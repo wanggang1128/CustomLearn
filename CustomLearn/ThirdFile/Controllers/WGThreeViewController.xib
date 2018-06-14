@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WGThreeViewController">
+            <connections>
+                <outlet property="WGThreeTableView" destination="wA9-yb-7qw" id="9BG-qC-cw6"/>
+                <outlet property="view" destination="eyl-Bs-yku" id="vkb-bq-rUc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eyl-Bs-yku">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wA9-yb-7qw">
+                    <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="uHU-ta-Xe5"/>
+                        <outlet property="delegate" destination="-1" id="Ppa-yA-wib"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wA9-yb-7qw" firstAttribute="top" secondItem="eyl-Bs-yku" secondAttribute="top" constant="64" id="6B2-Cs-pot"/>
+                <constraint firstAttribute="trailing" secondItem="wA9-yb-7qw" secondAttribute="trailing" id="Tqo-zl-EIQ"/>
+                <constraint firstItem="wA9-yb-7qw" firstAttribute="leading" secondItem="eyl-Bs-yku" secondAttribute="leading" id="oye-ZZ-reh"/>
+                <constraint firstAttribute="bottom" secondItem="wA9-yb-7qw" secondAttribute="bottom" constant="49" id="sG1-iR-VD9"/>
+            </constraints>
+            <point key="canvasLocation" x="-114" y="-63"/>
+        </view>
+    </objects>
+</document>

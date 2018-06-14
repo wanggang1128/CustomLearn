@@ -1,0 +1,25 @@
+//
+//  CustomLearn.pch
+//  CustomLearn
+//
+//  Created by wanggang on 2017/6/1.
+//  Copyright © 2017年 CSII. All rights reserved.
+//
+
+#ifndef CustomLearn_pch
+#define CustomLearn_pch
+
+#import "BaseSetingConfig.h"
+#import <RongIMKit/RongIMKit.h>
+#import "WGUIViewController.h"
+#import "UIImage+Addition.h"
+#import "GlobleMacroConfig.h"
+#import "TransactionNameConfig.h"
+#import "WGSendGeneralRequest.h"
+#import "WGConnectionManager.h"
+#import "WGRemoteResponse.h"
+#import "WGGlobleMethod.h"
+#import "JSONModel.h"
+#import "JSONModelLib.h"
+
+#endif 

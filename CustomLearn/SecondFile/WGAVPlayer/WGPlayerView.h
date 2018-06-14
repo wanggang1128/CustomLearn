@@ -1,0 +1,13 @@
+//
+//  WGPlayerView.h
+//  CustomLearn
+//
+//  Created by wanggang on 2017/8/18.
+//  Copyright © 2017年 CSII. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface WGPlayerView : UIView
+
+@end
