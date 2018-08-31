@@ -21,9 +21,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    self.button = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 200, 40)];
-    self.button.backgroundColor = [UIColor yellowColor];
-    [self.button addTarget:self action:@selector(btnClicked) forControlEvents:UIControlEventTouchUpInside];
+   
     [self.view addSubview:self.button];
     
     NSObject *foo = [[NSObject alloc] init];
@@ -33,11 +31,6 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (void)btnClicked {
     [NSThread detachNewThreadSelector:@selector(uiRefreashTest) toTarget:self withObject:nil];
 }
@@ -45,10 +38,42 @@
 - (void)uiRefreashTest {
     NSLog(@"当前线程:%@", [NSThread currentThread]);
     NSLog(@"主线程:%@", [NSThread mainThread]);
-    [self.button setTitle:@"ceshi" forState:UIControlStateNormal];
+    
+    //在子线程刷新该按钮的标题名字为子线程信息
+    NSString *subStr = [NSString stringWithFormat:@"子线程:%@", [NSThread currentThread]];
+    NSString *mainStr = [NSString stringWithFormat:@"主线程:%@", [NSThread mainThread]];
+    [_button setTitle:subStr forState:UIControlStateNormal];
+    CGRect labelTitleSize = [subStr boundingRectWithSize:CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13]} context:nil];
+    _button.frame = CGRectMake(0, 100, labelTitleSize.size.width+10, labelTitleSize.size.height+10);
+    
+    //在子线程新建一个按钮,标题名字为主线程信息
+    UIButton *newBtn = [[UIButton alloc] init];
+    newBtn.backgroundColor = [UIColor greenColor];
+    newBtn.titleLabel.font = [UIFont systemFontOfSize:13];
+    newBtn.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    [newBtn setTitle:subStr forState:UIControlStateNormal];
+    [newBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    CGRect labelTitleSize01 = [subStr boundingRectWithSize:CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13]} context:nil];
+    
+    newBtn.frame = CGRectMake(0, 250, labelTitleSize01.size.width+10, labelTitleSize01.size.height+10);
+    [self.view addSubview:newBtn];
+    
+    //在这个子线程延迟5秒钟
+    sleep(5);
 }
 
-
+-(UIButton *)button{
+    if (!_button) {
+        _button = [[UIButton alloc] initWithFrame:CGRectMake(0, 100, SCREEN_WIDTH, 100)];
+        _button.backgroundColor = [UIColor yellowColor];
+        [_button addTarget:self action:@selector(btnClicked) forControlEvents:UIControlEventTouchUpInside];
+        [_button setTitle:@"UI" forState:UIControlStateNormal];
+        [_button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        _button.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        _button.titleLabel.font = [UIFont systemFontOfSize:13];
+    }
+    return _button;
+}
 
 
 

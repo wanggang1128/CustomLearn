@@ -30,9 +30,20 @@
 #define font8 [UIFont systemFontOfSize:8.0]
 #define font7 [UIFont systemFontOfSize:7.0]
 #define font6 [UIFont systemFontOfSize:6.0]
-
+//是否是在手机上运行
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+//设计分辨率(点)
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+//取最大,防止屏幕旋转造成判断失效
+#define SCREEN_MAX_LENGTH MAX(SCREEN_WIDTH, SCREEN_HEIGHT)
+//取最小,防止屏幕旋转造成判断失效
+#define SCREEN_MIN_LENGTH MIN(SCREEN_WIDTH, SCREEN_HEIGHT)
+#define IS_IPHONE_35_OR_LESS (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0)
+#define IS_IPHONE_40 (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
+#define IS_IPHONE_47 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
+#define IS_IPHONE_55 (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+#define IS_IPHONE_X (IS_IPHONE && SCREEN_MAX_LENGTH == 812.0)
 
 #ifdef DEBUG
 # define WGLog(format, ...) NSLog(format, ##__VA_ARGS__)

@@ -53,7 +53,7 @@ static const void *key = @"key";
     /*
      NSTimer 内存泄漏
      */
-//    [self timerTest01];
+    [self timerTest01];
     
     
 }
@@ -68,13 +68,14 @@ static const void *key = @"key";
 }
 
 void targetMethod(id objj, SEL _cmd){
-    WGBlockTestViewController *con = objc_getAssociatedObject(objj, key);
-    [con timerMethod];
+    NSLog(@"1111111111");
+//    WGBlockTestViewController *con = objc_getAssociatedObject(objj, key);
+//    [con timerMethod];
 }
 
-- (void)timerMethod{
-    WGLog(@"timerMethod");
-}
+//- (void)timerMethod{
+//    WGLog(@"timerMethod");
+//}
 
 /*
  使用__weak，但是会有一个隐患，你不知道 self 什么时候会被释放，为了保证在block内不会被

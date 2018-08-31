@@ -9,6 +9,8 @@
 #import "WGGestureViewController.h"
 #import "WGUIGesture.h"
 
+
+
 @interface WGGestureViewController ()<WGUIGestureDelegate>
 
 @property (nonatomic, strong) UIImageView *imageView;
@@ -21,13 +23,33 @@
     [super viewDidLoad];
     
     [self setViewView];
+    
+    [self screenSize];
+    
     [self addGesture];
+    
 }
 
 - (void)setViewView{
     self.view.backgroundColor = BACKGROUND_COLOR;
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self.view addSubview:self.imageView];
+}
+
+- (void)screenSize{
+    if (IS_IPHONE_35_OR_LESS) {
+        WGLog(@"手机4");
+    }else if (IS_IPHONE_40){
+        WGLog(@"手机5");
+    }else if (IS_IPHONE_47){
+        WGLog(@"手机6");
+    }else if (IS_IPHONE_55){
+        WGLog(@"手机6P");
+    }else if (IS_IPHONE_X){
+        WGLog(@"手机X");
+    }else{
+        WGLog(@"手机类型未知");
+    }
 }
 
 - (void)addGesture{
