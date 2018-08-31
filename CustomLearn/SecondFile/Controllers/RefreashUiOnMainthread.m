@@ -29,6 +29,27 @@
         NSLog(@"正在释放foo!");
     }];
     
+    //MBProgressHUD一定要回到主线程消失
+//    [self MBProgressHUDText];
+}
+
+- (void)MBProgressHUDText{
+    MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.label.text = @"正在加载";
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        WGLog(@"000000");
+        sleep(5);
+        WGLog(@"111111");
+        [hud hideAnimated:YES];
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            [MBProgressHUD hideHUDForView:self.view animated:YES];
+//            WGLog(@"555555");
+//        });
+        WGLog(@"222222");
+        sleep(5);
+        WGLog(@"333333");
+    });
+    WGLog(@"444444");
 }
 
 - (void)btnClicked {

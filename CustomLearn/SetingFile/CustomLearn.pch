@@ -21,5 +21,6 @@
 #import "WGGlobleMethod.h"
 #import "JSONModel.h"
 #import "JSONModelLib.h"
+#import "MBProgressHUD.h"
 
 #endif 

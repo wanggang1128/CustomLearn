@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20E7BF9ED77FDDAF472CE6A4 /* libPods-CustomLearn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C4641BB293E7E0DFDB4E3B /* libPods-CustomLearn.a */; };
 		320219A91EFE139E0006704E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 320219961EFE139E0006704E /* AppDelegate.m */; };
 		320219AA1EFE139E0006704E /* WGTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320219981EFE139E0006704E /* WGTabBarViewController.m */; };
 		320219AD1EFE139E0006704E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 320219A01EFE139E0006704E /* main.m */; };
@@ -315,6 +316,9 @@
 		32FB7ED21EE010DC00B49531 /* CustomLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32FB7ED61EE010DC00B49531 /* CustomLearnUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLearnUITests.m; sourceTree = "<group>"; };
 		32FB7ED81EE010DC00B49531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38C4641BB293E7E0DFDB4E3B /* libPods-CustomLearn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CustomLearn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4162AA67F6F668379EF2BD2B /* Pods-CustomLearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomLearn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CustomLearn/Pods-CustomLearn.debug.xcconfig"; sourceTree = "<group>"; };
+		FA9B6BE151FA5175155856F2 /* Pods-CustomLearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomLearn.release.xcconfig"; path = "Pods/Target Support Files/Pods-CustomLearn/Pods-CustomLearn.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -350,6 +354,7 @@
 				32677F331F00B824003E24D2 /* AVFoundation.framework in Frameworks */,
 				32677F311F00B81A003E24D2 /* AudioToolbox.framework in Frameworks */,
 				32677F2F1F00B7DD003E24D2 /* AssetsLibrary.framework in Frameworks */,
+				20E7BF9ED77FDDAF472CE6A4 /* libPods-CustomLearn.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,6 +704,7 @@
 				32677F321F00B824003E24D2 /* AVFoundation.framework */,
 				32677F301F00B81A003E24D2 /* AudioToolbox.framework */,
 				32677F2E1F00B7DD003E24D2 /* AssetsLibrary.framework */,
+				38C4641BB293E7E0DFDB4E3B /* libPods-CustomLearn.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -785,6 +791,7 @@
 				32FB7ECA1EE010DC00B49531 /* CustomLearnTests */,
 				32FB7ED51EE010DC00B49531 /* CustomLearnUITests */,
 				32FB7EAF1EE010DC00B49531 /* Products */,
+				9DA3BEEDA35FA659B8921BB5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -834,6 +841,15 @@
 			path = CustomLearnUITests;
 			sourceTree = "<group>";
 		};
+		9DA3BEEDA35FA659B8921BB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4162AA67F6F668379EF2BD2B /* Pods-CustomLearn.debug.xcconfig */,
+				FA9B6BE151FA5175155856F2 /* Pods-CustomLearn.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -841,6 +857,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32FB7EDB1EE010DC00B49531 /* Build configuration list for PBXNativeTarget "CustomLearn" */;
 			buildPhases = (
+				9BE470FF568C7FB9E3AF8BEC /* [CP] Check Pods Manifest.lock */,
 				32FB7EAA1EE010DC00B49531 /* Sources */,
 				32FB7EAB1EE010DC00B49531 /* Frameworks */,
 				32FB7EAC1EE010DC00B49531 /* Resources */,
@@ -982,6 +999,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9BE470FF568C7FB9E3AF8BEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomLearn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		32FB7EAA1EE010DC00B49531 /* Sources */ = {
@@ -1182,6 +1220,7 @@
 		};
 		32FB7EDC1EE010DC00B49531 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4162AA67F6F668379EF2BD2B /* Pods-CustomLearn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1193,6 +1232,7 @@
 					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)s/IMKit",
 				);
 				GCC_PREFIX_HEADER = CustomLearn/SetingFile/CustomLearn.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = CustomLearn/SetingFile/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1200,7 +1240,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)s/IMKit",
 				);
-				OTHER_LDFLAGS = "-Objc";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wuhan.citizens.home02;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1210,6 +1250,7 @@
 		};
 		32FB7EDD1EE010DC00B49531 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA9B6BE151FA5175155856F2 /* Pods-CustomLearn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1221,7 +1262,7 @@
 					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)s/IMKit",
 				);
 				GCC_PREFIX_HEADER = CustomLearn/SetingFile/CustomLearn.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = NS_BLOCK_ASSERTIONS;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				INFOPLIST_FILE = CustomLearn/SetingFile/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1229,7 +1270,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)s/IMKit",
 				);
-				OTHER_LDFLAGS = "-Objc";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wuhan.citizens.home02;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
