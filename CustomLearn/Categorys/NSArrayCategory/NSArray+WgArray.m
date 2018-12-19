@@ -33,6 +33,12 @@
             method_exchangeImplementations(old, new);
         }
         
+        old = class_getClassMethod(objc_getClass("__NSArrayI"), @selector(allocWithZone:));
+        new = class_getClassMethod(objc_getClass("__NSArrayI"), @selector(WG_allocWithZone_NSArrayI:));
+        if (old && new) {
+            method_exchangeImplementations(old, new);
+        }
+        
     });
 }
 
@@ -75,6 +81,14 @@
         }
     } else {
         return [self WG_objectAtIndex_NSArray0:index];
+    }
+}
+
+- (id)WG_allocWithZone_NSArrayI:(NSUInteger)index{
+    if (index >self.count-1 || !self.count) {
+        return [self WG_allocWithZone_NSArrayI:index];
+    }else{
+        return nil;
     }
 }
 
