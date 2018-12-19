@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSData (WGCommon)
 
+#pragma mark - 加密
+// md5
+- (NSString*)md5;
+
 @end
 
 NS_ASSUME_NONNULL_END

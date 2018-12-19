@@ -23,6 +23,10 @@
 #import "WGAnimationStudyViewC.h"
 #import "WGArrayTestViewController.h"
 #import "WGBlockTestViewController.h"
+#import "AFNetworking.h"
+#import "WGCategoryTestViewController.h"
+#import "WGAlgorithmViewController.h"
+
 
 @interface WGTwoViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -150,8 +154,19 @@
             break;
         }
         case 15:{
-            WGBlockTestViewController *anivc = [[WGBlockTestViewController alloc] init];
-            [self pushNextController:anivc title:[_itemArr objectAtIndex:indexPath.row]];
+//            WGBlockTestViewController *anivc = [[WGBlockTestViewController alloc] init];
+//            [self pushNextController:anivc title:[_itemArr objectAtIndex:indexPath.row]];
+            [[WGControllerPush WGControllerPushShare] pushFromController:self toCon:@"WGBlockTestViewController"];
+            break;
+        }
+        case 16:{
+//            WGCategoryTestViewController *an = [[WGCategoryTestViewController alloc] init];
+//            [self pushNextController:an title:[_itemArr objectAtIndex:indexPath.row]];
+            [[WGControllerPush WGControllerPushShare] pushFromController:self toCon:@"WGCategoryTestViewController"];
+            break;
+        }case 17:{
+            WGAlgorithmViewController *an = [[WGAlgorithmViewController alloc] init];
+            [self pushNextController:an title:[_itemArr objectAtIndex:indexPath.row]];
             break;
         }
         default:
@@ -169,7 +184,7 @@
 
 -(NSMutableArray *)itemArr{
     if (!_itemArr) {
-        _itemArr = [NSMutableArray arrayWithObjects:@"手势",@"轮播图",@"自定义键盘",@"随机选餐",@"联系人分组",@"系统视频播放器",@"自定义浏览器",@"断点下载实验",@"动画实验",@"NSURLSession测试",@"HTML与OC的交互", @"UI验证", @"JSONModel使用", @"动画详解", @"=/copy/mutCopy对数组的影响", @"block学习", nil];
+        _itemArr = [NSMutableArray arrayWithObjects:@"手势",@"轮播图",@"自定义键盘",@"随机选餐",@"联系人分组",@"系统视频播放器",@"自定义浏览器",@"断点下载实验",@"动画实验",@"NSURLSession测试",@"HTML与OC的交互", @"UI验证", @"JSONModel使用", @"动画详解", @"=/copy/mutCopy对数组的影响", @"block学习", @"类别测试", @"常用算法", nil];
     }
     return _itemArr;
 }
@@ -180,7 +195,6 @@
     [controller setHidesBottomBarWhenPushed:YES];
     [self.navigationController pushViewController:controller animated:YES];
 }
-
 
 
 

@@ -12,6 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSDictionary (WGCommon)
 
+#pragma mark - 合并
++ (NSDictionary *)dictionaryByMerging:(NSDictionary *)dict1 with:(NSDictionary *)dict2;
+- (NSDictionary *)dictionaryByMergingWith:(NSDictionary *)dict;
+
+#pragma mark - 转成json字符串
+-(NSString *)JSONString;
+
 @end
 
 NS_ASSUME_NONNULL_END

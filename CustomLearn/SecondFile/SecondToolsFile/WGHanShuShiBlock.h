@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WGHanShuShiBlock : NSObject
 
+@property (nonatomic, assign) int result;
+
+- (WGHanShuShiBlock *)caculator:(int(^)(int value))block;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -10,4 +10,9 @@
 
 @implementation WGHanShuShiBlock
 
+- (WGHanShuShiBlock *)caculator:(int(^)(int))block{
+    _result = block(_result);
+    return self;
+}
+
 @end

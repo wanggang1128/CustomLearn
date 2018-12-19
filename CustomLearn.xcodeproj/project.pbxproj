@@ -20,11 +20,22 @@
 		3225C0872021A44300E72388 /* NSObject+WGRunTimeDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 3225C0832021A44100E72388 /* NSObject+WGRunTimeDealloc.m */; };
 		3225C0882021A44300E72388 /* WGBlockExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3225C0852021A44300E72388 /* WGBlockExecutor.m */; };
 		32295D381F03989F00AE8673 /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 32295D371F03989F00AE8673 /* UIImage+Addition.m */; };
+		322DB7C42175D09D005A9B0B /* NSArray+WGCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DB7C32175D09D005A9B0B /* NSArray+WGCommon.m */; };
+		322DB7C72175D8F5005A9B0B /* WGCategoryTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DB7C62175D8F5005A9B0B /* WGCategoryTestViewController.m */; };
+		322DB7CA2175E142005A9B0B /* NSMutableArray+WGCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DB7C92175E142005A9B0B /* NSMutableArray+WGCommon.m */; };
+		322DB7CE2175E352005A9B0B /* NSDictionary+WGCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DB7CD2175E352005A9B0B /* NSDictionary+WGCommon.m */; };
+		322DB7D22175EF10005A9B0B /* NSData+WGCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DB7D12175EF10005A9B0B /* NSData+WGCommon.m */; };
+		322DB7D62175F0B8005A9B0B /* NSBundle+WGCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DB7D52175F0B8005A9B0B /* NSBundle+WGCommon.m */; };
+		322DB7DA2175F2EA005A9B0B /* NSDate+WGCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DB7D92175F2EA005A9B0B /* NSDate+WGCommon.m */; };
+		322DB7DE2175F52E005A9B0B /* NSFileManager+WGCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DB7DD2175F52E005A9B0B /* NSFileManager+WGCommon.m */; };
+		322DB7E22175F821005A9B0B /* NSString+WGCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DB7E12175F821005A9B0B /* NSString+WGCommon.m */; };
+		322DB7E52175F9C4005A9B0B /* NSMutableString+WGCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DB7E42175F9C4005A9B0B /* NSMutableString+WGCommon.m */; };
 		322DC78D1F984D6D00BE55EF /* OC交互.html in Resources */ = {isa = PBXBuildFile; fileRef = 322DC78C1F984D6D00BE55EF /* OC交互.html */; };
 		322DC78F1F984E9900BE55EF /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 322DC78E1F984E9900BE55EF /* JavaScriptCore.framework */; };
 		322DC7951F984FCB00BE55EF /* WGHTMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DC7941F984FCB00BE55EF /* WGHTMLViewController.m */; };
 		323AF45520D0B29F008ABCDD /* WGBlockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 323AF45420D0B29F008ABCDD /* WGBlockTestViewController.m */; };
 		323AF45920D0BCEA008ABCDD /* WGLianShiBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 323AF45820D0BCEA008ABCDD /* WGLianShiBlock.m */; };
+		324297C021BBA1370073EA21 /* WGAlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324297BF21BBA1370073EA21 /* WGAlgorithmViewController.m */; };
 		324F336D1F5F8C77003209BC /* WGSendGeneralRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 324F336C1F5F8C77003209BC /* WGSendGeneralRequest.m */; };
 		324F33731F5FA30B003209BC /* WGGlobleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 324F33721F5FA30B003209BC /* WGGlobleMethod.m */; };
 		324F33761F5FC756003209BC /* WGConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 324F33751F5FC756003209BC /* WGConnectionManager.m */; };
@@ -96,6 +107,7 @@
 		32B8A21B1F287E7F006C3098 /* cycle_image6.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B8A2151F287E7F006C3098 /* cycle_image6.png */; };
 		32B8A21E1F287F76006C3098 /* WGBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B8A21D1F287F76006C3098 /* WGBannerViewController.m */; };
 		32B8A2211F287FDE006C3098 /* WGBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B8A2201F287FDE006C3098 /* WGBanner.m */; };
+		32D75E8821B6A120007A62E8 /* WGHanShuShiBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D75E8721B6A120007A62E8 /* WGHanShuShiBlock.m */; };
 		32E1F40B203FBA0F006ED322 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1F3F6203FBA0F006ED322 /* JSONValueTransformer.m */; };
 		32E1F40C203FBA0F006ED322 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1F3F9203FBA0F006ED322 /* JSONKeyMapper.m */; };
 		32E1F40D203FBA0F006ED322 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1F3FB203FBA0F006ED322 /* JSONModel.m */; };
@@ -167,6 +179,26 @@
 		3225C0862021A44300E72388 /* WGBlockExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGBlockExecutor.h; sourceTree = "<group>"; };
 		32295D361F03989F00AE8673 /* UIImage+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addition.h"; sourceTree = "<group>"; };
 		32295D371F03989F00AE8673 /* UIImage+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addition.m"; sourceTree = "<group>"; };
+		322DB7C22175D09D005A9B0B /* NSArray+WGCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+WGCommon.h"; sourceTree = "<group>"; };
+		322DB7C32175D09D005A9B0B /* NSArray+WGCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WGCommon.m"; sourceTree = "<group>"; };
+		322DB7C52175D8F5005A9B0B /* WGCategoryTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGCategoryTestViewController.h; sourceTree = "<group>"; };
+		322DB7C62175D8F5005A9B0B /* WGCategoryTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGCategoryTestViewController.m; sourceTree = "<group>"; };
+		322DB7C82175E142005A9B0B /* NSMutableArray+WGCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+WGCommon.h"; sourceTree = "<group>"; };
+		322DB7C92175E142005A9B0B /* NSMutableArray+WGCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+WGCommon.m"; sourceTree = "<group>"; };
+		322DB7CC2175E352005A9B0B /* NSDictionary+WGCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+WGCommon.h"; sourceTree = "<group>"; };
+		322DB7CD2175E352005A9B0B /* NSDictionary+WGCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+WGCommon.m"; sourceTree = "<group>"; };
+		322DB7D02175EF10005A9B0B /* NSData+WGCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+WGCommon.h"; sourceTree = "<group>"; };
+		322DB7D12175EF10005A9B0B /* NSData+WGCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+WGCommon.m"; sourceTree = "<group>"; };
+		322DB7D42175F0B8005A9B0B /* NSBundle+WGCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+WGCommon.h"; sourceTree = "<group>"; };
+		322DB7D52175F0B8005A9B0B /* NSBundle+WGCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+WGCommon.m"; sourceTree = "<group>"; };
+		322DB7D82175F2EA005A9B0B /* NSDate+WGCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+WGCommon.h"; sourceTree = "<group>"; };
+		322DB7D92175F2EA005A9B0B /* NSDate+WGCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+WGCommon.m"; sourceTree = "<group>"; };
+		322DB7DC2175F52E005A9B0B /* NSFileManager+WGCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+WGCommon.h"; sourceTree = "<group>"; };
+		322DB7DD2175F52E005A9B0B /* NSFileManager+WGCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+WGCommon.m"; sourceTree = "<group>"; };
+		322DB7E02175F821005A9B0B /* NSString+WGCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+WGCommon.h"; sourceTree = "<group>"; };
+		322DB7E12175F821005A9B0B /* NSString+WGCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+WGCommon.m"; sourceTree = "<group>"; };
+		322DB7E32175F9C4005A9B0B /* NSMutableString+WGCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+WGCommon.h"; sourceTree = "<group>"; };
+		322DB7E42175F9C4005A9B0B /* NSMutableString+WGCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+WGCommon.m"; sourceTree = "<group>"; };
 		322DC78C1F984D6D00BE55EF /* OC交互.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "OC交互.html"; sourceTree = "<group>"; };
 		322DC78E1F984E9900BE55EF /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		322DC7931F984FCB00BE55EF /* WGHTMLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGHTMLViewController.h; sourceTree = "<group>"; };
@@ -175,6 +207,8 @@
 		323AF45420D0B29F008ABCDD /* WGBlockTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBlockTestViewController.m; sourceTree = "<group>"; };
 		323AF45720D0BCEA008ABCDD /* WGLianShiBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGLianShiBlock.h; sourceTree = "<group>"; };
 		323AF45820D0BCEA008ABCDD /* WGLianShiBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGLianShiBlock.m; sourceTree = "<group>"; };
+		324297BE21BBA1370073EA21 /* WGAlgorithmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGAlgorithmViewController.h; sourceTree = "<group>"; };
+		324297BF21BBA1370073EA21 /* WGAlgorithmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGAlgorithmViewController.m; sourceTree = "<group>"; };
 		324F336B1F5F8C77003209BC /* WGSendGeneralRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGSendGeneralRequest.h; sourceTree = "<group>"; };
 		324F336C1F5F8C77003209BC /* WGSendGeneralRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGSendGeneralRequest.m; sourceTree = "<group>"; };
 		324F336E1F5F9402003209BC /* GlobleMacroConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobleMacroConfig.h; sourceTree = "<group>"; };
@@ -281,6 +315,8 @@
 		32B8A21D1F287F76006C3098 /* WGBannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGBannerViewController.m; sourceTree = "<group>"; };
 		32B8A21F1F287FDE006C3098 /* WGBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WGBanner.h; path = ../Model/WGBanner.h; sourceTree = "<group>"; };
 		32B8A2201F287FDE006C3098 /* WGBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WGBanner.m; path = ../Model/WGBanner.m; sourceTree = "<group>"; };
+		32D75E8621B6A120007A62E8 /* WGHanShuShiBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGHanShuShiBlock.h; sourceTree = "<group>"; };
+		32D75E8721B6A120007A62E8 /* WGHanShuShiBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGHanShuShiBlock.m; sourceTree = "<group>"; };
 		32E1F3F6203FBA0F006ED322 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
 		32E1F3F7203FBA0F006ED322 /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper.h; sourceTree = "<group>"; };
 		32E1F3F8203FBA0F006ED322 /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
@@ -446,12 +482,72 @@
 		32295D351F03984800AE8673 /* Categorys */ = {
 			isa = PBXGroup;
 			children = (
-				32295D361F03989F00AE8673 /* UIImage+Addition.h */,
-				32295D371F03989F00AE8673 /* UIImage+Addition.m */,
-				325BCEF82089CFB70062B735 /* NSArray+WgArray.h */,
-				325BCEF92089CFB70062B735 /* NSArray+WgArray.m */,
+				322DB7DF2175F7EB005A9B0B /* NSStringCategory */,
+				322DB7DB2175F4F7005A9B0B /* NSFileManagerCategory */,
+				322DB7D72175F2C9005A9B0B /* NSDateCategory */,
+				322DB7D32175F094005A9B0B /* NSBubdleCategory */,
+				322DB7CF2175EEDB005A9B0B /* NSDataCategory */,
+				322DB7CB2175E2CB005A9B0B /* NSDictionaryCategory */,
+				32EB682E21757D0D0046878E /* NSArrayCategory */,
+				32EB682C21757CCC0046878E /* UIImageCategory */,
 			);
 			path = Categorys;
+			sourceTree = "<group>";
+		};
+		322DB7CB2175E2CB005A9B0B /* NSDictionaryCategory */ = {
+			isa = PBXGroup;
+			children = (
+				322DB7CC2175E352005A9B0B /* NSDictionary+WGCommon.h */,
+				322DB7CD2175E352005A9B0B /* NSDictionary+WGCommon.m */,
+			);
+			path = NSDictionaryCategory;
+			sourceTree = "<group>";
+		};
+		322DB7CF2175EEDB005A9B0B /* NSDataCategory */ = {
+			isa = PBXGroup;
+			children = (
+				322DB7D02175EF10005A9B0B /* NSData+WGCommon.h */,
+				322DB7D12175EF10005A9B0B /* NSData+WGCommon.m */,
+			);
+			path = NSDataCategory;
+			sourceTree = "<group>";
+		};
+		322DB7D32175F094005A9B0B /* NSBubdleCategory */ = {
+			isa = PBXGroup;
+			children = (
+				322DB7D42175F0B8005A9B0B /* NSBundle+WGCommon.h */,
+				322DB7D52175F0B8005A9B0B /* NSBundle+WGCommon.m */,
+			);
+			path = NSBubdleCategory;
+			sourceTree = "<group>";
+		};
+		322DB7D72175F2C9005A9B0B /* NSDateCategory */ = {
+			isa = PBXGroup;
+			children = (
+				322DB7D82175F2EA005A9B0B /* NSDate+WGCommon.h */,
+				322DB7D92175F2EA005A9B0B /* NSDate+WGCommon.m */,
+			);
+			path = NSDateCategory;
+			sourceTree = "<group>";
+		};
+		322DB7DB2175F4F7005A9B0B /* NSFileManagerCategory */ = {
+			isa = PBXGroup;
+			children = (
+				322DB7DC2175F52E005A9B0B /* NSFileManager+WGCommon.h */,
+				322DB7DD2175F52E005A9B0B /* NSFileManager+WGCommon.m */,
+			);
+			path = NSFileManagerCategory;
+			sourceTree = "<group>";
+		};
+		322DB7DF2175F7EB005A9B0B /* NSStringCategory */ = {
+			isa = PBXGroup;
+			children = (
+				322DB7E02175F821005A9B0B /* NSString+WGCommon.h */,
+				322DB7E12175F821005A9B0B /* NSString+WGCommon.m */,
+				322DB7E32175F9C4005A9B0B /* NSMutableString+WGCommon.h */,
+				322DB7E42175F9C4005A9B0B /* NSMutableString+WGCommon.m */,
+			);
+			path = NSStringCategory;
 			sourceTree = "<group>";
 		};
 		323AF45620D0BC89008ABCDD /* SecondToolsFile */ = {
@@ -459,6 +555,8 @@
 			children = (
 				323AF45720D0BCEA008ABCDD /* WGLianShiBlock.h */,
 				323AF45820D0BCEA008ABCDD /* WGLianShiBlock.m */,
+				32D75E8621B6A120007A62E8 /* WGHanShuShiBlock.h */,
+				32D75E8721B6A120007A62E8 /* WGHanShuShiBlock.m */,
 			);
 			path = SecondToolsFile;
 			sourceTree = "<group>";
@@ -608,6 +706,10 @@
 				325BCEF62089C32F0062B735 /* WGArrayTestViewController.m */,
 				323AF45320D0B29F008ABCDD /* WGBlockTestViewController.h */,
 				323AF45420D0B29F008ABCDD /* WGBlockTestViewController.m */,
+				322DB7C52175D8F5005A9B0B /* WGCategoryTestViewController.h */,
+				322DB7C62175D8F5005A9B0B /* WGCategoryTestViewController.m */,
+				324297BE21BBA1370073EA21 /* WGAlgorithmViewController.h */,
+				324297BF21BBA1370073EA21 /* WGAlgorithmViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -772,6 +874,28 @@
 			path = JSONModelNetworking;
 			sourceTree = "<group>";
 		};
+		32EB682C21757CCC0046878E /* UIImageCategory */ = {
+			isa = PBXGroup;
+			children = (
+				32295D371F03989F00AE8673 /* UIImage+Addition.m */,
+				32295D361F03989F00AE8673 /* UIImage+Addition.h */,
+			);
+			path = UIImageCategory;
+			sourceTree = "<group>";
+		};
+		32EB682E21757D0D0046878E /* NSArrayCategory */ = {
+			isa = PBXGroup;
+			children = (
+				322DB7C22175D09D005A9B0B /* NSArray+WGCommon.h */,
+				322DB7C32175D09D005A9B0B /* NSArray+WGCommon.m */,
+				322DB7C82175E142005A9B0B /* NSMutableArray+WGCommon.h */,
+				322DB7C92175E142005A9B0B /* NSMutableArray+WGCommon.m */,
+				325BCEF82089CFB70062B735 /* NSArray+WgArray.h */,
+				325BCEF92089CFB70062B735 /* NSArray+WgArray.m */,
+			);
+			path = NSArrayCategory;
+			sourceTree = "<group>";
+		};
 		32EE63431F46DB7F00EAC313 /* WGAVPlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -914,8 +1038,9 @@
 		32FB7EA61EE010DC00B49531 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WG;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = CSII;
+				ORGANIZATIONNAME = WG;
 				TargetAttributes = {
 					32FB7EAD1EE010DC00B49531 = {
 						CreatedOnToolsVersion = 8.3.1;
@@ -1031,13 +1156,16 @@
 				32E1F40F203FBA0F006ED322 /* JSONModelClassProperty.m in Sources */,
 				320219AA1EFE139E0006704E /* WGTabBarViewController.m in Sources */,
 				325F34B91F38517F00990C72 /* WGContactsModel.m in Sources */,
+				322DB7C72175D8F5005A9B0B /* WGCategoryTestViewController.m in Sources */,
 				3258A59D1F023CCA0018D691 /* WGUIViewController.m in Sources */,
 				32B8A21E1F287F76006C3098 /* WGBannerViewController.m in Sources */,
+				322DB7D62175F0B8005A9B0B /* NSBundle+WGCommon.m in Sources */,
 				32B1BA4A200F43B3000119D7 /* RefreashUiOnMainthread.m in Sources */,
 				3295DE221F25E786000E895C /* WGUIGesture.m in Sources */,
 				32677F171F00B065003E24D2 /* WGFriendBooksViewController.m in Sources */,
 				323AF45920D0BCEA008ABCDD /* WGLianShiBlock.m in Sources */,
 				325F3328205B556C006115A4 /* WGAnimationStudyViewC.m in Sources */,
+				322DB7DE2175F52E005A9B0B /* NSFileManager+WGCommon.m in Sources */,
 				320219AD1EFE139E0006704E /* main.m in Sources */,
 				3267D0591F2B378B00737178 /* WGCustomKeyboardViewController.m in Sources */,
 				324F336D1F5F8C77003209BC /* WGSendGeneralRequest.m in Sources */,
@@ -1045,7 +1173,10 @@
 				32E1F41C203FBF13006ED322 /* WGJSONModelViewController.m in Sources */,
 				323AF45520D0B29F008ABCDD /* WGBlockTestViewController.m in Sources */,
 				32677F851F00DCE2003E24D2 /* RongYunChatListViewController.m in Sources */,
+				322DB7CE2175E352005A9B0B /* NSDictionary+WGCommon.m in Sources */,
+				322DB7D22175EF10005A9B0B /* NSData+WGCommon.m in Sources */,
 				3295DE1F1F25E646000E895C /* WGGestureViewController.m in Sources */,
+				324297C021BBA1370073EA21 /* WGAlgorithmViewController.m in Sources */,
 				322DC7951F984FCB00BE55EF /* WGHTMLViewController.m in Sources */,
 				32E1F40E203FBA0F006ED322 /* JSONModelError.m in Sources */,
 				3254505F1F43E45400EFB6A8 /* WGSystermVedioPlayerViewController.m in Sources */,
@@ -1057,6 +1188,7 @@
 				325BCEF72089C32F0062B735 /* WGArrayTestViewController.m in Sources */,
 				3225C0882021A44300E72388 /* WGBlockExecutor.m in Sources */,
 				32EE63421F46D24A00EAC313 /* WGAVPlayerViewController.m in Sources */,
+				322DB7C42175D09D005A9B0B /* NSArray+WGCommon.m in Sources */,
 				320219A91EFE139E0006704E /* AppDelegate.m in Sources */,
 				324F33761F5FC756003209BC /* WGConnectionManager.m in Sources */,
 				32E1F41F203FE270006ED322 /* WGJsonmodel.m in Sources */,
@@ -1066,17 +1198,22 @@
 				32E1F413203FBA0F006ED322 /* JSONModel+networking.m in Sources */,
 				325F34BC1F3859E800990C72 /* WGContactTableViewCell.m in Sources */,
 				325450661F44235100EFB6A8 /* WGWebViewViewController.m in Sources */,
+				322DB7CA2175E142005A9B0B /* NSMutableArray+WGCommon.m in Sources */,
 				3258A5A01F023D2D0018D691 /* WGTeamKindsViewController.m in Sources */,
 				324F337A1F60195C003209BC /* WGRemoteResponse.m in Sources */,
 				324F33731F5FA30B003209BC /* WGGlobleMethod.m in Sources */,
 				325F34B61F38516400990C72 /* WGContactsGroupModel.m in Sources */,
+				322DB7E52175F9C4005A9B0B /* NSMutableString+WGCommon.m in Sources */,
 				32677F181F00B065003E24D2 /* WGTwoViewController.m in Sources */,
 				327A329D1F3052DD008E76B5 /* WGUIPickerViewViewController.m in Sources */,
 				32E1F411203FBA0F006ED322 /* JSONHTTPClient.m in Sources */,
 				320E0E241F550F4300049762 /* WGResumeBrokenTransferViewController.m in Sources */,
 				325BCEFA2089CFB70062B735 /* NSArray+WgArray.m in Sources */,
+				322DB7E22175F821005A9B0B /* NSString+WGCommon.m in Sources */,
 				325F34B31F384E9000990C72 /* WGContactsGroupViewController.m in Sources */,
+				32D75E8821B6A120007A62E8 /* WGHanShuShiBlock.m in Sources */,
 				32677F191F00B065003E24D2 /* WGThreeViewController.m in Sources */,
+				322DB7DA2175F2EA005A9B0B /* NSDate+WGCommon.m in Sources */,
 				32B8A2211F287FDE006C3098 /* WGBanner.m in Sources */,
 				32E1F40D203FBA0F006ED322 /* JSONModel.m in Sources */,
 				32E1F40B203FBA0F006ED322 /* JSONValueTransformer.m in Sources */,

@@ -10,6 +10,7 @@
 #import "WGLianShiBlock.h"
 #import "WGBannerViewController.h"
 #import <objc/runtime.h>
+#import "WGHanShuShiBlock.h"
 
 typedef void(^BlockTest)(void);
 
@@ -42,6 +43,11 @@ static const void *key = @"key";
 //    [self blockTest03];
     
     /*
+     block函数式编程,写一个计算器
+     */
+        [self blockTest08];
+    
+    /*
      循环引用
      */
 //    [self blockTest04];
@@ -53,7 +59,7 @@ static const void *key = @"key";
     /*
      NSTimer 内存泄漏
      */
-    [self timerTest01];
+//    [self timerTest01];
     
     
 }
@@ -76,6 +82,17 @@ void targetMethod(id objj, SEL _cmd){
 //- (void)timerMethod{
 //    WGLog(@"timerMethod");
 //}
+
+- (void)blockTest08{
+    
+    WGHanShuShiBlock *block = [[WGHanShuShiBlock alloc] init];
+    int res = [block caculator:^int(int value) {
+        value += 5;
+        value -= 3;
+        return value;
+    }].result;
+    NSLog(@"---->%d", res);
+}
 
 /*
  使用__weak，但是会有一个隐患，你不知道 self 什么时候会被释放，为了保证在block内不会被

@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSBundle (WGCommon)
 
++ (instancetype)wg_subBundleWithBundleName:(NSString *)bundleName targetClass:(Class)targetClass;
+
+- (NSString *)appIconPath;
+- (UIImage *)appIcon;
+
 @end
 
 NS_ASSUME_NONNULL_END
