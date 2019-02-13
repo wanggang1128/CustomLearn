@@ -44,6 +44,8 @@
 		325450661F44235100EFB6A8 /* WGWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 325450651F44235100EFB6A8 /* WGWebViewViewController.m */; };
 		3258A59D1F023CCA0018D691 /* WGUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3258A59C1F023CCA0018D691 /* WGUIViewController.m */; };
 		3258A5A01F023D2D0018D691 /* WGTeamKindsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3258A59F1F023D2D0018D691 /* WGTeamKindsViewController.m */; };
+		325AABCA2213AD25009A92EE /* WGXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 325AABC82213AD25009A92EE /* WGXibViewController.m */; };
+		325AABCB2213AD25009A92EE /* WGXibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 325AABC92213AD25009A92EE /* WGXibViewController.xib */; };
 		325BCEF72089C32F0062B735 /* WGArrayTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BCEF62089C32F0062B735 /* WGArrayTestViewController.m */; };
 		325BCEFA2089CFB70062B735 /* NSArray+WgArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BCEF92089CFB70062B735 /* NSArray+WgArray.m */; };
 		325F3328205B556C006115A4 /* WGAnimationStudyViewC.m in Sources */ = {isa = PBXBuildFile; fileRef = 325F3327205B556C006115A4 /* WGAnimationStudyViewC.m */; };
@@ -227,6 +229,9 @@
 		3258A59C1F023CCA0018D691 /* WGUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGUIViewController.m; sourceTree = "<group>"; };
 		3258A59E1F023D2D0018D691 /* WGTeamKindsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGTeamKindsViewController.h; sourceTree = "<group>"; };
 		3258A59F1F023D2D0018D691 /* WGTeamKindsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGTeamKindsViewController.m; sourceTree = "<group>"; };
+		325AABC72213AD25009A92EE /* WGXibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGXibViewController.h; sourceTree = "<group>"; };
+		325AABC82213AD25009A92EE /* WGXibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGXibViewController.m; sourceTree = "<group>"; };
+		325AABC92213AD25009A92EE /* WGXibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WGXibViewController.xib; sourceTree = "<group>"; };
 		325BCEF52089C32F0062B735 /* WGArrayTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGArrayTestViewController.h; sourceTree = "<group>"; };
 		325BCEF62089C32F0062B735 /* WGArrayTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGArrayTestViewController.m; sourceTree = "<group>"; };
 		325BCEF82089CFB70062B735 /* NSArray+WgArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+WgArray.h"; sourceTree = "<group>"; };
@@ -710,6 +715,9 @@
 				322DB7C62175D8F5005A9B0B /* WGCategoryTestViewController.m */,
 				324297BE21BBA1370073EA21 /* WGAlgorithmViewController.h */,
 				324297BF21BBA1370073EA21 /* WGAlgorithmViewController.m */,
+				325AABC72213AD25009A92EE /* WGXibViewController.h */,
+				325AABC82213AD25009A92EE /* WGXibViewController.m */,
+				325AABC92213AD25009A92EE /* WGXibViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1091,6 +1099,7 @@
 				32B8A2161F287E7F006C3098 /* cycle_image1.png in Resources */,
 				3295DE1C1F25E414000E895C /* gesture.png in Resources */,
 				320219B61EFE51EC0006704E /* test@2x.png in Resources */,
+				325AABCB2213AD25009A92EE /* WGXibViewController.xib in Resources */,
 				32B8A2181F287E7F006C3098 /* cycle_image3.png in Resources */,
 				32B8A2171F287E7F006C3098 /* cycle_image2.png in Resources */,
 				32677F7E1F00DC06003E24D2 /* RongCloudKit.strings in Resources */,
@@ -1207,6 +1216,7 @@
 				32677F181F00B065003E24D2 /* WGTwoViewController.m in Sources */,
 				327A329D1F3052DD008E76B5 /* WGUIPickerViewViewController.m in Sources */,
 				32E1F411203FBA0F006ED322 /* JSONHTTPClient.m in Sources */,
+				325AABCA2213AD25009A92EE /* WGXibViewController.m in Sources */,
 				320E0E241F550F4300049762 /* WGResumeBrokenTransferViewController.m in Sources */,
 				325BCEFA2089CFB70062B735 /* NSArray+WgArray.m in Sources */,
 				322DB7E22175F821005A9B0B /* NSString+WGCommon.m in Sources */,
