@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - Coverage.info - SecondFile/Model/WGUIGesture.h</title>
+  <link rel="stylesheet" type="text/css" href="../../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../../index.html">top level</a> - <a href="index.html">SecondFile/Model</a> - WGUIGesture.h<span style="font-size: 80%;"> (source / <a href="WGUIGesture.h.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">Coverage.info</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">1</td>
+            <td class="headerCovTableEntry">1</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2019-02-19 13:48:16</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">2</td>
+            <td class="headerCovTableEntry">2</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
+          </tr>
+          <tr><td><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : //</a>
+<span class="lineNum">       2 </span>            : //  WGUIGesture.h
+<span class="lineNum">       3 </span>            : //  CustomLearn
+<span class="lineNum">       4 </span>            : //
+<span class="lineNum">       5 </span>            : //  Created by wanggang on 2017/7/24.
+<span class="lineNum">       6 </span>            : //  Copyright © 2017年 CSII. All rights reserved.
+<span class="lineNum">       7 </span>            : //
+<span class="lineNum">       8 </span>            : 
+<span class="lineNum">       9 </span>            : #import &lt;UIKit/UIKit.h&gt;
+<span class="lineNum">      10 </span>            : 
+<span class="lineNum">      11 </span>            : @protocol WGUIGestureDelegate &lt;NSObject&gt;
+<span class="lineNum">      12 </span>            : 
+<span class="lineNum">      13 </span>            : - (void)tap:(UITapGestureRecognizer *)tap;
+<span class="lineNum">      14 </span>            : - (void)doubleTap:(UITapGestureRecognizer *)doubleTap;
+<span class="lineNum">      15 </span>            : - (void)pinch:(UIPinchGestureRecognizer *)pinch;
+<span class="lineNum">      16 </span>            : - (void)rotation:(UIRotationGestureRecognizer *)rotation;
+<span class="lineNum">      17 </span>            : - (void)pan:(UIPanGestureRecognizer *)pan;
+<span class="lineNum">      18 </span>            : - (void)swipe:(UISwipeGestureRecognizer *)swipe;
+<span class="lineNum">      19 </span>            : - (void)longPress:(UILongPressGestureRecognizer *)longPress;
+<span class="lineNum">      20 </span>            : 
+<span class="lineNum">      21 </span>            : @end
+<span class="lineNum">      22 </span>            : 
+<a name="23"><span class="lineNum">      23 </span>            : @interface WGUIGesture : UIGestureRecognizer</a>
+<span class="lineNum">      24 </span>            : 
+<span class="lineNum">      25 </span><span class="lineCov"> 4294967552 : @property (nonatomic, weak) id&lt;WGUIGestureDelegate&gt;wguigestureDelegate;</span>
+<span class="lineNum">      26 </span>            : 
+<span class="lineNum">      27 </span>            : + (WGUIGesture *)WGUIGestureShare;
+<span class="lineNum">      28 </span>            : 
+<span class="lineNum">      29 </span>            : //单击
+<span class="lineNum">      30 </span>            : - (UITapGestureRecognizer *)tapGesture;
+<span class="lineNum">      31 </span>            : //双击
+<span class="lineNum">      32 </span>            : - (UITapGestureRecognizer *)doubleTapGesture;
+<span class="lineNum">      33 </span>            : //捏合
+<span class="lineNum">      34 </span>            : - (UIPinchGestureRecognizer *)pinchGesture;
+<span class="lineNum">      35 </span>            : //旋转
+<span class="lineNum">      36 </span>            : - (UIRotationGestureRecognizer *)rotationGesture;
+<span class="lineNum">      37 </span>            : //移动
+<span class="lineNum">      38 </span>            : - (UIPanGestureRecognizer *)panGesture;
+<span class="lineNum">      39 </span>            : //清扫
+<span class="lineNum">      40 </span>            : - (UISwipeGestureRecognizer *)swipeGesture;
+<span class="lineNum">      41 </span>            : //长按
+<span class="lineNum">      42 </span>            : - (UILongPressGestureRecognizer *)longPressGesture;
+<span class="lineNum">      43 </span>            : 
+<span class="lineNum">      44 </span>            : @end
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.13</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

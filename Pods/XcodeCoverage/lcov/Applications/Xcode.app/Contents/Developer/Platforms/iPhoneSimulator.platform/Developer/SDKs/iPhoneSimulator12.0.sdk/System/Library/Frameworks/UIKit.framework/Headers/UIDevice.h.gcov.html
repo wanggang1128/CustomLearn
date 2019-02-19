@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - Coverage.info - /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h</title>
+  <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../../../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../../../../../../../../../../../../../../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../../../../../../../../../../../../../../index.html">top level</a> - <a href="index.html">Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers</a> - UIDevice.h<span style="font-size: 80%;"> (source / <a href="UIDevice.h.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">Coverage.info</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">2</td>
+            <td class="headerCovTableEntry">2</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2019-02-19 13:48:16</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">1</td>
+            <td class="headerCovTableEntry">1</td>
+            <td class="headerCovTableEntryHi">100.0 %</td>
+          </tr>
+          <tr><td><img src="../../../../../../../../../../../../../../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../../../../../../../../../../../../../../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : #if USE_UIKIT_PUBLIC_HEADERS || !__has_include(&lt;UIKitCore/UIDevice.h&gt;)</a>
+<span class="lineNum">       2 </span>            : //
+<span class="lineNum">       3 </span>            : //  UIDevice.h
+<span class="lineNum">       4 </span>            : //  UIKit
+<span class="lineNum">       5 </span>            : //
+<span class="lineNum">       6 </span>            : //  Copyright (c) 2007-2018 Apple Inc. All rights reserved.
+<span class="lineNum">       7 </span>            : //
+<span class="lineNum">       8 </span>            : 
+<span class="lineNum">       9 </span>            : #import &lt;Foundation/Foundation.h&gt;
+<span class="lineNum">      10 </span>            : #import &lt;UIKit/UIKitDefines.h&gt;
+<span class="lineNum">      11 </span>            : 
+<span class="lineNum">      12 </span>            : NS_ASSUME_NONNULL_BEGIN
+<span class="lineNum">      13 </span>            : 
+<span class="lineNum">      14 </span>            : typedef NS_ENUM(NSInteger, UIDeviceOrientation) {
+<span class="lineNum">      15 </span>            :     UIDeviceOrientationUnknown,
+<span class="lineNum">      16 </span>            :     UIDeviceOrientationPortrait,            // Device oriented vertically, home button on the bottom
+<span class="lineNum">      17 </span>            :     UIDeviceOrientationPortraitUpsideDown,  // Device oriented vertically, home button on the top
+<span class="lineNum">      18 </span>            :     UIDeviceOrientationLandscapeLeft,       // Device oriented horizontally, home button on the right
+<span class="lineNum">      19 </span>            :     UIDeviceOrientationLandscapeRight,      // Device oriented horizontally, home button on the left
+<span class="lineNum">      20 </span>            :     UIDeviceOrientationFaceUp,              // Device oriented flat, face up
+<span class="lineNum">      21 </span>            :     UIDeviceOrientationFaceDown             // Device oriented flat, face down
+<span class="lineNum">      22 </span>            : } __TVOS_PROHIBITED;
+<span class="lineNum">      23 </span>            : 
+<span class="lineNum">      24 </span>            : typedef NS_ENUM(NSInteger, UIDeviceBatteryState) {
+<span class="lineNum">      25 </span>            :     UIDeviceBatteryStateUnknown,
+<span class="lineNum">      26 </span>            :     UIDeviceBatteryStateUnplugged,   // on battery, discharging
+<span class="lineNum">      27 </span>            :     UIDeviceBatteryStateCharging,    // plugged in, less than 100%
+<span class="lineNum">      28 </span>            :     UIDeviceBatteryStateFull,        // plugged in, at 100%
+<span class="lineNum">      29 </span>            : } __TVOS_PROHIBITED;              // available in iPhone 3.0
+<span class="lineNum">      30 </span>            : 
+<span class="lineNum">      31 </span>            : typedef NS_ENUM(NSInteger, UIUserInterfaceIdiom) {
+<span class="lineNum">      32 </span>            :     UIUserInterfaceIdiomUnspecified = -1,
+<span class="lineNum">      33 </span>            :     UIUserInterfaceIdiomPhone NS_ENUM_AVAILABLE_IOS(3_2), // iPhone and iPod touch style UI
+<span class="lineNum">      34 </span>            :     UIUserInterfaceIdiomPad NS_ENUM_AVAILABLE_IOS(3_2), // iPad style UI
+<span class="lineNum">      35 </span>            :     UIUserInterfaceIdiomTV NS_ENUM_AVAILABLE_IOS(9_0), // Apple TV style UI
+<span class="lineNum">      36 </span>            :     UIUserInterfaceIdiomCarPlay NS_ENUM_AVAILABLE_IOS(9_0), // CarPlay style UI
+<span class="lineNum">      37 </span>            : };
+<span class="lineNum">      38 </span>            : 
+<span class="lineNum">      39 </span>            : static inline BOOL UIDeviceOrientationIsPortrait(UIDeviceOrientation orientation)  __TVOS_PROHIBITED {
+<span class="lineNum">      40 </span>            :     return ((orientation) == UIDeviceOrientationPortrait || (orientation) == UIDeviceOrientationPortraitUpsideDown);
+<span class="lineNum">      41 </span>            : }
+<span class="lineNum">      42 </span>            : 
+<span class="lineNum">      43 </span>            : static inline BOOL UIDeviceOrientationIsLandscape(UIDeviceOrientation orientation)  __TVOS_PROHIBITED {
+<span class="lineNum">      44 </span>            :     return ((orientation) == UIDeviceOrientationLandscapeLeft || (orientation) == UIDeviceOrientationLandscapeRight);
+<span class="lineNum">      45 </span>            : }
+<span class="lineNum">      46 </span>            : 
+<span class="lineNum">      47 </span>            : static inline __attribute__((always_inline)) BOOL UIDeviceOrientationIsFlat(UIDeviceOrientation orientation)  __TVOS_PROHIBITED {
+<span class="lineNum">      48 </span>            :     return ((orientation) == UIDeviceOrientationFaceUp || (orientation) == UIDeviceOrientationFaceDown);
+<span class="lineNum">      49 </span>            : }
+<span class="lineNum">      50 </span>            : 
+<span class="lineNum">      51 </span>            : static inline __attribute__((always_inline)) BOOL UIDeviceOrientationIsValidInterfaceOrientation(UIDeviceOrientation orientation)  __TVOS_PROHIBITED {
+<span class="lineNum">      52 </span>            :     return ((orientation) == UIDeviceOrientationPortrait || (orientation) == UIDeviceOrientationPortraitUpsideDown || (orientation) == UIDeviceOrientationLandscapeLeft || (orientation) == UIDeviceOrientationLandscapeRight);
+<span class="lineNum">      53 </span>            : }
+<span class="lineNum">      54 </span>            : 
+<span class="lineNum">      55 </span>            : NS_CLASS_AVAILABLE_IOS(2_0) @interface UIDevice : NSObject 
+<span class="lineNum">      56 </span>            : 
+<span class="lineNum">      57 </span>            : #if UIKIT_DEFINE_AS_PROPERTIES
+<span class="lineNum">      58 </span>            : @property(class, nonatomic, readonly) UIDevice *currentDevice;
+<span class="lineNum">      59 </span>            : #else
+<span class="lineNum">      60 </span>            : + (UIDevice *)currentDevice;
+<span class="lineNum">      61 </span>            : #endif
+<span class="lineNum">      62 </span>            : 
+<span class="lineNum">      63 </span>            : @property(nonatomic,readonly,strong) NSString    *name;              // e.g. &quot;My iPhone&quot;
+<span class="lineNum">      64 </span>            : @property(nonatomic,readonly,strong) NSString    *model;             // e.g. @&quot;iPhone&quot;, @&quot;iPod touch&quot;
+<span class="lineNum">      65 </span>            : @property(nonatomic,readonly,strong) NSString    *localizedModel;    // localized version of model
+<span class="lineNum">      66 </span>            : @property(nonatomic,readonly,strong) NSString    *systemName;        // e.g. @&quot;iOS&quot;
+<span class="lineNum">      67 </span>            : @property(nonatomic,readonly,strong) NSString    *systemVersion;     // e.g. @&quot;4.0&quot;
+<span class="lineNum">      68 </span>            : @property(nonatomic,readonly) UIDeviceOrientation orientation __TVOS_PROHIBITED;       // return current device orientation.  this will return UIDeviceOrientationUnknown unless device orientation notifications are being generated.
+<span class="lineNum">      69 </span>            : 
+<span class="lineNum">      70 </span>            : @property(nullable, nonatomic,readonly,strong) NSUUID      *identifierForVendor NS_AVAILABLE_IOS(6_0);      // a UUID that may be used to uniquely identify the device, same across apps from a single vendor.
+<span class="lineNum">      71 </span>            : 
+<span class="lineNum">      72 </span>            : @property(nonatomic,readonly,getter=isGeneratingDeviceOrientationNotifications) BOOL generatesDeviceOrientationNotifications __TVOS_PROHIBITED;
+<span class="lineNum">      73 </span>            : - (void)beginGeneratingDeviceOrientationNotifications __TVOS_PROHIBITED;      // nestable
+<span class="lineNum">      74 </span>            : - (void)endGeneratingDeviceOrientationNotifications __TVOS_PROHIBITED;
+<span class="lineNum">      75 </span>            : 
+<span class="lineNum">      76 </span>            : @property(nonatomic,getter=isBatteryMonitoringEnabled) BOOL batteryMonitoringEnabled NS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED;  // default is NO
+<span class="lineNum">      77 </span>            : @property(nonatomic,readonly) UIDeviceBatteryState          batteryState NS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED;  // UIDeviceBatteryStateUnknown if monitoring disabled
+<span class="lineNum">      78 </span>            : @property(nonatomic,readonly) float                         batteryLevel NS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED;  // 0 .. 1.0. -1.0 if UIDeviceBatteryStateUnknown
+<span class="lineNum">      79 </span>            : 
+<span class="lineNum">      80 </span>            : @property(nonatomic,getter=isProximityMonitoringEnabled) BOOL proximityMonitoringEnabled NS_AVAILABLE_IOS(3_0); // default is NO
+<span class="lineNum">      81 </span>            : @property(nonatomic,readonly)                            BOOL proximityState NS_AVAILABLE_IOS(3_0);  // always returns NO if no proximity detector
+<span class="lineNum">      82 </span>            : 
+<span class="lineNum">      83 </span>            : @property(nonatomic,readonly,getter=isMultitaskingSupported) BOOL multitaskingSupported NS_AVAILABLE_IOS(4_0);
+<span class="lineNum">      84 </span>            : 
+<span class="lineNum">      85 </span>            : @property(nonatomic,readonly) UIUserInterfaceIdiom userInterfaceIdiom NS_AVAILABLE_IOS(3_2);
+<span class="lineNum">      86 </span>            : 
+<span class="lineNum">      87 </span>            : - (void)playInputClick NS_AVAILABLE_IOS(4_2);  // Plays a click only if an enabling input view is on-screen and user has enabled input clicks.
+<span class="lineNum">      88 </span>            : 
+<span class="lineNum">      89 </span>            : @end
+<span class="lineNum">      90 </span>            : 
+<span class="lineNum">      91 </span>            : @protocol UIInputViewAudioFeedback &lt;NSObject&gt;
+<span class="lineNum">      92 </span>            : @optional
+<span class="lineNum">      93 </span>            : 
+<span class="lineNum">      94 </span>            : @property (nonatomic, readonly) BOOL enableInputClicksWhenVisible; // If YES, an input view will enable playInputClick.
+<span class="lineNum">      95 </span>            : 
+<span class="lineNum">      96 </span>            : @end
+<span class="lineNum">      97 </span>            : 
+<a name="98"><span class="lineNum">      98 </span>            : /* The UI_USER_INTERFACE_IDIOM() function is provided for use when deploying to a version of the iOS less than 3.2. If the earliest version of iPhone/iOS that you will be deploying for is 3.2 or greater, you may use -[UIDevice userInterfaceIdiom] directly.</a>
+<span class="lineNum">      99 </span>            :  */
+<span class="lineNum">     100 </span>            : static inline UIUserInterfaceIdiom UI_USER_INTERFACE_IDIOM() {
+<span class="lineNum">     101 </span><span class="lineCov"> 8053067520 :     return ([[UIDevice currentDevice] respondsToSelector:@selector(userInterfaceIdiom)] ?</span>
+<span class="lineNum">     102 </span><span class="lineCov"> 1342177920 :             [[UIDevice currentDevice] userInterfaceIdiom] :</span>
+<span class="lineNum">     103 </span>            :             UIUserInterfaceIdiomPhone);
+<span class="lineNum">     104 </span>            : }
+<span class="lineNum">     105 </span>            : 
+<span class="lineNum">     106 </span>            : UIKIT_EXTERN NSNotificationName const UIDeviceOrientationDidChangeNotification __TVOS_PROHIBITED;
+<span class="lineNum">     107 </span>            : UIKIT_EXTERN NSNotificationName const UIDeviceBatteryStateDidChangeNotification   NS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED;
+<span class="lineNum">     108 </span>            : UIKIT_EXTERN NSNotificationName const UIDeviceBatteryLevelDidChangeNotification   NS_AVAILABLE_IOS(3_0) __TVOS_PROHIBITED;
+<span class="lineNum">     109 </span>            : UIKIT_EXTERN NSNotificationName const UIDeviceProximityStateDidChangeNotification NS_AVAILABLE_IOS(3_0);
+<span class="lineNum">     110 </span>            : 
+<span class="lineNum">     111 </span>            : NS_ASSUME_NONNULL_END
+<span class="lineNum">     112 </span>            : 
+<span class="lineNum">     113 </span>            : #else
+<span class="lineNum">     114 </span>            : #import &lt;UIKitCore/UIDevice.h&gt;
+<span class="lineNum">     115 </span>            : #endif
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../../../../../../../../../../../../../../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.13</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

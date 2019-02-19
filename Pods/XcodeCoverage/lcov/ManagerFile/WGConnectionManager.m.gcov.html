@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - Coverage.info - ManagerFile/WGConnectionManager.m</title>
+  <link rel="stylesheet" type="text/css" href="../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">ManagerFile</a> - WGConnectionManager.m<span style="font-size: 80%;"> (source / <a href="WGConnectionManager.m.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">Coverage.info</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">15</td>
+            <td class="headerCovTableEntry">17</td>
+            <td class="headerCovTableEntryMed">88.2 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2019-02-19 13:48:16</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">8</td>
+            <td class="headerCovTableEntry">10</td>
+            <td class="headerCovTableEntryMed">80.0 %</td>
+          </tr>
+          <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : //</a>
+<span class="lineNum">       2 </span>            : //  WGConnectionManager.m
+<span class="lineNum">       3 </span>            : //  CustomLearn
+<span class="lineNum">       4 </span>            : //
+<span class="lineNum">       5 </span>            : //  Created by wanggang on 2017/9/6.
+<span class="lineNum">       6 </span>            : //  Copyright © 2017年 CSII. All rights reserved.
+<span class="lineNum">       7 </span>            : //
+<span class="lineNum">       8 </span>            : 
+<span class="lineNum">       9 </span>            : #import &quot;WGConnectionManager.h&quot;
+<span class="lineNum">      10 </span>            : 
+<span class="lineNum">      11 </span>            : @implementation WGConnectionManager
+<span class="lineNum">      12 </span>            : 
+<a name="13"><span class="lineNum">      13 </span>            : #pragma mark 单例</a>
+<span class="lineNum">      14 </span>            : static WGConnectionManager *instance = nil;
+<a name="15"><span class="lineNum">      15 </span>            : + (WGConnectionManager *)shareWGConnectionManager{</a>
+<span class="lineNum">      16 </span>            :     static dispatch_once_t onceToken;
+<span class="lineNum">      17 </span><span class="lineCov">        512 :     dispatch_once(&amp;onceToken, ^{</span>
+<span class="lineNum">      18 </span><span class="lineCov">        256 :         instance = [[WGConnectionManager alloc] init];</span>
+<span class="lineNum">      19 </span><span class="lineCov">        256 :     });</span>
+<span class="lineNum">      20 </span><span class="lineCov">        256 :     return instance;</span>
+<a name="21"><span class="lineNum">      21 </span>            : }</a>
+<span class="lineNum">      22 </span>            : 
+<a name="23"><span class="lineNum">      23 </span>            : + (instancetype)allocWithZone:(struct _NSZone *)zone{</a>
+<span class="lineNum">      24 </span>            :     static dispatch_once_t onceToken;
+<a name="25"><span class="lineNum">      25 </span><span class="lineCov">        512 :     dispatch_once(&amp;onceToken, ^{</span></a>
+<span class="lineNum">      26 </span><span class="lineCov">        256 :         instance = [super allocWithZone:zone];</span>
+<span class="lineNum">      27 </span><span class="lineCov">        256 :     });</span>
+<span class="lineNum">      28 </span><span class="lineCov">        256 :     return instance;</span>
+<a name="29"><span class="lineNum">      29 </span>            : }</a>
+<span class="lineNum">      30 </span>            : 
+<span class="lineNum">      31 </span>            : - (id)copyWithZone:(NSZone *)zone{
+<span class="lineNum">      32 </span><span class="lineNoCov">          0 :     return instance;</span>
+<a name="33"><span class="lineNum">      33 </span>            : }</a>
+<span class="lineNum">      34 </span>            : 
+<span class="lineNum">      35 </span>            : - (id)mutableCopyWithZone:(NSZone *)zone{
+<span class="lineNum">      36 </span><span class="lineNoCov">          0 :     return instance;</span>
+<span class="lineNum">      37 </span>            : }
+<span class="lineNum">      38 </span>            : 
+<a name="39"><span class="lineNum">      39 </span>            : #pragma mark 方法</a>
+<span class="lineNum">      40 </span>            : //登录
+<span class="lineNum">      41 </span>            : - (void)loginWithUserName:(NSString *)userName passWord:(NSString *)passWord deviceId:(NSString *)deviceId complete:(void(^)(WGRemoteResponse *remoteResponse))complete{
+<span class="lineNum">      42 </span>            :     
+<span class="lineNum">      43 </span><span class="lineCov">        256 :     NSMutableDictionary *paragramDic = [[NSMutableDictionary alloc] init];</span>
+<span class="lineNum">      44 </span><span class="lineCov">        256 :     [paragramDic setObject:userName forKey:@&quot;mobile&quot;];</span>
+<span class="lineNum">      45 </span>            : //    [paragramDic setObject:passWord forKey:@&quot;password&quot;];
+<span class="lineNum">      46 </span>            : //    [paragramDic setObject:userName forKey:Transaction_UserName];
+<span class="lineNum">      47 </span>            : //    [paragramDic setObject:passWord forKey:Transaction_Password];
+<span class="lineNum">      48 </span>            : //    [paragramDic setObject:deviceId forKey:Transaction_DeviceId];
+<span class="lineNum">      49 </span>            :     
+<span class="lineNum">      50 </span>            : //    NSString *path = [[NSBundle mainBundle] pathForResource:@&quot;gesture.png&quot; ofType:nil];
+<span class="lineNum">      51 </span>            : //    UIImage *image = [UIImage imageNamed:@&quot;gesture.png&quot;];
+<span class="lineNum">      52 </span>            : //    NSData *data = UIImageJPEGRepresentation(image, 1.0);
+<span class="lineNum">      53 </span>            : //    [paragramDic setObject:data forKey:@&quot;imageData&quot;];
+<span class="lineNum">      54 </span>            :     
+<span class="lineNum">      55 </span>            : //    NSString *url = [NSString stringWithFormat:@&quot;%@%@&quot;,TransactionUrl,login];
+<span class="lineNum">      56 </span>            : //    NSString *url = [NSString stringWithFormat:@&quot;%@&quot;, @&quot;http://172.16.150.144:8090/nursing-branch-web/auth/user/mobilelogin&quot;];
+<a name="57"><span class="lineNum">      57 </span><span class="lineCov">        256 :      NSString *url = [NSString stringWithFormat:@&quot;%@&quot;, @&quot;http://172.16.150.144:8090/nursing-branch-web/app-api/auth/mobile/code&quot;];</span></a>
+<span class="lineNum">      58 </span>            :     
+<span class="lineNum">      59 </span><span class="lineCov">       1024 :     [[WGSendGeneralRequest shareWGSendGeneralRequest] sendGeRequestWithURL:url paragram:paragramDic complete:^(WGRemoteResponse *remoteResponse) {</span>
+<span class="lineNum">      60 </span><span class="lineCov">        256 :         complete(remoteResponse);</span>
+<span class="lineNum">      61 </span><span class="lineCov">        256 :     }];</span>
+<span class="lineNum">      62 </span>            :     
+<span class="lineNum">      63 </span><span class="lineCov">        256 : }</span>
+<span class="lineNum">      64 </span>            : 
+<span class="lineNum">      65 </span>            : @end
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.13</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

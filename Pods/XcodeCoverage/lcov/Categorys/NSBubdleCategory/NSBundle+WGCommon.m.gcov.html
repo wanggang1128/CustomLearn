@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - Coverage.info - Categorys/NSBubdleCategory/NSBundle+WGCommon.m</title>
+  <link rel="stylesheet" type="text/css" href="../../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../../index.html">top level</a> - <a href="index.html">Categorys/NSBubdleCategory</a> - NSBundle+WGCommon.m<span style="font-size: 80%;"> (source / <a href="NSBundle+WGCommon.m.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">Coverage.info</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">13</td>
+            <td class="headerCovTableEntryLo">0.0 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2019-02-19 13:48:16</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">3</td>
+            <td class="headerCovTableEntryLo">0.0 %</td>
+          </tr>
+          <tr><td><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : //</a>
+<span class="lineNum">       2 </span>            : //  NSBundle+WGCommon.m
+<span class="lineNum">       3 </span>            : //  CustomLearn
+<span class="lineNum">       4 </span>            : //
+<span class="lineNum">       5 </span>            : //  Created by wanggang on 2018/10/16.
+<span class="lineNum">       6 </span>            : //  Copyright © 2018 WG. All rights reserved.
+<span class="lineNum">       7 </span>            : //
+<span class="lineNum">       8 </span>            : 
+<span class="lineNum">       9 </span>            : #import &quot;NSBundle+WGCommon.h&quot;
+<span class="lineNum">      10 </span>            : 
+<span class="lineNum">      11 </span>            : @implementation NSBundle (WGCommon)
+<span class="lineNum">      12 </span>            : 
+<span class="lineNum">      13 </span>            : /**
+<span class="lineNum">      14 </span>            :  *  获取资源bundle
+<span class="lineNum">      15 </span>            :  *  @param bundleName 组件名字
+<span class="lineNum">      16 </span>            :  *  @param targetClass 文件所在的类
+<a name="17"><span class="lineNum">      17 </span>            :  *  @return 获得的路径</a>
+<span class="lineNum">      18 </span>            :  */
+<span class="lineNum">      19 </span>            : + (instancetype)wg_subBundleWithBundleName:(NSString *)bundleName targetClass:(Class)targetClass{
+<span class="lineNum">      20 </span>            :     //并没有拿到子bundle
+<span class="lineNum">      21 </span><span class="lineNoCov">          0 :     NSBundle *bundle = [NSBundle bundleForClass:targetClass];</span>
+<span class="lineNum">      22 </span>            :     //在这个路径下找到子bundle的路径
+<span class="lineNum">      23 </span><span class="lineNoCov">          0 :     NSString *path = [bundle pathForResource:bundleName ofType:@&quot;bundle&quot;];</span>
+<span class="lineNum">      24 </span>            :     //根据路径拿到子bundle
+<span class="lineNum">      25 </span><span class="lineNoCov">          0 :     return path?[NSBundle bundleWithPath:path]:[NSBundle mainBundle];</span>
+<span class="lineNum">      26 </span>            :     
+<span class="lineNum">      27 </span>            :     /*
+<span class="lineNum">      28 </span>            :      这种方式也可以
+<span class="lineNum">      29 </span>            :      NSBundle *bundle = [NSBundle bundleForClass:targetClass];
+<span class="lineNum">      30 </span>            :      NSURL *url = [bundle URLForResource:bundleName withExtension:@&quot;bundle&quot;];
+<span class="lineNum">      31 </span>            :      return path?[NSBundle bundleWithURL:url]:[NSBundle mainBundle];
+<span class="lineNum">      32 </span>            :      */
+<span class="lineNum">      33 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">      34 </span>            : 
+<span class="lineNum">      35 </span>            : /**
+<span class="lineNum">      36 </span>            :  *  获取icon的路径
+<span class="lineNum">      37 </span>            :  *
+<a name="38"><span class="lineNum">      38 </span>            :  *  @return 获得的路径</a>
+<span class="lineNum">      39 </span>            :  */
+<span class="lineNum">      40 </span>            : - (NSString*)appIconPath {
+<span class="lineNum">      41 </span><span class="lineNoCov">          0 :     NSString* iconFilename = [[NSBundle mainBundle] objectForInfoDictionaryKey:@&quot;CFBundleIconFile&quot;] ;</span>
+<span class="lineNum">      42 </span><span class="lineNoCov">          0 :     NSString* iconBasename = [iconFilename stringByDeletingPathExtension] ;</span>
+<span class="lineNum">      43 </span><span class="lineNoCov">          0 :     NSString* iconExtension = [iconFilename pathExtension] ;</span>
+<span class="lineNum">      44 </span><span class="lineNoCov">          0 :     return [[NSBundle mainBundle] pathForResource:iconBasename</span>
+<span class="lineNum">      45 </span><span class="lineNoCov">          0 :                                            ofType:iconExtension] ;</span>
+<span class="lineNum">      46 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">      47 </span>            : 
+<span class="lineNum">      48 </span>            : /**
+<span class="lineNum">      49 </span>            :  *  获取appIcon
+<span class="lineNum">      50 </span>            :  *
+<a name="51"><span class="lineNum">      51 </span>            :  *  @return 得到的iconImage</a>
+<span class="lineNum">      52 </span>            :  */
+<span class="lineNum">      53 </span>            : - (UIImage*)appIcon {
+<span class="lineNum">      54 </span><span class="lineNoCov">          0 :     UIImage*appIcon = [[UIImage alloc] initWithContentsOfFile:[self appIconPath]] ;</span>
+<span class="lineNum">      55 </span><span class="lineNoCov">          0 :     return appIcon;</span>
+<span class="lineNum">      56 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">      57 </span>            : 
+<span class="lineNum">      58 </span>            : @end
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.13</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

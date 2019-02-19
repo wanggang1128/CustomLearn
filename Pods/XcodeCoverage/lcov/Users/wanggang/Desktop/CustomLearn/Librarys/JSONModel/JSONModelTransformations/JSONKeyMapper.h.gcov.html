@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - Coverage.info - /Users/wanggang/Desktop/CustomLearn/Librarys/JSONModel/JSONModelTransformations/JSONKeyMapper.h</title>
+  <link rel="stylesheet" type="text/css" href="../../../../../../../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../../../../../../../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../../../../../../../index.html">top level</a> - <a href="index.html">Users/wanggang/Desktop/CustomLearn/Librarys/JSONModel/JSONModelTransformations</a> - JSONKeyMapper.h<span style="font-size: 80%;"> (source / <a href="JSONKeyMapper.h.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">Coverage.info</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">1</td>
+            <td class="headerCovTableEntryLo">0.0 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2019-02-19 13:48:16</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">1</td>
+            <td class="headerCovTableEntryLo">0.0 %</td>
+          </tr>
+          <tr><td><img src="../../../../../../../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../../../../../../../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : //</a>
+<span class="lineNum">       2 </span>            : //  JSONKeyMapper.h
+<span class="lineNum">       3 </span>            : //  JSONModel
+<span class="lineNum">       4 </span>            : //
+<span class="lineNum">       5 </span>            : 
+<span class="lineNum">       6 </span>            : #import &lt;Foundation/Foundation.h&gt;
+<span class="lineNum">       7 </span>            : 
+<span class="lineNum">       8 </span>            : typedef NSString *(^JSONModelKeyMapBlock)(NSString *keyName);
+<span class="lineNum">       9 </span>            : 
+<span class="lineNum">      10 </span>            : /**
+<span class="lineNum">      11 </span>            :  * **You won't need to create or store instances of this class yourself.** If you want your model
+<span class="lineNum">      12 </span>            :  * to have different property names than the JSON feed keys, look below on how to
+<span class="lineNum">      13 </span>            :  * make your model use a key mapper.
+<span class="lineNum">      14 </span>            :  *
+<span class="lineNum">      15 </span>            :  * For example if you consume JSON from twitter
+<span class="lineNum">      16 </span>            :  * you get back underscore_case style key names. For example:
+<span class="lineNum">      17 </span>            :  *
+<span class="lineNum">      18 </span>            :  * &lt;pre&gt;&quot;profile_sidebar_border_color&quot;: &quot;0094C2&quot;,
+<span class="lineNum">      19 </span>            :  * &quot;profile_background_tile&quot;: false,&lt;/pre&gt;
+<span class="lineNum">      20 </span>            :  *
+<span class="lineNum">      21 </span>            :  * To comply with Obj-C accepted camelCase property naming for your classes,
+<span class="lineNum">      22 </span>            :  * you need to provide mapping between JSON keys and ObjC property names.
+<span class="lineNum">      23 </span>            :  *
+<span class="lineNum">      24 </span>            :  * In your model overwrite the + (JSONKeyMapper *)keyMapper method and provide a JSONKeyMapper
+<span class="lineNum">      25 </span>            :  * instance to convert the key names for your model.
+<span class="lineNum">      26 </span>            :  *
+<span class="lineNum">      27 </span>            :  * If you need custom mapping it's as easy as:
+<span class="lineNum">      28 </span>            :  * &lt;pre&gt;
+<span class="lineNum">      29 </span>            :  * + (JSONKeyMapper *)keyMapper {
+<span class="lineNum">      30 </span>            :  * &amp;nbsp; return [[JSONKeyMapper&amp;nbsp;alloc]&amp;nbsp;initWithDictionary:@{@&quot;crazy_JSON_name&quot;:@&quot;myCamelCaseName&quot;}];
+<span class="lineNum">      31 </span>            :  * }
+<span class="lineNum">      32 </span>            :  * &lt;/pre&gt;
+<span class="lineNum">      33 </span>            :  * In case you want to handle underscore_case, **use the predefined key mapper**, like so:
+<span class="lineNum">      34 </span>            :  * &lt;pre&gt;
+<span class="lineNum">      35 </span>            :  * + (JSONKeyMapper *)keyMapper {
+<span class="lineNum">      36 </span>            :  * &amp;nbsp; return [JSONKeyMapper&amp;nbsp;mapperFromUnderscoreCaseToCamelCase];
+<span class="lineNum">      37 </span>            :  * }
+<span class="lineNum">      38 </span>            :  * &lt;/pre&gt;
+<span class="lineNum">      39 </span>            :  */
+<span class="lineNum">      40 </span>            : @interface JSONKeyMapper : NSObject
+<span class="lineNum">      41 </span>            : 
+<span class="lineNum">      42 </span>            : // deprecated
+<span class="lineNum">      43 </span>            : @property (readonly, nonatomic) JSONModelKeyMapBlock JSONToModelKeyBlock DEPRECATED_ATTRIBUTE;
+<span class="lineNum">      44 </span>            : - (NSString *)convertValue:(NSString *)value isImportingToModel:(BOOL)importing DEPRECATED_MSG_ATTRIBUTE(&quot;use convertValue:&quot;);
+<span class="lineNum">      45 </span>            : - (instancetype)initWithDictionary:(NSDictionary *)map DEPRECATED_MSG_ATTRIBUTE(&quot;use initWithModelToJSONDictionary:&quot;);
+<span class="lineNum">      46 </span>            : - (instancetype)initWithJSONToModelBlock:(JSONModelKeyMapBlock)toModel modelToJSONBlock:(JSONModelKeyMapBlock)toJSON DEPRECATED_MSG_ATTRIBUTE(&quot;use initWithModelToJSONBlock:&quot;);
+<span class="lineNum">      47 </span>            : + (instancetype)mapper:(JSONKeyMapper *)baseKeyMapper withExceptions:(NSDictionary *)exceptions DEPRECATED_MSG_ATTRIBUTE(&quot;use baseMapper:withModelToJSONExceptions:&quot;);
+<span class="lineNum">      48 </span>            : + (instancetype)mapperFromUnderscoreCaseToCamelCase DEPRECATED_MSG_ATTRIBUTE(&quot;use mapperForSnakeCase:&quot;);
+<span class="lineNum">      49 </span>            : + (instancetype)mapperFromUpperCaseToLowerCase DEPRECATED_ATTRIBUTE;
+<span class="lineNum">      50 </span>            : 
+<a name="51"><span class="lineNum">      51 </span>            : /** @name Name converters */</a>
+<span class="lineNum">      52 </span>            : /** Block, which takes in a property name and converts it to the corresponding JSON key name */
+<span class="lineNum">      53 </span><span class="lineNoCov">          0 : @property (readonly, nonatomic) JSONModelKeyMapBlock modelToJSONKeyBlock;</span>
+<span class="lineNum">      54 </span>            : 
+<span class="lineNum">      55 </span>            : /** Combined converter method
+<span class="lineNum">      56 </span>            :  * @param value the source name
+<span class="lineNum">      57 </span>            :  * @return JSONKeyMapper instance
+<span class="lineNum">      58 </span>            :  */
+<span class="lineNum">      59 </span>            : - (NSString *)convertValue:(NSString *)value;
+<span class="lineNum">      60 </span>            : 
+<span class="lineNum">      61 </span>            : /** @name Creating a key mapper */
+<span class="lineNum">      62 </span>            : 
+<span class="lineNum">      63 </span>            : /**
+<span class="lineNum">      64 </span>            :  * Creates a JSONKeyMapper instance, based on the block you provide this initializer.
+<span class="lineNum">      65 </span>            :  * The parameter takes in a JSONModelKeyMapBlock block:
+<span class="lineNum">      66 </span>            :  * &lt;pre&gt;NSString *(^JSONModelKeyMapBlock)(NSString *keyName)&lt;/pre&gt;
+<span class="lineNum">      67 </span>            :  * The block takes in a string and returns the transformed (if at all) string.
+<span class="lineNum">      68 </span>            :  * @param toJSON transforms your model property name to a JSON key
+<span class="lineNum">      69 </span>            :  */
+<span class="lineNum">      70 </span>            : - (instancetype)initWithModelToJSONBlock:(JSONModelKeyMapBlock)toJSON;
+<span class="lineNum">      71 </span>            : 
+<span class="lineNum">      72 </span>            : /**
+<span class="lineNum">      73 </span>            :  * Creates a JSONKeyMapper instance, based on the mapping you provide.
+<span class="lineNum">      74 </span>            :  * Use your JSONModel property names as keys, and the JSON key names as values.
+<span class="lineNum">      75 </span>            :  * @param toJSON map dictionary, in the format: &lt;pre&gt;@{@&quot;myCamelCaseName&quot;:@&quot;crazy_JSON_name&quot;}&lt;/pre&gt;
+<span class="lineNum">      76 </span>            :  * @return JSONKeyMapper instance
+<span class="lineNum">      77 </span>            :  */
+<span class="lineNum">      78 </span>            : - (instancetype)initWithModelToJSONDictionary:(NSDictionary &lt;NSString *, NSString *&gt; *)toJSON;
+<span class="lineNum">      79 </span>            : 
+<span class="lineNum">      80 </span>            : /**
+<span class="lineNum">      81 </span>            :  * Given a camelCase model property, this mapper finds JSON keys using the snake_case equivalent.
+<span class="lineNum">      82 </span>            :  */
+<span class="lineNum">      83 </span>            : + (instancetype)mapperForSnakeCase;
+<span class="lineNum">      84 </span>            : 
+<span class="lineNum">      85 </span>            : /**
+<span class="lineNum">      86 </span>            :  * Given a camelCase model property, this mapper finds JSON keys using the TitleCase equivalent.
+<span class="lineNum">      87 </span>            :  */
+<span class="lineNum">      88 </span>            : + (instancetype)mapperForTitleCase;
+<span class="lineNum">      89 </span>            : 
+<span class="lineNum">      90 </span>            : /**
+<span class="lineNum">      91 </span>            :  * Creates a JSONKeyMapper based on a built-in JSONKeyMapper, with specific exceptions.
+<span class="lineNum">      92 </span>            :  * Use your JSONModel property names as keys, and the JSON key names as values.
+<span class="lineNum">      93 </span>            :  */
+<span class="lineNum">      94 </span>            : + (instancetype)baseMapper:(JSONKeyMapper *)baseKeyMapper withModelToJSONExceptions:(NSDictionary *)toJSON;
+<span class="lineNum">      95 </span>            : 
+<span class="lineNum">      96 </span>            : @end
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../../../../../../../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.13</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

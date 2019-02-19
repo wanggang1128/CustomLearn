@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - Coverage.info - SecondFile/Controllers/WGCustomKeyboardViewController.m</title>
+  <link rel="stylesheet" type="text/css" href="../../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../../index.html">top level</a> - <a href="index.html">SecondFile/Controllers</a> - WGCustomKeyboardViewController.m<span style="font-size: 80%;"> (source / <a href="WGCustomKeyboardViewController.m.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">Coverage.info</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">37</td>
+            <td class="headerCovTableEntry">47</td>
+            <td class="headerCovTableEntryMed">78.7 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2019-02-19 13:48:16</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">4</td>
+            <td class="headerCovTableEntry">6</td>
+            <td class="headerCovTableEntryLo">66.7 %</td>
+          </tr>
+          <tr><td><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : //</a>
+<span class="lineNum">       2 </span>            : //  WGCustomKeyboardViewController.m
+<span class="lineNum">       3 </span>            : //  CustomLearn
+<span class="lineNum">       4 </span>            : //
+<span class="lineNum">       5 </span>            : //  Created by wanggang on 2017/7/28.
+<span class="lineNum">       6 </span>            : //  Copyright © 2017年 CSII. All rights reserved.
+<span class="lineNum">       7 </span>            : //
+<span class="lineNum">       8 </span>            : 
+<span class="lineNum">       9 </span>            : #import &quot;WGCustomKeyboardViewController.h&quot;
+<span class="lineNum">      10 </span>            : 
+<span class="lineNum">      11 </span>            : @interface WGCustomKeyboardViewController ()
+<span class="lineNum">      12 </span>            : {
+<span class="lineNum">      13 </span>            :     UIView *view;
+<span class="lineNum">      14 </span>            : }
+<a name="15"><span class="lineNum">      15 </span>            : @end</a>
+<span class="lineNum">      16 </span>            : 
+<a name="17"><span class="lineNum">      17 </span><span class="lineCov">        128 : @implementation WGCustomKeyboardViewController</span></a>
+<span class="lineNum">      18 </span>            : 
+<span class="lineNum">      19 </span>            : - (void)viewDidLoad {
+<span class="lineNum">      20 </span><span class="lineCov">        128 :     [super viewDidLoad];</span>
+<span class="lineNum">      21 </span>            :     
+<span class="lineNum">      22 </span><span class="lineCov">        128 :     [self setViewView];</span>
+<span class="lineNum">      23 </span><span class="lineCov">        128 :     [self buildTextFeild];</span>
+<a name="24"><span class="lineNum">      24 </span><span class="lineCov">        128 : }</span></a>
+<span class="lineNum">      25 </span>            : 
+<span class="lineNum">      26 </span>            : - (void)setViewView{
+<span class="lineNum">      27 </span><span class="lineCov">        128 :     self.view.backgroundColor = BACKGROUND_COLOR;</span>
+<span class="lineNum">      28 </span><span class="lineCov">        128 :     self.automaticallyAdjustsScrollViewInsets = NO;</span>
+<a name="29"><span class="lineNum">      29 </span><span class="lineCov">        128 : }</span></a>
+<span class="lineNum">      30 </span>            : 
+<span class="lineNum">      31 </span>            : - (void)buildTextFeild{
+<span class="lineNum">      32 </span><span class="lineCov">        128 :     UITextField *textFiled = [[UITextField alloc] initWithFrame:CGRectMake(10, 64, 300, 40)];</span>
+<span class="lineNum">      33 </span><span class="lineCov">        128 :     textFiled.borderStyle = UITextBorderStyleRoundedRect;//背景色白色</span>
+<span class="lineNum">      34 </span><span class="lineCov">        128 :     textFiled.tag = 100;</span>
+<span class="lineNum">      35 </span><span class="lineCov">        128 :     view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 1, 216)];</span>
+<span class="lineNum">      36 </span><span class="lineCov">        128 :     NSArray *array = @[@&quot;1&quot;,@&quot;2&quot;,@&quot;3&quot;,@&quot;4&quot;,@&quot;5&quot;,@&quot;6&quot;,@&quot;7&quot;,@&quot;8&quot;,@&quot;9&quot;,@&quot;0&quot;,@&quot;+&quot;,@&quot;-&quot;];</span>
+<span class="lineNum">      37 </span><span class="lineCov">        384 :     CGFloat xSpace = (SCREEN_WIDTH-40*4)/5.0;</span>
+<span class="lineNum">      38 </span><span class="lineCov">        128 :     CGFloat ySpace = (216-40*3)/4.0;</span>
+<span class="lineNum">      39 </span><span class="lineCov">       1024 :     for(int i=0;i&lt;3;i++){</span>
+<span class="lineNum">      40 </span><span class="lineCov">       3840 :         for(int j=0;j&lt;4;j++){</span>
+<span class="lineNum">      41 </span><span class="lineCov">       1536 :             UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];</span>
+<span class="lineNum">      42 </span><span class="lineCov">       1536 :             button.frame = CGRectMake(xSpace+j*(xSpace+40), ySpace+i*(ySpace+40), 40, 40) ;</span>
+<span class="lineNum">      43 </span><span class="lineCov">       1536 :             [button setTitle:[array objectAtIndex:i*4+j] forState:UIControlStateNormal];</span>
+<span class="lineNum">      44 </span><span class="lineCov">       1536 :             [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];</span>
+<span class="lineNum">      45 </span><span class="lineCov">       1536 :             button.titleLabel.font = [UIFont systemFontOfSize:30];</span>
+<span class="lineNum">      46 </span><span class="lineCov">       1536 :             [view addSubview:button];</span>
+<span class="lineNum">      47 </span><span class="lineCov">       1536 :         }</span>
+<span class="lineNum">      48 </span><span class="lineCov">        384 :     }</span>
+<span class="lineNum">      49 </span><span class="lineCov">        128 :     view.backgroundColor = [UIColor redColor];</span>
+<span class="lineNum">      50 </span><span class="lineCov">        128 :     textFiled.inputView = view;</span>
+<span class="lineNum">      51 </span>            :     
+<span class="lineNum">      52 </span><span class="lineCov">        128 :     UIView *accessoryView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, 25)];</span>
+<span class="lineNum">      53 </span><span class="lineCov">        128 :     accessoryView.backgroundColor = [UIColor orangeColor];</span>
+<span class="lineNum">      54 </span><span class="lineCov">        128 :     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];</span>
+<span class="lineNum">      55 </span><span class="lineCov">        128 :     [button setTitle:@&quot;收键盘1&quot; forState:UIControlStateNormal];</span>
+<span class="lineNum">      56 </span><span class="lineCov">        128 :     button.frame = CGRectMake(0, 0, 70, 25);</span>
+<span class="lineNum">      57 </span><span class="lineCov">        128 :     [button addTarget:self action:@selector(buttonClickTwo:) forControlEvents:UIControlEventTouchUpInside];</span>
+<span class="lineNum">      58 </span><span class="lineCov">        128 :     [accessoryView addSubview:button];</span>
+<span class="lineNum">      59 </span><span class="lineCov">        128 :     textFiled.inputAccessoryView = accessoryView;</span>
+<span class="lineNum">      60 </span><span class="lineCov">        128 :     [self.view addSubview:textFiled];</span>
+<a name="61"><span class="lineNum">      61 </span><span class="lineCov">        128 : }</span></a>
+<span class="lineNum">      62 </span>            : 
+<span class="lineNum">      63 </span>            : - (void)buttonClickTwo:(UIButton *)button{
+<span class="lineNum">      64 </span><span class="lineNoCov">          0 :     for (UIView *view1 in self.view.subviews){</span>
+<span class="lineNum">      65 </span><span class="lineNoCov">          0 :         if([view1 isMemberOfClass:[UITextField class]]){</span>
+<span class="lineNum">      66 </span><span class="lineNoCov">          0 :             UITextField *tf = (UITextField *)view1;</span>
+<span class="lineNum">      67 </span><span class="lineNoCov">          0 :             [tf resignFirstResponder];</span>
+<span class="lineNum">      68 </span><span class="lineNoCov">          0 :         }</span>
+<span class="lineNum">      69 </span><span class="lineNoCov">          0 :     }</span>
+<a name="70"><span class="lineNum">      70 </span><span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">      71 </span>            : 
+<span class="lineNum">      72 </span>            : - (void)buttonClick:(UIButton *)button{
+<span class="lineNum">      73 </span><span class="lineNoCov">          0 :     UITextField * textField = (UITextField *)[self.view viewWithTag:100];</span>
+<span class="lineNum">      74 </span><span class="lineNoCov">          0 :     textField.text = [textField.text stringByAppendingString:button.titleLabel.text];</span>
+<span class="lineNum">      75 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">      76 </span>            : 
+<span class="lineNum">      77 </span>            : @end
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.13</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

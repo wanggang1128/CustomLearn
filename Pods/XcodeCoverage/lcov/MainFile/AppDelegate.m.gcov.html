@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - Coverage.info - MainFile/AppDelegate.m</title>
+  <link rel="stylesheet" type="text/css" href="../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">MainFile</a> - AppDelegate.m<span style="font-size: 80%;"> (source / <a href="AppDelegate.m.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">Coverage.info</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">23</td>
+            <td class="headerCovTableEntry">29</td>
+            <td class="headerCovTableEntryMed">79.3 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2019-02-19 13:48:16</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">9</td>
+            <td class="headerCovTableEntry">12</td>
+            <td class="headerCovTableEntryMed">75.0 %</td>
+          </tr>
+          <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : //</a>
+<span class="lineNum">       2 </span>            : //  AppDelegate.m
+<span class="lineNum">       3 </span>            : //  CustomLearn
+<span class="lineNum">       4 </span>            : //
+<span class="lineNum">       5 </span>            : //  Created by wanggang on 2017/6/1.
+<span class="lineNum">       6 </span>            : //  Copyright © 2017年 CSII. All rights reserved.
+<span class="lineNum">       7 </span>            : //
+<span class="lineNum">       8 </span>            : 
+<span class="lineNum">       9 </span>            : #import &quot;AppDelegate.h&quot;
+<span class="lineNum">      10 </span>            : #import &quot;WGTabBarViewController.h&quot;
+<span class="lineNum">      11 </span>            : 
+<span class="lineNum">      12 </span>            : @interface AppDelegate ()
+<span class="lineNum">      13 </span>            : 
+<a name="14"><span class="lineNum">      14 </span>            : @end</a>
+<span class="lineNum">      15 </span>            : 
+<span class="lineNum">      16 </span><span class="lineNoCov">          0 : @implementation AppDelegate</span>
+<a name="17"><span class="lineNum">      17 </span>            : </a>
+<span class="lineNum">      18 </span>            : 
+<span class="lineNum">      19 </span>            : - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+<span class="lineNum">      20 </span><span class="lineCov">  811647360 :     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];</span>
+<span class="lineNum">      21 </span><span class="lineCov">  270549120 :     WGTabBarViewController *wgtab = [[WGTabBarViewController alloc] init];</span>
+<span class="lineNum">      22 </span><span class="lineCov">  270549120 :     self.window.rootViewController = wgtab;</span>
+<span class="lineNum">      23 </span><span class="lineCov">  270549120 :     self.window.backgroundColor = [UIColor whiteColor];</span>
+<span class="lineNum">      24 </span><span class="lineCov">  270549120 :     [self.window makeKeyAndVisible];</span>
+<span class="lineNum">      25 </span>            :     
+<span class="lineNum">      26 </span><span class="lineCov">  270549120 :     [self setNav];</span>
+<span class="lineNum">      27 </span>            :     
+<span class="lineNum">      28 </span><span class="lineCov">  270549120 :     [self rongyunChat];</span>
+<span class="lineNum">      29 </span>            :     return YES;
+<span class="lineNum">      30 </span><span class="lineCov">  270549120 : }</span>
+<span class="lineNum">      31 </span>            : 
+<a name="32"><span class="lineNum">      32 </span>            : //小王，xiaowang， cw4PH5JrLRbSAa5AYp/kFHUa4a5jpDZ3I3o1nVmkpf3IJT3+3ek11lrf5QYP2zMRF3LdLKtDg3DkXtCt4lpj/KLlfWauJzs5</a>
+<span class="lineNum">      33 </span>            : //小张，xiaozhang，H+orscL7FyyXkhIe0vZ4OABKvoyNDNACaQegNR+7b7w9xpDnqQqfrToH6WuY6PForT/mAP6LlAm2N3em8Z9zZ8fR1EUcA9FL
+<a name="34"><span class="lineNum">      34 </span>            : - (void)rongyunChat{</a>
+<span class="lineNum">      35 </span><span class="lineCov">  270549120 :     [[RCIM sharedRCIM] initWithAppKey:@&quot;vnroth0kvdoso&quot;];</span>
+<span class="lineNum">      36 </span><span class="lineCov">  541098240 :     [[RCIM sharedRCIM] connectWithToken:@&quot;cw4PH5JrLRbSAa5AYp/kFHUa4a5jpDZ3I3o1nVmkpf3IJT3+3ek11lrf5QYP2zMRF3LdLKtDg3DkXtCt4lpj/KLlfWauJzs5&quot; success:^(NSString *userId) {</span>
+<a name="37"><span class="lineNum">      37 </span>            :         </a>
+<span class="lineNum">      38 </span><span class="lineCov">  270549120 :         NSLog(@&quot;登陆成功。当前登录的用户ID：%@&quot;, userId);</span>
+<span class="lineNum">      39 </span><span class="lineCov">  270549120 :     } error:^(RCConnectErrorCode status) {</span>
+<a name="40"><span class="lineNum">      40 </span>            :         </a>
+<span class="lineNum">      41 </span><span class="lineNoCov">          0 :         NSLog(@&quot;登陆的错误码为:%ld&quot;, (long)status);</span>
+<span class="lineNum">      42 </span><span class="lineNoCov">          0 :     } tokenIncorrect:^{</span>
+<span class="lineNum">      43 </span>            :         
+<span class="lineNum">      44 </span>            :         //token过期或者不正确。
+<span class="lineNum">      45 </span>            :         //如果设置了token有效期并且token过期，请重新请求您的服务器获取新的token
+<span class="lineNum">      46 </span>            :         //如果没有设置token有效期却提示token错误，请检查您客户端和服务器的appkey是否匹配，还有检查您获取token的流程。
+<span class="lineNum">      47 </span><span class="lineNoCov">          0 :         NSLog(@&quot;token错误&quot;);</span>
+<span class="lineNum">      48 </span><span class="lineNoCov">          0 :     }];</span>
+<a name="49"><span class="lineNum">      49 </span><span class="lineCov">  270549120 : }</span></a>
+<span class="lineNum">      50 </span>            : 
+<span class="lineNum">      51 </span>            : - (void)setNav{
+<span class="lineNum">      52 </span>            :     
+<span class="lineNum">      53 </span>            :     //导航栏为白色
+<span class="lineNum">      54 </span><span class="lineCov">  270549120 :     [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];</span>
+<span class="lineNum">      55 </span>            :     //改变导航栏的字体颜色和大小
+<span class="lineNum">      56 </span><span class="lineCov">  541098240 :     [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:</span>
+<span class="lineNum">      57 </span><span class="lineCov">  270549120 :                                                           [UIColor blackColor], NSForegroundColorAttributeName,</span>
+<span class="lineNum">      58 </span><span class="lineCov">  270549120 :                                                           font18, NSFontAttributeName,</span>
+<span class="lineNum">      59 </span>            :                                                           nil]];
+<span class="lineNum">      60 </span>            :     //状态栏颜色
+<span class="lineNum">      61 </span><span class="lineCov">  270549120 :     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];</span>
+<a name="62"><span class="lineNum">      62 </span><span class="lineCov">  270549120 : }</span></a>
+<span class="lineNum">      63 </span>            : 
+<span class="lineNum">      64 </span>            : - (void)applicationWillResignActive:(UIApplication *)application {
+<span class="lineNum">      65 </span>            :     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+<span class="lineNum">      66 </span>            :     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+<span class="lineNum">      67 </span><span class="lineCov">  270549120 : }</span>
+<a name="68"><span class="lineNum">      68 </span>            : </a>
+<span class="lineNum">      69 </span>            : 
+<span class="lineNum">      70 </span>            : - (void)applicationDidEnterBackground:(UIApplication *)application {
+<span class="lineNum">      71 </span>            : 
+<span class="lineNum">      72 </span>            : #if NT_COVERAGE
+<span class="lineNum">      73 </span>            :     
+<span class="lineNum">      74 </span>            : #if !TARGET_IPHONE_SIMULATOR
+<span class="lineNum">      75 </span>            :     
+<span class="lineNum">      76 </span>            :     NSString *documentsDirectory = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject;
+<span class="lineNum">      77 </span>            :     
+<span class="lineNum">      78 </span>            :     setenv(&quot;GCOV_PREFIX&quot;, [documentsDirectory cStringUsingEncoding:NSUTF8StringEncoding], 1);
+<span class="lineNum">      79 </span>            :     setenv(&quot;GCOV_PREFIX_STRIP&quot;, &quot;13&quot;, 1);
+<span class="lineNum">      80 </span>            :     
+<span class="lineNum">      81 </span>            : #endif
+<span class="lineNum">      82 </span>            :     
+<span class="lineNum">      83 </span>            :     extern void __gcov_flush(void);
+<span class="lineNum">      84 </span>            :     
+<span class="lineNum">      85 </span>            :     __gcov_flush();
+<span class="lineNum">      86 </span>            :     
+<span class="lineNum">      87 </span>            : #endif
+<span class="lineNum">      88 </span><span class="lineCov">  270549120 : }</span>
+<a name="89"><span class="lineNum">      89 </span>            : </a>
+<span class="lineNum">      90 </span>            : 
+<span class="lineNum">      91 </span>            : - (void)applicationWillEnterForeground:(UIApplication *)application {
+<span class="lineNum">      92 </span>            :     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+<span class="lineNum">      93 </span><span class="lineNoCov">          0 : }</span>
+<a name="94"><span class="lineNum">      94 </span>            : </a>
+<span class="lineNum">      95 </span>            : 
+<span class="lineNum">      96 </span>            : - (void)applicationDidBecomeActive:(UIApplication *)application {
+<span class="lineNum">      97 </span>            :     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+<span class="lineNum">      98 </span><span class="lineCov">  270549120 : }</span>
+<a name="99"><span class="lineNum">      99 </span>            : </a>
+<span class="lineNum">     100 </span>            : 
+<span class="lineNum">     101 </span>            : - (void)applicationWillTerminate:(UIApplication *)application {
+<span class="lineNum">     102 </span>            :     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+<span class="lineNum">     103 </span><span class="lineCov">  270549120 : }</span>
+<span class="lineNum">     104 </span>            : 
+<span class="lineNum">     105 </span>            : 
+<span class="lineNum">     106 </span>            : @end
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.13</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - Coverage.info - SecondFile/Controllers/WGNSURLSessionViewController.m</title>
+  <link rel="stylesheet" type="text/css" href="../../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../../index.html">top level</a> - <a href="index.html">SecondFile/Controllers</a> - WGNSURLSessionViewController.m<span style="font-size: 80%;"> (source / <a href="WGNSURLSessionViewController.m.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">Coverage.info</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">12</td>
+            <td class="headerCovTableEntry">70</td>
+            <td class="headerCovTableEntryLo">17.1 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2019-02-19 13:48:16</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">4</td>
+            <td class="headerCovTableEntry">10</td>
+            <td class="headerCovTableEntryLo">40.0 %</td>
+          </tr>
+          <tr><td><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : //</a>
+<span class="lineNum">       2 </span>            : //  WGNSURLSessionViewController.m
+<span class="lineNum">       3 </span>            : //  CustomLearn
+<span class="lineNum">       4 </span>            : //
+<span class="lineNum">       5 </span>            : //  Created by wanggang on 2017/9/5.
+<span class="lineNum">       6 </span>            : //  Copyright © 2017年 CSII. All rights reserved.
+<span class="lineNum">       7 </span>            : //
+<span class="lineNum">       8 </span>            : 
+<span class="lineNum">       9 </span>            : #import &quot;WGNSURLSessionViewController.h&quot;
+<span class="lineNum">      10 </span>            : #define boundary @&quot;AaB03x&quot; //设置边界 参数可以随便设置
+<span class="lineNum">      11 </span>            : #define Enter @&quot;\r\n&quot;
+<span class="lineNum">      12 </span>            : 
+<span class="lineNum">      13 </span>            : @interface WGNSURLSessionViewController ()&lt;NSURLSessionTaskDelegate,NSURLSessionDelegate&gt;
+<span class="lineNum">      14 </span>            : 
+<span class="lineNum">      15 </span>            : @end
+<span class="lineNum">      16 </span>            : 
+<a name="17"><span class="lineNum">      17 </span>            : @implementation WGNSURLSessionViewController</a>
+<span class="lineNum">      18 </span>            : 
+<span class="lineNum">      19 </span>            : - (void)viewDidLoad {
+<span class="lineNum">      20 </span><span class="lineCov">        128 :     [super viewDidLoad];</span>
+<span class="lineNum">      21 </span>            :     
+<span class="lineNum">      22 </span><span class="lineCov">        128 :     [self setViewView];</span>
+<span class="lineNum">      23 </span><span class="lineCov">        128 :     [self sendLogin];</span>
+<span class="lineNum">      24 </span>            : //    [self filePostTest];
+<span class="lineNum">      25 </span>            : //    [self downloadTest];
+<span class="lineNum">      26 </span>            :     
+<a name="27"><span class="lineNum">      27 </span><span class="lineCov">        128 : }</span></a>
+<span class="lineNum">      28 </span>            : 
+<span class="lineNum">      29 </span>            : - (void)setViewView{
+<span class="lineNum">      30 </span><span class="lineCov">        128 :     self.view.backgroundColor = BACKGROUND_COLOR;</span>
+<span class="lineNum">      31 </span><span class="lineCov">        128 :     self.automaticallyAdjustsScrollViewInsets = NO;</span>
+<a name="32"><span class="lineNum">      32 </span><span class="lineCov">        128 : }</span></a>
+<a name="33"><span class="lineNum">      33 </span>            : </a>
+<span class="lineNum">      34 </span>            : - (void)sendLogin{
+<span class="lineNum">      35 </span><span class="lineCov">        256 :     [[WGConnectionManager shareWGConnectionManager] loginWithUserName:@&quot;18658114668&quot; passWord:@&quot;e10adc3949ba59abbe56e057f20f883e&quot; deviceId:@&quot;SPDBA001017&quot; complete:^(WGRemoteResponse *remoteResponse) {</span>
+<span class="lineNum">      36 </span><span class="lineCov">        128 :         if ([remoteResponse isSuccess]) {</span>
+<span class="lineNum">      37 </span><span class="lineNoCov">          0 :             WGLog(@&quot;登陆成功:%@,%@&quot;,[remoteResponse returnCode],[remoteResponse responseDic]);</span>
+<span class="lineNum">      38 </span><span class="lineNoCov">          0 :         }else{</span>
+<span class="lineNum">      39 </span><span class="lineCov">        128 :             WGLog(@&quot;登录失败:%@,%@&quot;,[remoteResponse returnCode],[remoteResponse returnMsg]);</span>
+<span class="lineNum">      40 </span>            :         }
+<span class="lineNum">      41 </span><span class="lineCov">        128 :     }];</span>
+<span class="lineNum">      42 </span><span class="lineCov">        128 : }</span>
+<a name="43"><span class="lineNum">      43 </span>            : </a>
+<span class="lineNum">      44 </span>            : #pragma mark get请求实验
+<span class="lineNum">      45 </span>            : - (void)getRequestTest{
+<a name="46"><span class="lineNum">      46 </span><span class="lineNoCov">          0 :     NSURLSession *session = [NSURLSession sharedSession];</span></a>
+<span class="lineNum">      47 </span><span class="lineNoCov">          0 :     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@&quot;http://10.129.32.151:9092/mcim/login.do&quot;]];</span>
+<span class="lineNum">      48 </span><span class="lineNoCov">          0 :     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {</span>
+<span class="lineNum">      49 </span><span class="lineNoCov">          0 :         NSHTTPURLResponse *res = (NSHTTPURLResponse *)response;</span>
+<span class="lineNum">      50 </span><span class="lineNoCov">          0 :         NSString *resStr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];</span>
+<span class="lineNum">      51 </span><span class="lineNoCov">          0 :         NSLog(@&quot;get请求返回数据data:%@,response:%@&quot;,resStr,res.allHeaderFields);</span>
+<span class="lineNum">      52 </span><span class="lineNoCov">          0 :     }];</span>
+<span class="lineNum">      53 </span><span class="lineNoCov">          0 :     [task resume];</span>
+<span class="lineNum">      54 </span><span class="lineNoCov">          0 : }</span>
+<a name="55"><span class="lineNum">      55 </span>            : </a>
+<span class="lineNum">      56 </span>            : #pragma mark 文件类post请求
+<span class="lineNum">      57 </span>            : - (void)filePostTest{
+<span class="lineNum">      58 </span>            :     
+<span class="lineNum">      59 </span><span class="lineNoCov">          0 :     NSString *path = [[NSBundle mainBundle] pathForResource:@&quot;gesture.png&quot; ofType:nil];</span>
+<span class="lineNum">      60 </span><span class="lineNoCov">          0 :     UIImage *image = [UIImage imageNamed:@&quot;gesture.png&quot;];</span>
+<span class="lineNum">      61 </span><span class="lineNoCov">          0 :     NSData *data = UIImageJPEGRepresentation(image, 1.0);</span>
+<span class="lineNum">      62 </span><span class="lineNoCov">          0 :     WGLog(@&quot;path:%@&quot;,path);</span>
+<span class="lineNum">      63 </span>            :     
+<span class="lineNum">      64 </span><span class="lineNoCov">          0 :     NSString *urlStr = [NSString stringWithFormat:@&quot;%@%@&quot;,TransactionUrl,UploadAllFile];</span>
+<span class="lineNum">      65 </span><span class="lineNoCov">          0 :     NSURL *url = [NSURL URLWithString:urlStr];</span>
+<span class="lineNum">      66 </span><span class="lineNoCov">          0 :     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:15.0];</span>
+<span class="lineNum">      67 </span><span class="lineNoCov">          0 :     [request setHTTPMethod:@&quot;POST&quot;];</span>
+<span class="lineNum">      68 </span>            :     
+<span class="lineNum">      69 </span><span class="lineNoCov">          0 :     NSDictionary *headDic = [NSDictionary dictionaryWithObjectsAndKeys:</span>
+<span class="lineNum">      70 </span>            :                              @&quot;application/json&quot;, @&quot;Content-Type&quot;,
+<span class="lineNum">      71 </span>            :                              nil];
+<span class="lineNum">      72 </span><span class="lineNoCov">          0 :     [request setAllHTTPHeaderFields:headDic];</span>
+<span class="lineNum">      73 </span>            :     
+<span class="lineNum">      74 </span>            : //    NSString* headerString = [NSString stringWithFormat:@&quot;multipart/form-data; charset=utf-8; boundary=%@&quot;,boundary];
+<span class="lineNum">      75 </span>            : //    [request setValue:headerString forHTTPHeaderField:@&quot;Content-Type&quot;];
+<span class="lineNum">      76 </span>            :     
+<span class="lineNum">      77 </span>            : //    NSMutableData *requestMutData = [NSMutableData data];
+<span class="lineNum">      78 </span>            : //    NSMutableString *bodyString = [NSMutableString stringWithFormat:@&quot;--%@\r\n&quot;,boundary];
+<span class="lineNum">      79 </span>            : //    [bodyString appendString:[NSString stringWithFormat:@&quot;Content-Disposition: form-data; name=\&quot;FilePath\&quot;; filename=\&quot;%@\&quot;\r\n&quot;,path]];
+<span class="lineNum">      80 </span>            : //    [bodyString appendString:@&quot;Content-Type: image/jpeg\r\n\r\n&quot;];
+<span class="lineNum">      81 </span>            : //    [requestMutData appendData:[bodyString dataUsingEncoding:NSUTF8StringEncoding]];
+<span class="lineNum">      82 </span>            :     
+<span class="lineNum">      83 </span>            : //    WGLog(@&quot;requestMutData00000:%@&quot;,[[NSString alloc] initWithData:requestMutData encoding:NSUTF8StringEncoding]);
+<span class="lineNum">      84 </span>            :     
+<span class="lineNum">      85 </span><span class="lineNoCov">          0 :     NSDictionary *parameter = [[NSDictionary alloc] initWithObjectsAndKeys:</span>
+<span class="lineNum">      86 </span><span class="lineNoCov">          0 :                                path,@&quot;FileName&quot;,</span>
+<span class="lineNum">      87 </span>            :                                @&quot;1&quot;,@&quot;UploadType&quot;,
+<span class="lineNum">      88 </span>            :                                @&quot;SPDBA001017&quot;,@&quot;UserName&quot;,
+<span class="lineNum">      89 </span>            :                                @&quot;SPDBA001017&quot;,@&quot;username&quot;,
+<span class="lineNum">      90 </span>            :                                @&quot;SPDBA001017&quot;,@&quot;DeviceId&quot;,
+<span class="lineNum">      91 </span>            :                                @&quot;image/jpeg&quot;,@&quot;imageType&quot;,
+<span class="lineNum">      92 </span>            :                                nil];
+<span class="lineNum">      93 </span><span class="lineNoCov">          0 :     NSData *parameterData = [NSJSONSerialization dataWithJSONObject:parameter options:NSJSONWritingPrettyPrinted error:nil];</span>
+<span class="lineNum">      94 </span><span class="lineNoCov">          0 :     NSString *str = [[NSString alloc] initWithData:parameterData encoding:NSUTF8StringEncoding];</span>
+<span class="lineNum">      95 </span>            : //    [requestMutData appendData:parameterData];
+<span class="lineNum">      96 </span>            : //    
+<span class="lineNum">      97 </span>            : //    [requestMutData appendData:data];
+<span class="lineNum">      98 </span>            : //    [requestMutData appendData:[[NSString stringWithFormat:@&quot;\r\n--%@--\r\n&quot;,boundary] dataUsingEncoding:NSUTF8StringEncoding] ];
+<span class="lineNum">      99 </span>            :     
+<span class="lineNum">     100 </span><span class="lineNoCov">          0 :     [request setHTTPBody:parameterData];</span>
+<span class="lineNum">     101 </span>            : //    NSDictionary *dic= [NSJSONSerialization JSONObjectWithData:requestMutData options:NSJSONReadingMutableContainers error:nil];
+<span class="lineNum">     102 </span>            : //    NSString *str = [[NSString alloc] initWithData:requestMutData encoding:NSUTF8StringEncoding];
+<span class="lineNum">     103 </span>            : //    WGLog(@&quot;requestMutData:%@&quot;,str);
+<span class="lineNum">     104 </span>            : //    WGLog(@&quot;dic:%@&quot;,dic);
+<span class="lineNum">     105 </span>            :     
+<a name="106"><span class="lineNum">     106 </span><span class="lineNoCov">          0 :     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:[NSOperationQueue mainQueue]];</span></a>
+<span class="lineNum">     107 </span>            :     
+<span class="lineNum">     108 </span><span class="lineNoCov">          0 :     NSURLSessionUploadTask *task = [session uploadTaskWithRequest:request fromData:parameterData completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {</span>
+<span class="lineNum">     109 </span><span class="lineNoCov">          0 :         if (error) {</span>
+<span class="lineNum">     110 </span><span class="lineNoCov">          0 :             WGLog(@&quot;上传图片失败&quot;);</span>
+<span class="lineNum">     111 </span><span class="lineNoCov">          0 :         }else{</span>
+<span class="lineNum">     112 </span><span class="lineNoCov">          0 :             NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];</span>
+<span class="lineNum">     113 </span><span class="lineNoCov">          0 :              WGLog(@&quot;上传图片成功:%@&quot;,str);</span>
+<span class="lineNum">     114 </span><span class="lineNoCov">          0 :         }</span>
+<span class="lineNum">     115 </span><span class="lineNoCov">          0 :     }];</span>
+<span class="lineNum">     116 </span><span class="lineNoCov">          0 :     [task resume];</span>
+<span class="lineNum">     117 </span><span class="lineNoCov">          0 : }</span>
+<a name="118"><span class="lineNum">     118 </span>            : </a>
+<span class="lineNum">     119 </span>            : #pragma mark 下载实验
+<span class="lineNum">     120 </span>            : - (void)downloadTest{
+<span class="lineNum">     121 </span><span class="lineNoCov">          0 :     NSString *urlStr = [NSString stringWithFormat:@&quot;http://audio.xmcdn.com/group11/M01/93/AF/wKgDa1dzzJLBL0gCAPUzeJqK84Y539.m4a&quot;];</span>
+<span class="lineNum">     122 </span>            :     // 一些特殊字符编码
+<span class="lineNum">     123 </span><span class="lineNoCov">          0 :     urlStr = [urlStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];</span>
+<span class="lineNum">     124 </span><span class="lineNoCov">          0 :     NSURL *url = [NSURL URLWithString:urlStr];</span>
+<span class="lineNum">     125 </span>            :     
+<span class="lineNum">     126 </span><span class="lineNoCov">          0 :     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];</span>
+<a name="127"><span class="lineNum">     127 </span>            :     </a>
+<span class="lineNum">     128 </span><span class="lineNoCov">          0 :     NSURLSession *session = [NSURLSession sharedSession];</span>
+<span class="lineNum">     129 </span><span class="lineNoCov">          0 :     NSURLSessionDownloadTask *task = [session downloadTaskWithRequest:request completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {</span>
+<span class="lineNum">     130 </span><span class="lineNoCov">          0 :         if (error) {</span>
+<span class="lineNum">     131 </span><span class="lineNoCov">          0 :             WGLog(@&quot;下载失败：%@&quot;,error);</span>
+<span class="lineNum">     132 </span><span class="lineNoCov">          0 :         }else{</span>
+<span class="lineNum">     133 </span><span class="lineNoCov">          0 :             WGLog(@&quot;下载成功:%@&quot;,location.path);</span>
+<span class="lineNum">     134 </span><span class="lineNoCov">          0 :             NSString *path = [[WGGlobleMethod shareWGGlobleMethod] applicationDocumentDirectoryFile:@&quot;111111&quot;];</span>
+<span class="lineNum">     135 </span><span class="lineNoCov">          0 :             NSError *fileError;</span>
+<span class="lineNum">     136 </span><span class="lineNoCov">          0 :             [[NSFileManager defaultManager] copyItemAtPath:location.path toPath:path error:&amp;fileError];</span>
+<span class="lineNum">     137 </span><span class="lineNoCov">          0 :             if (fileError == nil) {</span>
+<span class="lineNum">     138 </span><span class="lineNoCov">          0 :                 WGLog(@&quot;file save success&quot;);</span>
+<span class="lineNum">     139 </span><span class="lineNoCov">          0 :             } else {</span>
+<span class="lineNum">     140 </span><span class="lineNoCov">          0 :                 WGLog(@&quot;file save error: %@&quot;,fileError);</span>
+<span class="lineNum">     141 </span>            :             }
+<span class="lineNum">     142 </span><span class="lineNoCov">          0 :         }</span>
+<span class="lineNum">     143 </span><span class="lineNoCov">          0 :     }];</span>
+<span class="lineNum">     144 </span><span class="lineNoCov">          0 :     [task resume];</span>
+<span class="lineNum">     145 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     146 </span>            : 
+<span class="lineNum">     147 </span>            : 
+<span class="lineNum">     148 </span>            : 
+<span class="lineNum">     149 </span>            : 
+<span class="lineNum">     150 </span>            : 
+<span class="lineNum">     151 </span>            : 
+<span class="lineNum">     152 </span>            : 
+<span class="lineNum">     153 </span>            : 
+<span class="lineNum">     154 </span>            : 
+<span class="lineNum">     155 </span>            : 
+<span class="lineNum">     156 </span>            : 
+<span class="lineNum">     157 </span>            : 
+<span class="lineNum">     158 </span>            : 
+<span class="lineNum">     159 </span>            : 
+<span class="lineNum">     160 </span>            : @end
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.13</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

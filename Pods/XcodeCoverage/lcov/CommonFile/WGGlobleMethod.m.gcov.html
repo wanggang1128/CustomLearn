@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - Coverage.info - CommonFile/WGGlobleMethod.m</title>
+  <link rel="stylesheet" type="text/css" href="../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../index.html">top level</a> - <a href="index.html">CommonFile</a> - WGGlobleMethod.m<span style="font-size: 80%;"> (source / <a href="WGGlobleMethod.m.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">Coverage.info</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">36</td>
+            <td class="headerCovTableEntryLo">0.0 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2019-02-19 13:48:16</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">11</td>
+            <td class="headerCovTableEntryLo">0.0 %</td>
+          </tr>
+          <tr><td><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : //</a>
+<span class="lineNum">       2 </span>            : //  WGGlobleMethod.m
+<span class="lineNum">       3 </span>            : //  CustomLearn
+<span class="lineNum">       4 </span>            : //
+<span class="lineNum">       5 </span>            : //  Created by wanggang on 2017/9/6.
+<span class="lineNum">       6 </span>            : //  Copyright © 2017年 CSII. All rights reserved.
+<span class="lineNum">       7 </span>            : //
+<span class="lineNum">       8 </span>            : 
+<span class="lineNum">       9 </span>            : #import &quot;WGGlobleMethod.h&quot;
+<span class="lineNum">      10 </span>            : 
+<span class="lineNum">      11 </span>            : @implementation WGGlobleMethod
+<span class="lineNum">      12 </span>            : 
+<a name="13"><span class="lineNum">      13 </span>            : #pragma mark 单例</a>
+<span class="lineNum">      14 </span>            : static WGGlobleMethod *instance = nil;
+<a name="15"><span class="lineNum">      15 </span>            : + (WGGlobleMethod *)shareWGGlobleMethod{</a>
+<span class="lineNum">      16 </span>            :     static dispatch_once_t onceToken;
+<span class="lineNum">      17 </span><span class="lineNoCov">          0 :     dispatch_once(&amp;onceToken, ^{</span>
+<span class="lineNum">      18 </span><span class="lineNoCov">          0 :         instance = [[WGGlobleMethod alloc] init];</span>
+<span class="lineNum">      19 </span><span class="lineNoCov">          0 :     });</span>
+<span class="lineNum">      20 </span><span class="lineNoCov">          0 :     return instance;</span>
+<a name="21"><span class="lineNum">      21 </span>            : }</a>
+<span class="lineNum">      22 </span>            : 
+<a name="23"><span class="lineNum">      23 </span>            : + (instancetype)allocWithZone:(struct _NSZone *)zone{</a>
+<span class="lineNum">      24 </span>            :     static dispatch_once_t onceToken;
+<a name="25"><span class="lineNum">      25 </span><span class="lineNoCov">          0 :     dispatch_once(&amp;onceToken, ^{</span></a>
+<span class="lineNum">      26 </span><span class="lineNoCov">          0 :         instance = [super allocWithZone:zone];</span>
+<span class="lineNum">      27 </span><span class="lineNoCov">          0 :     });</span>
+<span class="lineNum">      28 </span><span class="lineNoCov">          0 :     return instance;</span>
+<a name="29"><span class="lineNum">      29 </span>            : }</a>
+<span class="lineNum">      30 </span>            : 
+<span class="lineNum">      31 </span>            : - (id)copyWithZone:(NSZone *)zone{
+<span class="lineNum">      32 </span><span class="lineNoCov">          0 :     return instance;</span>
+<a name="33"><span class="lineNum">      33 </span>            : }</a>
+<span class="lineNum">      34 </span>            : 
+<span class="lineNum">      35 </span>            : - (id)mutableCopyWithZone:(NSZone *)zone{
+<span class="lineNum">      36 </span><span class="lineNoCov">          0 :     return instance;</span>
+<span class="lineNum">      37 </span>            : }
+<span class="lineNum">      38 </span>            : 
+<a name="39"><span class="lineNum">      39 </span>            : #pragma mark 方法</a>
+<span class="lineNum">      40 </span>            : //jsonstr转字典
+<span class="lineNum">      41 </span>            : - (NSDictionary *)jsonStrToDictionary:(NSString *)jsonStr{
+<span class="lineNum">      42 </span><span class="lineNoCov">          0 :     if (jsonStr &amp;&amp; jsonStr.length &gt; 0) {</span>
+<span class="lineNum">      43 </span><span class="lineNoCov">          0 :         NSData *data = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];</span>
+<span class="lineNum">      44 </span><span class="lineNoCov">          0 :         NSError *error;</span>
+<span class="lineNum">      45 </span><span class="lineNoCov">          0 :         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&amp;error];</span>
+<span class="lineNum">      46 </span><span class="lineNoCov">          0 :         if (error) {</span>
+<span class="lineNum">      47 </span><span class="lineNoCov">          0 :             NSLog(@&quot;json解析失败：%@&quot;,error);</span>
+<span class="lineNum">      48 </span><span class="lineNoCov">          0 :             return nil;</span>
+<span class="lineNum">      49 </span>            :         }
+<span class="lineNum">      50 </span><span class="lineNoCov">          0 :         return dic;</span>
+<span class="lineNum">      51 </span><span class="lineNoCov">          0 :     }</span>
+<span class="lineNum">      52 </span><span class="lineNoCov">          0 :     return nil;</span>
+<span class="lineNum">      53 </span><span class="lineNoCov">          0 : }</span>
+<a name="54"><span class="lineNum">      54 </span>            : </a>
+<span class="lineNum">      55 </span>            : //字典转jsonStr
+<span class="lineNum">      56 </span>            : - (NSString *)dictionaryToJsonStr:(NSDictionary *)dic{
+<span class="lineNum">      57 </span><span class="lineNoCov">          0 :     if (dic) {</span>
+<span class="lineNum">      58 </span><span class="lineNoCov">          0 :         NSError *error;</span>
+<span class="lineNum">      59 </span><span class="lineNoCov">          0 :         NSData *data = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:&amp;error];</span>
+<span class="lineNum">      60 </span><span class="lineNoCov">          0 :         NSString *jsonStr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];</span>
+<span class="lineNum">      61 </span><span class="lineNoCov">          0 :         return jsonStr;</span>
+<span class="lineNum">      62 </span><span class="lineNoCov">          0 :     }</span>
+<span class="lineNum">      63 </span><span class="lineNoCov">          0 :     return @&quot;&quot;;</span>
+<span class="lineNum">      64 </span><span class="lineNoCov">          0 : }</span>
+<a name="65"><span class="lineNum">      65 </span>            : </a>
+<span class="lineNum">      66 </span>            : //获取沙盒document路径
+<span class="lineNum">      67 </span>            : - (NSString *)applicationDocumentDirectoryFile:(NSString *)fileName{
+<span class="lineNum">      68 </span><span class="lineNoCov">          0 :     NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];</span>
+<span class="lineNum">      69 </span><span class="lineNoCov">          0 :     if (fileName &amp;&amp; fileName.length &gt; 0) {</span>
+<span class="lineNum">      70 </span><span class="lineNoCov">          0 :         NSString *documentDirectory = [path stringByAppendingPathComponent:[NSString stringWithFormat:@&quot;%@&quot;,fileName]];</span>
+<span class="lineNum">      71 </span><span class="lineNoCov">          0 :         return documentDirectory;</span>
+<span class="lineNum">      72 </span><span class="lineNoCov">          0 :     }</span>
+<span class="lineNum">      73 </span><span class="lineNoCov">          0 :     return path;</span>
+<span class="lineNum">      74 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">      75 </span>            : 
+<span class="lineNum">      76 </span>            : @end
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.13</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

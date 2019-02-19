@@ -1,0 +1,6133 @@
+TN:
+SF:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBase.h
+FN:501,CFRangeMake
+FNDA:0,CFRangeMake
+FNF:1
+FNH:0
+DA:503,0
+DA:504,0
+DA:505,0
+LF:3
+LH:0
+end_of_record
+TN:
+SF:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+FN:280,CGPointMake
+FN:286,CGSizeMake
+FN:298,CGRectMake
+FNDA:29689502533248,CGRectMake
+FNDA:805316096,CGPointMake
+FNDA:268435712,CGSizeMake
+FNF:3
+FNH:3
+DA:282,805316096
+DA:288,268435712
+DA:301,29689502533248
+DA:302,29689502533248
+DA:303,29689502533248
+LF:5
+LH:5
+end_of_record
+TN:
+SF:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+FN:19,NSMakeRange
+FNDA:1610613504,NSMakeRange
+FNF:1
+FNH:1
+DA:21,1610613504
+DA:22,1610613504
+DA:23,1610613504
+LF:3
+LH:3
+end_of_record
+TN:
+SF:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDevice.h
+FN:100,UI_USER_INTERFACE_IDIOM
+FNDA:1342177920,UI_USER_INTERFACE_IDIOM
+FNF:1
+FNH:1
+DA:101,8053067520
+DA:102,1342177920
+LF:2
+LH:2
+end_of_record
+TN:
+SF:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/dispatch/once.h
+FN:80,_dispatch_once
+FNDA:12918589440,_dispatch_once
+FNF:1
+FNH:1
+DA:83,60163233024
+DA:84,12918589696
+DA:85,12918589696
+DA:86,47244643328
+DA:88,60163233024
+DA:89,60163233024
+LF:6
+LH:6
+end_of_record
+TN:
+SF:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/dispatch/queue.h
+FN:492,dispatch_get_main_queue
+FNDA:512,dispatch_get_main_queue
+FNF:1
+FNH:1
+DA:494,512
+LF:1
+LH:1
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/Categorys/NSArrayCategory/NSArray+WGCommon.m
+FN:20,-[NSArray(WGCommon) firstObject]
+FN:33,-[NSArray(WGCommon) randomObject]
+FN:50,-[NSArray(WGCommon) reversedArray]
+FN:60,-[NSArray(WGCommon) uniqueArray]
+FN:74,-[NSArray(WGCommon) arraySorting:ascending:]
+FN:82,-[NSArray(WGCommon) transToJSONString]
+FNDA:0,-[NSArray(WGCommon) reversedArray]
+FNDA:0,-[NSArray(WGCommon) randomObject]
+FNDA:0,-[NSArray(WGCommon) uniqueArray]
+FNDA:2701281920,-[NSArray(WGCommon) firstObject]
+FNDA:0,-[NSArray(WGCommon) transToJSONString]
+FNDA:0,-[NSArray(WGCommon) arraySorting:ascending:]
+FNF:6
+FNH:1
+DA:21,35786658176
+DA:22,33085376256
+DA:24,2701281920
+DA:26,35786658176
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:41,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:83,0
+DA:84,0
+DA:87,0
+DA:89,0
+DA:91,0
+DA:93,0
+DA:94,0
+DA:95,0
+LF:31
+LH:4
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/Categorys/NSArrayCategory/NSArray+WgArray.m
+FN:14,+[NSArray(WgArray) load]
+FN:17,__24+[NSArray(WgArray) load]_block_invoke
+FN:17,__destroy_helper_block_
+FN:36,__copy_helper_block_
+FN:39,-[NSArray(WgArray) WG_objectAtIndex_NSArrayI:]
+FN:53,-[NSArray(WgArray) WG_objectAtIndex_NSSingleObjectArrayI:]
+FN:67,-[NSArray(WgArray) WG_objectAtIndex_NSArray0:]
+FNDA:3869045278208,-[NSArray(WgArray) WG_objectAtIndex_NSArrayI:]
+FNDA:8623620608,__destroy_helper_block_
+FNDA:2735728303360,-[NSArray(WgArray) WG_objectAtIndex_NSSingleObjectArrayI:]
+FNDA:4311810304,__24+[NSArray(WgArray) load]_block_invoke
+FNDA:4311810304,__copy_helper_block_
+FNDA:0,-[NSArray(WgArray) WG_objectAtIndex_NSArray0:]
+FNDA:4311810304,+[NSArray(WgArray) load]
+FNF:7
+FNH:6
+DA:15,4311810304
+DA:17,8623620608
+DA:18,4311810304
+DA:19,4311810304
+DA:20,8623620608
+DA:21,4311810304
+DA:22,4311810304
+DA:24,4311810304
+DA:25,4311810304
+DA:26,8623620608
+DA:27,4311810304
+DA:28,4311810304
+DA:30,4311810304
+DA:31,4311810304
+DA:32,8623620608
+DA:33,4311810304
+DA:34,4311810304
+DA:36,4311810304
+DA:37,4311810304
+DA:40,7738090556416
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,3869045278208
+DA:51,3869045278208
+DA:54,5471456606720
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,2735728303360
+DA:65,2735728303360
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:79,0
+LF:52
+LH:25
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/Categorys/NSArrayCategory/NSMutableArray+WGCommon.m
+FN:21,-[NSMutableArray(WGCommon) insertObject:atIndexIfNotNil:]
+FN:33,-[NSMutableArray(WGCommon) moveObjectAtIndex:toIndex:]
+FN:46,-[NSMutableArray(WGCommon) removeFirstObject]
+FN:58,-[NSMutableArray(WGCommon) reverse]
+FN:67,-[NSMutableArray(WGCommon) unique]
+FN:80,-[NSMutableArray(WGCommon) sorting:ascending:]
+FNDA:0,-[NSMutableArray(WGCommon) insertObject:atIndexIfNotNil:]
+FNDA:0,-[NSMutableArray(WGCommon) unique]
+FNDA:0,-[NSMutableArray(WGCommon) sorting:ascending:]
+FNDA:0,-[NSMutableArray(WGCommon) reverse]
+FNDA:0,-[NSMutableArray(WGCommon) moveObjectAtIndex:toIndex:]
+FNDA:0,-[NSMutableArray(WGCommon) removeFirstObject]
+FNF:6
+FNH:0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+LF:33
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/Categorys/NSBubdleCategory/NSBundle+WGCommon.m
+FN:19,+[NSBundle(WGCommon) wg_subBundleWithBundleName:targetClass:]
+FN:40,-[NSBundle(WGCommon) appIconPath]
+FN:53,-[NSBundle(WGCommon) appIcon]
+FNDA:0,-[NSBundle(WGCommon) appIcon]
+FNDA:0,+[NSBundle(WGCommon) wg_subBundleWithBundleName:targetClass:]
+FNDA:0,-[NSBundle(WGCommon) appIconPath]
+FNF:3
+FNH:0
+DA:21,0
+DA:23,0
+DA:25,0
+DA:33,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:54,0
+DA:55,0
+DA:56,0
+LF:13
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/Categorys/NSDataCategory/NSData+WGCommon.m
+FN:20,-[NSData(WGCommon) md5]
+FNDA:0,-[NSData(WGCommon) md5]
+FNF:1
+FNH:0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+LF:6
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/Categorys/NSDateCategory/NSDate+WGCommon.m
+FN:27,+[NSDate(WGCommon) currentCalendar]
+FN:42,+[NSDate(WGCommon) convertDateToLocalTime:]
+FN:58,+[NSDate(WGCommon) dateWithDaysFromNow:]
+FN:69,+[NSDate(WGCommon) dateWithDaysBeforeNow:]
+FN:82,+[NSDate(WGCommon) dateWithHoursFromNow:]
+FN:95,+[NSDate(WGCommon) dateWithHoursBeforeNow:]
+FN:108,+[NSDate(WGCommon) dateWithMinutesFromNow:]
+FN:121,+[NSDate(WGCommon) dateWithMinutesBeforeNow:]
+FN:132,+[NSDate(WGCommon) dateTomorrow]
+FN:141,+[NSDate(WGCommon) dateYesterday]
+FN:149,+[NSDate(WGCommon) dateNow]
+FN:164,-[NSDate(WGCommon) stringWithFormat:]
+FN:178,-[NSDate(WGCommon) stringWithDateStyle:timeStyle:]
+FN:190,-[NSDate(WGCommon) shortString]
+FN:199,-[NSDate(WGCommon) shortTimeString]
+FN:208,-[NSDate(WGCommon) shortDateString]
+FN:217,-[NSDate(WGCommon) mediumString]
+FN:226,-[NSDate(WGCommon) mediumTimeString]
+FN:235,-[NSDate(WGCommon) mediumDateString]
+FN:244,-[NSDate(WGCommon) longString]
+FN:253,-[NSDate(WGCommon) longTimeString]
+FN:262,-[NSDate(WGCommon) longDateString]
+FN:274,-[NSDate(WGCommon) isEqualToDateIgnoringTime:]
+FN:287,-[NSDate(WGCommon) isToday]
+FN:296,-[NSDate(WGCommon) isTomorrow]
+FN:305,-[NSDate(WGCommon) isYesterday]
+FN:316,-[NSDate(WGCommon) isSameWeekAsDate:]
+FN:330,-[NSDate(WGCommon) isThisWeek]
+FN:339,-[NSDate(WGCommon) isNextWeek]
+FN:350,-[NSDate(WGCommon) isLastWeek]
+FN:363,-[NSDate(WGCommon) isSameMonthAsDate:]
+FN:375,-[NSDate(WGCommon) isThisMonth]
+FN:384,-[NSDate(WGCommon) isLastMonth]
+FN:393,-[NSDate(WGCommon) isNextMonth]
+FN:404,-[NSDate(WGCommon) isSameYearAsDate:]
+FN:415,-[NSDate(WGCommon) isThisYear]
+FN:424,-[NSDate(WGCommon) isNextYear]
+FN:436,-[NSDate(WGCommon) isLastYear]
+FN:450,-[NSDate(WGCommon) isEarlierThanDate:]
+FN:461,-[NSDate(WGCommon) isLaterThanDate:]
+FN:470,-[NSDate(WGCommon) isInFuture]
+FN:479,-[NSDate(WGCommon) isInPast]
+FN:490,-[NSDate(WGCommon) isTypicallyWeekend]
+FN:503,-[NSDate(WGCommon) isTypicallyWorkday]
+FN:515,-[NSDate(WGCommon) dateByAddingYears:]
+FN:529,-[NSDate(WGCommon) dateBySubtractingYears:]
+FN:540,-[NSDate(WGCommon) dateByAddingMonths:]
+FN:554,-[NSDate(WGCommon) dateBySubtractingMonths:]
+FN:565,-[NSDate(WGCommon) dateByAddingDays:]
+FN:579,-[NSDate(WGCommon) dateBySubtractingDays:]
+FN:590,-[NSDate(WGCommon) dateByAddingHours:]
+FN:603,-[NSDate(WGCommon) dateBySubtractingHours:]
+FN:614,-[NSDate(WGCommon) dateByAddingMinutes:]
+FN:627,-[NSDate(WGCommon) dateBySubtractingMinutes:]
+FN:638,-[NSDate(WGCommon) componentsWithOffsetFromDate:]
+FN:649,-[NSDate(WGCommon) dateAtStartOfDay]
+FN:662,-[NSDate(WGCommon) dateAtEndOfDay]
+FN:678,-[NSDate(WGCommon) minutesAfterDate:]
+FN:690,-[NSDate(WGCommon) minutesBeforeDate:]
+FN:702,-[NSDate(WGCommon) hoursAfterDate:]
+FN:714,-[NSDate(WGCommon) hoursBeforeDate:]
+FN:726,-[NSDate(WGCommon) daysAfterDate:]
+FN:738,-[NSDate(WGCommon) daysBeforeDate:]
+FN:750,-[NSDate(WGCommon) distanceInDaysToDate:]
+FN:762,-[NSDate(WGCommon) nearestHour]
+FN:775,-[NSDate(WGCommon) hour]
+FN:786,-[NSDate(WGCommon) minute]
+FN:797,-[NSDate(WGCommon) seconds]
+FN:808,-[NSDate(WGCommon) day]
+FN:819,-[NSDate(WGCommon) month]
+FN:830,-[NSDate(WGCommon) weekOfMonth]
+FN:841,-[NSDate(WGCommon) weekOfYear]
+FN:852,-[NSDate(WGCommon) weekday]
+FN:863,-[NSDate(WGCommon) nthWeekday]
+FN:874,-[NSDate(WGCommon) year]
+FNDA:0,+[NSDate(WGCommon) dateYesterday]
+FNDA:0,-[NSDate(WGCommon) isSameWeekAsDate:]
+FNDA:0,+[NSDate(WGCommon) convertDateToLocalTime:]
+FNDA:0,-[NSDate(WGCommon) dateBySubtractingMonths:]
+FNDA:0,-[NSDate(WGCommon) weekOfYear]
+FNDA:0,+[NSDate(WGCommon) currentCalendar]
+FNDA:0,-[NSDate(WGCommon) isEarlierThanDate:]
+FNDA:0,-[NSDate(WGCommon) isInPast]
+FNDA:0,-[NSDate(WGCommon) dateByAddingHours:]
+FNDA:0,-[NSDate(WGCommon) isToday]
+FNDA:0,+[NSDate(WGCommon) dateWithDaysFromNow:]
+FNDA:0,-[NSDate(WGCommon) stringWithDateStyle:timeStyle:]
+FNDA:0,-[NSDate(WGCommon) isThisMonth]
+FNDA:0,-[NSDate(WGCommon) isYesterday]
+FNDA:0,-[NSDate(WGCommon) longTimeString]
+FNDA:0,-[NSDate(WGCommon) hour]
+FNDA:0,-[NSDate(WGCommon) stringWithFormat:]
+FNDA:0,-[NSDate(WGCommon) distanceInDaysToDate:]
+FNDA:0,-[NSDate(WGCommon) mediumTimeString]
+FNDA:0,-[NSDate(WGCommon) dateBySubtractingMinutes:]
+FNDA:0,-[NSDate(WGCommon) weekOfMonth]
+FNDA:0,-[NSDate(WGCommon) shortDateString]
+FNDA:0,-[NSDate(WGCommon) isThisYear]
+FNDA:0,-[NSDate(WGCommon) isInFuture]
+FNDA:0,-[NSDate(WGCommon) dateByAddingYears:]
+FNDA:0,+[NSDate(WGCommon) dateWithMinutesFromNow:]
+FNDA:0,-[NSDate(WGCommon) isLastMonth]
+FNDA:0,-[NSDate(WGCommon) day]
+FNDA:0,-[NSDate(WGCommon) nearestHour]
+FNDA:0,+[NSDate(WGCommon) dateWithMinutesBeforeNow:]
+FNDA:0,-[NSDate(WGCommon) isLaterThanDate:]
+FNDA:0,-[NSDate(WGCommon) longString]
+FNDA:0,+[NSDate(WGCommon) dateWithHoursFromNow:]
+FNDA:0,-[NSDate(WGCommon) shortString]
+FNDA:0,-[NSDate(WGCommon) hoursBeforeDate:]
+FNDA:0,-[NSDate(WGCommon) isSameYearAsDate:]
+FNDA:0,-[NSDate(WGCommon) minute]
+FNDA:0,-[NSDate(WGCommon) isNextYear]
+FNDA:0,-[NSDate(WGCommon) dateAtEndOfDay]
+FNDA:0,-[NSDate(WGCommon) mediumString]
+FNDA:0,-[NSDate(WGCommon) dateBySubtractingYears:]
+FNDA:0,+[NSDate(WGCommon) dateWithDaysBeforeNow:]
+FNDA:0,-[NSDate(WGCommon) dateByAddingDays:]
+FNDA:0,-[NSDate(WGCommon) year]
+FNDA:0,-[NSDate(WGCommon) shortTimeString]
+FNDA:0,+[NSDate(WGCommon) dateWithHoursBeforeNow:]
+FNDA:0,-[NSDate(WGCommon) hoursAfterDate:]
+FNDA:0,-[NSDate(WGCommon) dateByAddingMonths:]
+FNDA:0,-[NSDate(WGCommon) mediumDateString]
+FNDA:0,-[NSDate(WGCommon) weekday]
+FNDA:0,+[NSDate(WGCommon) dateTomorrow]
+FNDA:0,-[NSDate(WGCommon) dateByAddingMinutes:]
+FNDA:0,-[NSDate(WGCommon) daysAfterDate:]
+FNDA:0,-[NSDate(WGCommon) daysBeforeDate:]
+FNDA:0,-[NSDate(WGCommon) componentsWithOffsetFromDate:]
+FNDA:0,-[NSDate(WGCommon) isNextMonth]
+FNDA:0,-[NSDate(WGCommon) isNextWeek]
+FNDA:0,-[NSDate(WGCommon) isLastYear]
+FNDA:0,-[NSDate(WGCommon) minutesBeforeDate:]
+FNDA:0,-[NSDate(WGCommon) month]
+FNDA:0,-[NSDate(WGCommon) isTomorrow]
+FNDA:0,-[NSDate(WGCommon) isTypicallyWeekend]
+FNDA:0,-[NSDate(WGCommon) minutesAfterDate:]
+FNDA:0,-[NSDate(WGCommon) isSameMonthAsDate:]
+FNDA:0,-[NSDate(WGCommon) nthWeekday]
+FNDA:0,-[NSDate(WGCommon) isLastWeek]
+FNDA:0,-[NSDate(WGCommon) isEqualToDateIgnoringTime:]
+FNDA:0,-[NSDate(WGCommon) dateAtStartOfDay]
+FNDA:0,-[NSDate(WGCommon) dateBySubtractingDays:]
+FNDA:0,-[NSDate(WGCommon) isTypicallyWorkday]
+FNDA:0,-[NSDate(WGCommon) longDateString]
+FNDA:0,-[NSDate(WGCommon) dateBySubtractingHours:]
+FNDA:0,+[NSDate(WGCommon) dateNow]
+FNDA:0,-[NSDate(WGCommon) isThisWeek]
+FNDA:0,-[NSDate(WGCommon) seconds]
+FNF:75
+FNH:0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:59,0
+DA:70,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:133,0
+DA:142,0
+DA:150,0
+DA:165,0
+DA:166,0
+DA:167,0
+DA:168,0
+DA:179,0
+DA:180,0
+DA:181,0
+DA:182,0
+DA:183,0
+DA:191,0
+DA:200,0
+DA:209,0
+DA:218,0
+DA:227,0
+DA:236,0
+DA:245,0
+DA:254,0
+DA:263,0
+DA:275,0
+DA:276,0
+DA:277,0
+DA:278,0
+DA:279,0
+DA:280,0
+DA:288,0
+DA:297,0
+DA:306,0
+DA:317,0
+DA:318,0
+DA:320,0
+DA:322,0
+DA:323,0
+DA:331,0
+DA:340,0
+DA:341,0
+DA:342,0
+DA:343,0
+DA:351,0
+DA:352,0
+DA:353,0
+DA:354,0
+DA:364,0
+DA:365,0
+DA:366,0
+DA:367,0
+DA:368,0
+DA:376,0
+DA:385,0
+DA:394,0
+DA:405,0
+DA:406,0
+DA:407,0
+DA:408,0
+DA:416,0
+DA:425,0
+DA:426,0
+DA:428,0
+DA:429,0
+DA:437,0
+DA:438,0
+DA:440,0
+DA:441,0
+DA:451,0
+DA:452,0
+DA:462,0
+DA:463,0
+DA:471,0
+DA:480,0
+DA:491,0
+DA:492,0
+DA:493,0
+DA:494,0
+DA:495,0
+DA:496,0
+DA:504,0
+DA:516,0
+DA:517,0
+DA:518,0
+DA:519,0
+DA:520,0
+DA:530,0
+DA:541,0
+DA:542,0
+DA:543,0
+DA:544,0
+DA:545,0
+DA:555,0
+DA:566,0
+DA:567,0
+DA:568,0
+DA:569,0
+DA:570,0
+DA:580,0
+DA:591,0
+DA:592,0
+DA:593,0
+DA:594,0
+DA:604,0
+DA:615,0
+DA:616,0
+DA:617,0
+DA:618,0
+DA:628,0
+DA:639,0
+DA:640,0
+DA:641,0
+DA:650,0
+DA:651,0
+DA:652,0
+DA:653,0
+DA:654,0
+DA:655,0
+DA:663,0
+DA:664,0
+DA:665,0
+DA:666,0
+DA:667,0
+DA:668,0
+DA:679,0
+DA:680,0
+DA:681,0
+DA:691,0
+DA:692,0
+DA:693,0
+DA:703,0
+DA:704,0
+DA:705,0
+DA:715,0
+DA:716,0
+DA:717,0
+DA:727,0
+DA:728,0
+DA:729,0
+DA:739,0
+DA:740,0
+DA:741,0
+DA:751,0
+DA:752,0
+DA:753,0
+DA:754,0
+DA:764,0
+DA:765,0
+DA:766,0
+DA:767,0
+DA:768,0
+DA:777,0
+DA:778,0
+DA:779,0
+DA:788,0
+DA:789,0
+DA:790,0
+DA:799,0
+DA:800,0
+DA:801,0
+DA:810,0
+DA:811,0
+DA:812,0
+DA:821,0
+DA:822,0
+DA:823,0
+DA:832,0
+DA:833,0
+DA:834,0
+DA:843,0
+DA:844,0
+DA:845,0
+DA:854,0
+DA:855,0
+DA:856,0
+DA:865,0
+DA:866,0
+DA:867,0
+DA:876,0
+DA:877,0
+DA:878,0
+LF:205
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/Categorys/NSDictionaryCategory/NSDictionary+WGCommon.m
+FN:22,+[NSDictionary(WGCommon) dictionaryByMerging:with:]
+FN:24,__51+[NSDictionary(WGCommon) dictionaryByMerging:with:]_block_invoke
+FN:24,__destroy_helper_block_
+FN:33,__copy_helper_block_
+FN:44,-[NSDictionary(WGCommon) dictionaryByMergingWith:]
+FN:49,-[NSDictionary(WGCommon) JSONString]
+FNDA:0,__copy_helper_block_
+FNDA:0,-[NSDictionary(WGCommon) JSONString]
+FNDA:0,__51+[NSDictionary(WGCommon) dictionaryByMerging:with:]_block_invoke
+FNDA:0,__destroy_helper_block_
+FNDA:0,-[NSDictionary(WGCommon) dictionaryByMergingWith:]
+FNDA:0,+[NSDictionary(WGCommon) dictionaryByMerging:with:]
+FNF:6
+FNH:0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:45,0
+DA:46,0
+DA:50,0
+DA:51,0
+DA:54,0
+DA:56,0
+DA:58,0
+DA:60,0
+DA:61,0
+DA:62,0
+LF:22
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/Categorys/NSFileManagerCategory/NSFileManager+WGCommon.m
+FN:20,+[NSFileManager(WGCommon) URLForDirectory:]
+FN:31,+[NSFileManager(WGCommon) pathForDirectory:]
+FN:40,+[NSFileManager(WGCommon) documentsURL]
+FN:49,+[NSFileManager(WGCommon) documentsPath]
+FN:58,+[NSFileManager(WGCommon) libraryURL]
+FN:67,+[NSFileManager(WGCommon) libraryPath]
+FN:76,+[NSFileManager(WGCommon) cachesURL]
+FN:85,+[NSFileManager(WGCommon) cachesPath]
+FN:94,+[NSFileManager(WGCommon) homePath]
+FN:103,+[NSFileManager(WGCommon) tmpPath]
+FN:112,-[NSFileManager(WGCommon) isFileExists:]
+FN:125,-[NSFileManager(WGCommon) isFile:timeout:]
+FNDA:0,+[NSFileManager(WGCommon) cachesURL]
+FNDA:0,-[NSFileManager(WGCommon) isFile:timeout:]
+FNDA:0,+[NSFileManager(WGCommon) URLForDirectory:]
+FNDA:0,+[NSFileManager(WGCommon) libraryURL]
+FNDA:0,+[NSFileManager(WGCommon) libraryPath]
+FNDA:0,-[NSFileManager(WGCommon) isFileExists:]
+FNDA:0,+[NSFileManager(WGCommon) documentsPath]
+FNDA:0,+[NSFileManager(WGCommon) documentsURL]
+FNDA:0,+[NSFileManager(WGCommon) pathForDirectory:]
+FNDA:0,+[NSFileManager(WGCommon) tmpPath]
+FNDA:0,+[NSFileManager(WGCommon) homePath]
+FNDA:0,+[NSFileManager(WGCommon) cachesPath]
+FNF:12
+FNH:0
+DA:21,0
+DA:32,0
+DA:41,0
+DA:50,0
+DA:59,0
+DA:68,0
+DA:77,0
+DA:86,0
+DA:95,0
+DA:104,0
+DA:113,0
+DA:114,0
+DA:116,0
+DA:117,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:130,0
+DA:131,0
+DA:133,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:139,0
+DA:140,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+LF:34
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/Categorys/NSStringCategory/NSMutableString+WGCommon.m
+FN:20,-[NSMutableString(WGCommon) replaceString:withString:]
+FN:28,-[NSMutableString(WGCommon) removeSpace]
+FN:32,-[NSMutableString(WGCommon) removeNilAndNull]
+FN:40,-[NSMutableString(WGCommon) heightWithContainWidth:]
+FNDA:0,-[NSMutableString(WGCommon) replaceString:withString:]
+FNDA:0,-[NSMutableString(WGCommon) removeNilAndNull]
+FNDA:0,-[NSMutableString(WGCommon) removeSpace]
+FNDA:0,-[NSMutableString(WGCommon) heightWithContainWidth:]
+FNF:4
+FNH:0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:29,0
+DA:30,0
+DA:34,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:58,0
+DA:59,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+LF:28
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/Categorys/NSStringCategory/NSString+WGCommon.m
+FN:20,-[NSString(WGCommon) isEmail]
+FN:31,-[NSString(WGCommon) isUrl]
+FN:42,-[NSString(WGCommon) isTelephone]
+FN:61,-[NSString(WGCommon) isValidZipcode]
+FN:83,-[NSString(WGCommon) isPassword]
+FN:95,-[NSString(WGCommon) isNumbers]
+FN:106,-[NSString(WGCommon) isLetter]
+FN:117,-[NSString(WGCommon) isCapitalLetter]
+FN:128,-[NSString(WGCommon) isSmallLetter]
+FN:139,-[NSString(WGCommon) isLetterAndNumbers]
+FN:150,-[NSString(WGCommon) isChineseAndLetterAndNumberAndBelowLine]
+FN:161,-[NSString(WGCommon) isChineseAndLetterAndNumberAndBelowLine4to10]
+FN:172,-[NSString(WGCommon) isChineseAndLetterAndNumberAndBelowLineNotFirstOrLast]
+FN:183,-[NSString(WGCommon) isBelow7ChineseOrBlow14LetterAndNumberAndBelowLine]
+FN:195,-[NSString(WGCommon) md5]
+FN:210,-[NSString(WGCommon) md5_16]
+FN:227,-[NSString(WGCommon) heightWithWidth:andFont:]
+FN:241,-[NSString(WGCommon) widthWithHeight:andFont:]
+FN:255,-[NSString(WGCommon) containString:]
+FN:264,-[NSString(WGCommon) containsChineseCharacter]
+FN:280,-[NSString(WGCommon) stringLength]
+FN:302,-[NSString(WGCommon) dateValueWithMillisecondsSince1970]
+FN:311,-[NSString(WGCommon) dateValueWithTimeIntervalSince1970]
+FN:321,-[NSString(WGCommon) empty]
+FN:330,-[NSString(WGCommon) isInteger]
+FN:342,-[NSString(WGCommon) isFloat]
+FN:353,-[NSString(WGCommon) isHasSpecialcharacters]
+FN:371,-[NSString(WGCommon) isHasNumder]
+FN:393,+[NSString(WGCommon) getTimeAndRandomString]
+FN:411,-[NSString(WGCommon) changeJsonEnter]
+FN:416,-[NSString(WGCommon) emailChangeToPrivacy]
+FN:448,-[NSString(WGCommon) isEmoji]
+FN:469,-[NSString(WGCommon) isIncludingEmoji]
+FN:474,__38-[NSString(WGCommon) isIncludingEmoji]_block_invoke
+FN:474,__destroy_helper_block_
+FN:479,__copy_helper_block_
+FN:489,-[NSString(WGCommon) removedEmojiString]
+FN:490,__Block_byref_object_copy_
+FN:490,__Block_byref_object_dispose_
+FN:494,__40-[NSString(WGCommon) removedEmojiString]_block_invoke
+FNDA:0,-[NSString(WGCommon) isLetter]
+FNDA:0,__38-[NSString(WGCommon) isIncludingEmoji]_block_invoke
+FNDA:0,-[NSString(WGCommon) md5]
+FNDA:0,__Block_byref_object_copy_
+FNDA:0,__Block_byref_object_dispose_
+FNDA:0,-[NSString(WGCommon) heightWithWidth:andFont:]
+FNDA:0,-[NSString(WGCommon) changeJsonEnter]
+FNDA:0,-[NSString(WGCommon) isIncludingEmoji]
+FNDA:0,-[NSString(WGCommon) containsChineseCharacter]
+FNDA:0,-[NSString(WGCommon) isBelow7ChineseOrBlow14LetterAndNumberAndBelowLine]
+FNDA:0,-[NSString(WGCommon) isValidZipcode]
+FNDA:0,-[NSString(WGCommon) isSmallLetter]
+FNDA:0,-[NSString(WGCommon) isUrl]
+FNDA:0,-[NSString(WGCommon) removedEmojiString]
+FNDA:0,-[NSString(WGCommon) isFloat]
+FNDA:0,-[NSString(WGCommon) isTelephone]
+FNDA:0,-[NSString(WGCommon) md5_16]
+FNDA:0,__destroy_helper_block_
+FNDA:0,-[NSString(WGCommon) containString:]
+FNDA:0,-[NSString(WGCommon) emailChangeToPrivacy]
+FNDA:0,-[NSString(WGCommon) isCapitalLetter]
+FNDA:0,-[NSString(WGCommon) isHasNumder]
+FNDA:0,-[NSString(WGCommon) isNumbers]
+FNDA:0,__40-[NSString(WGCommon) removedEmojiString]_block_invoke
+FNDA:0,+[NSString(WGCommon) getTimeAndRandomString]
+FNDA:0,-[NSString(WGCommon) isEmoji]
+FNDA:0,-[NSString(WGCommon) empty]
+FNDA:0,-[NSString(WGCommon) dateValueWithMillisecondsSince1970]
+FNDA:0,__copy_helper_block_
+FNDA:0,-[NSString(WGCommon) isInteger]
+FNDA:0,-[NSString(WGCommon) stringLength]
+FNDA:0,-[NSString(WGCommon) isLetterAndNumbers]
+FNDA:0,-[NSString(WGCommon) isEmail]
+FNDA:0,-[NSString(WGCommon) isChineseAndLetterAndNumberAndBelowLine]
+FNDA:0,-[NSString(WGCommon) isChineseAndLetterAndNumberAndBelowLineNotFirstOrLast]
+FNDA:0,-[NSString(WGCommon) isHasSpecialcharacters]
+FNDA:0,-[NSString(WGCommon) isChineseAndLetterAndNumberAndBelowLine4to10]
+FNDA:0,-[NSString(WGCommon) dateValueWithTimeIntervalSince1970]
+FNDA:0,-[NSString(WGCommon) isPassword]
+FNDA:0,-[NSString(WGCommon) widthWithHeight:andFont:]
+FNF:40
+FNH:0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:62,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:68,0
+DA:70,0
+DA:72,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:88,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:162,0
+DA:163,0
+DA:164,0
+DA:165,0
+DA:173,0
+DA:174,0
+DA:175,0
+DA:176,0
+DA:184,0
+DA:185,0
+DA:186,0
+DA:187,0
+DA:196,0
+DA:198,0
+DA:199,0
+DA:200,0
+DA:201,0
+DA:202,0
+DA:203,0
+DA:212,0
+DA:214,0
+DA:215,0
+DA:216,0
+DA:228,0
+DA:229,0
+DA:231,0
+DA:242,0
+DA:243,0
+DA:245,0
+DA:256,0
+DA:257,0
+DA:265,0
+DA:266,0
+DA:267,0
+DA:268,0
+DA:270,0
+DA:271,0
+DA:272,0
+DA:281,0
+DA:282,0
+DA:283,0
+DA:284,0
+DA:285,0
+DA:287,0
+DA:288,0
+DA:290,0
+DA:292,0
+DA:293,0
+DA:303,0
+DA:312,0
+DA:322,0
+DA:331,0
+DA:333,0
+DA:335,0
+DA:343,0
+DA:345,0
+DA:346,0
+DA:354,0
+DA:356,0
+DA:358,0
+DA:359,0
+DA:361,0
+DA:364,0
+DA:372,0
+DA:373,0
+DA:375,0
+DA:376,0
+DA:378,0
+DA:379,0
+DA:381,0
+DA:384,0
+DA:395,0
+DA:396,0
+DA:397,0
+DA:398,0
+DA:399,0
+DA:400,0
+DA:401,0
+DA:402,0
+DA:403,0
+DA:412,0
+DA:418,0
+DA:419,0
+DA:422,0
+DA:424,0
+DA:425,0
+DA:427,0
+DA:428,0
+DA:430,0
+DA:431,0
+DA:433,0
+DA:434,0
+DA:436,0
+DA:437,0
+DA:439,0
+DA:440,0
+DA:449,0
+DA:452,0
+DA:453,0
+DA:454,0
+DA:456,0
+DA:460,0
+DA:462,0
+DA:470,0
+DA:472,0
+DA:474,0
+DA:475,0
+DA:476,0
+DA:477,0
+DA:478,0
+DA:479,0
+DA:481,0
+DA:482,0
+DA:490,0
+DA:492,0
+DA:494,0
+DA:495,0
+DA:496,0
+DA:498,0
+DA:499,0
+LF:182
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/Categorys/UIImageCategory/UIImage+Addition.m
+FN:16,+[UIImage(Addition) VideoThumbImage:]
+FN:31,+[UIImage(Addition) ThumbnailWithImage:scale:]
+FN:65,+[UIImage(Addition) captureWithView:]
+FN:81,+[UIImage(Addition) getImageWithSize:FromImage:]
+FN:100,+[UIImage(Addition) addImage:addMsakImage:maskRect:]
+FN:111,+[UIImage(Addition) drawImage:atFrame:isSender:]
+FN:210,+[UIImage(Addition) imageWithColor:]
+FNDA:0,+[UIImage(Addition) addImage:addMsakImage:maskRect:]
+FNDA:12094627931136,+[UIImage(Addition) imageWithColor:]
+FNDA:0,+[UIImage(Addition) ThumbnailWithImage:scale:]
+FNDA:0,+[UIImage(Addition) VideoThumbImage:]
+FNDA:0,+[UIImage(Addition) captureWithView:]
+FNDA:0,+[UIImage(Addition) getImageWithSize:FromImage:]
+FNDA:0,+[UIImage(Addition) drawImage:atFrame:isSender:]
+FNF:7
+FNH:1
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:38,0
+DA:39,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:61,0
+DA:62,0
+DA:67,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:85,0
+DA:86,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:102,0
+DA:103,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:118,0
+DA:119,0
+DA:122,0
+DA:123,0
+DA:126,0
+DA:127,0
+DA:130,0
+DA:131,0
+DA:133,0
+DA:137,0
+DA:138,0
+DA:139,0
+DA:143,0
+DA:144,0
+DA:147,0
+DA:150,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:158,0
+DA:161,0
+DA:164,0
+DA:166,0
+DA:167,0
+DA:172,0
+DA:173,0
+DA:174,0
+DA:178,0
+DA:179,0
+DA:182,0
+DA:185,0
+DA:188,0
+DA:191,0
+DA:194,0
+DA:196,0
+DA:199,0
+DA:200,0
+DA:201,0
+DA:205,0
+DA:206,0
+DA:208,0
+DA:212,12094627931136
+DA:213,12094627931136
+DA:214,12094627931136
+DA:216,12094627931136
+DA:217,12094627931136
+DA:219,12094627931136
+DA:220,12094627931136
+DA:222,12094627931136
+DA:223,12094627931136
+LF:116
+LH:9
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/CommonFile/WGGlobleMethod.m
+FN:15,+[WGGlobleMethod shareWGGlobleMethod]
+FN:17,__37+[WGGlobleMethod shareWGGlobleMethod]_block_invoke
+FN:23,+[WGGlobleMethod allocWithZone:]
+FN:25,__destroy_helper_block_
+FN:25,__32+[WGGlobleMethod allocWithZone:]_block_invoke
+FN:27,__copy_helper_block_
+FN:31,-[WGGlobleMethod copyWithZone:]
+FN:35,-[WGGlobleMethod mutableCopyWithZone:]
+FN:41,-[WGGlobleMethod jsonStrToDictionary:]
+FN:56,-[WGGlobleMethod dictionaryToJsonStr:]
+FN:67,-[WGGlobleMethod applicationDocumentDirectoryFile:]
+FNDA:0,-[WGGlobleMethod dictionaryToJsonStr:]
+FNDA:0,__37+[WGGlobleMethod shareWGGlobleMethod]_block_invoke
+FNDA:0,+[WGGlobleMethod shareWGGlobleMethod]
+FNDA:0,-[WGGlobleMethod copyWithZone:]
+FNDA:0,-[WGGlobleMethod jsonStrToDictionary:]
+FNDA:0,__copy_helper_block_
+FNDA:0,+[WGGlobleMethod allocWithZone:]
+FNDA:0,-[WGGlobleMethod mutableCopyWithZone:]
+FNDA:0,__destroy_helper_block_
+FNDA:0,-[WGGlobleMethod applicationDocumentDirectoryFile:]
+FNDA:0,__32+[WGGlobleMethod allocWithZone:]_block_invoke
+FNF:11
+FNH:0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:32,0
+DA:36,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+LF:36
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/FirstFile/Controllers/WGOneViewController.m
+FN:13,-[WGOneViewController setTableView:]
+FN:13,-[WGOneViewController tableView]
+FN:17,-[WGOneViewController .cxx_destruct]
+FN:19,-[WGOneViewController viewDidLoad]
+FNDA:17043520,-[WGOneViewController viewDidLoad]
+FNDA:0,-[WGOneViewController .cxx_destruct]
+FNDA:0,-[WGOneViewController setTableView:]
+FNDA:0,-[WGOneViewController tableView]
+FNF:4
+FNH:1
+DA:13,0
+DA:17,0
+DA:20,17043520
+DA:22,17043520
+LF:4
+LH:2
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/ForthFile/Controllers/RongYunChatListViewController.m
+FN:17,-[RongYunChatListViewController viewDidLoad]
+FN:32,-[RongYunChatListViewController onSelectedTableRow:conversationModel:atIndexPath:]
+FNDA:0,-[RongYunChatListViewController onSelectedTableRow:conversationModel:atIndexPath:]
+FNDA:128,-[RongYunChatListViewController viewDidLoad]
+FNF:2
+FNH:1
+DA:18,128
+DA:20,768
+DA:21,128
+DA:22,128
+DA:23,128
+DA:24,128
+DA:25,128
+DA:27,256
+DA:28,128
+DA:29,128
+DA:30,128
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+LF:18
+LH:11
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/ForthFile/Controllers/WGChatIndexViewController.m
+FN:13,-[WGChatIndexViewController setTableView:]
+FN:13,-[WGChatIndexViewController tableView]
+FN:17,-[WGChatIndexViewController .cxx_destruct]
+FN:19,-[WGChatIndexViewController viewDidLoad]
+FN:26,-[WGChatIndexViewController createTableView]
+FN:35,-[WGChatIndexViewController numberOfSectionsInTableView:]
+FN:40,-[WGChatIndexViewController tableView:numberOfRowsInSection:]
+FN:45,-[WGChatIndexViewController tableView:cellForRowAtIndexPath:]
+FN:53,-[WGChatIndexViewController tableView:heightForHeaderInSection:]
+FNDA:0,-[WGChatIndexViewController setTableView:]
+FNDA:0,-[WGChatIndexViewController tableView:numberOfRowsInSection:]
+FNDA:0,-[WGChatIndexViewController tableView:heightForHeaderInSection:]
+FNDA:0,-[WGChatIndexViewController tableView:cellForRowAtIndexPath:]
+FNDA:0,-[WGChatIndexViewController numberOfSectionsInTableView:]
+FNDA:0,-[WGChatIndexViewController createTableView]
+FNDA:0,-[WGChatIndexViewController .cxx_destruct]
+FNDA:0,-[WGChatIndexViewController tableView]
+FNDA:0,-[WGChatIndexViewController viewDidLoad]
+FNF:9
+FNH:0
+DA:13,0
+DA:17,0
+DA:20,0
+DA:21,0
+DA:23,0
+DA:24,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:38,0
+DA:43,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:56,0
+LF:20
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/ForthFile/Controllers/WGFourViewController.m
+FN:17,-[WGFourViewController setSegment:]
+FN:17,-[WGFourViewController segment]
+FN:18,-[WGFourViewController scrollView]
+FN:18,-[WGFourViewController setScrollView:]
+FN:19,-[WGFourViewController segmentIndex]
+FN:19,-[WGFourViewController setSegmentIndex:]
+FN:20,-[WGFourViewController friendBooksView]
+FN:20,-[WGFourViewController setFriendBooksView:]
+FN:21,-[WGFourViewController setRongyunView:]
+FN:21,-[WGFourViewController RongyunView]
+FN:22,-[WGFourViewController setTeamKindsView:]
+FN:22,-[WGFourViewController teamKindsView]
+FN:26,-[WGFourViewController .cxx_destruct]
+FN:28,-[WGFourViewController viewDidLoad]
+FN:35,-[WGFourViewController createScrollView]
+FN:60,-[WGFourViewController createSegment]
+FN:70,-[WGFourViewController segmentClicked]
+FN:77,-[WGFourViewController scrollViewDidEndDecelerating:]
+FNDA:0,-[WGFourViewController segmentIndex]
+FNDA:128,-[WGFourViewController viewDidLoad]
+FNDA:128,-[WGFourViewController setTeamKindsView:]
+FNDA:128,-[WGFourViewController setRongyunView:]
+FNDA:128,-[WGFourViewController setFriendBooksView:]
+FNDA:128,-[WGFourViewController segment]
+FNDA:128,-[WGFourViewController friendBooksView]
+FNDA:128,-[WGFourViewController setSegment:]
+FNDA:128,-[WGFourViewController scrollView]
+FNDA:128,-[WGFourViewController RongyunView]
+FNDA:0,-[WGFourViewController setSegmentIndex:]
+FNDA:0,-[WGFourViewController scrollViewDidEndDecelerating:]
+FNDA:256,-[WGFourViewController segmentClicked]
+FNDA:128,-[WGFourViewController teamKindsView]
+FNDA:128,-[WGFourViewController createScrollView]
+FNDA:0,-[WGFourViewController .cxx_destruct]
+FNDA:128,-[WGFourViewController createSegment]
+FNDA:128,-[WGFourViewController setScrollView:]
+FNF:18
+FNH:14
+DA:17,128
+DA:18,128
+DA:19,0
+DA:20,128
+DA:21,128
+DA:22,128
+DA:26,0
+DA:29,128
+DA:30,128
+DA:31,128
+DA:32,128
+DA:33,128
+DA:37,640
+DA:38,128
+DA:39,640
+DA:40,128
+DA:41,128
+DA:42,128
+DA:43,128
+DA:44,128
+DA:46,128
+DA:47,640
+DA:48,128
+DA:49,896
+DA:50,128
+DA:51,896
+DA:52,128
+DA:53,128
+DA:54,128
+DA:55,128
+DA:56,128
+DA:57,128
+DA:58,128
+DA:62,128
+DA:63,128
+DA:64,128
+DA:65,128
+DA:66,128
+DA:67,128
+DA:68,128
+DA:72,256
+DA:73,768
+DA:75,256
+DA:79,0
+DA:80,0
+DA:81,0
+LF:46
+LH:41
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/ForthFile/Controllers/WGFriendBooksViewController.m
+FN:14,-[WGFriendBooksViewController tableView]
+FN:14,-[WGFriendBooksViewController setTableView:]
+FN:18,-[WGFriendBooksViewController .cxx_destruct]
+FN:20,-[WGFriendBooksViewController viewDidLoad]
+FN:28,-[WGFriendBooksViewController viewWillAppear:]
+FN:37,-[WGFriendBooksViewController createTableView]
+FN:46,-[WGFriendBooksViewController numberOfSectionsInTableView:]
+FN:51,-[WGFriendBooksViewController tableView:numberOfRowsInSection:]
+FN:56,-[WGFriendBooksViewController tableView:cellForRowAtIndexPath:]
+FN:64,-[WGFriendBooksViewController tableView:didSelectRowAtIndexPath:]
+FN:71,-[WGFriendBooksViewController tableView:heightForHeaderInSection:]
+FNDA:0,-[WGFriendBooksViewController .cxx_destruct]
+FNDA:384,-[WGFriendBooksViewController tableView:numberOfRowsInSection:]
+FNDA:384,-[WGFriendBooksViewController tableView]
+FNDA:0,-[WGFriendBooksViewController tableView:heightForHeaderInSection:]
+FNDA:128,-[WGFriendBooksViewController viewWillAppear:]
+FNDA:128,-[WGFriendBooksViewController viewDidLoad]
+FNDA:0,-[WGFriendBooksViewController tableView:didSelectRowAtIndexPath:]
+FNDA:2176,-[WGFriendBooksViewController tableView:cellForRowAtIndexPath:]
+FNDA:128,-[WGFriendBooksViewController createTableView]
+FNDA:384,-[WGFriendBooksViewController setTableView:]
+FNDA:384,-[WGFriendBooksViewController numberOfSectionsInTableView:]
+FNF:11
+FNH:8
+DA:14,384
+DA:18,0
+DA:21,128
+DA:23,128
+DA:25,128
+DA:26,128
+DA:29,128
+DA:31,384
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,128
+DA:39,640
+DA:40,128
+DA:41,128
+DA:42,128
+DA:43,128
+DA:44,128
+DA:49,384
+DA:54,384
+DA:58,2176
+DA:59,2176
+DA:60,2176
+DA:61,2176
+DA:62,2176
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:74,0
+LF:30
+LH:21
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/ForthFile/Controllers/WGFriendInfoViewController.m
+FN:17,-[WGFriendInfoViewController viewDidLoad]
+FNDA:64,-[WGFriendInfoViewController viewDidLoad]
+FNF:1
+FNH:1
+DA:18,64
+DA:19,64
+DA:20,64
+LF:3
+LH:3
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/ForthFile/Controllers/WGTeamKindsViewController.m
+FN:13,-[WGTeamKindsViewController segment]
+FN:13,-[WGTeamKindsViewController setSegment:]
+FN:17,-[WGTeamKindsViewController .cxx_destruct]
+FN:19,-[WGTeamKindsViewController viewDidLoad]
+FN:23,-[WGTeamKindsViewController setViewInfo]
+FN:28,-[WGTeamKindsViewController createSegment]
+FNDA:0,-[WGTeamKindsViewController setSegment:]
+FNDA:0,-[WGTeamKindsViewController setViewInfo]
+FNDA:0,-[WGTeamKindsViewController segment]
+FNDA:0,-[WGTeamKindsViewController .cxx_destruct]
+FNDA:64,-[WGTeamKindsViewController viewDidLoad]
+FNDA:0,-[WGTeamKindsViewController createSegment]
+FNF:6
+FNH:1
+DA:13,0
+DA:17,0
+DA:20,64
+DA:21,64
+DA:24,0
+DA:25,0
+DA:26,0
+DA:29,0
+DA:30,0
+LF:9
+LH:2
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/MainFile/AppDelegate.h
+FN:13,-[AppDelegate setWindow:]
+FN:13,-[AppDelegate window]
+FNDA:3500251264,-[AppDelegate window]
+FNDA:3500251264,-[AppDelegate setWindow:]
+FNF:2
+FNH:2
+DA:13,3500251264
+LF:1
+LH:1
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/MainFile/AppDelegate.m
+FN:16,-[AppDelegate .cxx_destruct]
+FN:19,-[AppDelegate application:didFinishLaunchingWithOptions:]
+FN:34,-[AppDelegate rongyunChat]
+FN:36,__26-[AppDelegate rongyunChat]_block_invoke
+FN:39,__26-[AppDelegate rongyunChat]_block_invoke_2
+FN:42,__26-[AppDelegate rongyunChat]_block_invoke_3
+FN:51,-[AppDelegate setNav]
+FN:64,-[AppDelegate applicationWillResignActive:]
+FN:70,-[AppDelegate applicationDidEnterBackground:]
+FN:91,-[AppDelegate applicationWillEnterForeground:]
+FN:96,-[AppDelegate applicationDidBecomeActive:]
+FN:101,-[AppDelegate applicationWillTerminate:]
+FNDA:270549120,-[AppDelegate applicationDidEnterBackground:]
+FNDA:270549120,-[AppDelegate setNav]
+FNDA:270549120,__26-[AppDelegate rongyunChat]_block_invoke
+FNDA:270549120,-[AppDelegate application:didFinishLaunchingWithOptions:]
+FNDA:270549120,-[AppDelegate applicationDidBecomeActive:]
+FNDA:270549120,__26-[AppDelegate rongyunChat]_block_invoke_2
+FNDA:270549120,-[AppDelegate rongyunChat]
+FNDA:0,-[AppDelegate applicationWillEnterForeground:]
+FNDA:270549120,-[AppDelegate applicationWillResignActive:]
+FNDA:0,-[AppDelegate .cxx_destruct]
+FNDA:270549120,-[AppDelegate applicationWillTerminate:]
+FNDA:0,__26-[AppDelegate rongyunChat]_block_invoke_3
+FNF:12
+FNH:9
+DA:16,0
+DA:20,811647360
+DA:21,270549120
+DA:22,270549120
+DA:23,270549120
+DA:24,270549120
+DA:26,270549120
+DA:28,270549120
+DA:30,270549120
+DA:35,270549120
+DA:36,541098240
+DA:38,270549120
+DA:39,270549120
+DA:41,0
+DA:42,0
+DA:47,0
+DA:48,0
+DA:49,270549120
+DA:54,270549120
+DA:56,541098240
+DA:57,270549120
+DA:58,270549120
+DA:61,270549120
+DA:62,270549120
+DA:67,270549120
+DA:88,270549120
+DA:93,0
+DA:98,270549120
+DA:103,270549120
+LF:29
+LH:23
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/MainFile/WGTabBarViewController.m
+FN:21,-[WGTabBarViewController viewDidLoad]
+FN:32,-[WGTabBarViewController viewController:title:nomalImg:tag:]
+FNDA:1082196480,-[WGTabBarViewController viewController:title:nomalImg:tag:]
+FNDA:270549120,-[WGTabBarViewController viewDidLoad]
+FNF:2
+FNH:2
+DA:22,270549120
+DA:24,270549120
+DA:25,270549120
+DA:26,270549120
+DA:27,270549120
+DA:29,270549120
+DA:30,270549120
+DA:34,1082196480
+DA:35,1082196480
+DA:36,1082196480
+DA:37,1082196480
+DA:38,1082196480
+DA:39,1082196480
+LF:13
+LH:13
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/MainFile/WGUIViewController.m
+FN:17,-[WGUIViewController viewDidLoad]
+FN:22,-[WGUIViewController didReceiveMemoryWarning]
+FNDA:0,-[WGUIViewController didReceiveMemoryWarning]
+FNDA:33555328,-[WGUIViewController viewDidLoad]
+FNF:2
+FNH:1
+DA:18,33555328
+DA:20,33555328
+DA:23,0
+DA:27,0
+LF:4
+LH:2
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/ManagerFile/WGConnectionManager.m
+FN:15,+[WGConnectionManager shareWGConnectionManager]
+FN:17,__47+[WGConnectionManager shareWGConnectionManager]_block_invoke
+FN:23,+[WGConnectionManager allocWithZone:]
+FN:25,__37+[WGConnectionManager allocWithZone:]_block_invoke
+FN:25,__destroy_helper_block_
+FN:27,__copy_helper_block_
+FN:31,-[WGConnectionManager copyWithZone:]
+FN:35,-[WGConnectionManager mutableCopyWithZone:]
+FN:41,-[WGConnectionManager loginWithUserName:passWord:deviceId:complete:]
+FN:59,__68-[WGConnectionManager loginWithUserName:passWord:deviceId:complete:]_block_invoke
+FNDA:256,-[WGConnectionManager loginWithUserName:passWord:deviceId:complete:]
+FNDA:0,-[WGConnectionManager mutableCopyWithZone:]
+FNDA:256,__68-[WGConnectionManager loginWithUserName:passWord:deviceId:complete:]_block_invoke
+FNDA:256,__37+[WGConnectionManager allocWithZone:]_block_invoke
+FNDA:256,+[WGConnectionManager shareWGConnectionManager]
+FNDA:256,+[WGConnectionManager allocWithZone:]
+FNDA:256,__47+[WGConnectionManager shareWGConnectionManager]_block_invoke
+FNDA:256,__copy_helper_block_
+FNDA:0,-[WGConnectionManager copyWithZone:]
+FNDA:512,__destroy_helper_block_
+FNF:10
+FNH:8
+DA:17,512
+DA:18,256
+DA:19,256
+DA:20,256
+DA:25,512
+DA:26,256
+DA:27,256
+DA:28,256
+DA:32,0
+DA:36,0
+DA:43,256
+DA:44,256
+DA:57,256
+DA:59,1024
+DA:60,256
+DA:61,256
+DA:63,256
+LF:17
+LH:15
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/ManagerFile/WGDownloadManager.h
+FN:17,-[WGDownloadManager downloadSuccessBlock]
+FN:17,-[WGDownloadManager setDownloadSuccessBlock:]
+FN:18,-[WGDownloadManager setDownloadFaileBlock:]
+FN:18,-[WGDownloadManager downloadFaileBlock]
+FN:19,-[WGDownloadManager downloadProcessBlock]
+FN:19,-[WGDownloadManager setDownloadProcessBlock:]
+FNDA:512,-[WGDownloadManager downloadSuccessBlock]
+FNDA:512,-[WGDownloadManager setDownloadSuccessBlock:]
+FNDA:3622400,-[WGDownloadManager downloadProcessBlock]
+FNDA:512,-[WGDownloadManager setDownloadFaileBlock:]
+FNDA:3622400,-[WGDownloadManager setDownloadProcessBlock:]
+FNDA:512,-[WGDownloadManager downloadFaileBlock]
+FNF:6
+FNH:6
+DA:17,512
+DA:18,512
+DA:19,3622400
+LF:3
+LH:3
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/ManagerFile/WGDownloadManager.m
+FN:13,-[WGDownloadManager setTask:]
+FN:15,-[WGDownloadManager setSession:]
+FN:17,-[WGDownloadManager setStream:]
+FN:19,-[WGDownloadManager totalLength]
+FN:19,-[WGDownloadManager setTotalLength:]
+FN:20,-[WGDownloadManager setDownloadUrl:]
+FN:20,-[WGDownloadManager downloadUrl]
+FN:34,-[WGDownloadManager .cxx_destruct]
+FN:38,+[WGDownloadManager shareWGDownloadManager]
+FN:41,__43+[WGDownloadManager shareWGDownloadManager]_block_invoke
+FN:47,+[WGDownloadManager allocWithZone:]
+FN:49,__35+[WGDownloadManager allocWithZone:]_block_invoke
+FN:49,__destroy_helper_block_
+FN:51,__copy_helper_block_
+FN:55,-[WGDownloadManager copyWithZone:]
+FN:59,-[WGDownloadManager mutableCopyWithZone:]
+FN:63,-[WGDownloadManager downloadWithUrl:success:faile:process:]
+FN:74,-[WGDownloadManager stopTask]
+FN:80,-[WGDownloadManager task]
+FN:102,-[WGDownloadManager stream]
+FN:109,-[WGDownloadManager session]
+FN:118,-[WGDownloadManager URLSession:dataTask:didReceiveResponse:completionHandler:]
+FN:141,-[WGDownloadManager URLSession:dataTask:didReceiveData:]
+FN:150,-[WGDownloadManager URLSession:task:didCompleteWithError:]
+FNDA:0,-[WGDownloadManager URLSession:task:didCompleteWithError:]
+FNDA:256,-[WGDownloadManager stream]
+FNDA:256,+[WGDownloadManager allocWithZone:]
+FNDA:256,-[WGDownloadManager task]
+FNDA:512,-[WGDownloadManager downloadWithUrl:success:faile:process:]
+FNDA:0,-[WGDownloadManager stopTask]
+FNDA:768,-[WGDownloadManager downloadUrl]
+FNDA:0,-[WGDownloadManager setTask:]
+FNDA:512,__destroy_helper_block_
+FNDA:256,-[WGDownloadManager session]
+FNDA:0,-[WGDownloadManager setStream:]
+FNDA:256,__35+[WGDownloadManager allocWithZone:]_block_invoke
+FNDA:512,+[WGDownloadManager shareWGDownloadManager]
+FNDA:256,-[WGDownloadManager URLSession:dataTask:didReceiveResponse:completionHandler:]
+FNDA:1810944,-[WGDownloadManager URLSession:dataTask:didReceiveData:]
+FNDA:512,-[WGDownloadManager totalLength]
+FNDA:0,-[WGDownloadManager .cxx_destruct]
+FNDA:0,-[WGDownloadManager copyWithZone:]
+FNDA:768,-[WGDownloadManager setDownloadUrl:]
+FNDA:0,-[WGDownloadManager mutableCopyWithZone:]
+FNDA:0,-[WGDownloadManager setSession:]
+FNDA:256,__43+[WGDownloadManager shareWGDownloadManager]_block_invoke
+FNDA:256,__copy_helper_block_
+FNDA:512,-[WGDownloadManager setTotalLength:]
+FNF:24
+FNH:16
+DA:13,0
+DA:15,0
+DA:17,0
+DA:19,512
+DA:20,768
+DA:34,0
+DA:41,768
+DA:42,256
+DA:43,256
+DA:44,512
+DA:49,512
+DA:50,256
+DA:51,256
+DA:52,256
+DA:56,0
+DA:60,0
+DA:67,512
+DA:68,512
+DA:69,512
+DA:70,512
+DA:71,512
+DA:72,512
+DA:75,0
+DA:76,0
+DA:81,512
+DA:82,256
+DA:84,2048
+DA:85,0
+DA:86,0
+DA:90,256
+DA:93,256
+DA:94,256
+DA:97,256
+DA:98,256
+DA:99,512
+DA:100,512
+DA:103,1811200
+DA:104,256
+DA:105,256
+DA:106,1811200
+DA:110,256
+DA:111,256
+DA:112,256
+DA:113,256
+DA:120,256
+DA:127,256
+DA:129,256
+DA:130,512
+DA:131,256
+DA:132,256
+DA:135,256
+DA:136,256
+DA:143,1810944
+DA:144,1810944
+DA:145,1810944
+DA:146,1810944
+DA:147,1810944
+DA:148,1810944
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:156,0
+DA:158,0
+DA:159,0
+DA:160,0
+DA:162,0
+DA:163,0
+DA:164,0
+DA:165,0
+DA:166,0
+DA:167,0
+DA:169,0
+DA:171,0
+DA:172,0
+DA:174,0
+DA:176,0
+LF:78
+LH:48
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/ManagerFile/WGSendGeneralRequest.m
+FN:19,+[WGSendGeneralRequest shareWGSendGeneralRequest]
+FN:21,__49+[WGSendGeneralRequest shareWGSendGeneralRequest]_block_invoke
+FN:27,+[WGSendGeneralRequest allocWithZone:]
+FN:29,__38+[WGSendGeneralRequest allocWithZone:]_block_invoke
+FN:29,__destroy_helper_block_
+FN:31,__copy_helper_block_
+FN:35,-[WGSendGeneralRequest copyWithZone:]
+FN:39,-[WGSendGeneralRequest mutableCopyWithZone:]
+FN:44,-[WGSendGeneralRequest sendGeRequestWithURL:paragram:complete:]
+FN:56,__63-[WGSendGeneralRequest sendGeRequestWithURL:paragram:complete:]_block_invoke
+FN:73,-[WGSendGeneralRequest baseParagram:]
+FN:88,-[WGSendGeneralRequest baseRequest:paragram:]
+FN:100,-[WGSendGeneralRequest URLSession:task:didReceiveChallenge:completionHandler:]
+FNDA:256,-[WGSendGeneralRequest baseRequest:paragram:]
+FNDA:256,+[WGSendGeneralRequest shareWGSendGeneralRequest]
+FNDA:256,__38+[WGSendGeneralRequest allocWithZone:]_block_invoke
+FNDA:256,-[WGSendGeneralRequest sendGeRequestWithURL:paragram:complete:]
+FNDA:0,-[WGSendGeneralRequest URLSession:task:didReceiveChallenge:completionHandler:]
+FNDA:512,__destroy_helper_block_
+FNDA:256,__63-[WGSendGeneralRequest sendGeRequestWithURL:paragram:complete:]_block_invoke
+FNDA:256,+[WGSendGeneralRequest allocWithZone:]
+FNDA:256,__49+[WGSendGeneralRequest shareWGSendGeneralRequest]_block_invoke
+FNDA:256,__copy_helper_block_
+FNDA:0,-[WGSendGeneralRequest copyWithZone:]
+FNDA:0,-[WGSendGeneralRequest mutableCopyWithZone:]
+FNDA:0,-[WGSendGeneralRequest baseParagram:]
+FNF:13
+FNH:9
+DA:21,512
+DA:22,256
+DA:23,256
+DA:24,256
+DA:29,512
+DA:30,256
+DA:31,256
+DA:32,256
+DA:36,0
+DA:40,0
+DA:47,256
+DA:48,256
+DA:52,256
+DA:54,256
+DA:56,1024
+DA:57,256
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,256
+DA:63,256
+DA:64,256
+DA:65,256
+DA:66,256
+DA:67,256
+DA:68,256
+DA:69,256
+DA:70,256
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:90,256
+DA:93,256
+DA:95,256
+DA:96,256
+DA:97,256
+DA:98,256
+DA:102,0
+DA:110,0
+DA:112,0
+DA:113,0
+LF:51
+LH:29
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/RefreashUiOnMainthread.m
+FN:14,-[RefreashUiOnMainthread setButton:]
+FN:18,-[RefreashUiOnMainthread .cxx_destruct]
+FN:20,-[RefreashUiOnMainthread viewDidLoad]
+FN:28,__37-[RefreashUiOnMainthread viewDidLoad]_block_invoke
+FN:36,-[RefreashUiOnMainthread MBProgressHUDText]
+FN:39,__43-[RefreashUiOnMainthread MBProgressHUDText]_block_invoke
+FN:39,__destroy_helper_block_
+FN:51,__copy_helper_block_
+FN:55,-[RefreashUiOnMainthread btnClicked]
+FN:59,-[RefreashUiOnMainthread uiRefreashTest]
+FN:86,-[RefreashUiOnMainthread button]
+FNDA:0,-[RefreashUiOnMainthread setButton:]
+FNDA:0,-[RefreashUiOnMainthread btnClicked]
+FNDA:128,-[RefreashUiOnMainthread viewDidLoad]
+FNDA:128,-[RefreashUiOnMainthread .cxx_destruct]
+FNDA:0,__43-[RefreashUiOnMainthread MBProgressHUDText]_block_invoke
+FNDA:128,-[RefreashUiOnMainthread button]
+FNDA:128,__37-[RefreashUiOnMainthread viewDidLoad]_block_invoke
+FNDA:0,-[RefreashUiOnMainthread uiRefreashTest]
+FNDA:0,__copy_helper_block_
+FNDA:0,-[RefreashUiOnMainthread MBProgressHUDText]
+FNDA:0,__destroy_helper_block_
+FNF:11
+FNH:4
+DA:14,0
+DA:18,128
+DA:21,128
+DA:23,128
+DA:25,128
+DA:27,128
+DA:28,256
+DA:29,128
+DA:30,128
+DA:34,128
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:56,0
+DA:57,0
+DA:60,0
+DA:61,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:79,0
+DA:80,0
+DA:83,0
+DA:84,0
+DA:87,128
+DA:88,384
+DA:89,128
+DA:90,128
+DA:91,128
+DA:92,128
+DA:93,128
+DA:94,128
+DA:95,128
+DA:96,128
+LF:53
+LH:19
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/WGAVPlayerViewController.m
+FN:17,-[WGAVPlayerViewController viewDidLoad]
+FN:23,-[WGAVPlayerViewController setViewView]
+FNDA:0,-[WGAVPlayerViewController viewDidLoad]
+FNDA:0,-[WGAVPlayerViewController setViewView]
+FNF:2
+FNH:0
+DA:18,0
+DA:20,0
+DA:21,0
+DA:24,0
+DA:25,0
+DA:26,0
+LF:6
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/WGAlgorithmViewController.m
+FN:17,-[WGAlgorithmViewController viewDidLoad]
+FN:32,-[WGAlgorithmViewController heapSort:]
+FN:38,-[WGAlgorithmViewController shellSort:]
+FN:49,-[WGAlgorithmViewController shellSort:startIndex:]
+FN:61,-[WGAlgorithmViewController insertionSort:]
+FN:81,-[WGAlgorithmViewController selecterSort:]
+FN:109,-[WGAlgorithmViewController bubbleSort:]
+FN:129,-[WGAlgorithmViewController bubbleSortNew:]
+FN:156,-[WGAlgorithmViewController setViewView]
+FNDA:0,-[WGAlgorithmViewController setViewView]
+FNDA:0,-[WGAlgorithmViewController insertionSort:]
+FNDA:0,-[WGAlgorithmViewController shellSort:startIndex:]
+FNDA:0,-[WGAlgorithmViewController bubbleSort:]
+FNDA:0,-[WGAlgorithmViewController heapSort:]
+FNDA:0,-[WGAlgorithmViewController selecterSort:]
+FNDA:0,-[WGAlgorithmViewController viewDidLoad]
+FNDA:0,-[WGAlgorithmViewController shellSort:]
+FNDA:0,-[WGAlgorithmViewController bubbleSortNew:]
+FNF:9
+FNH:0
+DA:18,0
+DA:20,0
+DA:22,0
+DA:28,0
+DA:29,0
+DA:35,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:46,0
+DA:47,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:63,0
+DA:64,0
+DA:66,0
+DA:68,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:83,0
+DA:85,0
+DA:86,0
+DA:88,0
+DA:89,0
+DA:91,0
+DA:92,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:116,0
+DA:117,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:130,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:136,0
+DA:137,0
+DA:139,0
+DA:140,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:157,0
+DA:158,0
+DA:159,0
+LF:89
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/WGAnimationStudyViewC.m
+FN:13,-[WGAnimationStudyViewC setOneView:]
+FN:17,-[WGAnimationStudyViewC .cxx_destruct]
+FN:19,-[WGAnimationStudyViewC viewDidLoad]
+FN:25,-[WGAnimationStudyViewC touchesBegan:withEvent:]
+FN:34,-[WGAnimationStudyViewC animation06]
+FN:50,-[WGAnimationStudyViewC animation05]
+FN:63,-[WGAnimationStudyViewC animation04]
+FN:65,__36-[WGAnimationStudyViewC animation04]_block_invoke
+FN:65,__destroy_helper_block_
+FN:67,__copy_helper_block_
+FN:67,__36-[WGAnimationStudyViewC animation04]_block_invoke.40
+FN:71,-[WGAnimationStudyViewC animation03]
+FN:80,__36-[WGAnimationStudyViewC animation03]_block_invoke
+FN:83,__36-[WGAnimationStudyViewC animation03]_block_invoke.52
+FN:89,-[WGAnimationStudyViewC animation02]
+FN:106,-[WGAnimationStudyViewC animation01:]
+FN:128,-[WGAnimationStudyViewC animationStart]
+FN:132,-[WGAnimationStudyViewC setViewView]
+FN:137,-[WGAnimationStudyViewC oneView]
+FNDA:0,-[WGAnimationStudyViewC setOneView:]
+FNDA:0,__36-[WGAnimationStudyViewC animation03]_block_invoke.52
+FNDA:256,-[WGAnimationStudyViewC .cxx_destruct]
+FNDA:0,-[WGAnimationStudyViewC animation04]
+FNDA:0,__36-[WGAnimationStudyViewC animation03]_block_invoke
+FNDA:256,-[WGAnimationStudyViewC viewDidLoad]
+FNDA:256,-[WGAnimationStudyViewC setViewView]
+FNDA:0,__destroy_helper_block_
+FNDA:0,-[WGAnimationStudyViewC animation05]
+FNDA:1280,-[WGAnimationStudyViewC animation06]
+FNDA:0,-[WGAnimationStudyViewC animation01:]
+FNDA:0,__36-[WGAnimationStudyViewC animation04]_block_invoke
+FNDA:0,-[WGAnimationStudyViewC animation02]
+FNDA:256,-[WGAnimationStudyViewC oneView]
+FNDA:0,-[WGAnimationStudyViewC animation03]
+FNDA:1280,-[WGAnimationStudyViewC touchesBegan:withEvent:]
+FNDA:0,-[WGAnimationStudyViewC animationStart]
+FNDA:0,__36-[WGAnimationStudyViewC animation04]_block_invoke.40
+FNDA:0,__copy_helper_block_
+FNF:19
+FNH:6
+DA:13,0
+DA:17,256
+DA:20,256
+DA:21,256
+DA:23,256
+DA:31,1280
+DA:32,1280
+DA:35,1280
+DA:36,1280
+DA:37,1280
+DA:38,1280
+DA:39,1280
+DA:40,1280
+DA:41,1280
+DA:43,1280
+DA:44,1280
+DA:45,1280
+DA:46,1280
+DA:47,1280
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:57,0
+DA:58,0
+DA:60,0
+DA:61,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:72,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:100,0
+DA:102,0
+DA:103,0
+DA:107,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:114,0
+DA:116,0
+DA:117,0
+DA:119,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:125,0
+DA:126,0
+DA:129,0
+DA:130,0
+DA:133,256
+DA:134,256
+DA:135,256
+DA:138,1280
+DA:139,256
+DA:140,256
+DA:141,256
+DA:142,256
+DA:143,1280
+LF:74
+LH:27
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/WGAnimationViewController.m
+FN:13,-[WGAnimationViewController setOneView:]
+FN:13,-[WGAnimationViewController oneView]
+FN:14,-[WGAnimationViewController setLayer:]
+FN:14,-[WGAnimationViewController layer]
+FN:15,-[WGAnimationViewController btn]
+FN:15,-[WGAnimationViewController setBtn:]
+FN:20,-[WGAnimationViewController .cxx_destruct]
+FN:22,-[WGAnimationViewController viewDidLoad]
+FN:31,-[WGAnimationViewController viewTest]
+FN:45,-[WGAnimationViewController layerTest]
+FN:64,-[WGAnimationViewController layerBtnClicked]
+FN:72,__destroy_helper_block_
+FN:72,__44-[WGAnimationViewController layerBtnClicked]_block_invoke
+FN:77,__copy_helper_block_
+FN:86,-[WGAnimationViewController viewBtnClicked]
+FN:98,-[WGAnimationViewController setViewView]
+FNDA:256,-[WGAnimationViewController btn]
+FNDA:3072,-[WGAnimationViewController layer]
+FNDA:768,__44-[WGAnimationViewController layerBtnClicked]_block_invoke
+FNDA:256,-[WGAnimationViewController layerTest]
+FNDA:512,-[WGAnimationViewController setOneView:]
+FNDA:3072,__destroy_helper_block_
+FNDA:3072,-[WGAnimationViewController setLayer:]
+FNDA:256,-[WGAnimationViewController viewDidLoad]
+FNDA:256,-[WGAnimationViewController setViewView]
+FNDA:0,-[WGAnimationViewController viewBtnClicked]
+FNDA:0,-[WGAnimationViewController viewTest]
+FNDA:512,-[WGAnimationViewController oneView]
+FNDA:768,__copy_helper_block_
+FNDA:768,-[WGAnimationViewController layerBtnClicked]
+FNDA:256,-[WGAnimationViewController .cxx_destruct]
+FNDA:256,-[WGAnimationViewController setBtn:]
+FNF:16
+FNH:14
+DA:13,512
+DA:14,3072
+DA:15,256
+DA:20,256
+DA:23,256
+DA:25,256
+DA:27,256
+DA:29,256
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:47,256
+DA:48,256
+DA:49,256
+DA:51,256
+DA:52,256
+DA:53,256
+DA:54,256
+DA:56,256
+DA:57,256
+DA:58,256
+DA:59,256
+DA:60,256
+DA:61,256
+DA:62,256
+DA:66,768
+DA:68,768
+DA:69,768
+DA:72,3072
+DA:73,2304
+DA:74,768
+DA:75,768
+DA:77,768
+DA:79,768
+DA:80,768
+DA:81,768
+DA:82,768
+DA:83,768
+DA:84,768
+DA:88,0
+DA:89,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:99,256
+DA:100,256
+DA:101,256
+LF:58
+LH:39
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/WGArrayTestViewController.m
+FN:17,-[WGArrayTestViewController viewDidLoad]
+FN:27,-[WGArrayTestViewController equalArr]
+FN:39,__37-[WGArrayTestViewController equalArr]_block_invoke
+FN:39,__destroy_helper_block_
+FN:45,__copy_helper_block_
+FN:48,-[WGArrayTestViewController copyArr]
+FN:61,__36-[WGArrayTestViewController copyArr]_block_invoke
+FN:72,-[WGArrayTestViewController mutcopyArr]
+FN:84,__39-[WGArrayTestViewController mutcopyArr]_block_invoke
+FNDA:0,__37-[WGArrayTestViewController equalArr]_block_invoke
+FNDA:256,__39-[WGArrayTestViewController mutcopyArr]_block_invoke
+FNDA:0,-[WGArrayTestViewController copyArr]
+FNDA:256,-[WGArrayTestViewController mutcopyArr]
+FNDA:1024,__destroy_helper_block_
+FNDA:256,__copy_helper_block_
+FNDA:0,-[WGArrayTestViewController equalArr]
+FNDA:256,-[WGArrayTestViewController viewDidLoad]
+FNDA:0,__36-[WGArrayTestViewController copyArr]_block_invoke
+FNF:9
+FNH:5
+DA:18,256
+DA:23,256
+DA:25,256
+DA:28,0
+DA:29,0
+DA:31,0
+DA:33,0
+DA:34,0
+DA:36,0
+DA:37,0
+DA:39,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:49,0
+DA:50,0
+DA:52,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:58,0
+DA:59,0
+DA:61,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:73,256
+DA:74,256
+DA:76,256
+DA:78,256
+DA:79,256
+DA:81,256
+DA:82,256
+DA:84,1024
+DA:86,256
+DA:87,256
+DA:88,256
+DA:89,256
+DA:90,256
+DA:91,256
+DA:92,256
+DA:93,256
+LF:50
+LH:19
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/WGBannerViewController.m
+FN:14,-[WGBannerViewController setArr:]
+FN:14,-[WGBannerViewController arr]
+FN:18,-[WGBannerViewController .cxx_destruct]
+FN:20,-[WGBannerViewController viewDidLoad]
+FN:30,-[WGBannerViewController setViewView]
+FN:35,-[WGBannerViewController buildCycleView]
+FN:51,-[WGBannerViewController buildLable]
+FN:67,-[WGBannerViewController currentPageClick:]
+FNDA:268435584,-[WGBannerViewController buildLable]
+FNDA:0,-[WGBannerViewController arr]
+FNDA:268435584,-[WGBannerViewController .cxx_destruct]
+FNDA:0,-[WGBannerViewController currentPageClick:]
+FNDA:0,-[WGBannerViewController setArr:]
+FNDA:268435584,-[WGBannerViewController viewDidLoad]
+FNDA:268435584,-[WGBannerViewController setViewView]
+FNDA:268435584,-[WGBannerViewController buildCycleView]
+FNF:8
+FNH:5
+DA:14,0
+DA:18,268435584
+DA:21,268435584
+DA:23,268435584
+DA:25,268435584
+DA:26,268435584
+DA:27,268435584
+DA:28,268435584
+DA:31,268435584
+DA:32,268435584
+DA:33,268435584
+DA:36,268435584
+DA:37,3758098176
+DA:38,1610613504
+DA:39,1610613504
+DA:40,1610613504
+DA:42,1342177920
+DA:43,268435584
+DA:44,268435584
+DA:45,268435584
+DA:46,268435584
+DA:48,268435584
+DA:49,268435584
+DA:52,1342177920
+DA:53,268435584
+DA:54,268435584
+DA:55,268435584
+DA:56,268435584
+DA:57,268435584
+DA:58,268435584
+DA:59,268435584
+DA:60,268435584
+DA:61,268435584
+DA:62,268435584
+DA:63,268435584
+DA:64,268435584
+DA:68,0
+DA:69,0
+DA:70,0
+LF:39
+LH:35
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/WGBlockTestViewController.m
+FN:19,-[WGBlockTestViewController blockTest]
+FN:19,-[WGBlockTestViewController setBlockTest:]
+FN:20,-[WGBlockTestViewController setTimer:]
+FN:20,-[WGBlockTestViewController timer]
+FN:21,-[WGBlockTestViewController setTarget:]
+FN:21,-[WGBlockTestViewController target]
+FN:25,-[WGBlockTestViewController .cxx_destruct]
+FN:29,-[WGBlockTestViewController viewDidLoad]
+FN:67,-[WGBlockTestViewController timerTest01]
+FN:76,targetMethod
+FN:86,-[WGBlockTestViewController blockTest08]
+FN:89,__40-[WGBlockTestViewController blockTest08]_block_invoke
+FN:103,-[WGBlockTestViewController blockTest07]
+FN:105,__40-[WGBlockTestViewController blockTest07]_block_invoke
+FN:107,__40-[WGBlockTestViewController blockTest07]_block_invoke_2
+FN:107,__destroy_helper_block_
+FN:109,__copy_helper_block_
+FN:114,-[WGBlockTestViewController blockTest06]
+FN:116,__40-[WGBlockTestViewController blockTest06]_block_invoke
+FN:122,-[WGBlockTestViewController blockTest05]
+FN:124,__40-[WGBlockTestViewController blockTest05]_block_invoke
+FN:133,-[WGBlockTestViewController blockTest04]
+FN:134,__40-[WGBlockTestViewController blockTest04]_block_invoke
+FN:140,-[WGBlockTestViewController blockTest03]
+FN:147,-[WGBlockTestViewController blockTest01]
+FN:149,__40-[WGBlockTestViewController blockTest01]_block_invoke
+FN:157,-[WGBlockTestViewController blockTest02]
+FN:159,__40-[WGBlockTestViewController blockTest02]_block_invoke
+FN:166,-[WGBlockTestViewController touchesBegan:withEvent:]
+FN:171,-[WGBlockTestViewController setViewView]
+FN:176,-[WGBlockTestViewController doSomething]
+FN:180,-[WGBlockTestViewController dealloc]
+FNDA:256,-[WGBlockTestViewController dealloc]
+FNDA:0,__40-[WGBlockTestViewController blockTest01]_block_invoke
+FNDA:0,-[WGBlockTestViewController blockTest04]
+FNDA:0,__copy_helper_block_
+FNDA:0,-[WGBlockTestViewController blockTest01]
+FNDA:0,-[WGBlockTestViewController blockTest07]
+FNDA:0,-[WGBlockTestViewController blockTest]
+FNDA:0,__40-[WGBlockTestViewController blockTest07]_block_invoke_2
+FNDA:0,__40-[WGBlockTestViewController blockTest06]_block_invoke
+FNDA:0,__40-[WGBlockTestViewController blockTest05]_block_invoke
+FNDA:0,-[WGBlockTestViewController setTarget:]
+FNDA:0,-[WGBlockTestViewController timerTest01]
+FNDA:0,-[WGBlockTestViewController blockTest02]
+FNDA:0,-[WGBlockTestViewController target]
+FNDA:0,-[WGBlockTestViewController setBlockTest:]
+FNDA:0,-[WGBlockTestViewController blockTest06]
+FNDA:256,-[WGBlockTestViewController viewDidLoad]
+FNDA:0,-[WGBlockTestViewController touchesBegan:withEvent:]
+FNDA:256,-[WGBlockTestViewController .cxx_destruct]
+FNDA:0,__40-[WGBlockTestViewController blockTest04]_block_invoke
+FNDA:0,__40-[WGBlockTestViewController blockTest02]_block_invoke
+FNDA:0,-[WGBlockTestViewController blockTest03]
+FNDA:0,-[WGBlockTestViewController setTimer:]
+FNDA:256,-[WGBlockTestViewController blockTest08]
+FNDA:0,__40-[WGBlockTestViewController blockTest07]_block_invoke
+FNDA:0,targetMethod
+FNDA:0,-[WGBlockTestViewController blockTest05]
+FNDA:256,-[WGBlockTestViewController setViewView]
+FNDA:0,-[WGBlockTestViewController timer]
+FNDA:256,__40-[WGBlockTestViewController blockTest08]_block_invoke
+FNDA:0,__destroy_helper_block_
+FNDA:0,-[WGBlockTestViewController doSomething]
+FNF:32
+FNH:6
+DA:19,0
+DA:20,0
+DA:21,0
+DA:25,256
+DA:30,256
+DA:32,256
+DA:48,256
+DA:65,256
+DA:68,0
+DA:69,0
+DA:71,0
+DA:73,0
+DA:74,0
+DA:77,0
+DA:80,0
+DA:88,256
+DA:89,768
+DA:90,256
+DA:91,256
+DA:92,256
+DA:93,256
+DA:94,256
+DA:95,256
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:158,0
+DA:159,0
+DA:160,0
+DA:161,0
+DA:162,0
+DA:163,0
+DA:164,0
+DA:167,0
+DA:168,0
+DA:169,0
+DA:172,256
+DA:173,256
+DA:174,256
+DA:177,0
+DA:178,0
+DA:181,256
+DA:182,256
+DA:183,256
+DA:184,256
+LF:75
+LH:20
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/WGCategoryTestViewController.m
+FN:22,-[WGCategoryTestViewController viewDidLoad]
+FN:41,-[WGCategoryTestViewController setViewView]
+FNDA:0,-[WGCategoryTestViewController viewDidLoad]
+FNDA:0,-[WGCategoryTestViewController setViewView]
+FNF:2
+FNH:0
+DA:23,0
+DA:25,0
+DA:27,0
+DA:28,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:42,0
+DA:43,0
+DA:44,0
+LF:14
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/WGContactsGroupViewController.m
+FN:17,-[WGContactsGroupViewController viewDidLoad]
+FN:24,-[WGContactsGroupViewController setViewView]
+FN:30,-[WGContactsGroupViewController arrayText]
+FNDA:64,-[WGContactsGroupViewController arrayText]
+FNDA:64,-[WGContactsGroupViewController setViewView]
+FNDA:64,-[WGContactsGroupViewController viewDidLoad]
+FNF:3
+FNH:3
+DA:18,64
+DA:20,64
+DA:21,64
+DA:22,64
+DA:25,64
+DA:26,64
+DA:27,64
+DA:31,64
+DA:32,64
+DA:33,64
+DA:34,64
+DA:35,64
+DA:36,64
+LF:13
+LH:13
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/WGCustomKeyboardViewController.m
+FN:17,-[WGCustomKeyboardViewController .cxx_destruct]
+FN:19,-[WGCustomKeyboardViewController viewDidLoad]
+FN:26,-[WGCustomKeyboardViewController setViewView]
+FN:31,-[WGCustomKeyboardViewController buildTextFeild]
+FN:63,-[WGCustomKeyboardViewController buttonClickTwo:]
+FN:72,-[WGCustomKeyboardViewController buttonClick:]
+FNDA:128,-[WGCustomKeyboardViewController setViewView]
+FNDA:128,-[WGCustomKeyboardViewController viewDidLoad]
+FNDA:0,-[WGCustomKeyboardViewController buttonClickTwo:]
+FNDA:128,-[WGCustomKeyboardViewController .cxx_destruct]
+FNDA:0,-[WGCustomKeyboardViewController buttonClick:]
+FNDA:128,-[WGCustomKeyboardViewController buildTextFeild]
+FNF:6
+FNH:4
+DA:17,128
+DA:20,128
+DA:22,128
+DA:23,128
+DA:24,128
+DA:27,128
+DA:28,128
+DA:29,128
+DA:32,128
+DA:33,128
+DA:34,128
+DA:35,128
+DA:36,128
+DA:37,384
+DA:38,128
+DA:39,1024
+DA:40,3840
+DA:41,1536
+DA:42,1536
+DA:43,1536
+DA:44,1536
+DA:45,1536
+DA:46,1536
+DA:47,1536
+DA:48,384
+DA:49,128
+DA:50,128
+DA:52,128
+DA:53,128
+DA:54,128
+DA:55,128
+DA:56,128
+DA:57,128
+DA:58,128
+DA:59,128
+DA:60,128
+DA:61,128
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:73,0
+DA:74,0
+DA:75,0
+LF:47
+LH:37
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/WGGestureViewController.m
+FN:16,-[WGGestureViewController setImageView:]
+FN:20,-[WGGestureViewController .cxx_destruct]
+FN:22,-[WGGestureViewController viewDidLoad]
+FN:33,-[WGGestureViewController setViewView]
+FN:39,-[WGGestureViewController screenSize]
+FN:55,-[WGGestureViewController addGesture]
+FN:69,-[WGGestureViewController imageView]
+FN:81,-[WGGestureViewController tap:]
+FN:82,__destroy_helper_block_
+FN:82,__31-[WGGestureViewController tap:]_block_invoke
+FN:87,__copy_helper_block_
+FN:90,-[WGGestureViewController doubleTap:]
+FN:91,__37-[WGGestureViewController doubleTap:]_block_invoke
+FN:99,-[WGGestureViewController pinch:]
+FN:104,-[WGGestureViewController rotation:]
+FN:109,-[WGGestureViewController pan:]
+FN:121,-[WGGestureViewController swipe:]
+FN:125,-[WGGestureViewController longPress:]
+FNDA:0,__copy_helper_block_
+FNDA:0,-[WGGestureViewController tap:]
+FNDA:268435584,-[WGGestureViewController imageView]
+FNDA:268435584,-[WGGestureViewController .cxx_destruct]
+FNDA:0,-[WGGestureViewController swipe:]
+FNDA:0,__37-[WGGestureViewController doubleTap:]_block_invoke
+FNDA:268435584,-[WGGestureViewController screenSize]
+FNDA:0,__destroy_helper_block_
+FNDA:268435584,-[WGGestureViewController setViewView]
+FNDA:268435584,-[WGGestureViewController viewDidLoad]
+FNDA:0,-[WGGestureViewController setImageView:]
+FNDA:0,-[WGGestureViewController doubleTap:]
+FNDA:0,-[WGGestureViewController rotation:]
+FNDA:268435584,-[WGGestureViewController addGesture]
+FNDA:0,-[WGGestureViewController pan:]
+FNDA:0,-[WGGestureViewController pinch:]
+FNDA:0,-[WGGestureViewController longPress:]
+FNDA:0,__31-[WGGestureViewController tap:]_block_invoke
+FNF:18
+FNH:6
+DA:16,0
+DA:20,268435584
+DA:23,268435584
+DA:25,268435584
+DA:27,268435584
+DA:29,268435584
+DA:31,268435584
+DA:34,268435584
+DA:35,268435584
+DA:36,268435584
+DA:37,268435584
+DA:40,2147484672
+DA:41,0
+DA:42,2147484672
+DA:43,0
+DA:44,2147484672
+DA:45,0
+DA:46,2147484672
+DA:47,0
+DA:48,2147484672
+DA:49,0
+DA:50,0
+DA:51,268435584
+DA:53,268435584
+DA:56,268435584
+DA:57,268435584
+DA:58,268435584
+DA:59,268435584
+DA:60,268435584
+DA:61,268435584
+DA:62,268435584
+DA:63,268435584
+DA:64,268435584
+DA:66,268435584
+DA:67,268435584
+DA:70,268435584
+DA:71,268435584
+DA:72,268435584
+DA:73,268435584
+DA:74,268435584
+DA:75,268435584
+DA:76,268435584
+DA:77,268435584
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:122,0
+DA:123,0
+DA:126,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:132,0
+DA:133,0
+DA:134,0
+LF:82
+LH:36
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/WGHTMLViewController.h
+FN:21,-[WGHTMLViewController jsContext]
+FN:21,-[WGHTMLViewController setJsContext:]
+FN:22,-[WGHTMLViewController setWebView:]
+FN:22,-[WGHTMLViewController webView]
+FNDA:0,-[WGHTMLViewController setWebView:]
+FNDA:0,-[WGHTMLViewController webView]
+FNDA:0,-[WGHTMLViewController setJsContext:]
+FNDA:0,-[WGHTMLViewController jsContext]
+FNF:4
+FNH:0
+DA:21,0
+DA:22,0
+LF:2
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/WGHTMLViewController.m
+FN:11,-[WGHTMLViewController .cxx_destruct]
+FN:13,-[WGHTMLViewController viewDidLoad]
+FN:20,-[WGHTMLViewController setViewView]
+FN:25,-[WGHTMLViewController setWebView]
+FN:37,-[WGHTMLViewController webViewDidFinishLoad:]
+FN:42,__45-[WGHTMLViewController webViewDidFinishLoad:]_block_invoke
+FN:48,-[WGHTMLViewController call]
+FN:56,-[WGHTMLViewController getCall:]
+FN:66,-[WGHTMLViewController alert]
+FNDA:0,-[WGHTMLViewController alert]
+FNDA:0,-[WGHTMLViewController setWebView]
+FNDA:0,-[WGHTMLViewController setViewView]
+FNDA:0,__45-[WGHTMLViewController webViewDidFinishLoad:]_block_invoke
+FNDA:0,-[WGHTMLViewController webViewDidFinishLoad:]
+FNDA:0,-[WGHTMLViewController .cxx_destruct]
+FNDA:0,-[WGHTMLViewController getCall:]
+FNDA:0,-[WGHTMLViewController call]
+FNDA:0,-[WGHTMLViewController viewDidLoad]
+FNF:9
+FNH:0
+DA:11,0
+DA:14,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:26,0
+DA:27,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:39,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:49,0
+DA:51,0
+DA:53,0
+DA:54,0
+DA:57,0
+DA:59,0
+DA:60,0
+DA:64,0
+DA:68,0
+DA:69,0
+DA:71,0
+LF:34
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/WGJSONModelViewController.m
+FN:25,-[WGJSONModelViewController .cxx_destruct]
+FN:27,-[WGJSONModelViewController viewDidLoad]
+FN:35,-[WGJSONModelViewController setViewView]
+FN:40,-[WGJSONModelViewController requestData]
+FNDA:0,-[WGJSONModelViewController setViewView]
+FNDA:0,-[WGJSONModelViewController viewDidLoad]
+FNDA:0,-[WGJSONModelViewController .cxx_destruct]
+FNDA:0,-[WGJSONModelViewController requestData]
+FNF:4
+FNH:0
+DA:25,0
+DA:28,0
+DA:30,0
+DA:31,0
+DA:33,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:48,0
+DA:50,0
+DA:52,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:58,0
+LF:22
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/WGNSURLSessionViewController.m
+FN:19,-[WGNSURLSessionViewController viewDidLoad]
+FN:29,-[WGNSURLSessionViewController setViewView]
+FN:34,-[WGNSURLSessionViewController sendLogin]
+FN:35,__41-[WGNSURLSessionViewController sendLogin]_block_invoke
+FN:45,-[WGNSURLSessionViewController getRequestTest]
+FN:48,__46-[WGNSURLSessionViewController getRequestTest]_block_invoke
+FN:57,-[WGNSURLSessionViewController filePostTest]
+FN:108,__44-[WGNSURLSessionViewController filePostTest]_block_invoke
+FN:120,-[WGNSURLSessionViewController downloadTest]
+FN:129,__44-[WGNSURLSessionViewController downloadTest]_block_invoke
+FNDA:0,-[WGNSURLSessionViewController getRequestTest]
+FNDA:0,__44-[WGNSURLSessionViewController filePostTest]_block_invoke
+FNDA:0,-[WGNSURLSessionViewController downloadTest]
+FNDA:0,__44-[WGNSURLSessionViewController downloadTest]_block_invoke
+FNDA:128,__41-[WGNSURLSessionViewController sendLogin]_block_invoke
+FNDA:0,__46-[WGNSURLSessionViewController getRequestTest]_block_invoke
+FNDA:128,-[WGNSURLSessionViewController viewDidLoad]
+FNDA:128,-[WGNSURLSessionViewController sendLogin]
+FNDA:0,-[WGNSURLSessionViewController filePostTest]
+FNDA:128,-[WGNSURLSessionViewController setViewView]
+FNF:10
+FNH:4
+DA:20,128
+DA:22,128
+DA:23,128
+DA:27,128
+DA:30,128
+DA:31,128
+DA:32,128
+DA:35,256
+DA:36,128
+DA:37,0
+DA:38,0
+DA:39,128
+DA:41,128
+DA:42,128
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:69,0
+DA:72,0
+DA:85,0
+DA:86,0
+DA:93,0
+DA:94,0
+DA:100,0
+DA:106,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:121,0
+DA:123,0
+DA:124,0
+DA:126,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:139,0
+DA:140,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+LF:70
+LH:12
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/WGResumeBrokenTransferViewController.m
+FN:14,-[WGResumeBrokenTransferViewController setProgressView:]
+FN:14,-[WGResumeBrokenTransferViewController progressView]
+FN:18,-[WGResumeBrokenTransferViewController .cxx_destruct]
+FN:20,-[WGResumeBrokenTransferViewController viewDidLoad]
+FN:43,-[WGResumeBrokenTransferViewController setViewView]
+FN:48,-[WGResumeBrokenTransferViewController startBtnclicked]
+FN:49,__55-[WGResumeBrokenTransferViewController startBtnclicked]_block_invoke
+FN:51,__55-[WGResumeBrokenTransferViewController startBtnclicked]_block_invoke_2
+FN:53,__55-[WGResumeBrokenTransferViewController startBtnclicked]_block_invoke_3
+FN:53,__destroy_helper_block_
+FN:56,__copy_helper_block_
+FN:59,-[WGResumeBrokenTransferViewController stopBtnClicked]
+FNDA:512,__55-[WGResumeBrokenTransferViewController startBtnclicked]_block_invoke
+FNDA:0,-[WGResumeBrokenTransferViewController .cxx_destruct]
+FNDA:128,-[WGResumeBrokenTransferViewController viewDidLoad]
+FNDA:128,-[WGResumeBrokenTransferViewController setProgressView:]
+FNDA:908928,__55-[WGResumeBrokenTransferViewController startBtnclicked]_block_invoke_3
+FNDA:909568,__55-[WGResumeBrokenTransferViewController startBtnclicked]_block_invoke_2
+FNDA:256,-[WGResumeBrokenTransferViewController startBtnclicked]
+FNDA:908928,__copy_helper_block_
+FNDA:128,-[WGResumeBrokenTransferViewController setViewView]
+FNDA:909568,__destroy_helper_block_
+FNDA:512,-[WGResumeBrokenTransferViewController stopBtnClicked]
+FNDA:128,-[WGResumeBrokenTransferViewController progressView]
+FNF:12
+FNH:11
+DA:14,128
+DA:18,0
+DA:21,128
+DA:23,128
+DA:25,128
+DA:26,128
+DA:27,128
+DA:28,128
+DA:29,128
+DA:30,128
+DA:32,128
+DA:33,128
+DA:34,128
+DA:35,128
+DA:36,128
+DA:37,128
+DA:39,384
+DA:40,128
+DA:41,128
+DA:44,128
+DA:45,128
+DA:46,128
+DA:49,512
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,909568
+DA:54,908928
+DA:55,908928
+DA:56,908928
+DA:57,256
+DA:65,512
+DA:68,512
+DA:70,0
+DA:71,0
+DA:72,512
+DA:74,512
+LF:37
+LH:31
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/WGSystermVedioPlayerViewController.m
+FN:19,-[WGSystermVedioPlayerViewController setMoviePlayer:]
+FN:23,-[WGSystermVedioPlayerViewController .cxx_destruct]
+FN:25,-[WGSystermVedioPlayerViewController viewDidLoad]
+FN:33,-[WGSystermVedioPlayerViewController viewDidDisappear:]
+FN:38,-[WGSystermVedioPlayerViewController setViewView]
+FN:43,-[WGSystermVedioPlayerViewController moviePlayer]
+FN:55,-[WGSystermVedioPlayerViewController addNotification]
+FN:60,-[WGSystermVedioPlayerViewController mediaPlayerPlaybackStateChange:]
+FN:81,-[WGSystermVedioPlayerViewController mediaPlayerPlaybackFinish:]
+FN:85,-[WGSystermVedioPlayerViewController dealloc]
+FNDA:0,-[WGSystermVedioPlayerViewController setViewView]
+FNDA:0,-[WGSystermVedioPlayerViewController dealloc]
+FNDA:0,-[WGSystermVedioPlayerViewController .cxx_destruct]
+FNDA:0,-[WGSystermVedioPlayerViewController mediaPlayerPlaybackStateChange:]
+FNDA:0,-[WGSystermVedioPlayerViewController mediaPlayerPlaybackFinish:]
+FNDA:0,-[WGSystermVedioPlayerViewController moviePlayer]
+FNDA:0,-[WGSystermVedioPlayerViewController addNotification]
+FNDA:0,-[WGSystermVedioPlayerViewController viewDidDisappear:]
+FNDA:0,-[WGSystermVedioPlayerViewController viewDidLoad]
+FNDA:0,-[WGSystermVedioPlayerViewController setMoviePlayer:]
+FNF:10
+FNH:0
+DA:19,0
+DA:23,0
+DA:26,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:61,0
+DA:63,0
+DA:64,0
+DA:67,0
+DA:68,0
+DA:71,0
+DA:72,0
+DA:75,0
+DA:76,0
+DA:79,0
+DA:82,0
+DA:83,0
+DA:86,0
+DA:87,0
+LF:39
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/WGTwoViewController.m
+FN:33,-[WGTwoViewController tableView]
+FN:33,-[WGTwoViewController setTableView:]
+FN:34,-[WGTwoViewController setItemArr:]
+FN:38,-[WGTwoViewController .cxx_destruct]
+FN:40,-[WGTwoViewController viewDidLoad]
+FN:48,-[WGTwoViewController setViewBaseInfo]
+FN:54,-[WGTwoViewController createTableView]
+FN:63,-[WGTwoViewController numberOfSectionsInTableView:]
+FN:67,-[WGTwoViewController tableView:numberOfRowsInSection:]
+FN:71,-[WGTwoViewController tableView:cellForRowAtIndexPath:]
+FN:78,-[WGTwoViewController tableView:didSelectRowAtIndexPath:]
+FN:177,-[WGTwoViewController tableView:heightForFooterInSection:]
+FN:181,-[WGTwoViewController tableView:heightForHeaderInSection:]
+FN:185,-[WGTwoViewController itemArr]
+FN:193,-[WGTwoViewController pushNextController:title:]
+FNDA:17592190240768,-[WGTwoViewController itemArr]
+FNDA:0,-[WGTwoViewController .cxx_destruct]
+FNDA:0,-[WGTwoViewController tableView:heightForHeaderInSection:]
+FNDA:52776570722304,-[WGTwoViewController tableView:numberOfRowsInSection:]
+FNDA:17592190240768,-[WGTwoViewController createTableView]
+FNDA:52776570722304,-[WGTwoViewController numberOfSectionsInTableView:]
+FNDA:0,-[WGTwoViewController tableView:heightForFooterInSection:]
+FNDA:17592190240768,-[WGTwoViewController viewDidLoad]
+FNDA:2048,-[WGTwoViewController tableView:didSelectRowAtIndexPath:]
+FNDA:35184372113408,-[WGTwoViewController pushNextController:title:]
+FNDA:299067234099200,-[WGTwoViewController tableView:cellForRowAtIndexPath:]
+FNDA:17592190240768,-[WGTwoViewController tableView]
+FNDA:17592190240768,-[WGTwoViewController setTableView:]
+FNDA:17592190240768,-[WGTwoViewController setViewBaseInfo]
+FNDA:0,-[WGTwoViewController setItemArr:]
+FNF:15
+FNH:11
+DA:33,17592190240768
+DA:34,0
+DA:38,0
+DA:41,17592190240768
+DA:43,17592190240768
+DA:44,17592190240768
+DA:46,17592190240768
+DA:49,17592190240768
+DA:50,17592190240768
+DA:51,17592190240768
+DA:52,17592190240768
+DA:56,87960951203840
+DA:57,17592190240768
+DA:58,17592190240768
+DA:59,17592190240768
+DA:60,17592190240768
+DA:61,17592190240768
+DA:65,52776570722304
+DA:68,52776570722304
+DA:69,52776570722304
+DA:72,299067234099200
+DA:73,299067234099200
+DA:74,299067234099200
+DA:75,299067234099200
+DA:76,299067234099200
+DA:79,35184372115456
+DA:81,17592186046464
+DA:82,17592186046464
+DA:84,17592186046464
+DA:87,17592186046464
+DA:88,17592186046464
+DA:90,17592186046464
+DA:92,2048
+DA:93,2048
+DA:95,2048
+DA:97,2048
+DA:98,2048
+DA:100,2048
+DA:102,2048
+DA:103,2048
+DA:105,2048
+DA:107,0
+DA:108,0
+DA:110,0
+DA:112,2048
+DA:113,2048
+DA:115,2048
+DA:117,2048
+DA:118,2048
+DA:120,2048
+DA:122,2048
+DA:123,2048
+DA:125,2048
+DA:127,2048
+DA:128,2048
+DA:130,2048
+DA:132,0
+DA:133,0
+DA:135,0
+DA:137,2048
+DA:138,2048
+DA:140,2048
+DA:142,0
+DA:143,0
+DA:145,0
+DA:147,2048
+DA:148,2048
+DA:150,2048
+DA:152,2048
+DA:153,2048
+DA:155,2048
+DA:159,2048
+DA:160,2048
+DA:165,0
+DA:166,0
+DA:168,0
+DA:169,0
+DA:171,0
+DA:173,0
+DA:175,35184372115456
+DA:179,0
+DA:183,0
+DA:186,351843804821504
+DA:187,17592190240768
+DA:188,17592190240768
+DA:189,351843804821504
+DA:194,35184372113408
+DA:195,35184372113408
+DA:196,35184372113408
+DA:197,35184372113408
+LF:90
+LH:71
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/WGUIPickerViewViewController.m
+FN:13,-[WGUIPickerViewViewController setFoodsArr:]
+FN:14,-[WGUIPickerViewViewController setFruitLab:]
+FN:15,-[WGUIPickerViewViewController setStapleLab:]
+FN:16,-[WGUIPickerViewViewController setDrinkLab:]
+FN:17,-[WGUIPickerViewViewController setPickerView:]
+FN:18,-[WGUIPickerViewViewController setRadomBtn:]
+FN:22,-[WGUIPickerViewViewController .cxx_destruct]
+FN:24,-[WGUIPickerViewViewController viewDidLoad]
+FN:33,-[WGUIPickerViewViewController setViewView]
+FN:48,-[WGUIPickerViewViewController fruitLab]
+FN:57,-[WGUIPickerViewViewController stapleLab]
+FN:66,-[WGUIPickerViewViewController drinkLab]
+FN:75,-[WGUIPickerViewViewController pickerView]
+FN:84,-[WGUIPickerViewViewController radomBtn]
+FN:94,-[WGUIPickerViewViewController radomClick]
+FN:114,-[WGUIPickerViewViewController foodsArr]
+FN:124,-[WGUIPickerViewViewController numberOfComponentsInPickerView:]
+FN:128,-[WGUIPickerViewViewController pickerView:numberOfRowsInComponent:]
+FN:132,-[WGUIPickerViewViewController pickerView:titleForRow:forComponent:]
+FN:140,-[WGUIPickerViewViewController pickerView:didSelectRow:inComponent:]
+FNDA:0,-[WGUIPickerViewViewController setPickerView:]
+FNDA:128,-[WGUIPickerViewViewController pickerView]
+FNDA:0,-[WGUIPickerViewViewController setRadomBtn:]
+FNDA:3072,-[WGUIPickerViewViewController pickerView:titleForRow:forComponent:]
+FNDA:512,-[WGUIPickerViewViewController numberOfComponentsInPickerView:]
+FNDA:0,-[WGUIPickerViewViewController setFoodsArr:]
+FNDA:128,-[WGUIPickerViewViewController viewDidLoad]
+FNDA:128,-[WGUIPickerViewViewController stapleLab]
+FNDA:128,-[WGUIPickerViewViewController radomBtn]
+FNDA:128,-[WGUIPickerViewViewController setViewView]
+FNDA:0,-[WGUIPickerViewViewController setStapleLab:]
+FNDA:0,-[WGUIPickerViewViewController setFruitLab:]
+FNDA:128,-[WGUIPickerViewViewController pickerView:didSelectRow:inComponent:]
+FNDA:128,-[WGUIPickerViewViewController fruitLab]
+FNDA:0,-[WGUIPickerViewViewController radomClick]
+FNDA:128,-[WGUIPickerViewViewController .cxx_destruct]
+FNDA:7296,-[WGUIPickerViewViewController pickerView:numberOfRowsInComponent:]
+FNDA:0,-[WGUIPickerViewViewController setDrinkLab:]
+FNDA:128,-[WGUIPickerViewViewController drinkLab]
+FNDA:128,-[WGUIPickerViewViewController foodsArr]
+FNF:20
+FNH:13
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:22,128
+DA:25,128
+DA:27,128
+DA:28,1024
+DA:29,384
+DA:30,384
+DA:31,128
+DA:34,128
+DA:35,128
+DA:37,640
+DA:38,128
+DA:40,128
+DA:41,128
+DA:42,128
+DA:43,128
+DA:44,128
+DA:45,128
+DA:46,128
+DA:49,256
+DA:50,384
+DA:51,128
+DA:52,128
+DA:53,128
+DA:54,256
+DA:58,256
+DA:59,384
+DA:60,128
+DA:61,128
+DA:62,128
+DA:63,256
+DA:67,256
+DA:68,384
+DA:69,128
+DA:70,128
+DA:71,128
+DA:72,256
+DA:76,128
+DA:77,384
+DA:78,128
+DA:79,128
+DA:80,128
+DA:81,128
+DA:85,128
+DA:86,128
+DA:87,128
+DA:88,128
+DA:89,128
+DA:90,128
+DA:91,128
+DA:96,0
+DA:98,0
+DA:100,0
+DA:102,0
+DA:104,0
+DA:105,0
+DA:108,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:115,512
+DA:116,128
+DA:117,128
+DA:118,128
+DA:119,128
+DA:120,128
+DA:121,512
+DA:125,512
+DA:126,512
+DA:129,7296
+DA:130,7296
+DA:134,3072
+DA:136,3072
+DA:137,3072
+DA:138,3072
+DA:142,384
+DA:144,384
+DA:145,128
+DA:146,384
+DA:147,128
+DA:148,128
+DA:149,128
+DA:150,384
+LF:88
+LH:72
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/WGWebViewViewController.m
+FN:13,-[WGWebViewViewController webView]
+FN:13,-[WGWebViewViewController setWebView:]
+FN:14,-[WGWebViewViewController setSearchBar:]
+FN:14,-[WGWebViewViewController searchBar]
+FN:15,-[WGWebViewViewController leftBtn]
+FN:15,-[WGWebViewViewController setLeftBtn:]
+FN:16,-[WGWebViewViewController setRightBtn:]
+FN:16,-[WGWebViewViewController rightBtn]
+FN:20,-[WGWebViewViewController .cxx_destruct]
+FN:22,-[WGWebViewViewController viewDidLoad]
+FN:30,-[WGWebViewViewController setViewView]
+FN:35,-[WGWebViewViewController setUIView]
+FN:57,-[WGWebViewViewController gobackClick:]
+FN:61,-[WGWebViewViewController goforwardClick:]
+FN:65,-[WGWebViewViewController searchBarSearchButtonClicked:]
+FN:70,-[WGWebViewViewController loadRequest:]
+FN:83,-[WGWebViewViewController webViewDidFinishLoad:]
+FNDA:0,-[WGWebViewViewController gobackClick:]
+FNDA:0,-[WGWebViewViewController leftBtn]
+FNDA:0,-[WGWebViewViewController searchBarSearchButtonClicked:]
+FNDA:0,-[WGWebViewViewController webViewDidFinishLoad:]
+FNDA:128,-[WGWebViewViewController setUIView]
+FNDA:256,-[WGWebViewViewController webView]
+FNDA:0,-[WGWebViewViewController setLeftBtn:]
+FNDA:0,-[WGWebViewViewController setRightBtn:]
+FNDA:128,-[WGWebViewViewController setSearchBar:]
+FNDA:0,-[WGWebViewViewController goforwardClick:]
+FNDA:128,-[WGWebViewViewController viewDidLoad]
+FNDA:128,-[WGWebViewViewController searchBar]
+FNDA:128,-[WGWebViewViewController loadRequest:]
+FNDA:128,-[WGWebViewViewController setViewView]
+FNDA:256,-[WGWebViewViewController setWebView:]
+FNDA:128,-[WGWebViewViewController .cxx_destruct]
+FNDA:0,-[WGWebViewViewController rightBtn]
+FNF:17
+FNH:9
+DA:13,256
+DA:14,128
+DA:15,0
+DA:16,0
+DA:20,128
+DA:23,128
+DA:25,128
+DA:26,128
+DA:27,128
+DA:28,128
+DA:31,128
+DA:32,128
+DA:33,128
+DA:36,384
+DA:37,128
+DA:38,128
+DA:40,640
+DA:41,128
+DA:42,128
+DA:43,128
+DA:45,384
+DA:46,128
+DA:47,128
+DA:48,128
+DA:49,640
+DA:50,128
+DA:51,128
+DA:52,128
+DA:53,128
+DA:54,128
+DA:55,128
+DA:58,0
+DA:59,0
+DA:62,0
+DA:63,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:72,128
+DA:73,128
+DA:74,0
+DA:75,0
+DA:77,128
+DA:78,128
+DA:79,128
+DA:80,128
+DA:84,0
+DA:85,0
+DA:86,0
+LF:49
+LH:35
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/WGXibViewController.h
+FN:15,-[WGXibViewController name]
+FN:15,-[WGXibViewController setName:]
+FNDA:0,-[WGXibViewController name]
+FNDA:0,-[WGXibViewController setName:]
+FNF:2
+FNH:0
+DA:15,0
+LF:1
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Controllers/WGXibViewController.m
+FN:13,-[WGXibViewController age]
+FN:13,-[WGXibViewController setAge:]
+FN:17,-[WGXibViewController .cxx_destruct]
+FN:19,-[WGXibViewController initWithAge:]
+FN:28,-[WGXibViewController viewDidLoad]
+FNDA:0,-[WGXibViewController viewDidLoad]
+FNDA:0,-[WGXibViewController initWithAge:]
+FNDA:0,-[WGXibViewController age]
+FNDA:0,-[WGXibViewController setAge:]
+FNDA:0,-[WGXibViewController .cxx_destruct]
+FNF:5
+FNH:0
+DA:13,0
+DA:17,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:29,0
+DA:31,0
+DA:32,0
+DA:33,0
+LF:12
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Model/NSObject+WGRunTimeDealloc.m
+FN:14,-[NSObject(WGRunTimeDealloc) wg_tuntimeDealloc:]
+FNDA:128,-[NSObject(WGRunTimeDealloc) wg_tuntimeDealloc:]
+FNF:1
+FNH:1
+DA:15,128
+DA:16,128
+DA:17,128
+DA:18,128
+DA:19,128
+LF:5
+LH:5
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Model/WGBanner.h
+FN:25,-[WGBanner imagesArr]
+FN:25,-[WGBanner setImagesArr:]
+FN:26,-[WGBanner descriptionArr]
+FN:27,-[WGBanner pageChangeTime]
+FN:28,-[WGBanner pageControl]
+FN:28,-[WGBanner setPageControl:]
+FN:29,-[WGBanner pageControlLocation]
+FN:30,-[WGBanner wgBannerDelegate]
+FN:30,-[WGBanner setWgBannerDelegate:]
+FNDA:0,-[WGBanner descriptionArr]
+FNDA:0,-[WGBanner imagesArr]
+FNDA:0,-[WGBanner pageControl]
+FNDA:268435584,-[WGBanner wgBannerDelegate]
+FNDA:268435584,-[WGBanner setWgBannerDelegate:]
+FNDA:0,-[WGBanner setImagesArr:]
+FNDA:0,-[WGBanner pageControlLocation]
+FNDA:0,-[WGBanner setPageControl:]
+FNDA:536871168,-[WGBanner pageChangeTime]
+FNF:9
+FNH:3
+DA:25,0
+DA:26,0
+DA:27,536871168
+DA:28,0
+DA:29,0
+DA:30,268435584
+LF:6
+LH:2
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Model/WGBanner.m
+FN:15,-[WGBanner setLeftImageView:]
+FN:15,-[WGBanner leftImageView]
+FN:16,-[WGBanner setMiddleImageView:]
+FN:16,-[WGBanner middleImageView]
+FN:17,-[WGBanner rightImageView]
+FN:17,-[WGBanner setRightImageView:]
+FN:18,-[WGBanner setContainerView:]
+FN:18,-[WGBanner containerView]
+FN:19,-[WGBanner setDescriptionLab:]
+FN:19,-[WGBanner descriptionLab]
+FN:20,-[WGBanner timer]
+FN:20,-[WGBanner setTimer:]
+FN:21,-[WGBanner currentNumber]
+FN:21,-[WGBanner setCurrentNumber:]
+FN:25,-[WGBanner .cxx_destruct]
+FN:27,-[WGBanner initWithImages:frame:]
+FN:45,-[WGBanner setCycleView]
+FN:66,-[WGBanner setPageControl]
+FN:76,-[WGBanner setPageDescription]
+FN:86,-[WGBanner setCycleImageView]
+FN:94,-[WGBanner reloadImage]
+FN:100,-[WGBanner setTimerAction]
+FN:106,-[WGBanner timeChanged]
+FN:117,-[WGBanner setDescriptionText]
+FN:122,-[WGBanner setPageControlLoca:]
+FN:143,-[WGBanner scrollViewWillBeginDragging:]
+FN:148,-[WGBanner scrollViewDidEndDragging:willDecelerate:]
+FN:152,-[WGBanner scrollViewDidEndDecelerating:]
+FN:170,-[WGBanner setPageControlLocation:]
+FN:174,-[WGBanner setDescriptionArr:]
+FN:179,-[WGBanner setPageChangeTime:]
+FN:186,-[WGBanner imageViewSelected:]
+FNDA:268435584,-[WGBanner setPageControlLocation:]
+FNDA:0,-[WGBanner setDescriptionLab:]
+FNDA:0,-[WGBanner rightImageView]
+FNDA:536875136,-[WGBanner timeChanged]
+FNDA:268435584,-[WGBanner setCycleImageView]
+FNDA:0,-[WGBanner .cxx_destruct]
+FNDA:0,-[WGBanner scrollViewDidEndDecelerating:]
+FNDA:0,-[WGBanner scrollViewDidEndDragging:willDecelerate:]
+FNDA:268435584,-[WGBanner setPageControl]
+FNDA:0,-[WGBanner setMiddleImageView:]
+FNDA:268435584,-[WGBanner setPageControlLoca:]
+FNDA:805310720,-[WGBanner reloadImage]
+FNDA:536875136,-[WGBanner setContainerView:]
+FNDA:0,-[WGBanner imageViewSelected:]
+FNDA:0,-[WGBanner setLeftImageView:]
+FNDA:0,-[WGBanner setRightImageView:]
+FNDA:0,-[WGBanner descriptionLab]
+FNDA:268435584,-[WGBanner initWithImages:frame:]
+FNDA:0,-[WGBanner scrollViewWillBeginDragging:]
+FNDA:0,-[WGBanner setCurrentNumber:]
+FNDA:268435584,-[WGBanner setPageDescription]
+FNDA:268435584,-[WGBanner setCycleView]
+FNDA:1342177920,-[WGBanner timer]
+FNDA:536875136,-[WGBanner containerView]
+FNDA:0,-[WGBanner currentNumber]
+FNDA:536871168,-[WGBanner setTimerAction]
+FNDA:1342177920,-[WGBanner setTimer:]
+FNDA:0,-[WGBanner leftImageView]
+FNDA:0,-[WGBanner middleImageView]
+FNDA:268435584,-[WGBanner setPageChangeTime:]
+FNDA:805310720,-[WGBanner setDescriptionText]
+FNDA:268435584,-[WGBanner setDescriptionArr:]
+FNF:32
+FNH:17
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,536875136
+DA:19,0
+DA:20,1342177920
+DA:21,0
+DA:25,0
+DA:28,268435584
+DA:29,268435584
+DA:30,268435584
+DA:31,268435584
+DA:32,268435584
+DA:34,268435584
+DA:35,268435584
+DA:36,268435584
+DA:37,268435584
+DA:39,268435584
+DA:40,268435584
+DA:41,268435584
+DA:42,268435584
+DA:43,268435584
+DA:46,268435584
+DA:47,1342177920
+DA:48,805306752
+DA:50,1342177920
+DA:51,1879049088
+DA:52,1879049088
+DA:54,268435584
+DA:55,268435584
+DA:56,268435584
+DA:57,268435584
+DA:58,268435584
+DA:59,268435584
+DA:60,268435584
+DA:61,268435584
+DA:63,268435584
+DA:64,268435584
+DA:67,268435584
+DA:68,268435584
+DA:69,268435584
+DA:70,268435584
+DA:71,268435584
+DA:72,268435584
+DA:73,268435584
+DA:74,268435584
+DA:77,805306752
+DA:78,268435584
+DA:79,268435584
+DA:80,268435584
+DA:81,268435584
+DA:82,268435584
+DA:84,268435584
+DA:87,536871168
+DA:88,0
+DA:90,268435584
+DA:91,268435584
+DA:92,536871168
+DA:95,805310720
+DA:96,805310720
+DA:97,805310720
+DA:98,805310720
+DA:102,536871168
+DA:103,536871168
+DA:104,536871168
+DA:107,1073750272
+DA:108,0
+DA:110,536875136
+DA:111,536875136
+DA:112,536875136
+DA:113,536875136
+DA:114,1610625408
+DA:115,1073750272
+DA:118,805310720
+DA:119,805310720
+DA:120,805310720
+DA:123,536871168
+DA:125,268435584
+DA:127,268435584
+DA:129,268435584
+DA:131,268435584
+DA:133,0
+DA:135,0
+DA:138,0
+DA:140,536871168
+DA:144,0
+DA:145,0
+DA:149,0
+DA:150,0
+DA:154,0
+DA:155,0
+DA:157,0
+DA:158,0
+DA:160,0
+DA:162,0
+DA:163,0
+DA:164,0
+DA:165,0
+DA:167,0
+DA:171,268435584
+DA:172,268435584
+DA:175,268435584
+DA:176,268435584
+DA:177,268435584
+DA:180,268435584
+DA:181,268435584
+DA:182,268435584
+DA:183,268435584
+DA:187,0
+DA:188,0
+DA:189,0
+DA:190,0
+LF:112
+LH:83
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Model/WGBlockExecutor.m
+FN:16,-[WGBlockExecutor .cxx_destruct]
+FN:18,-[WGBlockExecutor initWithBlock:]
+FN:25,-[WGBlockExecutor dealloc]
+FNDA:128,-[WGBlockExecutor dealloc]
+FNDA:128,-[WGBlockExecutor initWithBlock:]
+FNDA:128,-[WGBlockExecutor .cxx_destruct]
+FNF:3
+FNH:3
+DA:16,128
+DA:19,128
+DA:20,128
+DA:21,128
+DA:22,128
+DA:23,128
+DA:26,256
+DA:27,128
+LF:8
+LH:8
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Model/WGContactsGroupModel.h
+FN:14,-[WGContactsGroupModel groupId]
+FN:14,-[WGContactsGroupModel setGroupId:]
+FN:16,-[WGContactsGroupModel groupName]
+FN:16,-[WGContactsGroupModel setGroupName:]
+FN:18,-[WGContactsGroupModel groupType]
+FN:18,-[WGContactsGroupModel setGroupType:]
+FN:20,-[WGContactsGroupModel numbersOfGroup]
+FN:20,-[WGContactsGroupModel setNumbersOfGroup:]
+FN:22,-[WGContactsGroupModel mumbersArr]
+FN:22,-[WGContactsGroupModel setMumbersArr:]
+FNDA:0,-[WGContactsGroupModel mumbersArr]
+FNDA:0,-[WGContactsGroupModel setGroupType:]
+FNDA:0,-[WGContactsGroupModel groupType]
+FNDA:0,-[WGContactsGroupModel setNumbersOfGroup:]
+FNDA:0,-[WGContactsGroupModel groupName]
+FNDA:0,-[WGContactsGroupModel numbersOfGroup]
+FNDA:0,-[WGContactsGroupModel setGroupId:]
+FNDA:0,-[WGContactsGroupModel setGroupName:]
+FNDA:0,-[WGContactsGroupModel setMumbersArr:]
+FNDA:0,-[WGContactsGroupModel groupId]
+FNF:10
+FNH:0
+DA:14,0
+DA:16,0
+DA:18,0
+DA:20,0
+DA:22,0
+LF:5
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Model/WGContactsGroupModel.m
+FN:11,-[WGContactsGroupModel .cxx_destruct]
+FNDA:0,-[WGContactsGroupModel .cxx_destruct]
+FNF:1
+FNH:0
+DA:11,0
+LF:1
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Model/WGContactsModel.h
+FN:14,-[WGContactsModel contactId]
+FN:14,-[WGContactsModel setContactId:]
+FN:16,-[WGContactsModel contactName]
+FN:16,-[WGContactsModel setContactName:]
+FN:18,-[WGContactsModel setContactAvater:]
+FN:18,-[WGContactsModel contactAvater]
+FN:20,-[WGContactsModel setContactTime:]
+FN:20,-[WGContactsModel contactTime]
+FN:22,-[WGContactsModel contactDes]
+FN:22,-[WGContactsModel setContactDes:]
+FNDA:0,-[WGContactsModel setContactAvater:]
+FNDA:0,-[WGContactsModel contactDes]
+FNDA:0,-[WGContactsModel contactId]
+FNDA:0,-[WGContactsModel setContactTime:]
+FNDA:0,-[WGContactsModel contactName]
+FNDA:0,-[WGContactsModel contactTime]
+FNDA:0,-[WGContactsModel setContactName:]
+FNDA:0,-[WGContactsModel setContactDes:]
+FNDA:0,-[WGContactsModel contactAvater]
+FNDA:0,-[WGContactsModel setContactId:]
+FNF:10
+FNH:0
+DA:14,0
+DA:16,0
+DA:18,0
+DA:20,0
+DA:22,0
+LF:5
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Model/WGContactsModel.m
+FN:11,-[WGContactsModel .cxx_destruct]
+FNDA:0,-[WGContactsModel .cxx_destruct]
+FNF:1
+FNH:0
+DA:11,0
+LF:1
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Model/WGJsonmodel.h
+FN:16,-[Cat setOrderId:]
+FN:16,-[Cat orderId]
+FN:17,-[Cat name]
+FN:17,-[Cat setName:]
+FN:18,-[Cat products]
+FN:18,-[Cat setProducts:]
+FN:24,-[WGJsonmodel setSource:]
+FN:24,-[WGJsonmodel source]
+FN:25,-[WGJsonmodel agent]
+FN:25,-[WGJsonmodel setAgent:]
+FN:26,-[WGJsonmodel client]
+FN:26,-[WGJsonmodel setClient:]
+FN:27,-[WGJsonmodel setCategories:]
+FN:27,-[WGJsonmodel categories]
+FNDA:0,-[Cat setOrderId:]
+FNDA:0,-[Cat orderId]
+FNDA:0,-[Cat setProducts:]
+FNDA:0,-[WGJsonmodel setCategories:]
+FNDA:0,-[Cat products]
+FNDA:0,-[WGJsonmodel client]
+FNDA:0,-[Cat name]
+FNDA:0,-[WGJsonmodel setAgent:]
+FNDA:0,-[WGJsonmodel agent]
+FNDA:0,-[Cat setName:]
+FNDA:0,-[WGJsonmodel source]
+FNDA:0,-[WGJsonmodel setClient:]
+FNDA:0,-[WGJsonmodel categories]
+FNDA:0,-[WGJsonmodel setSource:]
+FNF:14
+FNH:0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+LF:7
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Model/WGJsonmodel.m
+FN:11,-[Cat .cxx_destruct]
+FN:19,+[Cat keyMapper]
+FN:26,+[Cat propertyIsOptional:]
+FN:32,-[WGJsonmodel .cxx_destruct]
+FNDA:0,-[WGJsonmodel .cxx_destruct]
+FNDA:0,+[Cat propertyIsOptional:]
+FNDA:0,+[Cat keyMapper]
+FNDA:0,-[Cat .cxx_destruct]
+FNF:4
+FNH:0
+DA:11,0
+DA:21,0
+DA:28,0
+DA:32,0
+LF:4
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Model/WGUIGesture.h
+FN:25,-[WGUIGesture wguigestureDelegate]
+FN:25,-[WGUIGesture setWguigestureDelegate:]
+FNDA:4294967552,-[WGUIGesture wguigestureDelegate]
+FNDA:4294967552,-[WGUIGesture setWguigestureDelegate:]
+FNF:2
+FNH:2
+DA:25,4294967552
+LF:1
+LH:1
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Model/WGUIGesture.m
+FN:13,-[WGUIGesture setSingleTap:]
+FN:14,-[WGUIGesture setDoubleTap:]
+FN:15,-[WGUIGesture setPinch:]
+FN:16,-[WGUIGesture setRotation:]
+FN:17,-[WGUIGesture setPan:]
+FN:18,-[WGUIGesture setSwipe:]
+FN:19,-[WGUIGesture longPress]
+FN:19,-[WGUIGesture setLongPress:]
+FN:23,-[WGUIGesture .cxx_destruct]
+FN:26,+[WGUIGesture WGUIGestureShare]
+FN:28,__31+[WGUIGesture WGUIGestureShare]_block_invoke
+FN:34,-[WGUIGesture tapGesture]
+FN:39,-[WGUIGesture doubleTapGesture]
+FN:44,-[WGUIGesture pinchGesture]
+FN:49,-[WGUIGesture rotationGesture]
+FN:53,-[WGUIGesture panGesture]
+FN:57,-[WGUIGesture swipeGesture]
+FN:61,-[WGUIGesture longPressGesture]
+FN:65,-[WGUIGesture singleTap]
+FN:74,-[WGUIGesture doubleTap]
+FN:82,-[WGUIGesture pinch]
+FN:90,-[WGUIGesture rotation]
+FN:98,-[WGUIGesture pan]
+FN:105,-[WGUIGesture swipe]
+FN:113,-[WGUIGesture loogPress]
+FN:123,-[WGUIGesture tap:]
+FN:130,-[WGUIGesture doubleTap:]
+FN:137,-[WGUIGesture pinch:]
+FN:144,-[WGUIGesture rotation:]
+FN:151,-[WGUIGesture pan:]
+FN:158,-[WGUIGesture swipe:]
+FN:165,-[WGUIGesture longPress:]
+FNDA:4294967552,-[WGUIGesture loogPress]
+FNDA:0,-[WGUIGesture setLongPress:]
+FNDA:0,-[WGUIGesture setPinch:]
+FNDA:4294967552,-[WGUIGesture pan]
+FNDA:8589935104,-[WGUIGesture tapGesture]
+FNDA:0,-[WGUIGesture setPan:]
+FNDA:4294967552,-[WGUIGesture rotation]
+FNDA:0,-[WGUIGesture doubleTap:]
+FNDA:4294967552,-[WGUIGesture pinchGesture]
+FNDA:0,-[WGUIGesture pan:]
+FNDA:4294967552,-[WGUIGesture singleTap]
+FNDA:0,-[WGUIGesture longPress]
+FNDA:8589935104,-[WGUIGesture doubleTapGesture]
+FNDA:8589935104,-[WGUIGesture panGesture]
+FNDA:0,-[WGUIGesture setSwipe:]
+FNDA:4294967552,__31+[WGUIGesture WGUIGestureShare]_block_invoke
+FNDA:0,-[WGUIGesture tap:]
+FNDA:8589935104,-[WGUIGesture swipeGesture]
+FNDA:4294967552,-[WGUIGesture doubleTap]
+FNDA:51539610624,+[WGUIGesture WGUIGestureShare]
+FNDA:0,-[WGUIGesture setSingleTap:]
+FNDA:4294967552,-[WGUIGesture pinch]
+FNDA:0,-[WGUIGesture swipe:]
+FNDA:0,-[WGUIGesture setDoubleTap:]
+FNDA:0,-[WGUIGesture longPress:]
+FNDA:4294967552,-[WGUIGesture longPressGesture]
+FNDA:0,-[WGUIGesture rotation:]
+FNDA:4294967552,-[WGUIGesture rotationGesture]
+FNDA:0,-[WGUIGesture .cxx_destruct]
+FNDA:0,-[WGUIGesture pinch:]
+FNDA:4294967552,-[WGUIGesture swipe]
+FNDA:0,-[WGUIGesture setRotation:]
+FNF:32
+FNH:16
+DA:13,0
+DA:14,0
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:23,0
+DA:28,55834578176
+DA:29,4294967552
+DA:30,4294967552
+DA:31,51539610624
+DA:36,8589935104
+DA:41,8589935104
+DA:46,4294967552
+DA:50,4294967552
+DA:54,8589935104
+DA:58,8589935104
+DA:62,4294967552
+DA:66,8589935104
+DA:67,4294967552
+DA:68,4294967552
+DA:69,4294967552
+DA:70,4294967552
+DA:71,8589935104
+DA:75,8589935104
+DA:76,4294967552
+DA:77,4294967552
+DA:78,4294967552
+DA:79,8589935104
+DA:83,4294967552
+DA:84,4294967552
+DA:85,4294967552
+DA:86,4294967552
+DA:87,4294967552
+DA:91,4294967552
+DA:92,4294967552
+DA:93,4294967552
+DA:94,4294967552
+DA:95,4294967552
+DA:99,8589935104
+DA:100,4294967552
+DA:101,4294967552
+DA:102,8589935104
+DA:106,8589935104
+DA:107,4294967552
+DA:108,4294967552
+DA:109,4294967552
+DA:110,8589935104
+DA:114,4294967552
+DA:115,4294967552
+DA:116,4294967552
+DA:117,4294967552
+DA:118,4294967552
+DA:119,4294967552
+DA:124,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:138,0
+DA:139,0
+DA:140,0
+DA:141,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:159,0
+DA:160,0
+DA:161,0
+DA:162,0
+DA:166,0
+DA:167,0
+DA:168,0
+DA:169,0
+LF:83
+LH:47
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/SecondToolsFile/WGHanShuShiBlock.h
+FN:15,-[WGHanShuShiBlock setResult:]
+FN:15,-[WGHanShuShiBlock result]
+FNDA:128,-[WGHanShuShiBlock result]
+FNDA:128,-[WGHanShuShiBlock setResult:]
+FNF:2
+FNH:2
+DA:15,128
+LF:1
+LH:1
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/SecondToolsFile/WGHanShuShiBlock.m
+FN:13,-[WGHanShuShiBlock caculator:]
+FNDA:128,-[WGHanShuShiBlock caculator:]
+FNF:1
+FNH:1
+DA:14,128
+DA:15,128
+DA:16,128
+LF:3
+LH:3
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/SecondToolsFile/WGLianShiBlock.h
+FN:13,-[WGLianShiBlock result]
+FN:13,-[WGLianShiBlock setResult:]
+FNDA:0,-[WGLianShiBlock result]
+FNDA:0,-[WGLianShiBlock setResult:]
+FNF:2
+FNH:0
+DA:13,0
+LF:1
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/SecondToolsFile/WGLianShiBlock.m
+FN:13,-[WGLianShiBlock add]
+FN:14,__21-[WGLianShiBlock add]_block_invoke
+FN:14,__destroy_helper_block_
+FN:17,__copy_helper_block_
+FNDA:0,__21-[WGLianShiBlock add]_block_invoke
+FNDA:0,-[WGLianShiBlock add]
+FNDA:0,__destroy_helper_block_
+FNDA:0,__copy_helper_block_
+FNF:4
+FNH:0
+DA:14,0
+DA:15,0
+DA:16,0
+LF:3
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Views/WGContactTableViewCell.h
+FN:15,-[WGContactTableViewCell contactModel]
+FNDA:0,-[WGContactTableViewCell contactModel]
+FNF:1
+FNH:0
+DA:15,0
+LF:1
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SecondFile/Views/WGContactTableViewCell.m
+FN:16,-[WGContactTableViewCell setAvaterView:]
+FN:17,-[WGContactTableViewCell setNameLab:]
+FN:18,-[WGContactTableViewCell setDesLab:]
+FN:19,-[WGContactTableViewCell setTimeLab:]
+FN:23,-[WGContactTableViewCell .cxx_destruct]
+FN:25,-[WGContactTableViewCell initWithStyle:reuseIdentifier:]
+FN:36,-[WGContactTableViewCell layoutSubviews]
+FN:45,-[WGContactTableViewCell setContactModel:]
+FN:53,-[WGContactTableViewCell avaterView]
+FN:60,-[WGContactTableViewCell nameLab]
+FN:67,-[WGContactTableViewCell desLab]
+FN:74,-[WGContactTableViewCell timeLab]
+FNDA:0,-[WGContactTableViewCell desLab]
+FNDA:0,-[WGContactTableViewCell setNameLab:]
+FNDA:0,-[WGContactTableViewCell setTimeLab:]
+FNDA:0,-[WGContactTableViewCell setContactModel:]
+FNDA:0,-[WGContactTableViewCell initWithStyle:reuseIdentifier:]
+FNDA:0,-[WGContactTableViewCell setDesLab:]
+FNDA:0,-[WGContactTableViewCell avaterView]
+FNDA:0,-[WGContactTableViewCell nameLab]
+FNDA:0,-[WGContactTableViewCell layoutSubviews]
+FNDA:0,-[WGContactTableViewCell timeLab]
+FNDA:0,-[WGContactTableViewCell .cxx_destruct]
+FNDA:0,-[WGContactTableViewCell setAvaterView:]
+FNF:12
+FNH:0
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:23,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:37,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+LF:42
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/SetingFile/main.m
+FN:12,main
+FNDA:17043520,main
+FNF:1
+FNH:1
+DA:14,17043520
+DA:15,34087040
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+LF:7
+LH:2
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/ThirdFile/Controllers/WGThreeViewController.m
+FN:13,-[WGThreeViewController setWGThreeTableView:]
+FN:13,-[WGThreeViewController WGThreeTableView]
+FN:17,-[WGThreeViewController .cxx_destruct]
+FN:19,-[WGThreeViewController viewDidLoad]
+FN:29,-[WGThreeViewController observeValueForKeyPath:ofObject:change:context:]
+FN:35,-[WGThreeViewController numberOfSectionsInTableView:]
+FN:39,-[WGThreeViewController tableView:numberOfRowsInSection:]
+FN:43,-[WGThreeViewController tableView:cellForRowAtIndexPath:]
+FN:50,-[WGThreeViewController tableView:didSelectRowAtIndexPath:]
+FNDA:1073742336,-[WGThreeViewController tableView:numberOfRowsInSection:]
+FNDA:268435584,-[WGThreeViewController viewDidLoad]
+FNDA:3758099968,-[WGThreeViewController setWGThreeTableView:]
+FNDA:4831840640,-[WGThreeViewController tableView:cellForRowAtIndexPath:]
+FNDA:0,-[WGThreeViewController .cxx_destruct]
+FNDA:3758099968,-[WGThreeViewController WGThreeTableView]
+FNDA:1073742336,-[WGThreeViewController numberOfSectionsInTableView:]
+FNDA:2952793216,-[WGThreeViewController observeValueForKeyPath:ofObject:change:context:]
+FNDA:128,-[WGThreeViewController tableView:didSelectRowAtIndexPath:]
+FNF:9
+FNH:8
+DA:13,3758099968
+DA:17,0
+DA:20,268435584
+DA:21,268435584
+DA:22,268435584
+DA:23,268435584
+DA:25,268435584
+DA:27,268435584
+DA:31,14763966080
+DA:32,2952793216
+DA:33,2952793216
+DA:37,1073742336
+DA:41,1073742336
+DA:44,4831840640
+DA:45,4831840640
+DA:46,4831840640
+DA:47,4831840640
+DA:48,4831840640
+DA:52,128
+DA:53,128
+DA:54,128
+DA:55,128
+LF:22
+LH:21
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/CustomLearn/connectionModel/WGRemoteResponse.m
+FN:19,-[WGRemoteResponse .cxx_destruct]
+FN:21,+[WGRemoteResponse remoteResponseWithDic:]
+FN:25,-[WGRemoteResponse initWithDic:]
+FN:34,-[WGRemoteResponse isSuccess]
+FN:37,-[WGRemoteResponse returnCode]
+FN:40,-[WGRemoteResponse returnMsg]
+FN:43,-[WGRemoteResponse responseDic]
+FNDA:128,-[WGRemoteResponse returnCode]
+FNDA:128,-[WGRemoteResponse .cxx_destruct]
+FNDA:128,-[WGRemoteResponse returnMsg]
+FNDA:128,-[WGRemoteResponse isSuccess]
+FNDA:0,-[WGRemoteResponse responseDic]
+FNDA:128,+[WGRemoteResponse remoteResponseWithDic:]
+FNDA:128,-[WGRemoteResponse initWithDic:]
+FNF:7
+FNH:6
+DA:19,128
+DA:22,128
+DA:23,128
+DA:26,128
+DA:27,128
+DA:28,128
+DA:29,128
+DA:30,128
+DA:31,128
+DA:32,128
+DA:35,128
+DA:38,128
+DA:41,128
+DA:44,0
+LF:14
+LH:13
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/Librarys/JSONModel/JSONModel/JSONModel.m
+FN:34,-[JSONModel .cxx_destruct]
+FN:41,+[JSONModel load]
+FN:44,__17+[JSONModel load]_block_invoke
+FN:44,__destroy_helper_block_
+FN:72,__copy_helper_block_
+FN:75,-[JSONModel __setup__]
+FN:94,-[JSONModel init]
+FN:104,-[JSONModel initWithData:error:]
+FN:128,-[JSONModel initWithString:error:]
+FN:136,-[JSONModel initWithString:usingEncoding:error:]
+FN:151,-[JSONModel initWithDictionary:error:]
+FN:193,-[JSONModel __keyMapper]
+FN:199,-[JSONModel __doesDictionary:matchModelWithKeyMapper:error:]
+FN:255,-[JSONModel __mapString:withKeyMapper:]
+FN:272,-[JSONModel __importDictionary:withKeyMapper:validation:error:]
+FN:481,-[JSONModel __isJSONModelSubClass:]
+FN:492,-[JSONModel __requiredPropertyNames]
+FN:499,__36-[JSONModel __requiredPropertyNames]_block_invoke
+FN:515,-[JSONModel __properties__]
+FN:530,-[JSONModel __inspectProperties]
+FN:723,-[JSONModel __transform:forProperty:error:]
+FN:806,-[JSONModel __reverseTransform:forProperty:]
+FN:841,-[JSONModel __customSetValue:forProperty:]
+FN:861,-[JSONModel __customGetValue:forProperty:]
+FN:876,-[JSONModel __createDictionariesForKeyPath:inDictionary:]
+FN:899,-[JSONModel toDictionary]
+FN:904,-[JSONModel toJSONString]
+FN:909,-[JSONModel toJSONData]
+FN:915,-[JSONModel toDictionaryWithKeys:]
+FN:1030,-[JSONModel toJSONDataWithKeys:]
+FN:1049,-[JSONModel toJSONStringWithKeys:]
+FN:1057,+[JSONModel arrayOfModelsFromDictionaries:]
+FN:1062,+[JSONModel arrayOfModelsFromData:error:]
+FN:1070,+[JSONModel arrayOfModelsFromString:error:]
+FN:1076,+[JSONModel arrayOfModelsFromDictionaries:error:]
+FN:1115,+[JSONModel dictionaryOfModelsFromString:error:]
+FN:1120,+[JSONModel dictionaryOfModelsFromData:error:]
+FN:1128,+[JSONModel dictionaryOfModelsFromDictionary:error:]
+FN:1161,+[JSONModel arrayOfDictionariesFromModels:]
+FN:1180,+[JSONModel arrayOfDictionariesFromModels:propertyNamesToExport:]
+FN:1198,+[JSONModel dictionaryOfDictionariesFromModels:]
+FN:1219,-[JSONModel indexPropertyName]
+FN:1225,-[JSONModel isEqual:]
+FN:1240,-[JSONModel compare:]
+FN:1256,-[JSONModel hash]
+FN:1272,-[JSONModel validate:]
+FN:1279,-[JSONModel description]
+FN:1302,+[JSONModel keyMapper]
+FN:1307,+[JSONModel setGlobalKeyMapper:]
+FN:1312,+[JSONModel propertyIsOptional:]
+FN:1317,+[JSONModel propertyIsIgnored:]
+FN:1322,+[JSONModel protocolForArrayProperty:]
+FN:1327,+[JSONModel classForCollectionProperty:]
+FN:1341,-[JSONModel mergeFromDictionary:useKeyMapping:]
+FN:1346,-[JSONModel mergeFromDictionary:useKeyMapping:error:]
+FN:1352,-[JSONModel copyWithZone:]
+FN:1359,-[JSONModel initWithCoder:]
+FN:1377,-[JSONModel encodeWithCoder:]
+FN:1382,+[JSONModel supportsSecureCoding]
+FNDA:0,-[JSONModel toJSONDataWithKeys:]
+FNDA:0,+[JSONModel arrayOfModelsFromString:error:]
+FNDA:0,-[JSONModel __doesDictionary:matchModelWithKeyMapper:error:]
+FNDA:0,+[JSONModel arrayOfDictionariesFromModels:propertyNamesToExport:]
+FNDA:0,-[JSONModel initWithDictionary:error:]
+FNDA:0,+[JSONModel propertyIsIgnored:]
+FNDA:0,-[JSONModel toDictionary]
+FNDA:0,-[JSONModel copyWithZone:]
+FNDA:0,-[JSONModel __mapString:withKeyMapper:]
+FNDA:0,-[JSONModel isEqual:]
+FNDA:0,-[JSONModel __requiredPropertyNames]
+FNDA:0,-[JSONModel __setup__]
+FNDA:0,-[JSONModel toJSONData]
+FNDA:0,-[JSONModel __inspectProperties]
+FNDA:4311810304,__17+[JSONModel load]_block_invoke
+FNDA:0,-[JSONModel mergeFromDictionary:useKeyMapping:]
+FNDA:0,-[JSONModel .cxx_destruct]
+FNDA:0,-[JSONModel __isJSONModelSubClass:]
+FNDA:0,+[JSONModel supportsSecureCoding]
+FNDA:0,+[JSONModel arrayOfModelsFromDictionaries:]
+FNDA:0,-[JSONModel toJSONStringWithKeys:]
+FNDA:0,+[JSONModel classForCollectionProperty:]
+FNDA:0,-[JSONModel __importDictionary:withKeyMapper:validation:error:]
+FNDA:0,-[JSONModel description]
+FNDA:0,__36-[JSONModel __requiredPropertyNames]_block_invoke
+FNDA:0,-[JSONModel compare:]
+FNDA:0,-[JSONModel __reverseTransform:forProperty:]
+FNDA:0,-[JSONModel initWithCoder:]
+FNDA:0,-[JSONModel __customSetValue:forProperty:]
+FNDA:0,-[JSONModel __createDictionariesForKeyPath:inDictionary:]
+FNDA:0,-[JSONModel validate:]
+FNDA:4311810304,+[JSONModel load]
+FNDA:0,-[JSONModel __properties__]
+FNDA:0,+[JSONModel protocolForArrayProperty:]
+FNDA:4311810304,__copy_helper_block_
+FNDA:0,-[JSONModel indexPropertyName]
+FNDA:0,-[JSONModel initWithString:usingEncoding:error:]
+FNDA:0,+[JSONModel arrayOfModelsFromData:error:]
+FNDA:0,-[JSONModel encodeWithCoder:]
+FNDA:0,+[JSONModel arrayOfModelsFromDictionaries:error:]
+FNDA:0,-[JSONModel mergeFromDictionary:useKeyMapping:error:]
+FNDA:0,-[JSONModel __customGetValue:forProperty:]
+FNDA:0,+[JSONModel dictionaryOfModelsFromData:error:]
+FNDA:0,+[JSONModel dictionaryOfModelsFromString:error:]
+FNDA:8623620608,__destroy_helper_block_
+FNDA:0,-[JSONModel __keyMapper]
+FNDA:0,-[JSONModel toDictionaryWithKeys:]
+FNDA:0,-[JSONModel hash]
+FNDA:0,-[JSONModel toJSONString]
+FNDA:0,+[JSONModel dictionaryOfDictionariesFromModels:]
+FNDA:0,-[JSONModel initWithString:error:]
+FNDA:0,-[JSONModel init]
+FNDA:0,+[JSONModel propertyIsOptional:]
+FNDA:0,-[JSONModel __transform:forProperty:error:]
+FNDA:0,+[JSONModel arrayOfDictionariesFromModels:]
+FNDA:0,-[JSONModel initWithData:error:]
+FNDA:0,+[JSONModel keyMapper]
+FNDA:0,+[JSONModel setGlobalKeyMapper:]
+FNDA:0,+[JSONModel dictionaryOfModelsFromDictionary:error:]
+FNF:59
+FNH:4
+DA:34,0
+DA:44,8623620608
+DA:48,4311810304
+DA:49,43118103040
+DA:50,25870861824
+DA:51,12935430912
+DA:54,4311810304
+DA:62,4311810304
+DA:70,4311810304
+DA:71,4311810304
+DA:72,4311810304
+DA:73,4311810304
+DA:78,0
+DA:79,0
+DA:80,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:88,0
+DA:91,0
+DA:92,0
+DA:96,0
+DA:97,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:112,0
+DA:113,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:139,0
+DA:140,0
+DA:141,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:149,0
+DA:154,0
+DA:155,0
+DA:156,0
+DA:160,0
+DA:161,0
+DA:162,0
+DA:166,0
+DA:167,0
+DA:170,0
+DA:171,0
+DA:175,0
+DA:176,0
+DA:180,0
+DA:181,0
+DA:185,0
+DA:186,0
+DA:190,0
+DA:191,0
+DA:196,0
+DA:202,0
+DA:203,0
+DA:204,0
+DA:207,0
+DA:209,0
+DA:210,0
+DA:213,0
+DA:215,0
+DA:218,0
+DA:220,0
+DA:221,0
+DA:222,0
+DA:223,0
+DA:224,0
+DA:226,0
+DA:227,0
+DA:228,0
+DA:229,0
+DA:232,0
+DA:233,0
+DA:236,0
+DA:239,0
+DA:242,0
+DA:244,0
+DA:245,0
+DA:249,0
+DA:250,0
+DA:252,0
+DA:253,0
+DA:257,0
+DA:259,0
+DA:260,0
+DA:261,0
+DA:262,0
+DA:263,0
+DA:264,0
+DA:266,0
+DA:267,0
+DA:269,0
+DA:270,0
+DA:275,0
+DA:278,0
+DA:282,0
+DA:284,0
+DA:285,0
+DA:286,0
+DA:287,0
+DA:288,0
+DA:291,0
+DA:293,0
+DA:295,0
+DA:297,0
+DA:298,0
+DA:299,0
+DA:300,0
+DA:301,0
+DA:304,0
+DA:305,0
+DA:307,0
+DA:308,0
+DA:309,0
+DA:310,0
+DA:312,0
+DA:314,0
+DA:316,0
+DA:318,0
+DA:319,0
+DA:320,0
+DA:321,0
+DA:322,0
+DA:323,0
+DA:327,0
+DA:331,0
+DA:333,0
+DA:337,0
+DA:340,0
+DA:341,0
+DA:342,0
+DA:345,0
+DA:349,0
+DA:350,0
+DA:351,0
+DA:352,0
+DA:353,0
+DA:358,0
+DA:361,0
+DA:362,0
+DA:364,0
+DA:366,0
+DA:369,0
+DA:371,0
+DA:372,0
+DA:373,0
+DA:375,0
+DA:376,0
+DA:377,0
+DA:380,0
+DA:382,0
+DA:386,0
+DA:389,0
+DA:390,0
+DA:391,0
+DA:392,0
+DA:393,0
+DA:394,0
+DA:395,0
+DA:396,0
+DA:398,0
+DA:401,0
+DA:404,0
+DA:405,0
+DA:406,0
+DA:409,0
+DA:410,0
+DA:411,0
+DA:412,0
+DA:417,0
+DA:418,0
+DA:420,0
+DA:421,0
+DA:423,0
+DA:428,0
+DA:433,0
+DA:434,0
+DA:435,0
+DA:436,0
+DA:439,0
+DA:440,0
+DA:441,0
+DA:442,0
+DA:444,0
+DA:445,0
+DA:446,0
+DA:447,0
+DA:448,0
+DA:452,0
+DA:453,0
+DA:454,0
+DA:455,0
+DA:457,0
+DA:458,0
+DA:459,0
+DA:460,0
+DA:461,0
+DA:462,0
+DA:463,0
+DA:464,0
+DA:465,0
+DA:467,0
+DA:469,0
+DA:470,0
+DA:473,0
+DA:474,0
+DA:476,0
+DA:477,0
+DA:487,0
+DA:495,0
+DA:497,0
+DA:498,0
+DA:499,0
+DA:500,0
+DA:501,0
+DA:504,0
+DA:505,0
+DA:507,0
+DA:510,0
+DA:511,0
+DA:512,0
+DA:518,0
+DA:519,0
+DA:522,0
+DA:525,0
+DA:526,0
+DA:527,0
+DA:534,0
+DA:537,0
+DA:538,0
+DA:539,0
+DA:542,0
+DA:546,0
+DA:549,0
+DA:551,0
+DA:554,0
+DA:555,0
+DA:556,0
+DA:561,0
+DA:562,0
+DA:563,0
+DA:566,0
+DA:567,0
+DA:570,0
+DA:573,0
+DA:574,0
+DA:577,0
+DA:579,0
+DA:583,0
+DA:584,0
+DA:585,0
+DA:588,0
+DA:590,0
+DA:592,0
+DA:594,0
+DA:595,0
+DA:596,0
+DA:599,0
+DA:602,0
+DA:603,0
+DA:605,0
+DA:608,0
+DA:609,0
+DA:610,0
+DA:611,0
+DA:614,0
+DA:615,0
+DA:617,0
+DA:619,0
+DA:620,0
+DA:623,0
+DA:624,0
+DA:626,0
+DA:631,0
+DA:635,0
+DA:637,0
+DA:640,0
+DA:641,0
+DA:647,0
+DA:648,0
+DA:649,0
+DA:650,0
+DA:652,0
+DA:653,0
+DA:654,0
+DA:656,0
+DA:657,0
+DA:658,0
+DA:659,0
+DA:662,0
+DA:663,0
+DA:664,0
+DA:667,0
+DA:668,0
+DA:669,0
+DA:672,0
+DA:674,0
+DA:677,0
+DA:679,0
+DA:680,0
+DA:683,0
+DA:685,0
+DA:687,0
+DA:688,0
+DA:690,0
+DA:692,0
+DA:694,0
+DA:695,0
+DA:697,0
+DA:699,0
+DA:700,0
+DA:701,0
+DA:702,0
+DA:703,0
+DA:705,0
+DA:709,0
+DA:713,0
+DA:714,0
+DA:716,0
+DA:719,0
+DA:725,0
+DA:726,0
+DA:730,0
+DA:731,0
+DA:732,0
+DA:735,0
+DA:739,0
+DA:742,0
+DA:745,0
+DA:747,0
+DA:749,0
+DA:750,0
+DA:751,0
+DA:752,0
+DA:753,0
+DA:757,0
+DA:758,0
+DA:759,0
+DA:761,0
+DA:762,0
+DA:764,0
+DA:767,0
+DA:770,0
+DA:772,0
+DA:774,0
+DA:775,0
+DA:776,0
+DA:777,0
+DA:778,0
+DA:781,0
+DA:783,0
+DA:784,0
+DA:785,0
+DA:786,0
+DA:789,0
+DA:791,0
+DA:792,0
+DA:793,0
+DA:794,0
+DA:796,0
+DA:797,0
+DA:798,0
+DA:799,0
+DA:800,0
+DA:802,0
+DA:803,0
+DA:808,0
+DA:809,0
+DA:812,0
+DA:815,0
+DA:816,0
+DA:817,0
+DA:818,0
+DA:819,0
+DA:820,0
+DA:821,0
+DA:822,0
+DA:823,0
+DA:824,0
+DA:827,0
+DA:828,0
+DA:829,0
+DA:830,0
+DA:831,0
+DA:832,0
+DA:833,0
+DA:834,0
+DA:835,0
+DA:837,0
+DA:838,0
+DA:843,0
+DA:845,0
+DA:846,0
+DA:848,0
+DA:849,0
+DA:851,0
+DA:852,0
+DA:854,0
+DA:855,0
+DA:856,0
+DA:858,0
+DA:859,0
+DA:863,0
+DA:865,0
+DA:866,0
+DA:868,0
+DA:869,0
+DA:870,0
+DA:872,0
+DA:873,0
+DA:879,0
+DA:880,0
+DA:883,0
+DA:884,0
+DA:886,0
+DA:888,0
+DA:889,0
+DA:892,0
+DA:896,0
+DA:897,0
+DA:901,0
+DA:906,0
+DA:911,0
+DA:917,0
+DA:918,0
+DA:920,0
+DA:923,0
+DA:926,0
+DA:927,0
+DA:930,0
+DA:931,0
+DA:935,0
+DA:937,0
+DA:938,0
+DA:941,0
+DA:943,0
+DA:944,0
+DA:949,0
+DA:951,0
+DA:953,0
+DA:954,0
+DA:957,0
+DA:959,0
+DA:963,0
+DA:966,0
+DA:967,0
+DA:970,0
+DA:975,0
+DA:976,0
+DA:977,0
+DA:980,0
+DA:983,0
+DA:985,0
+DA:992,0
+DA:993,0
+DA:995,0
+DA:996,0
+DA:997,0
+DA:998,0
+DA:1000,0
+DA:1001,0
+DA:1002,0
+DA:1003,0
+DA:1004,0
+DA:1008,0
+DA:1009,0
+DA:1010,0
+DA:1011,0
+DA:1013,0
+DA:1014,0
+DA:1017,0
+DA:1018,0
+DA:1022,0
+DA:1024,0
+DA:1026,0
+DA:1027,0
+DA:1032,0
+DA:1033,0
+DA:1036,0
+DA:1037,0
+DA:1038,0
+DA:1039,0
+DA:1042,0
+DA:1043,0
+DA:1044,0
+DA:1046,0
+DA:1047,0
+DA:1051,0
+DA:1053,0
+DA:1059,0
+DA:1060,0
+DA:1064,0
+DA:1065,0
+DA:1067,0
+DA:1068,0
+DA:1072,0
+DA:1073,0
+DA:1079,0
+DA:1082,0
+DA:1084,0
+DA:1086,0
+DA:1088,0
+DA:1089,0
+DA:1090,0
+DA:1093,0
+DA:1095,0
+DA:1096,0
+DA:1097,0
+DA:1098,0
+DA:1101,0
+DA:1102,0
+DA:1104,0
+DA:1105,0
+DA:1110,0
+DA:1112,0
+DA:1113,0
+DA:1117,0
+DA:1118,0
+DA:1122,0
+DA:1123,0
+DA:1125,0
+DA:1126,0
+DA:1130,0
+DA:1132,0
+DA:1134,0
+DA:1136,0
+DA:1138,0
+DA:1139,0
+DA:1140,0
+DA:1141,0
+DA:1142,0
+DA:1144,0
+DA:1145,0
+DA:1146,0
+DA:1147,0
+DA:1150,0
+DA:1151,0
+DA:1152,0
+DA:1153,0
+DA:1155,0
+DA:1157,0
+DA:1158,0
+DA:1164,0
+DA:1167,0
+DA:1169,0
+DA:1171,0
+DA:1172,0
+DA:1174,0
+DA:1175,0
+DA:1176,0
+DA:1177,0
+DA:1183,0
+DA:1186,0
+DA:1188,0
+DA:1190,0
+DA:1191,0
+DA:1193,0
+DA:1194,0
+DA:1195,0
+DA:1196,0
+DA:1201,0
+DA:1203,0
+DA:1205,0
+DA:1206,0
+DA:1207,0
+DA:1208,0
+DA:1209,0
+DA:1210,0
+DA:1212,0
+DA:1213,0
+DA:1222,0
+DA:1228,0
+DA:1230,0
+DA:1232,0
+DA:1233,0
+DA:1234,0
+DA:1237,0
+DA:1238,0
+DA:1242,0
+DA:1243,0
+DA:1244,0
+DA:1245,0
+DA:1247,0
+DA:1251,0
+DA:1252,0
+DA:1253,0
+DA:1254,0
+DA:1258,0
+DA:1259,0
+DA:1261,0
+DA:1262,0
+DA:1264,0
+DA:1266,0
+DA:1267,0
+DA:1274,0
+DA:1281,0
+DA:1283,0
+DA:1285,0
+DA:1286,0
+DA:1288,0
+DA:1291,0
+DA:1292,0
+DA:1293,0
+DA:1294,0
+DA:1295,0
+DA:1297,0
+DA:1298,0
+DA:1299,0
+DA:1304,0
+DA:1309,0
+DA:1310,0
+DA:1315,0
+DA:1320,0
+DA:1325,0
+DA:1331,0
+DA:1334,0
+DA:1335,0
+DA:1337,0
+DA:1338,0
+DA:1343,0
+DA:1344,0
+DA:1348,0
+DA:1349,0
+DA:1354,0
+DA:1355,0
+DA:1361,0
+DA:1363,0
+DA:1364,0
+DA:1365,0
+DA:1366,0
+DA:1369,0
+DA:1370,0
+DA:1371,0
+DA:1372,0
+DA:1373,0
+DA:1374,0
+DA:1375,0
+DA:1379,0
+DA:1380,0
+DA:1384,0
+LF:659
+LH:11
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/Librarys/JSONModel/JSONModel/JSONModelClassProperty.h
+FN:19,-[JSONModelClassProperty isIndex]
+FN:19,-[JSONModelClassProperty setIsIndex:]
+FN:22,-[JSONModelClassProperty setName:]
+FN:22,-[JSONModelClassProperty name]
+FN:25,-[JSONModelClassProperty setType:]
+FN:25,-[JSONModelClassProperty type]
+FN:28,-[JSONModelClassProperty structName]
+FN:28,-[JSONModelClassProperty setStructName:]
+FN:31,-[JSONModelClassProperty protocol]
+FN:31,-[JSONModelClassProperty setProtocol:]
+FN:34,-[JSONModelClassProperty isOptional]
+FN:34,-[JSONModelClassProperty setIsOptional:]
+FN:37,-[JSONModelClassProperty setIsStandardJSONType:]
+FN:37,-[JSONModelClassProperty isStandardJSONType]
+FN:40,-[JSONModelClassProperty setIsMutable:]
+FN:40,-[JSONModelClassProperty isMutable]
+FN:43,-[JSONModelClassProperty setCustomGetter:]
+FN:43,-[JSONModelClassProperty customGetter]
+FN:46,-[JSONModelClassProperty setCustomSetters:]
+FN:46,-[JSONModelClassProperty customSetters]
+FNDA:0,-[JSONModelClassProperty setProtocol:]
+FNDA:0,-[JSONModelClassProperty setName:]
+FNDA:0,-[JSONModelClassProperty setStructName:]
+FNDA:0,-[JSONModelClassProperty customGetter]
+FNDA:0,-[JSONModelClassProperty isStandardJSONType]
+FNDA:0,-[JSONModelClassProperty setCustomSetters:]
+FNDA:0,-[JSONModelClassProperty setIsStandardJSONType:]
+FNDA:0,-[JSONModelClassProperty isIndex]
+FNDA:0,-[JSONModelClassProperty customSetters]
+FNDA:0,-[JSONModelClassProperty setCustomGetter:]
+FNDA:0,-[JSONModelClassProperty structName]
+FNDA:0,-[JSONModelClassProperty protocol]
+FNDA:0,-[JSONModelClassProperty name]
+FNDA:0,-[JSONModelClassProperty setIsIndex:]
+FNDA:0,-[JSONModelClassProperty type]
+FNDA:0,-[JSONModelClassProperty isMutable]
+FNDA:0,-[JSONModelClassProperty isOptional]
+FNDA:0,-[JSONModelClassProperty setIsOptional:]
+FNDA:0,-[JSONModelClassProperty setType:]
+FNDA:0,-[JSONModelClassProperty setIsMutable:]
+FNF:20
+FNH:0
+DA:19,0
+DA:22,0
+DA:25,0
+DA:28,0
+DA:31,0
+DA:34,0
+DA:37,0
+DA:40,0
+DA:43,0
+DA:46,0
+LF:10
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/Librarys/JSONModel/JSONModel/JSONModelClassProperty.m
+FN:8,-[JSONModelClassProperty .cxx_destruct]
+FN:10,-[JSONModelClassProperty description]
+FNDA:0,-[JSONModelClassProperty .cxx_destruct]
+FNDA:0,-[JSONModelClassProperty description]
+FNF:2
+FNH:0
+DA:8,0
+DA:13,0
+DA:17,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:25,0
+DA:27,0
+DA:29,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:36,0
+DA:37,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:51,0
+LF:25
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/Librarys/JSONModel/JSONModel/JSONModelError.h
+FN:52,-[JSONModelError httpResponse]
+FN:52,-[JSONModelError setHttpResponse:]
+FN:54,-[JSONModelError responseData]
+FN:54,-[JSONModelError setResponseData:]
+FNDA:0,-[JSONModelError setHttpResponse:]
+FNDA:0,-[JSONModelError responseData]
+FNDA:0,-[JSONModelError httpResponse]
+FNDA:0,-[JSONModelError setResponseData:]
+FNF:4
+FNH:0
+DA:52,0
+DA:54,0
+LF:2
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/Librarys/JSONModel/JSONModel/JSONModelError.m
+FN:13,-[JSONModelError .cxx_destruct]
+FN:15,+[JSONModelError errorInvalidDataWithMessage:]
+FN:23,+[JSONModelError errorInvalidDataWithMissingKeys:]
+FN:30,+[JSONModelError errorInvalidDataWithTypeMismatch:]
+FN:37,+[JSONModelError errorBadResponse]
+FN:44,+[JSONModelError errorBadJSON]
+FN:51,+[JSONModelError errorModelIsInvalid]
+FN:58,+[JSONModelError errorInputIsNil]
+FN:65,-[JSONModelError errorByPrependingKeyPathComponent:]
+FNDA:0,-[JSONModelError errorByPrependingKeyPathComponent:]
+FNDA:0,+[JSONModelError errorInvalidDataWithMissingKeys:]
+FNDA:0,+[JSONModelError errorModelIsInvalid]
+FNDA:0,+[JSONModelError errorBadJSON]
+FNDA:0,+[JSONModelError errorInvalidDataWithMessage:]
+FNDA:0,-[JSONModelError .cxx_destruct]
+FNDA:0,+[JSONModelError errorInvalidDataWithTypeMismatch:]
+FNDA:0,+[JSONModelError errorBadResponse]
+FNDA:0,+[JSONModelError errorInputIsNil]
+FNF:9
+FNH:0
+DA:13,0
+DA:17,0
+DA:18,0
+DA:20,0
+DA:21,0
+DA:25,0
+DA:27,0
+DA:28,0
+DA:32,0
+DA:34,0
+DA:35,0
+DA:39,0
+DA:41,0
+DA:46,0
+DA:48,0
+DA:53,0
+DA:55,0
+DA:60,0
+DA:62,0
+DA:68,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+LF:28
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/Librarys/JSONModel/JSONModelNetworking/JSONAPI.m
+FN:13,-[JSONAPIRPCErrorModel setCode:]
+FN:13,-[JSONAPIRPCErrorModel code]
+FN:14,-[JSONAPIRPCErrorModel setMessage:]
+FN:14,-[JSONAPIRPCErrorModel message]
+FN:15,-[JSONAPIRPCErrorModel setData:]
+FN:15,-[JSONAPIRPCErrorModel data]
+FN:27,-[JSONAPI baseURLString]
+FN:27,-[JSONAPI setBaseURLString:]
+FN:32,-[JSONAPI .cxx_destruct]
+FN:36,+[JSONAPI initialize]
+FN:39,__21+[JSONAPI initialize]_block_invoke
+FN:46,+[JSONAPI setAPIBaseURLWithString:]
+FN:51,+[JSONAPI setContentType:]
+FN:57,+[JSONAPI getWithPath:andParams:completion:]
+FN:61,__44+[JSONAPI getWithPath:andParams:completion:]_block_invoke
+FN:61,__destroy_helper_block_
+FN:63,__copy_helper_block_
+FN:67,+[JSONAPI postWithPath:andParams:completion:]
+FN:71,__45+[JSONAPI postWithPath:andParams:completion:]_block_invoke
+FN:77,+[JSONAPI __rpcRequestWithObject:completion:]
+FN:88,__45+[JSONAPI __rpcRequestWithObject:completion:]_block_invoke
+FN:114,+[JSONAPI rpcWithMethodName:andArguments:completion:]
+FN:127,+[JSONAPI rpc2WithMethodName:andParams:completion:]
+FN:144,-[JSONAPIRPCErrorModel .cxx_destruct]
+FNDA:0,__45+[JSONAPI __rpcRequestWithObject:completion:]_block_invoke
+FNDA:0,+[JSONAPI rpc2WithMethodName:andParams:completion:]
+FNDA:0,-[JSONAPIRPCErrorModel .cxx_destruct]
+FNDA:0,-[JSONAPIRPCErrorModel setMessage:]
+FNDA:0,-[JSONAPI setBaseURLString:]
+FNDA:0,-[JSONAPI baseURLString]
+FNDA:0,+[JSONAPI rpcWithMethodName:andArguments:completion:]
+FNDA:0,+[JSONAPI postWithPath:andParams:completion:]
+FNDA:0,-[JSONAPIRPCErrorModel setCode:]
+FNDA:0,__copy_helper_block_
+FNDA:0,-[JSONAPIRPCErrorModel setData:]
+FNDA:0,+[JSONAPI setContentType:]
+FNDA:0,-[JSONAPIRPCErrorModel data]
+FNDA:0,-[JSONAPIRPCErrorModel message]
+FNDA:0,__21+[JSONAPI initialize]_block_invoke
+FNDA:0,-[JSONAPI .cxx_destruct]
+FNDA:0,-[JSONAPIRPCErrorModel code]
+FNDA:0,__44+[JSONAPI getWithPath:andParams:completion:]_block_invoke
+FNDA:0,+[JSONAPI __rpcRequestWithObject:completion:]
+FNDA:0,+[JSONAPI initialize]
+FNDA:0,+[JSONAPI getWithPath:andParams:completion:]
+FNDA:0,__destroy_helper_block_
+FNDA:0,+[JSONAPI setAPIBaseURLWithString:]
+FNDA:0,__45+[JSONAPI postWithPath:andParams:completion:]_block_invoke
+FNF:24
+FNH:0
+DA:13,0
+DA:14,0
+DA:15,0
+DA:27,0
+DA:32,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:48,0
+DA:49,0
+DA:53,0
+DA:54,0
+DA:59,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:69,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:80,0
+DA:83,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:90,0
+DA:92,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:104,0
+DA:106,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:116,0
+DA:117,0
+DA:119,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:129,0
+DA:130,0
+DA:132,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:139,0
+DA:144,0
+LF:62
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/Librarys/JSONModel/JSONModelNetworking/JSONHTTPClient.m
+FN:45,+[JSONHTTPClient initialize]
+FN:48,__28+[JSONHTTPClient initialize]_block_invoke
+FN:55,+[JSONHTTPClient requestHeaders]
+FN:60,+[JSONHTTPClient setDefaultTextEncoding:]
+FN:65,+[JSONHTTPClient setCachingPolicy:]
+FN:70,+[JSONHTTPClient setTimeoutInSeconds:]
+FN:75,+[JSONHTTPClient setRequestContentType:]
+FN:81,+[JSONHTTPClient contentTypeForRequestString:]
+FN:107,+[JSONHTTPClient urlEncode:]
+FN:132,+[JSONHTTPClient requestDataFromURL:method:requestBody:headers:handler:]
+FN:165,__72+[JSONHTTPClient requestDataFromURL:method:requestBody:headers:handler:]_block_invoke
+FN:165,__destroy_helper_block_
+FN:195,__copy_helper_block_
+FN:211,+[JSONHTTPClient requestDataFromURL:method:params:headers:handler:]
+FN:247,+[JSONHTTPClient JSONFromURLWithString:method:params:orBodyString:completion:]
+FN:257,+[JSONHTTPClient JSONFromURLWithString:method:params:orBodyString:headers:completion:]
+FN:267,+[JSONHTTPClient JSONFromURLWithString:method:params:orBodyData:headers:completion:]
+FN:269,__84+[JSONHTTPClient JSONFromURLWithString:method:params:orBodyData:headers:completion:]_block_invoke
+FN:297,__84+[JSONHTTPClient JSONFromURLWithString:method:params:orBodyData:headers:completion:]_block_invoke_2
+FN:314,+[JSONHTTPClient getJSONFromURLWithString:completion:]
+FN:318,__54+[JSONHTTPClient getJSONFromURLWithString:completion:]_block_invoke
+FN:323,+[JSONHTTPClient getJSONFromURLWithString:params:completion:]
+FN:327,__61+[JSONHTTPClient getJSONFromURLWithString:params:completion:]_block_invoke
+FN:332,+[JSONHTTPClient postJSONFromURLWithString:params:completion:]
+FN:336,__62+[JSONHTTPClient postJSONFromURLWithString:params:completion:]_block_invoke
+FN:342,+[JSONHTTPClient postJSONFromURLWithString:bodyString:completion:]
+FN:346,__66+[JSONHTTPClient postJSONFromURLWithString:bodyString:completion:]_block_invoke
+FN:351,+[JSONHTTPClient postJSONFromURLWithString:bodyData:completion:]
+FN:356,__64+[JSONHTTPClient postJSONFromURLWithString:bodyData:completion:]_block_invoke
+FNDA:0,__64+[JSONHTTPClient postJSONFromURLWithString:bodyData:completion:]_block_invoke
+FNDA:0,+[JSONHTTPClient setCachingPolicy:]
+FNDA:0,+[JSONHTTPClient urlEncode:]
+FNDA:0,__61+[JSONHTTPClient getJSONFromURLWithString:params:completion:]_block_invoke
+FNDA:0,__28+[JSONHTTPClient initialize]_block_invoke
+FNDA:0,+[JSONHTTPClient JSONFromURLWithString:method:params:orBodyString:completion:]
+FNDA:0,__72+[JSONHTTPClient requestDataFromURL:method:requestBody:headers:handler:]_block_invoke
+FNDA:0,__84+[JSONHTTPClient JSONFromURLWithString:method:params:orBodyData:headers:completion:]_block_invoke
+FNDA:0,+[JSONHTTPClient setTimeoutInSeconds:]
+FNDA:0,__62+[JSONHTTPClient postJSONFromURLWithString:params:completion:]_block_invoke
+FNDA:0,__copy_helper_block_
+FNDA:0,+[JSONHTTPClient contentTypeForRequestString:]
+FNDA:0,+[JSONHTTPClient JSONFromURLWithString:method:params:orBodyData:headers:completion:]
+FNDA:0,+[JSONHTTPClient getJSONFromURLWithString:completion:]
+FNDA:0,__66+[JSONHTTPClient postJSONFromURLWithString:bodyString:completion:]_block_invoke
+FNDA:0,+[JSONHTTPClient requestDataFromURL:method:requestBody:headers:handler:]
+FNDA:0,+[JSONHTTPClient initialize]
+FNDA:0,__84+[JSONHTTPClient JSONFromURLWithString:method:params:orBodyData:headers:completion:]_block_invoke_2
+FNDA:0,+[JSONHTTPClient getJSONFromURLWithString:params:completion:]
+FNDA:0,+[JSONHTTPClient requestHeaders]
+FNDA:0,+[JSONHTTPClient postJSONFromURLWithString:bodyData:completion:]
+FNDA:0,+[JSONHTTPClient requestDataFromURL:method:params:headers:handler:]
+FNDA:0,+[JSONHTTPClient setDefaultTextEncoding:]
+FNDA:0,+[JSONHTTPClient postJSONFromURLWithString:bodyString:completion:]
+FNDA:0,+[JSONHTTPClient setRequestContentType:]
+FNDA:0,+[JSONHTTPClient postJSONFromURLWithString:params:completion:]
+FNDA:0,__54+[JSONHTTPClient getJSONFromURLWithString:completion:]_block_invoke
+FNDA:0,__destroy_helper_block_
+FNDA:0,+[JSONHTTPClient JSONFromURLWithString:method:params:orBodyString:headers:completion:]
+FNF:29
+FNH:0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:57,0
+DA:62,0
+DA:63,0
+DA:67,0
+DA:68,0
+DA:72,0
+DA:73,0
+DA:77,0
+DA:78,0
+DA:84,0
+DA:86,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:93,0
+DA:95,0
+DA:96,0
+DA:98,0
+DA:100,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:114,0
+DA:116,0
+DA:119,0
+DA:129,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:139,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:147,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:156,0
+DA:157,0
+DA:158,0
+DA:160,0
+DA:161,0
+DA:162,0
+DA:163,0
+DA:165,0
+DA:166,0
+DA:167,0
+DA:170,0
+DA:171,0
+DA:172,0
+DA:175,0
+DA:176,0
+DA:177,0
+DA:180,0
+DA:181,0
+DA:182,0
+DA:185,0
+DA:186,0
+DA:187,0
+DA:190,0
+DA:191,0
+DA:192,0
+DA:194,0
+DA:195,0
+DA:200,0
+DA:201,0
+DA:209,0
+DA:214,0
+DA:216,0
+DA:218,0
+DA:219,0
+DA:220,0
+DA:221,0
+DA:222,0
+DA:223,0
+DA:224,0
+DA:225,0
+DA:228,0
+DA:231,0
+DA:232,0
+DA:233,0
+DA:234,0
+DA:236,0
+DA:239,0
+DA:240,0
+DA:241,0
+DA:242,0
+DA:243,0
+DA:244,0
+DA:249,0
+DA:250,0
+DA:251,0
+DA:252,0
+DA:254,0
+DA:255,0
+DA:259,0
+DA:260,0
+DA:261,0
+DA:262,0
+DA:263,0
+DA:264,0
+DA:265,0
+DA:269,0
+DA:270,0
+DA:273,0
+DA:275,0
+DA:276,0
+DA:279,0
+DA:282,0
+DA:285,0
+DA:286,0
+DA:287,0
+DA:289,0
+DA:291,0
+DA:293,0
+DA:294,0
+DA:297,0
+DA:298,0
+DA:299,0
+DA:300,0
+DA:301,0
+DA:302,0
+DA:304,0
+DA:306,0
+DA:307,0
+DA:308,0
+DA:309,0
+DA:311,0
+DA:316,0
+DA:318,0
+DA:319,0
+DA:320,0
+DA:321,0
+DA:325,0
+DA:326,0
+DA:327,0
+DA:328,0
+DA:329,0
+DA:330,0
+DA:334,0
+DA:335,0
+DA:336,0
+DA:337,0
+DA:338,0
+DA:340,0
+DA:344,0
+DA:346,0
+DA:347,0
+DA:348,0
+DA:349,0
+DA:353,0
+DA:355,0
+DA:356,0
+DA:357,0
+DA:358,0
+DA:359,0
+LF:167
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/Librarys/JSONModel/JSONModelNetworking/JSONModel+networking.m
+FN:18,-[JSONModel(Networking) isLoading]
+FN:23,-[JSONModel(Networking) setIsLoading:]
+FN:28,-[JSONModel(Networking) initFromURLWithString:completion:]
+FN:31,__Block_byref_object_copy_
+FN:31,__Block_byref_object_dispose_
+FN:38,__58-[JSONModel(Networking) initFromURLWithString:completion:]_block_invoke
+FN:44,__58-[JSONModel(Networking) initFromURLWithString:completion:]_block_invoke_2
+FN:44,__destroy_helper_block_
+FN:46,__copy_helper_block_
+FN:56,+[JSONModel(Networking) getModelFromURLWithString:completion:]
+FN:59,__62+[JSONModel(Networking) getModelFromURLWithString:completion:]_block_invoke
+FN:70,__62+[JSONModel(Networking) getModelFromURLWithString:completion:]_block_invoke_2
+FN:78,+[JSONModel(Networking) postModel:toURLWithString:completion:]
+FN:82,__62+[JSONModel(Networking) postModel:toURLWithString:completion:]_block_invoke
+FN:93,__62+[JSONModel(Networking) postModel:toURLWithString:completion:]_block_invoke_2
+FNDA:0,-[JSONModel(Networking) isLoading]
+FNDA:0,__62+[JSONModel(Networking) postModel:toURLWithString:completion:]_block_invoke
+FNDA:0,__58-[JSONModel(Networking) initFromURLWithString:completion:]_block_invoke
+FNDA:0,-[JSONModel(Networking) initFromURLWithString:completion:]
+FNDA:0,__62+[JSONModel(Networking) getModelFromURLWithString:completion:]_block_invoke_2
+FNDA:0,__62+[JSONModel(Networking) postModel:toURLWithString:completion:]_block_invoke_2
+FNDA:0,__62+[JSONModel(Networking) getModelFromURLWithString:completion:]_block_invoke
+FNDA:0,__58-[JSONModel(Networking) initFromURLWithString:completion:]_block_invoke_2
+FNDA:0,-[JSONModel(Networking) setIsLoading:]
+FNDA:0,+[JSONModel(Networking) postModel:toURLWithString:completion:]
+FNDA:0,__Block_byref_object_dispose_
+FNDA:0,__Block_byref_object_copy_
+FNDA:0,__destroy_helper_block_
+FNDA:0,+[JSONModel(Networking) getModelFromURLWithString:completion:]
+FNDA:0,__copy_helper_block_
+FNF:15
+FNH:0
+DA:20,0
+DA:25,0
+DA:26,0
+DA:30,0
+DA:31,0
+DA:33,0
+DA:35,0
+DA:37,0
+DA:38,0
+DA:40,0
+DA:41,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:49,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:63,0
+DA:65,0
+DA:66,0
+DA:68,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:86,0
+DA:88,0
+DA:89,0
+DA:91,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+LF:52
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/Librarys/JSONModel/JSONModelTransformations/JSONKeyMapper.h
+FN:53,-[JSONKeyMapper modelToJSONKeyBlock]
+FNDA:0,-[JSONKeyMapper modelToJSONKeyBlock]
+FNF:1
+FNH:0
+DA:53,0
+LF:1
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/Librarys/JSONModel/JSONModelTransformations/JSONKeyMapper.m
+FN:8,-[JSONKeyMapper .cxx_destruct]
+FN:10,-[JSONKeyMapper initWithJSONToModelBlock:modelToJSONBlock:]
+FN:15,-[JSONKeyMapper initWithModelToJSONBlock:]
+FN:25,-[JSONKeyMapper initWithDictionary:]
+FN:32,-[JSONKeyMapper initWithModelToJSONDictionary:]
+FN:37,__destroy_helper_block_
+FN:37,__47-[JSONKeyMapper initWithModelToJSONDictionary:]_block_invoke
+FN:40,__copy_helper_block_
+FN:45,-[JSONKeyMapper JSONToModelKeyBlock]
+FN:50,+[JSONKeyMapper swapKeysAndValuesInDictionary:]
+FN:58,-[JSONKeyMapper convertValue:isImportingToModel:]
+FN:63,-[JSONKeyMapper convertValue:]
+FN:68,+[JSONKeyMapper mapperFromUnderscoreCaseToCamelCase]
+FN:73,+[JSONKeyMapper mapperForSnakeCase]
+FN:75,__35+[JSONKeyMapper mapperForSnakeCase]_block_invoke
+FN:109,+[JSONKeyMapper mapperForTitleCase]
+FN:111,__35+[JSONKeyMapper mapperForTitleCase]_block_invoke
+FN:117,+[JSONKeyMapper mapperFromUpperCaseToLowerCase]
+FN:119,__47+[JSONKeyMapper mapperFromUpperCaseToLowerCase]_block_invoke
+FN:125,+[JSONKeyMapper mapper:withExceptions:]
+FN:132,+[JSONKeyMapper baseMapper:withModelToJSONExceptions:]
+FN:134,__54+[JSONKeyMapper baseMapper:withModelToJSONExceptions:]_block_invoke
+FNDA:0,__35+[JSONKeyMapper mapperForTitleCase]_block_invoke
+FNDA:0,+[JSONKeyMapper mapperFromUpperCaseToLowerCase]
+FNDA:0,-[JSONKeyMapper initWithDictionary:]
+FNDA:0,-[JSONKeyMapper initWithJSONToModelBlock:modelToJSONBlock:]
+FNDA:0,-[JSONKeyMapper convertValue:isImportingToModel:]
+FNDA:0,__54+[JSONKeyMapper baseMapper:withModelToJSONExceptions:]_block_invoke
+FNDA:0,-[JSONKeyMapper initWithModelToJSONDictionary:]
+FNDA:0,+[JSONKeyMapper baseMapper:withModelToJSONExceptions:]
+FNDA:0,-[JSONKeyMapper convertValue:]
+FNDA:0,-[JSONKeyMapper JSONToModelKeyBlock]
+FNDA:0,-[JSONKeyMapper .cxx_destruct]
+FNDA:0,__47-[JSONKeyMapper initWithModelToJSONDictionary:]_block_invoke
+FNDA:0,__47+[JSONKeyMapper mapperFromUpperCaseToLowerCase]_block_invoke
+FNDA:0,__copy_helper_block_
+FNDA:0,+[JSONKeyMapper mapperForSnakeCase]
+FNDA:0,-[JSONKeyMapper initWithModelToJSONBlock:]
+FNDA:0,+[JSONKeyMapper mapperForTitleCase]
+FNDA:0,__35+[JSONKeyMapper mapperForSnakeCase]_block_invoke
+FNDA:0,+[JSONKeyMapper mapperFromUnderscoreCaseToCamelCase]
+FNDA:0,+[JSONKeyMapper mapper:withExceptions:]
+FNDA:0,+[JSONKeyMapper swapKeysAndValuesInDictionary:]
+FNDA:0,__destroy_helper_block_
+FNF:22
+FNH:0
+DA:8,0
+DA:12,0
+DA:13,0
+DA:17,0
+DA:18,0
+DA:20,0
+DA:22,0
+DA:23,0
+DA:27,0
+DA:29,0
+DA:30,0
+DA:34,0
+DA:35,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:42,0
+DA:43,0
+DA:47,0
+DA:52,0
+DA:53,0
+DA:55,0
+DA:56,0
+DA:60,0
+DA:61,0
+DA:65,0
+DA:66,0
+DA:70,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:81,0
+DA:82,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:90,0
+DA:91,0
+DA:93,0
+DA:96,0
+DA:97,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:105,0
+DA:106,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:127,0
+DA:129,0
+DA:130,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:139,0
+DA:140,0
+DA:142,0
+DA:143,0
+DA:144,0
+LF:70
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/Librarys/JSONModel/JSONModelTransformations/JSONValueTransformer.h
+FN:35,-[JSONValueTransformer primitivesNames]
+FNDA:0,-[JSONValueTransformer primitivesNames]
+FNF:1
+FNH:0
+DA:35,0
+LF:1
+LH:0
+end_of_record
+TN:
+SF:/Users/wanggang/Desktop/CustomLearn/Librarys/JSONModel/JSONModelTransformations/JSONValueTransformer.m
+FN:9,isNull
+FN:17,-[JSONValueTransformer .cxx_destruct]
+FN:19,-[JSONValueTransformer init]
+FN:34,+[JSONValueTransformer classByResolvingClusterClasses:]
+FN:66,-[JSONValueTransformer NSMutableStringFromNSString:]
+FN:72,-[JSONValueTransformer NSMutableArrayFromNSArray:]
+FN:78,-[JSONValueTransformer NSMutableDictionaryFromNSDictionary:]
+FN:84,-[JSONValueTransformer NSSetFromNSArray:]
+FN:89,-[JSONValueTransformer NSMutableSetFromNSArray:]
+FN:94,-[JSONValueTransformer JSONObjectFromNSSet:]
+FN:99,-[JSONValueTransformer JSONObjectFromNSMutableSet:]
+FN:109,-[JSONValueTransformer BOOLFromNSNumber:]
+FN:115,-[JSONValueTransformer BOOLFromNSString:]
+FN:125,-[JSONValueTransformer JSONObjectFromBOOL:]
+FN:131,-[JSONValueTransformer floatFromObject:]
+FN:136,-[JSONValueTransformer floatFromNSString:]
+FN:141,-[JSONValueTransformer floatFromNSNumber:]
+FN:146,-[JSONValueTransformer NSNumberFromfloat:]
+FN:152,-[JSONValueTransformer NSNumberFromNSString:]
+FN:157,-[JSONValueTransformer NSStringFromNSNumber:]
+FN:162,-[JSONValueTransformer NSDecimalNumberFromNSString:]
+FN:167,-[JSONValueTransformer NSStringFromNSDecimalNumber:]
+FN:173,-[JSONValueTransformer NSURLFromNSString:]
+FN:180,-[JSONValueTransformer JSONObjectFromNSURL:]
+FN:186,-[JSONValueTransformer importDateFormatter]
+FN:190,__43-[JSONValueTransformer importDateFormatter]_block_invoke
+FN:198,-[JSONValueTransformer __NSDateFromNSString:]
+FN:204,-[JSONValueTransformer __JSONObjectFromNSDate:]
+FN:208,__47-[JSONValueTransformer __JSONObjectFromNSDate:]_block_invoke
+FN:217,-[JSONValueTransformer NSDateFromNSNumber:]
+FN:224,-[JSONValueTransformer NSTimeZoneFromNSString:]
+FN:228,-[JSONValueTransformer JSONObjectFromNSTimeZone:]
+FN:234,-[JSONValueTransformer __NSDictionaryFromNSArray:]
+FN:240,-[JSONValueTransformer __NSMutableDictionaryFromNSArray:]
+FNDA:0,-[JSONValueTransformer NSURLFromNSString:]
+FNDA:0,isNull
+FNDA:0,-[JSONValueTransformer NSDecimalNumberFromNSString:]
+FNDA:0,-[JSONValueTransformer NSDateFromNSNumber:]
+FNDA:0,-[JSONValueTransformer JSONObjectFromNSMutableSet:]
+FNDA:0,-[JSONValueTransformer __JSONObjectFromNSDate:]
+FNDA:0,-[JSONValueTransformer .cxx_destruct]
+FNDA:0,-[JSONValueTransformer __NSDateFromNSString:]
+FNDA:0,-[JSONValueTransformer JSONObjectFromNSTimeZone:]
+FNDA:0,-[JSONValueTransformer __NSMutableDictionaryFromNSArray:]
+FNDA:0,-[JSONValueTransformer BOOLFromNSString:]
+FNDA:0,-[JSONValueTransformer NSNumberFromNSString:]
+FNDA:0,-[JSONValueTransformer NSStringFromNSDecimalNumber:]
+FNDA:0,+[JSONValueTransformer classByResolvingClusterClasses:]
+FNDA:0,-[JSONValueTransformer floatFromNSString:]
+FNDA:0,-[JSONValueTransformer NSMutableStringFromNSString:]
+FNDA:0,-[JSONValueTransformer floatFromObject:]
+FNDA:0,__47-[JSONValueTransformer __JSONObjectFromNSDate:]_block_invoke
+FNDA:0,-[JSONValueTransformer JSONObjectFromNSSet:]
+FNDA:0,-[JSONValueTransformer NSMutableDictionaryFromNSDictionary:]
+FNDA:0,-[JSONValueTransformer BOOLFromNSNumber:]
+FNDA:0,__43-[JSONValueTransformer importDateFormatter]_block_invoke
+FNDA:0,-[JSONValueTransformer __NSDictionaryFromNSArray:]
+FNDA:0,-[JSONValueTransformer NSMutableSetFromNSArray:]
+FNDA:0,-[JSONValueTransformer NSNumberFromfloat:]
+FNDA:0,-[JSONValueTransformer JSONObjectFromBOOL:]
+FNDA:0,-[JSONValueTransformer importDateFormatter]
+FNDA:4311810304,-[JSONValueTransformer init]
+FNDA:0,-[JSONValueTransformer NSSetFromNSArray:]
+FNDA:0,-[JSONValueTransformer JSONObjectFromNSURL:]
+FNDA:0,-[JSONValueTransformer floatFromNSNumber:]
+FNDA:0,-[JSONValueTransformer NSTimeZoneFromNSString:]
+FNDA:0,-[JSONValueTransformer NSStringFromNSNumber:]
+FNDA:0,-[JSONValueTransformer NSMutableArrayFromNSArray:]
+FNF:34
+FNH:1
+DA:11,0
+DA:12,0
+DA:14,0
+DA:15,0
+DA:17,0
+DA:21,4311810304
+DA:22,4311810304
+DA:23,4311810304
+DA:30,4311810304
+DA:31,4311810304
+DA:32,4311810304
+DA:37,0
+DA:38,0
+DA:42,0
+DA:43,0
+DA:47,0
+DA:48,0
+DA:52,0
+DA:53,0
+DA:57,0
+DA:58,0
+DA:62,0
+DA:63,0
+DA:68,0
+DA:69,0
+DA:74,0
+DA:75,0
+DA:80,0
+DA:81,0
+DA:86,0
+DA:87,0
+DA:91,0
+DA:92,0
+DA:96,0
+DA:97,0
+DA:101,0
+DA:102,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:122,0
+DA:123,0
+DA:127,0
+DA:128,0
+DA:133,0
+DA:134,0
+DA:138,0
+DA:139,0
+DA:143,0
+DA:144,0
+DA:148,0
+DA:154,0
+DA:155,0
+DA:159,0
+DA:160,0
+DA:164,0
+DA:165,0
+DA:169,0
+DA:170,0
+DA:177,0
+DA:178,0
+DA:182,0
+DA:183,0
+DA:190,0
+DA:191,0
+DA:192,0
+DA:193,0
+DA:194,0
+DA:195,0
+DA:200,0
+DA:201,0
+DA:202,0
+DA:208,0
+DA:209,0
+DA:210,0
+DA:211,0
+DA:212,0
+DA:213,0
+DA:214,0
+DA:219,0
+DA:220,0
+DA:225,0
+DA:226,0
+DA:229,0
+DA:230,0
+DA:236,0
+DA:237,0
+DA:238,0
+DA:242,0
+DA:243,0
+DA:244,0
+LF:95
+LH:6
+end_of_record

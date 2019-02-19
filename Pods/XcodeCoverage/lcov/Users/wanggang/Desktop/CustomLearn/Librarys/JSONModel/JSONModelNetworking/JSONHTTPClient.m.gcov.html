@@ -1,0 +1,437 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - Coverage.info - /Users/wanggang/Desktop/CustomLearn/Librarys/JSONModel/JSONModelNetworking/JSONHTTPClient.m</title>
+  <link rel="stylesheet" type="text/css" href="../../../../../../../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../../../../../../../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../../../../../../../index.html">top level</a> - <a href="index.html">Users/wanggang/Desktop/CustomLearn/Librarys/JSONModel/JSONModelNetworking</a> - JSONHTTPClient.m<span style="font-size: 80%;"> (source / <a href="JSONHTTPClient.m.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">Coverage.info</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">167</td>
+            <td class="headerCovTableEntryLo">0.0 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2019-02-19 13:48:16</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">29</td>
+            <td class="headerCovTableEntryLo">0.0 %</td>
+          </tr>
+          <tr><td><img src="../../../../../../../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../../../../../../../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : //</a>
+<span class="lineNum">       2 </span>            : //  JSONModelHTTPClient.m
+<span class="lineNum">       3 </span>            : //  JSONModel
+<span class="lineNum">       4 </span>            : //
+<span class="lineNum">       5 </span>            : 
+<span class="lineNum">       6 </span>            : #import &quot;JSONHTTPClient.h&quot;
+<span class="lineNum">       7 </span>            : 
+<span class="lineNum">       8 </span>            : #pragma GCC diagnostic ignored &quot;-Wdeprecated-declarations&quot;
+<span class="lineNum">       9 </span>            : #pragma GCC diagnostic ignored &quot;-Wdeprecated-implementations&quot;
+<span class="lineNum">      10 </span>            : 
+<span class="lineNum">      11 </span>            : typedef void (^RequestResultBlock)(NSData *data, JSONModelError *error);
+<span class="lineNum">      12 </span>            : 
+<span class="lineNum">      13 </span>            : #pragma mark - constants
+<span class="lineNum">      14 </span>            : NSString* const kHTTPMethodGET = @&quot;GET&quot;;
+<span class="lineNum">      15 </span>            : NSString* const kHTTPMethodPOST = @&quot;POST&quot;;
+<span class="lineNum">      16 </span>            : 
+<span class="lineNum">      17 </span>            : NSString* const kContentTypeAutomatic    = @&quot;jsonmodel/automatic&quot;;
+<span class="lineNum">      18 </span>            : NSString* const kContentTypeJSON         = @&quot;application/json&quot;;
+<span class="lineNum">      19 </span>            : NSString* const kContentTypeWWWEncoded   = @&quot;application/x-www-form-urlencoded&quot;;
+<span class="lineNum">      20 </span>            : 
+<span class="lineNum">      21 </span>            : #pragma mark - static variables
+<span class="lineNum">      22 </span>            : 
+<span class="lineNum">      23 </span>            : /**
+<span class="lineNum">      24 </span>            :  * Defaults for HTTP requests
+<span class="lineNum">      25 </span>            :  */
+<span class="lineNum">      26 </span>            : static NSStringEncoding defaultTextEncoding = NSUTF8StringEncoding;
+<span class="lineNum">      27 </span>            : static NSURLRequestCachePolicy defaultCachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
+<span class="lineNum">      28 </span>            : 
+<span class="lineNum">      29 </span>            : static int defaultTimeoutInSeconds = 60;
+<span class="lineNum">      30 </span>            : 
+<span class="lineNum">      31 </span>            : /**
+<span class="lineNum">      32 </span>            :  * Custom HTTP headers to send over with *each* request
+<span class="lineNum">      33 </span>            :  */
+<span class="lineNum">      34 </span>            : static NSMutableDictionary* requestHeaders = nil;
+<span class="lineNum">      35 </span>            : 
+<span class="lineNum">      36 </span>            : /**
+<span class="lineNum">      37 </span>            :  * Default request content type
+<span class="lineNum">      38 </span>            :  */
+<span class="lineNum">      39 </span>            : static NSString* requestContentType = nil;
+<span class="lineNum">      40 </span>            : 
+<span class="lineNum">      41 </span>            : #pragma mark - implementation
+<span class="lineNum">      42 </span>            : @implementation JSONHTTPClient
+<a name="43"><span class="lineNum">      43 </span>            : </a>
+<span class="lineNum">      44 </span>            : #pragma mark - initialization
+<span class="lineNum">      45 </span>            : +(void)initialize
+<a name="46"><span class="lineNum">      46 </span>            : {</a>
+<span class="lineNum">      47 </span>            :     static dispatch_once_t once;
+<span class="lineNum">      48 </span><span class="lineNoCov">          0 :     dispatch_once(&amp;once, ^{</span>
+<span class="lineNum">      49 </span><span class="lineNoCov">          0 :         requestHeaders = [NSMutableDictionary dictionary];</span>
+<span class="lineNum">      50 </span><span class="lineNoCov">          0 :         requestContentType = kContentTypeAutomatic;</span>
+<span class="lineNum">      51 </span><span class="lineNoCov">          0 :     });</span>
+<span class="lineNum">      52 </span><span class="lineNoCov">          0 : }</span>
+<a name="53"><span class="lineNum">      53 </span>            : </a>
+<span class="lineNum">      54 </span>            : #pragma mark - configuration methods
+<span class="lineNum">      55 </span>            : +(NSMutableDictionary*)requestHeaders
+<span class="lineNum">      56 </span>            : {
+<span class="lineNum">      57 </span><span class="lineNoCov">          0 :     return requestHeaders;</span>
+<a name="58"><span class="lineNum">      58 </span>            : }</a>
+<span class="lineNum">      59 </span>            : 
+<span class="lineNum">      60 </span>            : +(void)setDefaultTextEncoding:(NSStringEncoding)encoding
+<span class="lineNum">      61 </span>            : {
+<span class="lineNum">      62 </span><span class="lineNoCov">          0 :     defaultTextEncoding = encoding;</span>
+<a name="63"><span class="lineNum">      63 </span><span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">      64 </span>            : 
+<span class="lineNum">      65 </span>            : +(void)setCachingPolicy:(NSURLRequestCachePolicy)policy
+<span class="lineNum">      66 </span>            : {
+<span class="lineNum">      67 </span><span class="lineNoCov">          0 :     defaultCachePolicy = policy;</span>
+<a name="68"><span class="lineNum">      68 </span><span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">      69 </span>            : 
+<span class="lineNum">      70 </span>            : +(void)setTimeoutInSeconds:(int)seconds
+<span class="lineNum">      71 </span>            : {
+<span class="lineNum">      72 </span><span class="lineNoCov">          0 :     defaultTimeoutInSeconds = seconds;</span>
+<a name="73"><span class="lineNum">      73 </span><span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">      74 </span>            : 
+<span class="lineNum">      75 </span>            : +(void)setRequestContentType:(NSString*)contentTypeString
+<span class="lineNum">      76 </span>            : {
+<span class="lineNum">      77 </span><span class="lineNoCov">          0 :     requestContentType = contentTypeString;</span>
+<span class="lineNum">      78 </span><span class="lineNoCov">          0 : }</span>
+<a name="79"><span class="lineNum">      79 </span>            : </a>
+<span class="lineNum">      80 </span>            : #pragma mark - helper methods
+<span class="lineNum">      81 </span>            : +(NSString*)contentTypeForRequestString:(NSString*)requestString
+<span class="lineNum">      82 </span>            : {
+<span class="lineNum">      83 </span>            :     //fetch the charset name from the default string encoding
+<span class="lineNum">      84 </span><span class="lineNoCov">          0 :     NSString* contentType = requestContentType;</span>
+<span class="lineNum">      85 </span>            : 
+<span class="lineNum">      86 </span><span class="lineNoCov">          0 :     if (requestString.length&gt;0 &amp;&amp; [contentType isEqualToString:kContentTypeAutomatic]) {</span>
+<span class="lineNum">      87 </span>            :         //check for &quot;eventual&quot; JSON array or dictionary
+<span class="lineNum">      88 </span><span class="lineNoCov">          0 :         NSString* firstAndLastChar = [NSString stringWithFormat:@&quot;%@%@&quot;,</span>
+<span class="lineNum">      89 </span><span class="lineNoCov">          0 :                                       [requestString substringToIndex:1],</span>
+<span class="lineNum">      90 </span><span class="lineNoCov">          0 :                                       [requestString substringFromIndex: requestString.length -1]</span>
+<span class="lineNum">      91 </span>            :                                       ];
+<span class="lineNum">      92 </span>            : 
+<span class="lineNum">      93 </span><span class="lineNoCov">          0 :         if ([firstAndLastChar isEqualToString:@&quot;{}&quot;] || [firstAndLastChar isEqualToString:@&quot;[]&quot;]) {</span>
+<span class="lineNum">      94 </span>            :             //guessing for a JSON request
+<span class="lineNum">      95 </span><span class="lineNoCov">          0 :             contentType = kContentTypeJSON;</span>
+<span class="lineNum">      96 </span><span class="lineNoCov">          0 :         } else {</span>
+<span class="lineNum">      97 </span>            :             //fallback to www form encoded params
+<span class="lineNum">      98 </span><span class="lineNoCov">          0 :             contentType = kContentTypeWWWEncoded;</span>
+<span class="lineNum">      99 </span>            :         }
+<span class="lineNum">     100 </span><span class="lineNoCov">          0 :     }</span>
+<span class="lineNum">     101 </span>            : 
+<span class="lineNum">     102 </span>            :     //type is set, just add charset
+<span class="lineNum">     103 </span><span class="lineNoCov">          0 :     NSString *charset = (NSString *)CFStringConvertEncodingToIANACharSetName(CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));</span>
+<span class="lineNum">     104 </span><span class="lineNoCov">          0 :     return [NSString stringWithFormat:@&quot;%@; charset=%@&quot;, contentType, charset];</span>
+<a name="105"><span class="lineNum">     105 </span><span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">     106 </span>            : 
+<span class="lineNum">     107 </span>            : +(NSString*)urlEncode:(id&lt;NSObject&gt;)value
+<span class="lineNum">     108 </span>            : {
+<span class="lineNum">     109 </span>            :     //make sure param is a string
+<span class="lineNum">     110 </span><span class="lineNoCov">          0 :     if ([value isKindOfClass:[NSNumber class]]) {</span>
+<span class="lineNum">     111 </span><span class="lineNoCov">          0 :         value = [(NSNumber*)value stringValue];</span>
+<span class="lineNum">     112 </span><span class="lineNoCov">          0 :     }</span>
+<span class="lineNum">     113 </span>            : 
+<span class="lineNum">     114 </span><span class="lineNoCov">          0 :     NSAssert([value isKindOfClass:[NSString class]], @&quot;request parameters can be only of NSString or NSNumber classes. '%@' is of class %@.&quot;, value, [value class]);</span>
+<span class="lineNum">     115 </span>            : 
+<span class="lineNum">     116 </span><span class="lineNoCov">          0 :     NSString *str = (NSString *)value;</span>
+<span class="lineNum">     117 </span>            : 
+<span class="lineNum">     118 </span>            : #if __IPHONE_OS_VERSION_MIN_REQUIRED &gt;= __IPHONE_7_0 || __MAC_OS_X_VERSION_MIN_REQUIRED &gt;= __MAC_10_9
+<span class="lineNum">     119 </span><span class="lineNoCov">          0 :     return [str stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];</span>
+<span class="lineNum">     120 </span>            : 
+<span class="lineNum">     121 </span>            : #else
+<span class="lineNum">     122 </span>            :     return (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(
+<span class="lineNum">     123 </span>            :                                                                                  NULL,
+<span class="lineNum">     124 </span>            :                                                                                  (__bridge CFStringRef)str,
+<span class="lineNum">     125 </span>            :                                                                                  NULL,
+<span class="lineNum">     126 </span>            :                                                                                  (CFStringRef)@&quot;!*'();:@&amp;=+$,/?%#[]&quot;,
+<span class="lineNum">     127 </span>            :                                                                                  kCFStringEncodingUTF8));
+<span class="lineNum">     128 </span>            : #endif
+<span class="lineNum">     129 </span><span class="lineNoCov">          0 : }</span>
+<a name="130"><span class="lineNum">     130 </span>            : </a>
+<span class="lineNum">     131 </span>            : #pragma mark - networking worker methods
+<span class="lineNum">     132 </span>            : +(void)requestDataFromURL:(NSURL*)url method:(NSString*)method requestBody:(NSData*)bodyData headers:(NSDictionary*)headers handler:(RequestResultBlock)handler
+<span class="lineNum">     133 </span>            : {
+<span class="lineNum">     134 </span><span class="lineNoCov">          0 :     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL: url</span>
+<span class="lineNum">     135 </span><span class="lineNoCov">          0 :                                                                 cachePolicy: defaultCachePolicy</span>
+<span class="lineNum">     136 </span><span class="lineNoCov">          0 :                                                             timeoutInterval: defaultTimeoutInSeconds];</span>
+<span class="lineNum">     137 </span><span class="lineNoCov">          0 :     [request setHTTPMethod:method];</span>
+<span class="lineNum">     138 </span>            : 
+<span class="lineNum">     139 </span><span class="lineNoCov">          0 :     if ([requestContentType isEqualToString:kContentTypeAutomatic]) {</span>
+<span class="lineNum">     140 </span>            :         //automatic content type
+<span class="lineNum">     141 </span><span class="lineNoCov">          0 :         if (bodyData) {</span>
+<span class="lineNum">     142 </span><span class="lineNoCov">          0 :             NSString *bodyString = [[NSString alloc] initWithData:bodyData encoding:NSUTF8StringEncoding];</span>
+<span class="lineNum">     143 </span><span class="lineNoCov">          0 :             [request setValue: [self contentTypeForRequestString: bodyString] forHTTPHeaderField:@&quot;Content-type&quot;];</span>
+<span class="lineNum">     144 </span><span class="lineNoCov">          0 :         }</span>
+<span class="lineNum">     145 </span><span class="lineNoCov">          0 :     } else {</span>
+<span class="lineNum">     146 </span>            :         //user set content type
+<span class="lineNum">     147 </span><span class="lineNoCov">          0 :         [request setValue: requestContentType forHTTPHeaderField:@&quot;Content-type&quot;];</span>
+<span class="lineNum">     148 </span>            :     }
+<span class="lineNum">     149 </span>            : 
+<span class="lineNum">     150 </span>            :     //add all the custom headers defined
+<span class="lineNum">     151 </span><span class="lineNoCov">          0 :     for (NSString* key in [requestHeaders allKeys]) {</span>
+<span class="lineNum">     152 </span><span class="lineNoCov">          0 :         [request setValue:requestHeaders[key] forHTTPHeaderField:key];</span>
+<span class="lineNum">     153 </span><span class="lineNoCov">          0 :     }</span>
+<span class="lineNum">     154 </span>            : 
+<span class="lineNum">     155 </span>            :     //add the custom headers
+<span class="lineNum">     156 </span><span class="lineNoCov">          0 :     for (NSString* key in [headers allKeys]) {</span>
+<span class="lineNum">     157 </span><span class="lineNoCov">          0 :         [request setValue:headers[key] forHTTPHeaderField:key];</span>
+<span class="lineNum">     158 </span><span class="lineNoCov">          0 :     }</span>
+<span class="lineNum">     159 </span>            : 
+<span class="lineNum">     160 </span><span class="lineNoCov">          0 :     if (bodyData) {</span>
+<span class="lineNum">     161 </span><span class="lineNoCov">          0 :         [request setHTTPBody: bodyData];</span>
+<span class="lineNum">     162 </span><span class="lineNoCov">          0 :         [request setValue:[NSString stringWithFormat:@&quot;%lu&quot;, (unsigned long)bodyData.length] forHTTPHeaderField:@&quot;Content-Length&quot;];</span>
+<a name="163"><span class="lineNum">     163 </span><span class="lineNoCov">          0 :     }</span></a>
+<span class="lineNum">     164 </span>            : 
+<span class="lineNum">     165 </span><span class="lineNoCov">          0 :     void (^completionHandler)(NSData *, NSURLResponse *, NSError *) = ^(NSData *data, NSURLResponse *origResponse, NSError *origError) {</span>
+<span class="lineNum">     166 </span><span class="lineNoCov">          0 :         NSHTTPURLResponse *response = (NSHTTPURLResponse *)origResponse;</span>
+<span class="lineNum">     167 </span><span class="lineNoCov">          0 :         JSONModelError *error = nil;</span>
+<span class="lineNum">     168 </span>            : 
+<span class="lineNum">     169 </span>            :         //convert an NSError to a JSONModelError
+<span class="lineNum">     170 </span><span class="lineNoCov">          0 :         if (origError) {</span>
+<span class="lineNum">     171 </span><span class="lineNoCov">          0 :             error = [JSONModelError errorWithDomain:origError.domain code:origError.code userInfo:origError.userInfo];</span>
+<span class="lineNum">     172 </span><span class="lineNoCov">          0 :         }</span>
+<span class="lineNum">     173 </span>            : 
+<span class="lineNum">     174 </span>            :         //special case for http error code 401
+<span class="lineNum">     175 </span><span class="lineNoCov">          0 :         if (error.code == NSURLErrorUserCancelledAuthentication) {</span>
+<span class="lineNum">     176 </span><span class="lineNoCov">          0 :             response = [[NSHTTPURLResponse alloc] initWithURL:url statusCode:401 HTTPVersion:@&quot;HTTP/1.1&quot; headerFields:@{}];</span>
+<span class="lineNum">     177 </span><span class="lineNoCov">          0 :         }</span>
+<span class="lineNum">     178 </span>            : 
+<span class="lineNum">     179 </span>            :         //if not OK status set the err to a JSONModelError instance
+<span class="lineNum">     180 </span><span class="lineNoCov">          0 :         if (!error &amp;&amp; (response.statusCode &gt;= 300 || response.statusCode &lt; 200)) {</span>
+<span class="lineNum">     181 </span><span class="lineNoCov">          0 :             error = [JSONModelError errorBadResponse];</span>
+<span class="lineNum">     182 </span><span class="lineNoCov">          0 :         }</span>
+<span class="lineNum">     183 </span>            : 
+<span class="lineNum">     184 </span>            :         //if there was an error, assign the response to the JSONModel instance
+<span class="lineNum">     185 </span><span class="lineNoCov">          0 :         if (error) {</span>
+<span class="lineNum">     186 </span><span class="lineNoCov">          0 :             error.httpResponse = [response copy];</span>
+<span class="lineNum">     187 </span><span class="lineNoCov">          0 :         }</span>
+<span class="lineNum">     188 </span>            : 
+<span class="lineNum">     189 </span>            :         //empty respone, return nil instead
+<span class="lineNum">     190 </span><span class="lineNoCov">          0 :         if (!data.length) {</span>
+<span class="lineNum">     191 </span><span class="lineNoCov">          0 :             data = nil;</span>
+<span class="lineNum">     192 </span><span class="lineNoCov">          0 :         }</span>
+<a name="193"><span class="lineNum">     193 </span>            : </a>
+<span class="lineNum">     194 </span><span class="lineNoCov">          0 :         handler(data, error);</span>
+<span class="lineNum">     195 </span><span class="lineNoCov">          0 :     };</span>
+<span class="lineNum">     196 </span>            : 
+<span class="lineNum">     197 </span>            :     //fire the request
+<span class="lineNum">     198 </span>            : 
+<span class="lineNum">     199 </span>            : #if __IPHONE_OS_VERSION_MIN_REQUIRED &gt;= __IPHONE_7_0 || __MAC_OS_X_VERSION_MIN_REQUIRED &gt;= __MAC_10_10
+<span class="lineNum">     200 </span><span class="lineNoCov">          0 :     NSURLSessionTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:completionHandler];</span>
+<span class="lineNum">     201 </span><span class="lineNoCov">          0 :     [task resume];</span>
+<span class="lineNum">     202 </span>            : #else
+<span class="lineNum">     203 </span>            :     NSOperationQueue *queue = [NSOperationQueue new];
+<span class="lineNum">     204 </span>            : 
+<span class="lineNum">     205 </span>            :     [NSURLConnection sendAsynchronousRequest:request queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+<span class="lineNum">     206 </span>            :         completionHandler(data, response, error);
+<span class="lineNum">     207 </span>            :     }];
+<span class="lineNum">     208 </span>            : #endif
+<a name="209"><span class="lineNum">     209 </span><span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">     210 </span>            : 
+<span class="lineNum">     211 </span>            : +(void)requestDataFromURL:(NSURL*)url method:(NSString*)method params:(NSDictionary*)params headers:(NSDictionary*)headers handler:(RequestResultBlock)handler
+<span class="lineNum">     212 </span>            : {
+<span class="lineNum">     213 </span>            :     //create the request body
+<span class="lineNum">     214 </span><span class="lineNoCov">          0 :     NSMutableString* paramsString = nil;</span>
+<span class="lineNum">     215 </span>            : 
+<span class="lineNum">     216 </span><span class="lineNoCov">          0 :     if (params) {</span>
+<span class="lineNum">     217 </span>            :         //build a simple url encoded param string
+<span class="lineNum">     218 </span><span class="lineNoCov">          0 :         paramsString = [NSMutableString stringWithString:@&quot;&quot;];</span>
+<span class="lineNum">     219 </span><span class="lineNoCov">          0 :         for (NSString* key in [[params allKeys] sortedArrayUsingSelector:@selector(compare:)]) {</span>
+<span class="lineNum">     220 </span><span class="lineNoCov">          0 :             [paramsString appendFormat:@&quot;%@=%@&amp;&quot;, key, [self urlEncode:params[key]] ];</span>
+<span class="lineNum">     221 </span><span class="lineNoCov">          0 :         }</span>
+<span class="lineNum">     222 </span><span class="lineNoCov">          0 :         if ([paramsString hasSuffix:@&quot;&amp;&quot;]) {</span>
+<span class="lineNum">     223 </span><span class="lineNoCov">          0 :             paramsString = [[NSMutableString alloc] initWithString: [paramsString substringToIndex: paramsString.length-1]];</span>
+<span class="lineNum">     224 </span><span class="lineNoCov">          0 :         }</span>
+<span class="lineNum">     225 </span><span class="lineNoCov">          0 :     }</span>
+<span class="lineNum">     226 </span>            : 
+<span class="lineNum">     227 </span>            :     //set the request params
+<span class="lineNum">     228 </span><span class="lineNoCov">          0 :     if ([method isEqualToString:kHTTPMethodGET] &amp;&amp; params) {</span>
+<span class="lineNum">     229 </span>            : 
+<span class="lineNum">     230 </span>            :         //add GET params to the query string
+<span class="lineNum">     231 </span><span class="lineNoCov">          0 :         url = [NSURL URLWithString:[NSString stringWithFormat: @&quot;%@%@%@&quot;,</span>
+<span class="lineNum">     232 </span><span class="lineNoCov">          0 :                                     [url absoluteString],</span>
+<span class="lineNum">     233 </span><span class="lineNoCov">          0 :                                     [url query] ? @&quot;&amp;&quot; : @&quot;?&quot;,</span>
+<span class="lineNum">     234 </span><span class="lineNoCov">          0 :                                     paramsString</span>
+<span class="lineNum">     235 </span>            :                                     ]];
+<span class="lineNum">     236 </span><span class="lineNoCov">          0 :     }</span>
+<span class="lineNum">     237 </span>            : 
+<span class="lineNum">     238 </span>            :     //call the more general synq request method
+<span class="lineNum">     239 </span><span class="lineNoCov">          0 :     [self requestDataFromURL: url</span>
+<span class="lineNum">     240 </span><span class="lineNoCov">          0 :                       method: method</span>
+<span class="lineNum">     241 </span><span class="lineNoCov">          0 :                  requestBody: [method isEqualToString:kHTTPMethodPOST]?[paramsString dataUsingEncoding:NSUTF8StringEncoding]:nil</span>
+<span class="lineNum">     242 </span><span class="lineNoCov">          0 :                      headers: headers</span>
+<span class="lineNum">     243 </span><span class="lineNoCov">          0 :                        handler:handler];</span>
+<span class="lineNum">     244 </span><span class="lineNoCov">          0 : }</span>
+<a name="245"><span class="lineNum">     245 </span>            : </a>
+<span class="lineNum">     246 </span>            : #pragma mark - Async network request
+<span class="lineNum">     247 </span>            : +(void)JSONFromURLWithString:(NSString*)urlString method:(NSString*)method params:(NSDictionary*)params orBodyString:(NSString*)bodyString completion:(JSONObjectBlock)completeBlock
+<span class="lineNum">     248 </span>            : {
+<span class="lineNum">     249 </span><span class="lineNoCov">          0 :     [self JSONFromURLWithString:urlString</span>
+<span class="lineNum">     250 </span><span class="lineNoCov">          0 :                          method:method</span>
+<span class="lineNum">     251 </span><span class="lineNoCov">          0 :                          params:params</span>
+<span class="lineNum">     252 </span><span class="lineNoCov">          0 :                    orBodyString:bodyString</span>
+<span class="lineNum">     253 </span>            :                         headers:nil
+<span class="lineNum">     254 </span><span class="lineNoCov">          0 :                      completion:completeBlock];</span>
+<a name="255"><span class="lineNum">     255 </span><span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">     256 </span>            : 
+<span class="lineNum">     257 </span>            : +(void)JSONFromURLWithString:(NSString *)urlString method:(NSString *)method params:(NSDictionary *)params orBodyString:(NSString *)bodyString headers:(NSDictionary *)headers completion:(JSONObjectBlock)completeBlock
+<span class="lineNum">     258 </span>            : {
+<span class="lineNum">     259 </span><span class="lineNoCov">          0 :     [self JSONFromURLWithString:urlString</span>
+<span class="lineNum">     260 </span><span class="lineNoCov">          0 :                          method:method</span>
+<span class="lineNum">     261 </span><span class="lineNoCov">          0 :                          params:params</span>
+<span class="lineNum">     262 </span><span class="lineNoCov">          0 :                      orBodyData:[bodyString dataUsingEncoding:NSUTF8StringEncoding]</span>
+<span class="lineNum">     263 </span><span class="lineNoCov">          0 :                         headers:headers</span>
+<span class="lineNum">     264 </span><span class="lineNoCov">          0 :                      completion:completeBlock];</span>
+<a name="265"><span class="lineNum">     265 </span><span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">     266 </span>            : 
+<a name="267"><span class="lineNum">     267 </span>            : +(void)JSONFromURLWithString:(NSString*)urlString method:(NSString*)method params:(NSDictionary *)params orBodyData:(NSData*)bodyData headers:(NSDictionary*)headers completion:(JSONObjectBlock)completeBlock</a>
+<span class="lineNum">     268 </span>            : {
+<span class="lineNum">     269 </span><span class="lineNoCov">          0 :     RequestResultBlock handler = ^(NSData *responseData, JSONModelError *error) {</span>
+<span class="lineNum">     270 </span><span class="lineNoCov">          0 :         id jsonObject = nil;</span>
+<span class="lineNum">     271 </span>            : 
+<span class="lineNum">     272 </span>            :         //step 3: if there's no response so far, return a basic error
+<span class="lineNum">     273 </span><span class="lineNoCov">          0 :         if (!responseData &amp;&amp; !error) {</span>
+<span class="lineNum">     274 </span>            :             //check for false response, but no network error
+<span class="lineNum">     275 </span><span class="lineNoCov">          0 :             error = [JSONModelError errorBadResponse];</span>
+<span class="lineNum">     276 </span><span class="lineNoCov">          0 :         }</span>
+<span class="lineNum">     277 </span>            : 
+<span class="lineNum">     278 </span>            :         //step 4: if there's a response at this and no errors, convert to object
+<span class="lineNum">     279 </span><span class="lineNoCov">          0 :         if (error==nil) {</span>
+<span class="lineNum">     280 </span>            :             // Note: it is possible to have a valid response with empty response data (204 No Content).
+<span class="lineNum">     281 </span>            :             // So only create the JSON object if there is some response data.
+<span class="lineNum">     282 </span><span class="lineNoCov">          0 :             if(responseData.length &gt; 0)</span>
+<span class="lineNum">     283 </span>            :             {
+<span class="lineNum">     284 </span>            :                 //convert to an object
+<span class="lineNum">     285 </span><span class="lineNoCov">          0 :                 jsonObject = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&amp;error];</span>
+<span class="lineNum">     286 </span><span class="lineNoCov">          0 :             }</span>
+<span class="lineNum">     287 </span><span class="lineNoCov">          0 :         }</span>
+<span class="lineNum">     288 </span>            :         //step 4.5: cover an edge case in which meaningful content is return along an error HTTP status code
+<span class="lineNum">     289 </span><span class="lineNoCov">          0 :         else if (error &amp;&amp; responseData &amp;&amp; jsonObject==nil) {</span>
+<span class="lineNum">     290 </span>            :             //try to get the JSON object, while preserving the original error object
+<span class="lineNum">     291 </span><span class="lineNoCov">          0 :             jsonObject = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:nil];</span>
+<span class="lineNum">     292 </span>            :             //keep responseData just in case it contains error information
+<span class="lineNum">     293 </span><span class="lineNoCov">          0 :             error.responseData = responseData;</span>
+<span class="lineNum">     294 </span><span class="lineNoCov">          0 :         }</span>
+<a name="295"><span class="lineNum">     295 </span>            : </a>
+<span class="lineNum">     296 </span>            :         //step 5: invoke the complete block
+<span class="lineNum">     297 </span><span class="lineNoCov">          0 :         dispatch_async(dispatch_get_main_queue(), ^{</span>
+<span class="lineNum">     298 </span><span class="lineNoCov">          0 :             if (completeBlock) {</span>
+<span class="lineNum">     299 </span><span class="lineNoCov">          0 :                 completeBlock(jsonObject, error);</span>
+<span class="lineNum">     300 </span><span class="lineNoCov">          0 :             }</span>
+<span class="lineNum">     301 </span><span class="lineNoCov">          0 :         });</span>
+<span class="lineNum">     302 </span><span class="lineNoCov">          0 :     };</span>
+<span class="lineNum">     303 </span>            : 
+<span class="lineNum">     304 </span><span class="lineNoCov">          0 :     NSURL *url = [NSURL URLWithString:urlString];</span>
+<span class="lineNum">     305 </span>            : 
+<span class="lineNum">     306 </span><span class="lineNoCov">          0 :     if (bodyData) {</span>
+<span class="lineNum">     307 </span><span class="lineNoCov">          0 :         [self requestDataFromURL:url method:method requestBody:bodyData headers:headers handler:handler];</span>
+<span class="lineNum">     308 </span><span class="lineNoCov">          0 :     } else {</span>
+<span class="lineNum">     309 </span><span class="lineNoCov">          0 :         [self requestDataFromURL:url method:method params:params headers:headers handler:handler];</span>
+<span class="lineNum">     310 </span>            :     }
+<span class="lineNum">     311 </span><span class="lineNoCov">          0 : }</span>
+<a name="312"><span class="lineNum">     312 </span>            : </a>
+<span class="lineNum">     313 </span>            : #pragma mark - request aliases
+<span class="lineNum">     314 </span>            : +(void)getJSONFromURLWithString:(NSString*)urlString completion:(JSONObjectBlock)completeBlock
+<span class="lineNum">     315 </span>            : {
+<a name="316"><span class="lineNum">     316 </span><span class="lineNoCov">          0 :     [self JSONFromURLWithString:urlString method:kHTTPMethodGET</span></a>
+<span class="lineNum">     317 </span>            :                          params:nil
+<span class="lineNum">     318 </span><span class="lineNoCov">          0 :                    orBodyString:nil completion:^(id json, JSONModelError* e) {</span>
+<span class="lineNum">     319 </span><span class="lineNoCov">          0 :                        if (completeBlock) completeBlock(json, e);</span>
+<span class="lineNum">     320 </span><span class="lineNoCov">          0 :                    }];</span>
+<a name="321"><span class="lineNum">     321 </span><span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">     322 </span>            : 
+<span class="lineNum">     323 </span>            : +(void)getJSONFromURLWithString:(NSString*)urlString params:(NSDictionary*)params completion:(JSONObjectBlock)completeBlock
+<span class="lineNum">     324 </span>            : {
+<a name="325"><span class="lineNum">     325 </span><span class="lineNoCov">          0 :     [self JSONFromURLWithString:urlString method:kHTTPMethodGET</span></a>
+<span class="lineNum">     326 </span><span class="lineNoCov">          0 :                          params:params</span>
+<span class="lineNum">     327 </span><span class="lineNoCov">          0 :                    orBodyString:nil completion:^(id json, JSONModelError* e) {</span>
+<span class="lineNum">     328 </span><span class="lineNoCov">          0 :                        if (completeBlock) completeBlock(json, e);</span>
+<span class="lineNum">     329 </span><span class="lineNoCov">          0 :                    }];</span>
+<a name="330"><span class="lineNum">     330 </span><span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">     331 </span>            : 
+<span class="lineNum">     332 </span>            : +(void)postJSONFromURLWithString:(NSString*)urlString params:(NSDictionary*)params completion:(JSONObjectBlock)completeBlock
+<span class="lineNum">     333 </span>            : {
+<a name="334"><span class="lineNum">     334 </span><span class="lineNoCov">          0 :     [self JSONFromURLWithString:urlString method:kHTTPMethodPOST</span></a>
+<span class="lineNum">     335 </span><span class="lineNoCov">          0 :                          params:params</span>
+<span class="lineNum">     336 </span><span class="lineNoCov">          0 :                    orBodyString:nil completion:^(id json, JSONModelError* e) {</span>
+<span class="lineNum">     337 </span><span class="lineNoCov">          0 :                        if (completeBlock) completeBlock(json, e);</span>
+<span class="lineNum">     338 </span><span class="lineNoCov">          0 :                    }];</span>
+<span class="lineNum">     339 </span>            : 
+<a name="340"><span class="lineNum">     340 </span><span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">     341 </span>            : 
+<span class="lineNum">     342 </span>            : +(void)postJSONFromURLWithString:(NSString*)urlString bodyString:(NSString*)bodyString completion:(JSONObjectBlock)completeBlock
+<span class="lineNum">     343 </span>            : {
+<a name="344"><span class="lineNum">     344 </span><span class="lineNoCov">          0 :     [self JSONFromURLWithString:urlString method:kHTTPMethodPOST</span></a>
+<span class="lineNum">     345 </span>            :                          params:nil
+<span class="lineNum">     346 </span><span class="lineNoCov">          0 :                    orBodyString:bodyString completion:^(id json, JSONModelError* e) {</span>
+<span class="lineNum">     347 </span><span class="lineNoCov">          0 :                        if (completeBlock) completeBlock(json, e);</span>
+<span class="lineNum">     348 </span><span class="lineNoCov">          0 :                    }];</span>
+<a name="349"><span class="lineNum">     349 </span><span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">     350 </span>            : 
+<span class="lineNum">     351 </span>            : +(void)postJSONFromURLWithString:(NSString*)urlString bodyData:(NSData*)bodyData completion:(JSONObjectBlock)completeBlock
+<span class="lineNum">     352 </span>            : {
+<span class="lineNum">     353 </span><span class="lineNoCov">          0 :     [self JSONFromURLWithString:urlString method:kHTTPMethodPOST</span>
+<a name="354"><span class="lineNum">     354 </span>            :                          params:nil</a>
+<span class="lineNum">     355 </span><span class="lineNoCov">          0 :                    orBodyString:[[NSString alloc] initWithData:bodyData encoding:defaultTextEncoding]</span>
+<span class="lineNum">     356 </span><span class="lineNoCov">          0 :                                  completion:^(id json, JSONModelError* e) {</span>
+<span class="lineNum">     357 </span><span class="lineNoCov">          0 :                        if (completeBlock) completeBlock(json, e);</span>
+<span class="lineNum">     358 </span><span class="lineNoCov">          0 :                    }];</span>
+<span class="lineNum">     359 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     360 </span>            : 
+<span class="lineNum">     361 </span>            : @end
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../../../../../../../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.13</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

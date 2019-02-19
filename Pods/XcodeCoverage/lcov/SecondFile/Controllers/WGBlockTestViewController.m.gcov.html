@@ -1,0 +1,262 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - Coverage.info - SecondFile/Controllers/WGBlockTestViewController.m</title>
+  <link rel="stylesheet" type="text/css" href="../../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../../index.html">top level</a> - <a href="index.html">SecondFile/Controllers</a> - WGBlockTestViewController.m<span style="font-size: 80%;"> (source / <a href="WGBlockTestViewController.m.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">Coverage.info</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">20</td>
+            <td class="headerCovTableEntry">75</td>
+            <td class="headerCovTableEntryLo">26.7 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2019-02-19 13:48:16</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">6</td>
+            <td class="headerCovTableEntry">32</td>
+            <td class="headerCovTableEntryLo">18.8 %</td>
+          </tr>
+          <tr><td><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : //</a>
+<span class="lineNum">       2 </span>            : //  WGBlockTestViewController.m
+<span class="lineNum">       3 </span>            : //  CustomLearn
+<span class="lineNum">       4 </span>            : //
+<span class="lineNum">       5 </span>            : //  Created by wanggang on 2018/6/13.
+<span class="lineNum">       6 </span>            : //  Copyright © 2018年 CSII. All rights reserved.
+<span class="lineNum">       7 </span>            : //
+<span class="lineNum">       8 </span>            : 
+<span class="lineNum">       9 </span>            : #import &quot;WGBlockTestViewController.h&quot;
+<span class="lineNum">      10 </span>            : #import &quot;WGLianShiBlock.h&quot;
+<span class="lineNum">      11 </span>            : #import &quot;WGBannerViewController.h&quot;
+<span class="lineNum">      12 </span>            : #import &lt;objc/runtime.h&gt;
+<span class="lineNum">      13 </span>            : #import &quot;WGHanShuShiBlock.h&quot;
+<span class="lineNum">      14 </span>            : 
+<span class="lineNum">      15 </span>            : typedef void(^BlockTest)(void);
+<span class="lineNum">      16 </span>            : 
+<a name="17"><span class="lineNum">      17 </span>            : @interface WGBlockTestViewController ()</a>
+<a name="18"><span class="lineNum">      18 </span>            : </a>
+<a name="19"><span class="lineNum">      19 </span><span class="lineNoCov">          0 : @property (nonatomic, copy) BlockTest blockTest;</span></a>
+<span class="lineNum">      20 </span><span class="lineNoCov">          0 : @property (nonatomic, strong) NSTimer *timer;</span>
+<span class="lineNum">      21 </span><span class="lineNoCov">          0 : @property (nonatomic, strong) id target;</span>
+<span class="lineNum">      22 </span>            : 
+<a name="23"><span class="lineNum">      23 </span>            : @end</a>
+<span class="lineNum">      24 </span>            : 
+<span class="lineNum">      25 </span><span class="lineCov">        256 : @implementation WGBlockTestViewController</span>
+<span class="lineNum">      26 </span>            : 
+<a name="27"><span class="lineNum">      27 </span>            : static const void *key = @&quot;key&quot;;</a>
+<span class="lineNum">      28 </span>            : 
+<span class="lineNum">      29 </span>            : - (void)viewDidLoad {
+<span class="lineNum">      30 </span><span class="lineCov">        256 :     [super viewDidLoad];</span>
+<span class="lineNum">      31 </span>            :     
+<span class="lineNum">      32 </span><span class="lineCov">        256 :     [self setViewView];</span>
+<span class="lineNum">      33 </span>            :     
+<span class="lineNum">      34 </span>            :     /*
+<span class="lineNum">      35 </span>            :      block如何修改block外部的局部变量值
+<span class="lineNum">      36 </span>            :      */
+<span class="lineNum">      37 </span>            : //    [self blockTest01];
+<span class="lineNum">      38 </span>            : //    [self blockTest02];
+<span class="lineNum">      39 </span>            :     
+<span class="lineNum">      40 </span>            :     /*
+<span class="lineNum">      41 </span>            :      block实现链式编程,写一个加法计算器
+<span class="lineNum">      42 </span>            :      */
+<span class="lineNum">      43 </span>            : //    [self blockTest03];
+<span class="lineNum">      44 </span>            :     
+<span class="lineNum">      45 </span>            :     /*
+<span class="lineNum">      46 </span>            :      block函数式编程,写一个计算器
+<span class="lineNum">      47 </span>            :      */
+<span class="lineNum">      48 </span><span class="lineCov">        256 :         [self blockTest08];</span>
+<span class="lineNum">      49 </span>            :     
+<span class="lineNum">      50 </span>            :     /*
+<span class="lineNum">      51 </span>            :      循环引用
+<span class="lineNum">      52 </span>            :      */
+<span class="lineNum">      53 </span>            : //    [self blockTest04];
+<span class="lineNum">      54 </span>            : //    [self blockTest05];
+<span class="lineNum">      55 </span>            :     //    [self blockTest06];
+<span class="lineNum">      56 </span>            : //    [self blockTest07];
+<span class="lineNum">      57 </span>            : //    self.blockTest();
+<span class="lineNum">      58 </span>            :     
+<span class="lineNum">      59 </span>            :     /*
+<span class="lineNum">      60 </span>            :      NSTimer 内存泄漏
+<span class="lineNum">      61 </span>            :      */
+<span class="lineNum">      62 </span>            : //    [self timerTest01];
+<span class="lineNum">      63 </span>            :     
+<span class="lineNum">      64 </span>            :     
+<a name="65"><span class="lineNum">      65 </span><span class="lineCov">        256 : }</span></a>
+<span class="lineNum">      66 </span>            : 
+<span class="lineNum">      67 </span>            : - (void)timerTest01{
+<span class="lineNum">      68 </span><span class="lineNoCov">          0 :     _target = [[NSObject alloc] init];</span>
+<span class="lineNum">      69 </span><span class="lineNoCov">          0 :     class_addMethod([_target class], @selector(timerMethod), (IMP)targetMethod, &quot;v@:&quot;);</span>
+<span class="lineNum">      70 </span>            :     
+<span class="lineNum">      71 </span><span class="lineNoCov">          0 :     objc_setAssociatedObject(_target, key, self, OBJC_ASSOCIATION_ASSIGN);</span>
+<span class="lineNum">      72 </span>            :     
+<span class="lineNum">      73 </span><span class="lineNoCov">          0 :     _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:_target selector:@selector(timerMethod) userInfo:nil repeats:YES];</span>
+<a name="74"><span class="lineNum">      74 </span><span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">      75 </span>            : 
+<span class="lineNum">      76 </span>            : void targetMethod(id objj, SEL _cmd){
+<span class="lineNum">      77 </span><span class="lineNoCov">          0 :     NSLog(@&quot;1111111111&quot;);</span>
+<span class="lineNum">      78 </span>            : //    WGBlockTestViewController *con = objc_getAssociatedObject(objj, key);
+<span class="lineNum">      79 </span>            : //    [con timerMethod];
+<span class="lineNum">      80 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">      81 </span>            : 
+<span class="lineNum">      82 </span>            : //- (void)timerMethod{
+<span class="lineNum">      83 </span>            : //    WGLog(@&quot;timerMethod&quot;);
+<a name="84"><span class="lineNum">      84 </span>            : //}</a>
+<span class="lineNum">      85 </span>            : 
+<span class="lineNum">      86 </span>            : - (void)blockTest08{
+<a name="87"><span class="lineNum">      87 </span>            :     </a>
+<span class="lineNum">      88 </span><span class="lineCov">        256 :     WGHanShuShiBlock *block = [[WGHanShuShiBlock alloc] init];</span>
+<span class="lineNum">      89 </span><span class="lineCov">        768 :     int res = [block caculator:^int(int value) {</span>
+<span class="lineNum">      90 </span><span class="lineCov">        256 :         value += 5;</span>
+<span class="lineNum">      91 </span><span class="lineCov">        256 :         value -= 3;</span>
+<span class="lineNum">      92 </span><span class="lineCov">        256 :         return value;</span>
+<span class="lineNum">      93 </span><span class="lineCov">        256 :     }].result;</span>
+<span class="lineNum">      94 </span><span class="lineCov">        256 :     NSLog(@&quot;----&gt;%d&quot;, res);</span>
+<span class="lineNum">      95 </span><span class="lineCov">        256 : }</span>
+<span class="lineNum">      96 </span>            : 
+<span class="lineNum">      97 </span>            : /*
+<span class="lineNum">      98 </span>            :  使用__weak，但是会有一个隐患，你不知道 self 什么时候会被释放，为了保证在block内不会被
+<span class="lineNum">      99 </span>            :  释放，我们添加__strong。更多的时候需要配合strongSelf使用
+<span class="lineNum">     100 </span>            :  注意:不会循环引用是因为strongSelf是在栈中的,局部变量,执行完就释放了
+<a name="101"><span class="lineNum">     101 </span>            :  不会循环引用</a>
+<span class="lineNum">     102 </span>            :  */
+<a name="103"><span class="lineNum">     103 </span>            : - (void)blockTest07{</a>
+<span class="lineNum">     104 </span><span class="lineNoCov">          0 :     __weak typeof(self) weakSelf = self;</span>
+<a name="105"><span class="lineNum">     105 </span><span class="lineNoCov">          0 :     self.blockTest = ^{</span></a>
+<span class="lineNum">     106 </span><span class="lineNoCov">          0 :         __strong typeof(weakSelf) strongSelf = weakSelf;</span>
+<a name="107"><span class="lineNum">     107 </span><span class="lineNoCov">          0 :         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{</span></a>
+<span class="lineNum">     108 </span><span class="lineNoCov">          0 :             [strongSelf doSomething];</span>
+<span class="lineNum">     109 </span><span class="lineNoCov">          0 :         });</span>
+<span class="lineNum">     110 </span><span class="lineNoCov">          0 :     };</span>
+<span class="lineNum">     111 </span><span class="lineNoCov">          0 : }</span>
+<a name="112"><span class="lineNum">     112 </span>            : </a>
+<span class="lineNum">     113 </span>            : //不会循环引用
+<a name="114"><span class="lineNum">     114 </span>            : - (void)blockTest06{</a>
+<span class="lineNum">     115 </span><span class="lineNoCov">          0 :     __weak WGBlockTestViewController *weakSelf = self;</span>
+<span class="lineNum">     116 </span><span class="lineNoCov">          0 :     self.blockTest = ^{</span>
+<span class="lineNum">     117 </span><span class="lineNoCov">          0 :         [weakSelf doSomething];</span>
+<span class="lineNum">     118 </span><span class="lineNoCov">          0 :     };</span>
+<span class="lineNum">     119 </span><span class="lineNoCov">          0 : }</span>
+<a name="120"><span class="lineNum">     120 </span>            : </a>
+<span class="lineNum">     121 </span>            : //不会循环引用
+<a name="122"><span class="lineNum">     122 </span>            : - (void)blockTest05{</a>
+<span class="lineNum">     123 </span><span class="lineNoCov">          0 :     __weak typeof(self) weakSelf = self;</span>
+<span class="lineNum">     124 </span><span class="lineNoCov">          0 :     self.blockTest = ^{</span>
+<span class="lineNum">     125 </span><span class="lineNoCov">          0 :         [weakSelf doSomething];</span>
+<span class="lineNum">     126 </span><span class="lineNoCov">          0 :     };</span>
+<span class="lineNum">     127 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     128 </span>            : 
+<span class="lineNum">     129 </span>            : /*
+<span class="lineNum">     130 </span>            :  block里用到self,则block会保持一个对self的引用,然而self也直接持有block属性,从而造成block和self的相互持有,在成循环引用
+<a name="131"><span class="lineNum">     131 </span>            :  会循环引用</a>
+<a name="132"><span class="lineNum">     132 </span>            :  */</a>
+<span class="lineNum">     133 </span>            : - (void)blockTest04{
+<span class="lineNum">     134 </span><span class="lineNoCov">          0 :     self.blockTest = ^{</span>
+<span class="lineNum">     135 </span><span class="lineNoCov">          0 :         [self doSomething];</span>
+<span class="lineNum">     136 </span><span class="lineNoCov">          0 :     };</span>
+<span class="lineNum">     137 </span><span class="lineNoCov">          0 : }</span>
+<a name="138"><span class="lineNum">     138 </span>            : </a>
+<span class="lineNum">     139 </span>            : //
+<span class="lineNum">     140 </span>            : - (void)blockTest03{
+<span class="lineNum">     141 </span><span class="lineNoCov">          0 :     WGLianShiBlock *wgBlock = [[WGLianShiBlock alloc] init];</span>
+<span class="lineNum">     142 </span><span class="lineNoCov">          0 :     int res = wgBlock.add(10).add(20).add(30).result;</span>
+<span class="lineNum">     143 </span><span class="lineNoCov">          0 :     WGLog(@&quot;block实现链式编程加法结果%d&quot;,res);</span>
+<span class="lineNum">     144 </span><span class="lineNoCov">          0 : }</span>
+<a name="145"><span class="lineNum">     145 </span>            : </a>
+<span class="lineNum">     146 </span>            : //打印1
+<a name="147"><span class="lineNum">     147 </span>            : - (void)blockTest01{</a>
+<span class="lineNum">     148 </span><span class="lineNoCov">          0 :     int blockTest01 = 1;</span>
+<span class="lineNum">     149 </span><span class="lineNoCov">          0 :     void(^blk)(void) = ^{</span>
+<span class="lineNum">     150 </span><span class="lineNoCov">          0 :         WGLog(@&quot;blockTest01=%d\n&quot;,blockTest01);</span>
+<span class="lineNum">     151 </span><span class="lineNoCov">          0 :     };</span>
+<span class="lineNum">     152 </span><span class="lineNoCov">          0 :     blockTest01 = 2;</span>
+<span class="lineNum">     153 </span><span class="lineNoCov">          0 :     blk();</span>
+<span class="lineNum">     154 </span><span class="lineNoCov">          0 : }</span>
+<a name="155"><span class="lineNum">     155 </span>            : </a>
+<span class="lineNum">     156 </span>            : //打印4
+<a name="157"><span class="lineNum">     157 </span>            : - (void)blockTest02{</a>
+<span class="lineNum">     158 </span><span class="lineNoCov">          0 :     __block int blockTest02 = 3;</span>
+<span class="lineNum">     159 </span><span class="lineNoCov">          0 :     void(^blk)(void) = ^{</span>
+<span class="lineNum">     160 </span><span class="lineNoCov">          0 :         WGLog(@&quot;blockTest02=%d\n&quot;,blockTest02);</span>
+<span class="lineNum">     161 </span><span class="lineNoCov">          0 :     };</span>
+<span class="lineNum">     162 </span><span class="lineNoCov">          0 :     blockTest02 = 4;</span>
+<span class="lineNum">     163 </span><span class="lineNoCov">          0 :     blk();</span>
+<a name="164"><span class="lineNum">     164 </span><span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">     165 </span>            : 
+<span class="lineNum">     166 </span>            : -(void)touchesBegan:(NSSet&lt;UITouch *&gt; *)touches withEvent:(UIEvent *)event{
+<span class="lineNum">     167 </span><span class="lineNoCov">          0 :     WGBannerViewController *conv = [[WGBannerViewController alloc] init];</span>
+<span class="lineNum">     168 </span><span class="lineNoCov">          0 :     [self.navigationController pushViewController:conv animated:YES];</span>
+<a name="169"><span class="lineNum">     169 </span><span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">     170 </span>            : 
+<span class="lineNum">     171 </span>            : - (void)setViewView{
+<span class="lineNum">     172 </span><span class="lineCov">        256 :     self.view.backgroundColor = BACKGROUND_COLOR;</span>
+<span class="lineNum">     173 </span><span class="lineCov">        256 :     self.automaticallyAdjustsScrollViewInsets = NO;</span>
+<a name="174"><span class="lineNum">     174 </span><span class="lineCov">        256 : }</span></a>
+<span class="lineNum">     175 </span>            : 
+<span class="lineNum">     176 </span>            : - (void)doSomething{
+<span class="lineNum">     177 </span><span class="lineNoCov">          0 :     WGLog(@&quot;测试循环引用调用方法&quot;);</span>
+<a name="178"><span class="lineNum">     178 </span><span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">     179 </span>            : 
+<span class="lineNum">     180 </span>            : -(void)dealloc{
+<span class="lineNum">     181 </span><span class="lineCov">        256 :     WGLog(@&quot;没有循环引用&quot;);</span>
+<span class="lineNum">     182 </span><span class="lineCov">        256 :     [_timer invalidate];</span>
+<span class="lineNum">     183 </span><span class="lineCov">        256 :     _timer = nil;</span>
+<span class="lineNum">     184 </span><span class="lineCov">        256 : }</span>
+<span class="lineNum">     185 </span>            : 
+<span class="lineNum">     186 </span>            : @end
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.13</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

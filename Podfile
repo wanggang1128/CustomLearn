@@ -7,4 +7,6 @@ pod 'AFNetworking'
 pod 'WGPushControllerKit'
 pod 'SDWebImage', '~> 4.0'
 
+pod 'XcodeCoverage', ‘~>1.0'
+
 end

@@ -1,0 +1,577 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - Coverage.info - Categorys/NSStringCategory/NSString+WGCommon.m</title>
+  <link rel="stylesheet" type="text/css" href="../../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../../index.html">top level</a> - <a href="index.html">Categorys/NSStringCategory</a> - NSString+WGCommon.m<span style="font-size: 80%;"> (source / <a href="NSString+WGCommon.m.func-sort-c.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">Coverage.info</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">182</td>
+            <td class="headerCovTableEntryLo">0.0 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2019-02-19 13:48:16</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">40</td>
+            <td class="headerCovTableEntryLo">0.0 %</td>
+          </tr>
+          <tr><td><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">          Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>            : //</a>
+<span class="lineNum">       2 </span>            : //  NSString+WGCommon.m
+<span class="lineNum">       3 </span>            : //  CustomLearn
+<span class="lineNum">       4 </span>            : //
+<span class="lineNum">       5 </span>            : //  Created by wanggang on 2018/10/16.
+<span class="lineNum">       6 </span>            : //  Copyright © 2018 WG. All rights reserved.
+<span class="lineNum">       7 </span>            : //
+<span class="lineNum">       8 </span>            : 
+<span class="lineNum">       9 </span>            : #import &quot;NSString+WGCommon.h&quot;
+<span class="lineNum">      10 </span>            : #import &lt;CommonCrypto/CommonCrypto.h&gt;
+<span class="lineNum">      11 </span>            : 
+<span class="lineNum">      12 </span>            : @implementation NSString (WGCommon)
+<span class="lineNum">      13 </span>            : 
+<span class="lineNum">      14 </span>            : #pragma mark - 正则匹配
+<span class="lineNum">      15 </span>            : /**
+<span class="lineNum">      16 </span>            :  *  匹配Email
+<span class="lineNum">      17 </span>            :  *
+<a name="18"><span class="lineNum">      18 </span>            :  *  @return YES 成功 NO 失败</a>
+<span class="lineNum">      19 </span>            :  */
+<span class="lineNum">      20 </span>            : - (BOOL)isEmail {
+<span class="lineNum">      21 </span><span class="lineNoCov">          0 :     NSString *regex = @&quot;[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}&quot;;</span>
+<span class="lineNum">      22 </span><span class="lineNoCov">          0 :     NSPredicate *pred = [NSPredicate predicateWithFormat:@&quot;SELF MATCHES %@&quot;, regex];</span>
+<span class="lineNum">      23 </span><span class="lineNoCov">          0 :     return [pred evaluateWithObject:self];</span>
+<span class="lineNum">      24 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">      25 </span>            : 
+<span class="lineNum">      26 </span>            : /**
+<span class="lineNum">      27 </span>            :  *  匹配URL
+<span class="lineNum">      28 </span>            :  *
+<a name="29"><span class="lineNum">      29 </span>            :  *  @return YES 成功 NO 失败</a>
+<span class="lineNum">      30 </span>            :  */
+<span class="lineNum">      31 </span>            : - (BOOL)isUrl {
+<span class="lineNum">      32 </span><span class="lineNoCov">          0 :     NSString *regex = @&quot;http(s)?:\\/\\/([\\w-]+\\.)+[\\w-]+(\\/[\\w- .\\/?%&amp;=]*)?&quot;;</span>
+<span class="lineNum">      33 </span><span class="lineNoCov">          0 :     NSPredicate *pred = [NSPredicate predicateWithFormat:@&quot;SELF MATCHES %@&quot;, regex];</span>
+<span class="lineNum">      34 </span><span class="lineNoCov">          0 :     return [pred evaluateWithObject:self];</span>
+<span class="lineNum">      35 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">      36 </span>            : 
+<span class="lineNum">      37 </span>            : /**
+<span class="lineNum">      38 </span>            :  *  匹配电话号码
+<span class="lineNum">      39 </span>            :  *
+<a name="40"><span class="lineNum">      40 </span>            :  *  @return YES 成功 NO 失败</a>
+<span class="lineNum">      41 </span>            :  */
+<span class="lineNum">      42 </span>            : - (BOOL)isTelephone {
+<span class="lineNum">      43 </span><span class="lineNoCov">          0 :     NSString * MOBILE = @&quot;^1(3[0-9]|47|5[0-35-9]|8[025-9])\\d{8}$&quot;;</span>
+<span class="lineNum">      44 </span><span class="lineNoCov">          0 :     NSString * CM = @&quot;^((13[4-9])|(147)|(15[0-2,7-9])|(178)|(18[2-4,7-8]))\\d{8}|(1705)\\d{7}$&quot;;;</span>
+<span class="lineNum">      45 </span><span class="lineNoCov">          0 :     NSString * CU = @&quot;^((13[0-2])|(145)|(15[5-6])|(176)|(18[5,6]))\\d{8}|(1709)\\d{7}$&quot;;</span>
+<span class="lineNum">      46 </span><span class="lineNoCov">          0 :     NSString * CT = @&quot;^((133)|(153)|(177)|(18[0,1,9]))\\d{8}$&quot;;</span>
+<span class="lineNum">      47 </span><span class="lineNoCov">          0 :     NSString * PHS = @&quot;^0(10|2[0-5789]|\\d{3})\\d{7,8}$&quot;;</span>
+<span class="lineNum">      48 </span><span class="lineNoCov">          0 :     NSPredicate *regextestmobile = [NSPredicate predicateWithFormat:@&quot;SELF MATCHES %@&quot;, MOBILE];</span>
+<span class="lineNum">      49 </span><span class="lineNoCov">          0 :     NSPredicate *regextestcm = [NSPredicate predicateWithFormat:@&quot;SELF MATCHES %@&quot;, CM];</span>
+<span class="lineNum">      50 </span><span class="lineNoCov">          0 :     NSPredicate *regextestcu = [NSPredicate predicateWithFormat:@&quot;SELF MATCHES %@&quot;, CU];</span>
+<span class="lineNum">      51 </span><span class="lineNoCov">          0 :     NSPredicate *regextestct = [NSPredicate predicateWithFormat:@&quot;SELF MATCHES %@&quot;, CT];</span>
+<span class="lineNum">      52 </span><span class="lineNoCov">          0 :     NSPredicate *regextestphs = [NSPredicate predicateWithFormat:@&quot;SELF MATCHES %@&quot;, PHS];</span>
+<span class="lineNum">      53 </span>            :     
+<span class="lineNum">      54 </span><span class="lineNoCov">          0 :     return  [regextestmobile evaluateWithObject:self]   ||</span>
+<span class="lineNum">      55 </span><span class="lineNoCov">          0 :     [regextestphs evaluateWithObject:self]      ||</span>
+<span class="lineNum">      56 </span><span class="lineNoCov">          0 :     [regextestct evaluateWithObject:self]       ||</span>
+<span class="lineNum">      57 </span><span class="lineNoCov">          0 :     [regextestcu evaluateWithObject:self]       ||</span>
+<span class="lineNum">      58 </span><span class="lineNoCov">          0 :     [regextestcm evaluateWithObject:self];</span>
+<a name="59"><span class="lineNum">      59 </span><span class="lineNoCov">          0 : }</span></a>
+<span class="lineNum">      60 </span>            : 
+<span class="lineNum">      61 </span>            : - (BOOL)isValidZipcode {
+<span class="lineNum">      62 </span><span class="lineNoCov">          0 :     const char *cvalue = [self UTF8String];</span>
+<span class="lineNum">      63 </span>            :     
+<span class="lineNum">      64 </span><span class="lineNoCov">          0 :     long len = strlen(cvalue);</span>
+<span class="lineNum">      65 </span><span class="lineNoCov">          0 :     if (len != 6) {</span>
+<span class="lineNum">      66 </span><span class="lineNoCov">          0 :         return NO;</span>
+<span class="lineNum">      67 </span>            :     }
+<span class="lineNum">      68 </span><span class="lineNoCov">          0 :     for (int i = 0; i &lt; len; i++)</span>
+<span class="lineNum">      69 </span>            :     {
+<span class="lineNum">      70 </span><span class="lineNoCov">          0 :         if (!(cvalue[i] &gt;= '0' &amp;&amp; cvalue[i] &lt;= '9'))</span>
+<span class="lineNum">      71 </span>            :         {
+<span class="lineNum">      72 </span><span class="lineNoCov">          0 :             return NO;</span>
+<span class="lineNum">      73 </span>            :         }
+<span class="lineNum">      74 </span><span class="lineNoCov">          0 :     }</span>
+<span class="lineNum">      75 </span><span class="lineNoCov">          0 :     return YES;</span>
+<span class="lineNum">      76 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">      77 </span>            : 
+<span class="lineNum">      78 </span>            : /**
+<span class="lineNum">      79 </span>            :  *  由英文、字母或数字组成 6-18位
+<span class="lineNum">      80 </span>            :  *
+<a name="81"><span class="lineNum">      81 </span>            :  *  @return YES 验证成功 NO 验证失败</a>
+<span class="lineNum">      82 </span>            :  */
+<span class="lineNum">      83 </span>            : - (BOOL)isPassword {
+<span class="lineNum">      84 </span><span class="lineNoCov">          0 :     NSString * regex = @&quot;^[A-Za-z0-9_]{6,18}$&quot;;</span>
+<span class="lineNum">      85 </span><span class="lineNoCov">          0 :     NSPredicate *pred = [NSPredicate predicateWithFormat:@&quot;SELF MATCHES %@&quot;, regex];</span>
+<span class="lineNum">      86 </span><span class="lineNoCov">          0 :     return [pred evaluateWithObject:self];</span>
+<span class="lineNum">      87 </span>            :     
+<span class="lineNum">      88 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">      89 </span>            : 
+<span class="lineNum">      90 </span>            : /**
+<span class="lineNum">      91 </span>            :  *  匹配数字
+<span class="lineNum">      92 </span>            :  *
+<a name="93"><span class="lineNum">      93 </span>            :  *  @return YES 成功 NO 失败</a>
+<span class="lineNum">      94 </span>            :  */
+<span class="lineNum">      95 </span>            : - (BOOL)isNumbers {
+<span class="lineNum">      96 </span><span class="lineNoCov">          0 :     NSString *regEx = @&quot;^-?\\d+.?\\d?&quot;;</span>
+<span class="lineNum">      97 </span><span class="lineNoCov">          0 :     NSPredicate *pred= [NSPredicate predicateWithFormat:@&quot;SELF MATCHES %@&quot;, regEx];</span>
+<span class="lineNum">      98 </span><span class="lineNoCov">          0 :     return [pred evaluateWithObject:self];</span>
+<span class="lineNum">      99 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     100 </span>            : 
+<span class="lineNum">     101 </span>            : /**
+<span class="lineNum">     102 </span>            :  *  匹配英文字母
+<span class="lineNum">     103 </span>            :  *
+<a name="104"><span class="lineNum">     104 </span>            :  *  @return YES 成功 NO 失败</a>
+<span class="lineNum">     105 </span>            :  */
+<span class="lineNum">     106 </span>            : - (BOOL)isLetter {
+<span class="lineNum">     107 </span><span class="lineNoCov">          0 :     NSString *regEx = @&quot;^[A-Za-z]+$&quot;;</span>
+<span class="lineNum">     108 </span><span class="lineNoCov">          0 :     NSPredicate *pred = [NSPredicate predicateWithFormat:@&quot;SELF MATCHES %@&quot;, regEx];</span>
+<span class="lineNum">     109 </span><span class="lineNoCov">          0 :     return [pred evaluateWithObject:self];</span>
+<span class="lineNum">     110 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     111 </span>            : 
+<span class="lineNum">     112 </span>            : /**
+<span class="lineNum">     113 </span>            :  *  匹配大写英文字母
+<span class="lineNum">     114 </span>            :  *
+<a name="115"><span class="lineNum">     115 </span>            :  *  @return YES 成功 NO 失败</a>
+<span class="lineNum">     116 </span>            :  */
+<span class="lineNum">     117 </span>            : - (BOOL)isCapitalLetter {
+<span class="lineNum">     118 </span><span class="lineNoCov">          0 :     NSString *regEx = @&quot;^[A-Z]+$&quot;;</span>
+<span class="lineNum">     119 </span><span class="lineNoCov">          0 :     NSPredicate *pred = [NSPredicate predicateWithFormat:@&quot;SELF MATCHES %@&quot;, regEx];</span>
+<span class="lineNum">     120 </span><span class="lineNoCov">          0 :     return [pred evaluateWithObject:self];</span>
+<span class="lineNum">     121 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     122 </span>            : 
+<span class="lineNum">     123 </span>            : /**
+<span class="lineNum">     124 </span>            :  *  匹配小写英文字母
+<span class="lineNum">     125 </span>            :  *
+<a name="126"><span class="lineNum">     126 </span>            :  *  @return YES 成功 NO 失败</a>
+<span class="lineNum">     127 </span>            :  */
+<span class="lineNum">     128 </span>            : - (BOOL)isSmallLetter {
+<span class="lineNum">     129 </span><span class="lineNoCov">          0 :     NSString *regEx = @&quot;^[a-z]+$&quot;;</span>
+<span class="lineNum">     130 </span><span class="lineNoCov">          0 :     NSPredicate *pred = [NSPredicate predicateWithFormat:@&quot;SELF MATCHES %@&quot;, regEx];</span>
+<span class="lineNum">     131 </span><span class="lineNoCov">          0 :     return [pred evaluateWithObject:self];</span>
+<span class="lineNum">     132 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     133 </span>            : 
+<span class="lineNum">     134 </span>            : /**
+<span class="lineNum">     135 </span>            :  *  匹配小写英文字母
+<span class="lineNum">     136 </span>            :  *
+<a name="137"><span class="lineNum">     137 </span>            :  *  @return YES 成功 NO 失败</a>
+<span class="lineNum">     138 </span>            :  */
+<span class="lineNum">     139 </span>            : - (BOOL)isLetterAndNumbers {
+<span class="lineNum">     140 </span><span class="lineNoCov">          0 :     NSString *regEx = @&quot;^[A-Za-z0-9]+$&quot;;</span>
+<span class="lineNum">     141 </span><span class="lineNoCov">          0 :     NSPredicate *pred = [NSPredicate predicateWithFormat:@&quot;SELF MATCHES %@&quot;, regEx];</span>
+<span class="lineNum">     142 </span><span class="lineNoCov">          0 :     return [pred evaluateWithObject:self];</span>
+<span class="lineNum">     143 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     144 </span>            : 
+<span class="lineNum">     145 </span>            : /**
+<span class="lineNum">     146 </span>            :  *  匹配中文，英文字母和数字及_
+<span class="lineNum">     147 </span>            :  *
+<a name="148"><span class="lineNum">     148 </span>            :  *  @return YES 成功 NO 失败</a>
+<span class="lineNum">     149 </span>            :  */
+<span class="lineNum">     150 </span>            : - (BOOL)isChineseAndLetterAndNumberAndBelowLine {
+<span class="lineNum">     151 </span><span class="lineNoCov">          0 :     NSString *regEx = @&quot;^[\u4e00-\u9fa5_a-zA-Z0-9]+$&quot;;</span>
+<span class="lineNum">     152 </span><span class="lineNoCov">          0 :     NSPredicate *pred = [NSPredicate predicateWithFormat:@&quot;SELF MATCHES %@&quot;, regEx];</span>
+<span class="lineNum">     153 </span><span class="lineNoCov">          0 :     return [pred evaluateWithObject:self];</span>
+<span class="lineNum">     154 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     155 </span>            : 
+<span class="lineNum">     156 </span>            : /**
+<span class="lineNum">     157 </span>            :  *  匹配中文，英文字母和数字及_ 并限制字数
+<span class="lineNum">     158 </span>            :  *
+<a name="159"><span class="lineNum">     159 </span>            :  *  @return YES 成功 NO 失败</a>
+<span class="lineNum">     160 </span>            :  */
+<span class="lineNum">     161 </span>            : - (BOOL)isChineseAndLetterAndNumberAndBelowLine4to10 {
+<span class="lineNum">     162 </span><span class="lineNoCov">          0 :     NSString *regEx = @&quot;[\u4e00-\u9fa5_a-zA-Z0-9_]{4,10}&quot;;</span>
+<span class="lineNum">     163 </span><span class="lineNoCov">          0 :     NSPredicate *pred = [NSPredicate predicateWithFormat:@&quot;SELF MATCHES %@&quot;, regEx];</span>
+<span class="lineNum">     164 </span><span class="lineNoCov">          0 :     return [pred evaluateWithObject:self];</span>
+<span class="lineNum">     165 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     166 </span>            : 
+<span class="lineNum">     167 </span>            : /**
+<span class="lineNum">     168 </span>            :  *  匹配含有汉字、数字、字母、下划线不能以下划线开头和结尾
+<span class="lineNum">     169 </span>            :  *
+<a name="170"><span class="lineNum">     170 </span>            :  *  @return YES 成功 NO 失败</a>
+<span class="lineNum">     171 </span>            :  */
+<span class="lineNum">     172 </span>            : - (BOOL)isChineseAndLetterAndNumberAndBelowLineNotFirstOrLast {
+<span class="lineNum">     173 </span><span class="lineNoCov">          0 :     NSString *regEx = @&quot;^(?!_)(?!.*?_$)[a-zA-Z0-9_\u4e00-\u9fa5]+$&quot;;</span>
+<span class="lineNum">     174 </span><span class="lineNoCov">          0 :     NSPredicate *pred = [NSPredicate predicateWithFormat:@&quot;SELF MATCHES %@&quot;, regEx];</span>
+<span class="lineNum">     175 </span><span class="lineNoCov">          0 :     return [pred evaluateWithObject:self];</span>
+<span class="lineNum">     176 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     177 </span>            : 
+<span class="lineNum">     178 </span>            : /**
+<span class="lineNum">     179 </span>            :  *  最长不得超过7个汉字，或14个字节(数字，字母和下划线)正则表达式
+<span class="lineNum">     180 </span>            :  *
+<a name="181"><span class="lineNum">     181 </span>            :  *  @return YES 成功 NO 失败</a>
+<span class="lineNum">     182 </span>            :  */
+<span class="lineNum">     183 </span>            : - (BOOL)isBelow7ChineseOrBlow14LetterAndNumberAndBelowLine {
+<span class="lineNum">     184 </span><span class="lineNoCov">          0 :     NSString *regEx = @&quot;^[\u4e00-\u9fa5]{1,7}$|^[\dA-Za-z_]{1,14}$&quot;;</span>
+<span class="lineNum">     185 </span><span class="lineNoCov">          0 :     NSPredicate *pred = [NSPredicate predicateWithFormat:@&quot;SELF MATCHES %@&quot;, regEx];</span>
+<span class="lineNum">     186 </span><span class="lineNoCov">          0 :     return [pred evaluateWithObject:self];</span>
+<span class="lineNum">     187 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     188 </span>            : 
+<span class="lineNum">     189 </span>            : #pragma mark - 加密
+<span class="lineNum">     190 </span>            : /**
+<span class="lineNum">     191 </span>            :  *  md5加密(32位 常规)
+<span class="lineNum">     192 </span>            :  *
+<a name="193"><span class="lineNum">     193 </span>            :  *  @return 加密后的字符串</a>
+<span class="lineNum">     194 </span>            :  */
+<span class="lineNum">     195 </span>            : - (NSString *)md5 {
+<span class="lineNum">     196 </span><span class="lineNoCov">          0 :     const char *cStr = [self UTF8String];</span>
+<span class="lineNum">     197 </span>            :     unsigned char digest[CC_MD5_DIGEST_LENGTH];
+<span class="lineNum">     198 </span><span class="lineNoCov">          0 :     CC_MD5( cStr, (CC_LONG)strlen(cStr), digest );</span>
+<span class="lineNum">     199 </span><span class="lineNoCov">          0 :     NSMutableString *result = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH *2];</span>
+<span class="lineNum">     200 </span><span class="lineNoCov">          0 :     for(int i =0; i &lt; CC_MD5_DIGEST_LENGTH; i++)</span>
+<span class="lineNum">     201 </span><span class="lineNoCov">          0 :         [result appendFormat:@&quot;%02x&quot;, digest[i]];</span>
+<span class="lineNum">     202 </span><span class="lineNoCov">          0 :     return result;</span>
+<span class="lineNum">     203 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     204 </span>            : 
+<span class="lineNum">     205 </span>            : /**
+<span class="lineNum">     206 </span>            :  *  md5加密(16位)
+<span class="lineNum">     207 </span>            :  *
+<a name="208"><span class="lineNum">     208 </span>            :  *  @return 加密后的字符串</a>
+<span class="lineNum">     209 </span>            :  */
+<span class="lineNum">     210 </span>            : - (NSString *)md5_16 {
+<span class="lineNum">     211 </span>            :     // 提取32位MD5散列的中间16位
+<span class="lineNum">     212 </span><span class="lineNoCov">          0 :     NSString *md5_32=[self md5];</span>
+<span class="lineNum">     213 </span>            :     // 即9～25位
+<span class="lineNum">     214 </span><span class="lineNoCov">          0 :     NSString *result = [[md5_32 substringToIndex:24] substringFromIndex:8];</span>
+<span class="lineNum">     215 </span><span class="lineNoCov">          0 :     return result;</span>
+<span class="lineNum">     216 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     217 </span>            : 
+<span class="lineNum">     218 </span>            : #pragma mark - 计算字符串尺寸
+<span class="lineNum">     219 </span>            : /**
+<span class="lineNum">     220 </span>            :  *  计算字符串高度 （多行）
+<span class="lineNum">     221 </span>            :  *
+<span class="lineNum">     222 </span>            :  *  @param width 字符串的宽度
+<span class="lineNum">     223 </span>            :  *  @param font  字体大小
+<span class="lineNum">     224 </span>            :  *
+<a name="225"><span class="lineNum">     225 </span>            :  *  @return 字符串的尺寸</a>
+<span class="lineNum">     226 </span>            :  */
+<span class="lineNum">     227 </span>            : - (CGSize)heightWithWidth:(CGFloat)width andFont:(CGFloat)font {
+<span class="lineNum">     228 </span><span class="lineNoCov">          0 :     NSDictionary *attribute = @{NSFontAttributeName: [UIFont systemFontOfSize:font]};</span>
+<span class="lineNum">     229 </span><span class="lineNoCov">          0 :     CGSize  size = [self boundingRectWithSize:CGSizeMake(width, MAXFLOAT)  options:NSStringDrawingUsesLineFragmentOrigin  |NSStringDrawingUsesFontLeading |NSStringDrawingTruncatesLastVisibleLine attributes:attribute context:nil].size;</span>
+<span class="lineNum">     230 </span>            :     return size;
+<span class="lineNum">     231 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     232 </span>            : 
+<span class="lineNum">     233 </span>            : /**
+<span class="lineNum">     234 </span>            :  *  计算字符串宽度
+<span class="lineNum">     235 </span>            :  *
+<span class="lineNum">     236 </span>            :  *  @param height 字符串的高度
+<span class="lineNum">     237 </span>            :  *  @param font  字体大小
+<span class="lineNum">     238 </span>            :  *
+<a name="239"><span class="lineNum">     239 </span>            :  *  @return 字符串的尺寸</a>
+<span class="lineNum">     240 </span>            :  */
+<span class="lineNum">     241 </span>            : - (CGSize)widthWithHeight:(CGFloat)height andFont:(CGFloat)font {
+<span class="lineNum">     242 </span><span class="lineNoCov">          0 :     NSDictionary *attribute = @{NSFontAttributeName: [UIFont systemFontOfSize:font]};</span>
+<span class="lineNum">     243 </span><span class="lineNoCov">          0 :     CGSize  size = [self boundingRectWithSize:CGSizeMake(MAXFLOAT, height)  options:NSStringDrawingUsesLineFragmentOrigin  |NSStringDrawingUsesFontLeading |NSStringDrawingTruncatesLastVisibleLine  attributes:attribute context:nil].size;</span>
+<span class="lineNum">     244 </span>            :     return size;
+<span class="lineNum">     245 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     246 </span>            : 
+<span class="lineNum">     247 </span>            : #pragma mark - 检测是否含有某个字符
+<span class="lineNum">     248 </span>            : /**
+<span class="lineNum">     249 </span>            :  *  检测是否含有某个字符
+<span class="lineNum">     250 </span>            :  *
+<span class="lineNum">     251 </span>            :  *  @param string 检测是否含有的字符
+<span class="lineNum">     252 </span>            :  *
+<a name="253"><span class="lineNum">     253 </span>            :  *  @return YES 含有 NO 不含有</a>
+<span class="lineNum">     254 </span>            :  */
+<span class="lineNum">     255 </span>            : - (BOOL)containString:(NSString *)string {
+<span class="lineNum">     256 </span><span class="lineNoCov">          0 :     return ([self rangeOfString:string].location == NSNotFound) ? NO : YES;</span>
+<span class="lineNum">     257 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     258 </span>            : 
+<span class="lineNum">     259 </span>            : /**
+<span class="lineNum">     260 </span>            :  *  是否含有汉字
+<span class="lineNum">     261 </span>            :  *
+<a name="262"><span class="lineNum">     262 </span>            :  *  @return YES 是 NO 不是</a>
+<span class="lineNum">     263 </span>            :  */
+<span class="lineNum">     264 </span>            : - (BOOL)containsChineseCharacter {
+<span class="lineNum">     265 </span><span class="lineNoCov">          0 :     for (int i = 0; i &lt; self.length; i++) {</span>
+<span class="lineNum">     266 </span><span class="lineNoCov">          0 :         unichar c = [self characterAtIndex:i];</span>
+<span class="lineNum">     267 </span><span class="lineNoCov">          0 :         if (c &gt;=0x4E00 &amp;&amp; c &lt;=0x9FFF) {</span>
+<span class="lineNum">     268 </span><span class="lineNoCov">          0 :             return YES;</span>
+<span class="lineNum">     269 </span>            :         }
+<span class="lineNum">     270 </span><span class="lineNoCov">          0 :     }</span>
+<span class="lineNum">     271 </span><span class="lineNoCov">          0 :     return NO;</span>
+<span class="lineNum">     272 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     273 </span>            : 
+<span class="lineNum">     274 </span>            : #pragma mark - 计算String的字数(中英混合)
+<span class="lineNum">     275 </span>            : /**
+<span class="lineNum">     276 </span>            :  *  计算string字数
+<span class="lineNum">     277 </span>            :  *
+<a name="278"><span class="lineNum">     278 </span>            :  *  @return 获得的中英混合字数</a>
+<span class="lineNum">     279 </span>            :  */
+<span class="lineNum">     280 </span>            : - (NSInteger)stringLength {
+<span class="lineNum">     281 </span><span class="lineNoCov">          0 :     NSInteger strlength = 0;</span>
+<span class="lineNum">     282 </span><span class="lineNoCov">          0 :     NSInteger elength = 0;</span>
+<span class="lineNum">     283 </span><span class="lineNoCov">          0 :     for (int i = 0; i &lt; self.length; i++) {</span>
+<span class="lineNum">     284 </span><span class="lineNoCov">          0 :         unichar c = [self characterAtIndex:i];</span>
+<span class="lineNum">     285 </span><span class="lineNoCov">          0 :         if (c &gt;=0x4E00 &amp;&amp; c &lt;=0x9FFF) {</span>
+<span class="lineNum">     286 </span>            :             // 汉字
+<span class="lineNum">     287 </span><span class="lineNoCov">          0 :             strlength++;</span>
+<span class="lineNum">     288 </span><span class="lineNoCov">          0 :         } else {</span>
+<span class="lineNum">     289 </span>            :             // 英文
+<span class="lineNum">     290 </span><span class="lineNoCov">          0 :             elength++;</span>
+<span class="lineNum">     291 </span>            :         }
+<span class="lineNum">     292 </span><span class="lineNoCov">          0 :     }</span>
+<span class="lineNum">     293 </span><span class="lineNoCov">          0 :     return strlength+elength;</span>
+<span class="lineNum">     294 </span>            : }
+<span class="lineNum">     295 </span>            : 
+<span class="lineNum">     296 </span>            : #pragma mark - 时间戳转换
+<span class="lineNum">     297 </span>            : /**
+<span class="lineNum">     298 </span>            :  *  毫秒级时间戳转日期
+<span class="lineNum">     299 </span>            :  *
+<a name="300"><span class="lineNum">     300 </span>            :  *  @return 日期</a>
+<span class="lineNum">     301 </span>            :  */
+<span class="lineNum">     302 </span>            : - (NSDate *)dateValueWithMillisecondsSince1970 {
+<span class="lineNum">     303 </span><span class="lineNoCov">          0 :     return [NSDate dateWithTimeIntervalSince1970:[self doubleValue] / 1000];</span>
+<span class="lineNum">     304 </span>            : }
+<span class="lineNum">     305 </span>            : 
+<span class="lineNum">     306 </span>            : /**
+<span class="lineNum">     307 </span>            :  *  秒级时间戳转日期
+<span class="lineNum">     308 </span>            :  *
+<a name="309"><span class="lineNum">     309 </span>            :  *  @return 日期</a>
+<span class="lineNum">     310 </span>            :  */
+<span class="lineNum">     311 </span>            : - (NSDate *)dateValueWithTimeIntervalSince1970 {
+<span class="lineNum">     312 </span><span class="lineNoCov">          0 :     return [NSDate dateWithTimeIntervalSince1970:[self doubleValue]];</span>
+<span class="lineNum">     313 </span>            : }
+<span class="lineNum">     314 </span>            : 
+<span class="lineNum">     315 </span>            : #pragma mark - 判断特殊字符
+<span class="lineNum">     316 </span>            : /**
+<span class="lineNum">     317 </span>            :  *  判断字符串是否为空
+<span class="lineNum">     318 </span>            :  *
+<a name="319"><span class="lineNum">     319 </span>            :  *  @return YES 是 NO 不是</a>
+<span class="lineNum">     320 </span>            :  */
+<span class="lineNum">     321 </span>            : - (BOOL)empty {
+<span class="lineNum">     322 </span><span class="lineNoCov">          0 :     return [self length] &gt; 0 ? NO : YES;</span>
+<span class="lineNum">     323 </span>            : }
+<span class="lineNum">     324 </span>            : 
+<span class="lineNum">     325 </span>            : /**
+<span class="lineNum">     326 </span>            :  *  判断是否为整形
+<span class="lineNum">     327 </span>            :  *
+<a name="328"><span class="lineNum">     328 </span>            :  *  @return YES 是 NO 不是</a>
+<span class="lineNum">     329 </span>            :  */
+<span class="lineNum">     330 </span>            : - (BOOL)isInteger {
+<span class="lineNum">     331 </span><span class="lineNoCov">          0 :     NSScanner* scan = [NSScanner scannerWithString:self];</span>
+<span class="lineNum">     332 </span>            :     int val;
+<span class="lineNum">     333 </span><span class="lineNoCov">          0 :     return[scan scanInt:&amp;val] &amp;&amp; [scan isAtEnd];</span>
+<span class="lineNum">     334 </span>            :     
+<span class="lineNum">     335 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     336 </span>            : 
+<span class="lineNum">     337 </span>            : /**
+<span class="lineNum">     338 </span>            :  *  判断是否为浮点形
+<span class="lineNum">     339 </span>            :  *
+<a name="340"><span class="lineNum">     340 </span>            :  *  @return YES 是 NO 不是</a>
+<span class="lineNum">     341 </span>            :  */
+<span class="lineNum">     342 </span>            : - (BOOL)isFloat {
+<span class="lineNum">     343 </span><span class="lineNoCov">          0 :     NSScanner* scan = [NSScanner scannerWithString:self];</span>
+<span class="lineNum">     344 </span>            :     float val;
+<span class="lineNum">     345 </span><span class="lineNoCov">          0 :     return[scan scanFloat:&amp;val] &amp;&amp; [scan isAtEnd];</span>
+<span class="lineNum">     346 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     347 </span>            : 
+<span class="lineNum">     348 </span>            : /**
+<span class="lineNum">     349 </span>            :  *  判断是否有特殊字符
+<span class="lineNum">     350 </span>            :  *
+<a name="351"><span class="lineNum">     351 </span>            :  *  @return YES 是 NO 不是</a>
+<span class="lineNum">     352 </span>            :  */
+<span class="lineNum">     353 </span>            : - (BOOL)isHasSpecialcharacters {
+<span class="lineNum">     354 </span><span class="lineNoCov">          0 :     NSString *  englishNameRule = @&quot;^[(A-Za-z0-9)*(\u4e00-\u9fa5)*(,|\\.|，|。|\\:|;|：|；|!|！|\\*|\\×|\\(|\\)|\\（|\\）|#|#|\\$|&amp;#|\\$|&amp;|\\^|@|&amp;#|\\$|&amp;|\\^|@|＠|＆|\\￥|\\……)*]+$&quot;;</span>
+<span class="lineNum">     355 </span>            :     
+<span class="lineNum">     356 </span><span class="lineNoCov">          0 :     NSPredicate * englishpredicate = [NSPredicate predicateWithFormat:@&quot;SELF MATCHES %@&quot;, englishNameRule];</span>
+<span class="lineNum">     357 </span>            :     
+<span class="lineNum">     358 </span><span class="lineNoCov">          0 :     if ([englishpredicate evaluateWithObject:self] == YES) {</span>
+<span class="lineNum">     359 </span><span class="lineNoCov">          0 :         return YES;</span>
+<span class="lineNum">     360 </span>            :     }else{
+<span class="lineNum">     361 </span><span class="lineNoCov">          0 :         return NO;</span>
+<span class="lineNum">     362 </span>            :         
+<span class="lineNum">     363 </span>            :     }
+<span class="lineNum">     364 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     365 </span>            : 
+<span class="lineNum">     366 </span>            : /**
+<span class="lineNum">     367 </span>            :  *  判断是否含有数字
+<span class="lineNum">     368 </span>            :  *
+<a name="369"><span class="lineNum">     369 </span>            :  *  @return YES 是 NO 不是</a>
+<span class="lineNum">     370 </span>            :  */
+<span class="lineNum">     371 </span>            : - (BOOL)isHasNumder {
+<span class="lineNum">     372 </span><span class="lineNoCov">          0 :     NSString *  englishNameRule = @&quot;[A-Za-z]{2,}|[\u4e00-\u9fa5]{1,}[A-Za-z]+$&quot;;</span>
+<span class="lineNum">     373 </span><span class="lineNoCov">          0 :     NSString * chineseNameRule =@&quot;^[\u4e00-\u9fa5]{2,}$&quot;;</span>
+<span class="lineNum">     374 </span>            :     
+<span class="lineNum">     375 </span><span class="lineNoCov">          0 :     NSPredicate * englishpredicate = [NSPredicate predicateWithFormat:@&quot;SELF MATCHES %@&quot;, englishNameRule];</span>
+<span class="lineNum">     376 </span><span class="lineNoCov">          0 :     NSPredicate *chinesepredicate = [NSPredicate predicateWithFormat:@&quot;SELF MATCHES %@&quot;, chineseNameRule];</span>
+<span class="lineNum">     377 </span>            :     
+<span class="lineNum">     378 </span><span class="lineNoCov">          0 :     if ([englishpredicate evaluateWithObject:self] == YES||[chinesepredicate evaluateWithObject:self] == YES) {</span>
+<span class="lineNum">     379 </span><span class="lineNoCov">          0 :         return YES;</span>
+<span class="lineNum">     380 </span>            :     }else{
+<span class="lineNum">     381 </span><span class="lineNoCov">          0 :         return NO;</span>
+<span class="lineNum">     382 </span>            :     }
+<span class="lineNum">     383 </span>            :     
+<span class="lineNum">     384 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     385 </span>            : 
+<span class="lineNum">     386 </span>            : #pragma mark - 获得特殊字符串
+<span class="lineNum">     387 </span>            : //日期+随机数
+<span class="lineNum">     388 </span>            : /**
+<span class="lineNum">     389 </span>            :  *  日期+随机数的字符串（比如为文件命名）
+<span class="lineNum">     390 </span>            :  *
+<a name="391"><span class="lineNum">     391 </span>            :  *  @return 得到的字符串</a>
+<span class="lineNum">     392 </span>            :  */
+<span class="lineNum">     393 </span>            : + (NSString*)getTimeAndRandomString {
+<span class="lineNum">     394 </span>            :     
+<span class="lineNum">     395 </span><span class="lineNoCov">          0 :     int iRandom=arc4random();</span>
+<span class="lineNum">     396 </span><span class="lineNoCov">          0 :     if (iRandom&lt;0) {</span>
+<span class="lineNum">     397 </span><span class="lineNoCov">          0 :         iRandom=-iRandom;</span>
+<span class="lineNum">     398 </span><span class="lineNoCov">          0 :     }</span>
+<span class="lineNum">     399 </span><span class="lineNoCov">          0 :     NSDateFormatter *tFormat=[[NSDateFormatter alloc] init];</span>
+<span class="lineNum">     400 </span><span class="lineNoCov">          0 :     [tFormat setDateFormat:@&quot;yyyyMMddHHmmss&quot;];</span>
+<span class="lineNum">     401 </span><span class="lineNoCov">          0 :     NSString *tResult=[NSString stringWithFormat:@&quot;%@%d&quot;,[tFormat stringFromDate:[NSDate date]],iRandom];</span>
+<span class="lineNum">     402 </span><span class="lineNoCov">          0 :     return tResult;</span>
+<span class="lineNum">     403 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     404 </span>            : 
+<span class="lineNum">     405 </span>            : #pragma mark - json转义
+<span class="lineNum">     406 </span>            : /**
+<span class="lineNum">     407 </span>            :  *  将得到的json的回车替换转义字符
+<span class="lineNum">     408 </span>            :  *
+<a name="409"><span class="lineNum">     409 </span>            :  *  @return 得到替换后的字符串</a>
+<span class="lineNum">     410 </span>            :  */
+<span class="lineNum">     411 </span>            : - (NSString *)changeJsonEnter {
+<span class="lineNum">     412 </span><span class="lineNoCov">          0 :     return [self stringByReplacingOccurrencesOfString:@&quot;\n&quot; withString:@&quot;\\n&quot;];</span>
+<span class="lineNum">     413 </span>            : }
+<a name="414"><span class="lineNum">     414 </span>            : </a>
+<span class="lineNum">     415 </span>            : #pragma mark -  email 转换为 312******@qq.com 形式
+<span class="lineNum">     416 </span>            : - (NSString *)emailChangeToPrivacy {
+<span class="lineNum">     417 </span>            :     
+<span class="lineNum">     418 </span><span class="lineNoCov">          0 :     if (![self isEmail]) {</span>
+<span class="lineNum">     419 </span><span class="lineNoCov">          0 :         return @&quot;&quot;;</span>
+<span class="lineNum">     420 </span>            :     }
+<span class="lineNum">     421 </span>            :     
+<span class="lineNum">     422 </span><span class="lineNoCov">          0 :     NSRange range = [self rangeOfString:@&quot;@&quot;];</span>
+<span class="lineNum">     423 </span>            :     
+<span class="lineNum">     424 </span><span class="lineNoCov">          0 :     NSMutableString *changeStr = [NSMutableString stringWithString:self];</span>
+<span class="lineNum">     425 </span><span class="lineNoCov">          0 :     if (range.location &gt; 2) {</span>
+<span class="lineNum">     426 </span>            :         NSRange changeRange;
+<span class="lineNum">     427 </span><span class="lineNoCov">          0 :         changeRange.location = 3;</span>
+<span class="lineNum">     428 </span><span class="lineNoCov">          0 :         changeRange.length = range.location - 3;</span>
+<span class="lineNum">     429 </span>            :         
+<span class="lineNum">     430 </span><span class="lineNoCov">          0 :         NSMutableString *needChanegeToStr = [NSMutableString string];</span>
+<span class="lineNum">     431 </span><span class="lineNoCov">          0 :         for (int i = 0; i &lt; changeRange.length ; i ++) {</span>
+<span class="lineNum">     432 </span>            :             
+<span class="lineNum">     433 </span><span class="lineNoCov">          0 :             [needChanegeToStr appendString:@&quot;*&quot;];</span>
+<span class="lineNum">     434 </span><span class="lineNoCov">          0 :         }</span>
+<span class="lineNum">     435 </span>            :         
+<span class="lineNum">     436 </span><span class="lineNoCov">          0 :         [changeStr replaceCharactersInRange:changeRange withString:needChanegeToStr];</span>
+<span class="lineNum">     437 </span><span class="lineNoCov">          0 :     }</span>
+<span class="lineNum">     438 </span>            :     
+<span class="lineNum">     439 </span><span class="lineNoCov">          0 :     return changeStr;</span>
+<span class="lineNum">     440 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     441 </span>            : 
+<span class="lineNum">     442 </span>            : #pragma mark - Emoji相关
+<span class="lineNum">     443 </span>            : /**
+<span class="lineNum">     444 </span>            :  *  判断是否是Emoji
+<span class="lineNum">     445 </span>            :  *
+<a name="446"><span class="lineNum">     446 </span>            :  *  @return YES 是 NO 不是</a>
+<span class="lineNum">     447 </span>            :  */
+<span class="lineNum">     448 </span>            : - (BOOL)isEmoji {
+<span class="lineNum">     449 </span><span class="lineNoCov">          0 :     const unichar high = [self characterAtIndex: 0];</span>
+<span class="lineNum">     450 </span>            :     
+<span class="lineNum">     451 </span>            :     // Surrogate pair (U+1D000-1F77F)
+<span class="lineNum">     452 </span><span class="lineNoCov">          0 :     if (0xd800 &lt;= high &amp;&amp; high &lt;= 0xdbff) {</span>
+<span class="lineNum">     453 </span><span class="lineNoCov">          0 :         const unichar low = [self characterAtIndex: 1];</span>
+<span class="lineNum">     454 </span><span class="lineNoCov">          0 :         const int codepoint = ((high - 0xd800) * 0x400) + (low - 0xdc00) + 0x10000;</span>
+<span class="lineNum">     455 </span>            :         
+<span class="lineNum">     456 </span><span class="lineNoCov">          0 :         return (0x1d000 &lt;= codepoint &amp;&amp; codepoint &lt;= 0x1f77f);</span>
+<span class="lineNum">     457 </span>            :         
+<span class="lineNum">     458 </span>            :         // Not surrogate pair (U+2100-27BF)
+<span class="lineNum">     459 </span>            :     } else {
+<span class="lineNum">     460 </span><span class="lineNoCov">          0 :         return (0x2100 &lt;= high &amp;&amp; high &lt;= 0x27bf);</span>
+<span class="lineNum">     461 </span>            :     }
+<span class="lineNum">     462 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     463 </span>            : 
+<span class="lineNum">     464 </span>            : /**
+<span class="lineNum">     465 </span>            :  *  判断字符串时候含有Emoji
+<span class="lineNum">     466 </span>            :  *
+<a name="467"><span class="lineNum">     467 </span>            :  *  @return YES 是 NO 不是</a>
+<span class="lineNum">     468 </span>            :  */
+<span class="lineNum">     469 </span>            : - (BOOL)isIncludingEmoji {
+<span class="lineNum">     470 </span><span class="lineNoCov">          0 :     BOOL __block result = NO;</span>
+<span class="lineNum">     471 </span>            :     
+<a name="472"><span class="lineNum">     472 </span><span class="lineNoCov">          0 :     [self enumerateSubstringsInRange:NSMakeRange(0, [self length])</span></a>
+<span class="lineNum">     473 </span>            :                              options:NSStringEnumerationByComposedCharacterSequences
+<span class="lineNum">     474 </span><span class="lineNoCov">          0 :                           usingBlock: ^(NSString* substring, NSRange substringRange, NSRange enclosingRange, BOOL* stop) {</span>
+<span class="lineNum">     475 </span><span class="lineNoCov">          0 :                               if ([substring isEmoji]) {</span>
+<span class="lineNum">     476 </span><span class="lineNoCov">          0 :                                   *stop = YES;</span>
+<a name="477"><span class="lineNum">     477 </span><span class="lineNoCov">          0 :                                   result = YES;</span></a>
+<span class="lineNum">     478 </span><span class="lineNoCov">          0 :                               }</span>
+<span class="lineNum">     479 </span><span class="lineNoCov">          0 :                           }];</span>
+<span class="lineNum">     480 </span>            :     
+<span class="lineNum">     481 </span><span class="lineNoCov">          0 :     return result;</span>
+<span class="lineNum">     482 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     483 </span>            : 
+<span class="lineNum">     484 </span>            : /**
+<span class="lineNum">     485 </span>            :  *  移除掉字符串中得Emoji
+<span class="lineNum">     486 </span>            :  *
+<a name="487"><span class="lineNum">     487 </span>            :  *  @return 得到移除后的Emoji</a>
+<a name="488"><span class="lineNum">     488 </span>            :  */</a>
+<span class="lineNum">     489 </span>            : - (instancetype)removedEmojiString {
+<span class="lineNum">     490 </span><span class="lineNoCov">          0 :     NSMutableString* __block buffer = [NSMutableString stringWithCapacity:[self length]];</span>
+<span class="lineNum">     491 </span>            :     
+<a name="492"><span class="lineNum">     492 </span><span class="lineNoCov">          0 :     [self enumerateSubstringsInRange:NSMakeRange(0, [self length])</span></a>
+<span class="lineNum">     493 </span>            :                              options:NSStringEnumerationByComposedCharacterSequences
+<span class="lineNum">     494 </span><span class="lineNoCov">          0 :                           usingBlock: ^(NSString* substring, NSRange substringRange, NSRange enclosingRange, BOOL* stop) {</span>
+<span class="lineNum">     495 </span><span class="lineNoCov">          0 :                               [buffer appendString:([substring isEmoji])? @&quot;&quot;: substring];</span>
+<span class="lineNum">     496 </span><span class="lineNoCov">          0 :                           }];</span>
+<span class="lineNum">     497 </span>            :     
+<span class="lineNum">     498 </span><span class="lineNoCov">          0 :     return buffer;</span>
+<span class="lineNum">     499 </span><span class="lineNoCov">          0 : }</span>
+<span class="lineNum">     500 </span>            : 
+<span class="lineNum">     501 </span>            : @end
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.13</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>
