@@ -25,7 +25,13 @@
 //    [self bubbleSortNew:arr];
 //    [self selecterSort:arr];
 //    [self insertionSort:arr];
-    [self shellSort:arr];
+//    [self shellSort:arr];
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    
+    
 }
 
 #pragma mark -堆排序
@@ -156,6 +162,7 @@
 - (void)setViewView{
     self.view.backgroundColor = BACKGROUND_COLOR;
     self.automaticallyAdjustsScrollViewInsets = NO;
+    
 }
 
 
