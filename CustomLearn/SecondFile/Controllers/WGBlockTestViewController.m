@@ -31,6 +31,12 @@ static const void *key = @"key";
     
     [self setViewView];
     
+    
+    void (^BlockTestTwo)(NSInteger num) = ^(NSInteger num){
+        NSLog(@"---->%ld", (long)num);
+    };
+    BlockTestTwo(10);
+    
     /*
      block如何修改block外部的局部变量值
      */
@@ -45,7 +51,7 @@ static const void *key = @"key";
     /*
      block函数式编程,写一个计算器
      */
-        [self blockTest08];
+//        [self blockTest08];
     
     /*
      循环引用

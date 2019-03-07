@@ -31,6 +31,21 @@
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
     
+    [self testTargetQueue2];
+}
+
+//dispatch_set_target_queue除了能用来设置队列的优先级之外，还能够创建队列的层次体系，当我们想让不同队列中的任务同步的执行时，我们可以创建一个串行队列，然后将这些队列的target指向新创建的队列即可。
+- (void)testTargetQueue2 {
+    
+    NSLog(@"----start-----当前线程---%@",[NSThread currentThread]);
+    
+    dispatch_queue_t globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    
+    dispatch_apply(100, globalQueue, ^(size_t index) {
+        NSLog(@"执行第%zd次的任务---%@",index, [NSThread currentThread]);
+    });
+    
+    NSLog(@"----end-----当前线程---%@",[NSThread currentThread]);
     
 }
 
