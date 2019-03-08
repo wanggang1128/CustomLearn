@@ -8,10 +8,12 @@
 
 #import "WGSnowAnimationViewController.h"
 #import "WGSnowView.h"
+#import "WGCAEmitterLayerView.h"
 
 @interface WGSnowAnimationViewController ()
 
 @property (nonatomic, strong)WGSnowView *snowView;
+@property (nonatomic, strong)WGCAEmitterLayerView *snowView01;
 
 @end
 
@@ -23,14 +25,17 @@
     self.title = @"雪花❄️动画";
     [self setViewView];
     
-    [self.view addSubview:self.snowView];
-    [_snowView begin];
+    //第一种,较耗性能
+//    [self.view addSubview:self.snowView];
+//    [_snowView begin];
+    
+    //第二种比较好
+    [self.view addSubview:self.snowView01];
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     
-    [self.snowView removeFromSuperview];
 }
 
 - (void)setViewView{
@@ -44,6 +49,13 @@
         _snowView = [WGSnowView snowBGImgView:@"backgound.jpg" snowName:@"snow" frame:self.view.frame];
     }
     return _snowView;
+}
+
+-(WGCAEmitterLayerView *)snowView01{
+    if (!_snowView01) {
+        _snowView01 = [[WGCAEmitterLayerView alloc] initWithFrame:self.view.frame bgImgView:@"backgound.jpg"];
+    }
+    return _snowView01;
 }
 
 @end

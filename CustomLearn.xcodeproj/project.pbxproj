@@ -41,6 +41,7 @@
 		324EF2E1223208B7009EA813 /* WGSnowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF2E0223208B7009EA813 /* WGSnowView.m */; };
 		324EF2E422323183009EA813 /* backgound.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 324EF2E222323183009EA813 /* backgound.jpg */; };
 		324EF2E522323183009EA813 /* snow.png in Resources */ = {isa = PBXBuildFile; fileRef = 324EF2E322323183009EA813 /* snow.png */; };
+		324EF2E8223244E4009EA813 /* WGCAEmitterLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF2E7223244E4009EA813 /* WGCAEmitterLayerView.m */; };
 		324F336D1F5F8C77003209BC /* WGSendGeneralRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 324F336C1F5F8C77003209BC /* WGSendGeneralRequest.m */; };
 		324F33731F5FA30B003209BC /* WGGlobleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 324F33721F5FA30B003209BC /* WGGlobleMethod.m */; };
 		324F33761F5FC756003209BC /* WGConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 324F33751F5FC756003209BC /* WGConnectionManager.m */; };
@@ -224,6 +225,8 @@
 		324EF2E0223208B7009EA813 /* WGSnowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGSnowView.m; sourceTree = "<group>"; };
 		324EF2E222323183009EA813 /* backgound.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backgound.jpg; sourceTree = "<group>"; };
 		324EF2E322323183009EA813 /* snow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snow.png; sourceTree = "<group>"; };
+		324EF2E6223244E4009EA813 /* WGCAEmitterLayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGCAEmitterLayerView.h; sourceTree = "<group>"; };
+		324EF2E7223244E4009EA813 /* WGCAEmitterLayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGCAEmitterLayerView.m; sourceTree = "<group>"; };
 		324F336B1F5F8C77003209BC /* WGSendGeneralRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGSendGeneralRequest.h; sourceTree = "<group>"; };
 		324F336C1F5F8C77003209BC /* WGSendGeneralRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGSendGeneralRequest.m; sourceTree = "<group>"; };
 		324F336E1F5F9402003209BC /* GlobleMacroConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobleMacroConfig.h; sourceTree = "<group>"; };
@@ -769,6 +772,8 @@
 				325F34BB1F3859E800990C72 /* WGContactTableViewCell.m */,
 				324EF2DF223208B7009EA813 /* WGSnowView.h */,
 				324EF2E0223208B7009EA813 /* WGSnowView.m */,
+				324EF2E6223244E4009EA813 /* WGCAEmitterLayerView.h */,
+				324EF2E7223244E4009EA813 /* WGCAEmitterLayerView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1220,6 +1225,7 @@
 				32677F161F00B065003E24D2 /* WGFourViewController.m in Sources */,
 				32E1F412203FBA0F006ED322 /* JSONAPI.m in Sources */,
 				325BCEF72089C32F0062B735 /* WGArrayTestViewController.m in Sources */,
+				324EF2E8223244E4009EA813 /* WGCAEmitterLayerView.m in Sources */,
 				3225C0882021A44300E72388 /* WGBlockExecutor.m in Sources */,
 				32EE63421F46D24A00EAC313 /* WGAVPlayerViewController.m in Sources */,
 				322DB7C42175D09D005A9B0B /* NSArray+WGCommon.m in Sources */,

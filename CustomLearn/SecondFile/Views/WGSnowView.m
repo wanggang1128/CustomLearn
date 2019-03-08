@@ -21,6 +21,7 @@
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
+        self.clipsToBounds = YES;
         self.backImgView = [[UIImageView alloc] init];
         _backImgView.frame = self.frame;
         _backImgView.contentMode = UIViewContentModeScaleAspectFill;
