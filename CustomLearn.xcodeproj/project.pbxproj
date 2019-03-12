@@ -102,6 +102,8 @@
 		3267D0591F2B378B00737178 /* WGCustomKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3267D0581F2B378B00737178 /* WGCustomKeyboardViewController.m */; };
 		326CDBAB1F5D2DE6000CE124 /* WGAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 326CDBAA1F5D2DE6000CE124 /* WGAnimationViewController.m */; };
 		327A329D1F3052DD008E76B5 /* WGUIPickerViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A329C1F3052DD008E76B5 /* WGUIPickerViewViewController.m */; };
+		328A486E2237A857007D2339 /* UIView+WGFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 328A486D2237A857007D2339 /* UIView+WGFrame.m */; };
+		328A48712237A8CC007D2339 /* UIView+WGController.m in Sources */ = {isa = PBXBuildFile; fileRef = 328A48702237A8CC007D2339 /* UIView+WGController.m */; };
 		3295DE1C1F25E414000E895C /* gesture.png in Resources */ = {isa = PBXBuildFile; fileRef = 3295DE1B1F25E414000E895C /* gesture.png */; };
 		3295DE1F1F25E646000E895C /* WGGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3295DE1E1F25E646000E895C /* WGGestureViewController.m */; };
 		3295DE221F25E786000E895C /* WGUIGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3295DE211F25E786000E895C /* WGUIGesture.m */; };
@@ -317,6 +319,10 @@
 		326CDBAA1F5D2DE6000CE124 /* WGAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGAnimationViewController.m; sourceTree = "<group>"; };
 		327A329B1F3052DD008E76B5 /* WGUIPickerViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGUIPickerViewViewController.h; sourceTree = "<group>"; };
 		327A329C1F3052DD008E76B5 /* WGUIPickerViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGUIPickerViewViewController.m; sourceTree = "<group>"; };
+		328A486C2237A857007D2339 /* UIView+WGFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+WGFrame.h"; sourceTree = "<group>"; };
+		328A486D2237A857007D2339 /* UIView+WGFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+WGFrame.m"; sourceTree = "<group>"; };
+		328A486F2237A8CC007D2339 /* UIView+WGController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+WGController.h"; sourceTree = "<group>"; };
+		328A48702237A8CC007D2339 /* UIView+WGController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+WGController.m"; sourceTree = "<group>"; };
 		3295DE1B1F25E414000E895C /* gesture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture.png; sourceTree = "<group>"; };
 		3295DE1D1F25E646000E895C /* WGGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGGestureViewController.h; sourceTree = "<group>"; };
 		3295DE1E1F25E646000E895C /* WGGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGGestureViewController.m; sourceTree = "<group>"; };
@@ -505,6 +511,7 @@
 		32295D351F03984800AE8673 /* Categorys */ = {
 			isa = PBXGroup;
 			children = (
+				328A486B2237A815007D2339 /* UIViewCategory */,
 				322DB7DF2175F7EB005A9B0B /* NSStringCategory */,
 				322DB7DB2175F4F7005A9B0B /* NSFileManagerCategory */,
 				322DB7D72175F2C9005A9B0B /* NSDateCategory */,
@@ -856,6 +863,17 @@
 				32677F7B1F00DC06003E24D2 /* RongIMLib.framework */,
 			);
 			path = IMKit;
+			sourceTree = "<group>";
+		};
+		328A486B2237A815007D2339 /* UIViewCategory */ = {
+			isa = PBXGroup;
+			children = (
+				328A486C2237A857007D2339 /* UIView+WGFrame.h */,
+				328A486D2237A857007D2339 /* UIView+WGFrame.m */,
+				328A486F2237A8CC007D2339 /* UIView+WGController.h */,
+				328A48702237A8CC007D2339 /* UIView+WGController.m */,
+			);
+			path = UIViewCategory;
 			sourceTree = "<group>";
 		};
 		32E1F3F4203FBA0F006ED322 /* JSONModel */ = {
@@ -1214,9 +1232,11 @@
 				32677F851F00DCE2003E24D2 /* RongYunChatListViewController.m in Sources */,
 				322DB7CE2175E352005A9B0B /* NSDictionary+WGCommon.m in Sources */,
 				322DB7D22175EF10005A9B0B /* NSData+WGCommon.m in Sources */,
+				328A48712237A8CC007D2339 /* UIView+WGController.m in Sources */,
 				3295DE1F1F25E646000E895C /* WGGestureViewController.m in Sources */,
 				324297C021BBA1370073EA21 /* WGAlgorithmViewController.m in Sources */,
 				322DC7951F984FCB00BE55EF /* WGHTMLViewController.m in Sources */,
+				328A486E2237A857007D2339 /* UIView+WGFrame.m in Sources */,
 				32E1F40E203FBA0F006ED322 /* JSONModelError.m in Sources */,
 				3254505F1F43E45400EFB6A8 /* WGSystermVedioPlayerViewController.m in Sources */,
 				320E0E281F5512F500049762 /* WGDownloadManager.m in Sources */,
