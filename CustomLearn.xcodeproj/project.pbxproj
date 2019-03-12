@@ -323,6 +323,7 @@
 		328A486D2237A857007D2339 /* UIView+WGFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+WGFrame.m"; sourceTree = "<group>"; };
 		328A486F2237A8CC007D2339 /* UIView+WGController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+WGController.h"; sourceTree = "<group>"; };
 		328A48702237A8CC007D2339 /* UIView+WGController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+WGController.m"; sourceTree = "<group>"; };
+		328A48752237ACA1007D2339 /* CustomLearnOCSwiftHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomLearnOCSwiftHeader.h; sourceTree = "<group>"; };
 		3295DE1B1F25E414000E895C /* gesture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture.png; sourceTree = "<group>"; };
 		3295DE1D1F25E646000E895C /* WGGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGGestureViewController.h; sourceTree = "<group>"; };
 		3295DE1E1F25E646000E895C /* WGGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGGestureViewController.m; sourceTree = "<group>"; };
@@ -461,6 +462,7 @@
 				325F34BD1F38651D00990C72 /* WGContactsGroupInfo.plist */,
 				324F336E1F5F9402003209BC /* GlobleMacroConfig.h */,
 				324F336F1F5F9BAD003209BC /* TransactionNameConfig.h */,
+				328A48752237ACA1007D2339 /* CustomLearnOCSwiftHeader.h */,
 			);
 			path = SetingFile;
 			sourceTree = "<group>";
@@ -1097,6 +1099,7 @@
 					32FB7EAD1EE010DC00B49531 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 3WSRA66R7A;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					32FB7EC61EE010DC00B49531 = {
@@ -1422,6 +1425,7 @@
 			baseConfigurationReference = 4162AA67F6F668379EF2BD2B /* Pods-CustomLearn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3WSRA66R7A;
 				ENABLE_BITCODE = NO;
@@ -1446,6 +1450,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/wanggang/Desktop/CustomLearn/CustomLearn/SetingFile/CustomLearnOCSwiftHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1454,6 +1461,7 @@
 			baseConfigurationReference = FA9B6BE151FA5175155856F2 /* Pods-CustomLearn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3WSRA66R7A;
 				ENABLE_BITCODE = NO;
@@ -1478,6 +1486,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/wanggang/Desktop/CustomLearn/CustomLearn/SetingFile/CustomLearnOCSwiftHeader.h;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
