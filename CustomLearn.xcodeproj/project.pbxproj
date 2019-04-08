@@ -108,6 +108,8 @@
 		3295DE1F1F25E646000E895C /* WGGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3295DE1E1F25E646000E895C /* WGGestureViewController.m */; };
 		3295DE221F25E786000E895C /* WGUIGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3295DE211F25E786000E895C /* WGUIGesture.m */; };
 		32A02CF21F5E921B002FE6EC /* WGNSURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A02CF11F5E921B002FE6EC /* WGNSURLSessionViewController.m */; };
+		32B08D8E225AF2990053804C /* WGUIApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B08D8D225AF2990053804C /* WGUIApplication.m */; };
+		32B08D91225B0FA20053804C /* WGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B08D90225B0FA20053804C /* WGLoginViewController.m */; };
 		32B1BA4A200F43B3000119D7 /* RefreashUiOnMainthread.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B1BA49200F43B3000119D7 /* RefreashUiOnMainthread.m */; };
 		32B8A2161F287E7F006C3098 /* cycle_image1.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B8A2101F287E7F006C3098 /* cycle_image1.png */; };
 		32B8A2171F287E7F006C3098 /* cycle_image2.png in Resources */ = {isa = PBXBuildFile; fileRef = 32B8A2111F287E7F006C3098 /* cycle_image2.png */; };
@@ -331,6 +333,10 @@
 		3295DE211F25E786000E895C /* WGUIGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WGUIGesture.m; path = CustomLearn/SecondFile/Model/WGUIGesture.m; sourceTree = SOURCE_ROOT; };
 		32A02CF01F5E921B002FE6EC /* WGNSURLSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGNSURLSessionViewController.h; sourceTree = "<group>"; };
 		32A02CF11F5E921B002FE6EC /* WGNSURLSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGNSURLSessionViewController.m; sourceTree = "<group>"; };
+		32B08D8C225AF2990053804C /* WGUIApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGUIApplication.h; sourceTree = "<group>"; };
+		32B08D8D225AF2990053804C /* WGUIApplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGUIApplication.m; sourceTree = "<group>"; };
+		32B08D8F225B0FA20053804C /* WGLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGLoginViewController.h; sourceTree = "<group>"; };
+		32B08D90225B0FA20053804C /* WGLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGLoginViewController.m; sourceTree = "<group>"; };
 		32B1BA48200F43B3000119D7 /* RefreashUiOnMainthread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RefreashUiOnMainthread.h; sourceTree = "<group>"; };
 		32B1BA49200F43B3000119D7 /* RefreashUiOnMainthread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefreashUiOnMainthread.m; sourceTree = "<group>"; };
 		32B8A2101F287E7F006C3098 /* cycle_image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cycle_image1.png; sourceTree = "<group>"; };
@@ -448,6 +454,10 @@
 				320219981EFE139E0006704E /* WGTabBarViewController.m */,
 				3258A59B1F023CCA0018D691 /* WGUIViewController.h */,
 				3258A59C1F023CCA0018D691 /* WGUIViewController.m */,
+				32B08D8C225AF2990053804C /* WGUIApplication.h */,
+				32B08D8D225AF2990053804C /* WGUIApplication.m */,
+				32B08D8F225B0FA20053804C /* WGLoginViewController.h */,
+				32B08D90225B0FA20053804C /* WGLoginViewController.m */,
 			);
 			path = MainFile;
 			sourceTree = "<group>";
@@ -1249,6 +1259,7 @@
 				32E1F412203FBA0F006ED322 /* JSONAPI.m in Sources */,
 				325BCEF72089C32F0062B735 /* WGArrayTestViewController.m in Sources */,
 				324EF2E8223244E4009EA813 /* WGCAEmitterLayerView.m in Sources */,
+				32B08D91225B0FA20053804C /* WGLoginViewController.m in Sources */,
 				3225C0882021A44300E72388 /* WGBlockExecutor.m in Sources */,
 				32EE63421F46D24A00EAC313 /* WGAVPlayerViewController.m in Sources */,
 				322DB7C42175D09D005A9B0B /* NSArray+WGCommon.m in Sources */,
@@ -1274,6 +1285,7 @@
 				320E0E241F550F4300049762 /* WGResumeBrokenTransferViewController.m in Sources */,
 				325BCEFA2089CFB70062B735 /* NSArray+WgArray.m in Sources */,
 				322DB7E22175F821005A9B0B /* NSString+WGCommon.m in Sources */,
+				32B08D8E225AF2990053804C /* WGUIApplication.m in Sources */,
 				325F34B31F384E9000990C72 /* WGContactsGroupViewController.m in Sources */,
 				32D75E8821B6A120007A62E8 /* WGHanShuShiBlock.m in Sources */,
 				32677F191F00B065003E24D2 /* WGThreeViewController.m in Sources */,

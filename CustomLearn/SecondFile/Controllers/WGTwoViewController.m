@@ -42,7 +42,7 @@
     
     [self setViewBaseInfo];
     [self createTableView];
-    
+
 }
 
 - (void)setViewBaseInfo{

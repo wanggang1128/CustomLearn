@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "WGTabBarViewController.h"
+#import "WGLoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -26,7 +27,17 @@
     [self setNav];
     
     [self rongyunChat];
+    
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(startLoginOut) name:@"startLoginOut" object:nil];
+    
     return YES;
+}
+
+- (void)startLoginOut{
+    
+    NSLog(@"------->登出");
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[WGLoginViewController alloc] init]];
+    self.window.rootViewController = nav;
 }
 
 //小王，xiaowang， cw4PH5JrLRbSAa5AYp/kFHUa4a5jpDZ3I3o1nVmkpf3IJT3+3ek11lrf5QYP2zMRF3LdLKtDg3DkXtCt4lpj/KLlfWauJzs5
