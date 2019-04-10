@@ -23,6 +23,7 @@
 #import "JSONModelLib.h"
 #import "MBProgressHUD.h"
 #import "WGControllerPush.h"
+#import "HuCusSagmentBtnView.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "UIView+WGFrame.h"
 #import "UIView+WGController.h"

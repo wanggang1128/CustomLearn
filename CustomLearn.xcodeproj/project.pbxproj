@@ -20,6 +20,10 @@
 		322426AA223100F0004671E6 /* WGNSTimerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322426A9223100F0004671E6 /* WGNSTimerTestViewController.m */; };
 		3225C0872021A44300E72388 /* NSObject+WGRunTimeDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 3225C0832021A44100E72388 /* NSObject+WGRunTimeDealloc.m */; };
 		3225C0882021A44300E72388 /* WGBlockExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3225C0852021A44300E72388 /* WGBlockExecutor.m */; };
+		322757F3225DB7AD000E786E /* HuCusSagmentBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322757F2225DB7AD000E786E /* HuCusSagmentBtnView.m */; };
+		322757F6225DB826000E786E /* WGScrollViewTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322757F5225DB826000E786E /* WGScrollViewTableViewViewController.m */; };
+		322757F9225DB9CF000E786E /* WGScrollViewTableViewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322757F8225DB9CF000E786E /* WGScrollViewTableViewDetailViewController.m */; };
+		322757FC225DCF35000E786E /* WGSliderUIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322757FB225DCF35000E786E /* WGSliderUIScrollView.m */; };
 		32295D381F03989F00AE8673 /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 32295D371F03989F00AE8673 /* UIImage+Addition.m */; };
 		322DB7C42175D09D005A9B0B /* NSArray+WGCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DB7C32175D09D005A9B0B /* NSArray+WGCommon.m */; };
 		322DB7C72175D8F5005A9B0B /* WGCategoryTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DB7C62175D8F5005A9B0B /* WGCategoryTestViewController.m */; };
@@ -191,6 +195,14 @@
 		3225C0842021A44200E72388 /* NSObject+WGRunTimeDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WGRunTimeDealloc.h"; sourceTree = "<group>"; };
 		3225C0852021A44300E72388 /* WGBlockExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGBlockExecutor.m; sourceTree = "<group>"; };
 		3225C0862021A44300E72388 /* WGBlockExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGBlockExecutor.h; sourceTree = "<group>"; };
+		322757F1225DB7AD000E786E /* HuCusSagmentBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HuCusSagmentBtnView.h; sourceTree = "<group>"; };
+		322757F2225DB7AD000E786E /* HuCusSagmentBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HuCusSagmentBtnView.m; sourceTree = "<group>"; };
+		322757F4225DB826000E786E /* WGScrollViewTableViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGScrollViewTableViewViewController.h; sourceTree = "<group>"; };
+		322757F5225DB826000E786E /* WGScrollViewTableViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGScrollViewTableViewViewController.m; sourceTree = "<group>"; };
+		322757F7225DB9CF000E786E /* WGScrollViewTableViewDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGScrollViewTableViewDetailViewController.h; sourceTree = "<group>"; };
+		322757F8225DB9CF000E786E /* WGScrollViewTableViewDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGScrollViewTableViewDetailViewController.m; sourceTree = "<group>"; };
+		322757FA225DCF35000E786E /* WGSliderUIScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGSliderUIScrollView.h; sourceTree = "<group>"; };
+		322757FB225DCF35000E786E /* WGSliderUIScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGSliderUIScrollView.m; sourceTree = "<group>"; };
 		32295D361F03989F00AE8673 /* UIImage+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addition.h"; sourceTree = "<group>"; };
 		32295D371F03989F00AE8673 /* UIImage+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addition.m"; sourceTree = "<group>"; };
 		322DB7C22175D09D005A9B0B /* NSArray+WGCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+WGCommon.h"; sourceTree = "<group>"; };
@@ -608,6 +620,8 @@
 			children = (
 				324F33711F5FA30B003209BC /* WGGlobleMethod.h */,
 				324F33721F5FA30B003209BC /* WGGlobleMethod.m */,
+				322757F1225DB7AD000E786E /* HuCusSagmentBtnView.h */,
+				322757F2225DB7AD000E786E /* HuCusSagmentBtnView.m */,
 			);
 			path = CommonFile;
 			sourceTree = "<group>";
@@ -759,6 +773,10 @@
 				322426A9223100F0004671E6 /* WGNSTimerTestViewController.m */,
 				324EF2DC223204F3009EA813 /* WGSnowAnimationViewController.h */,
 				324EF2DD223204F3009EA813 /* WGSnowAnimationViewController.m */,
+				322757F4225DB826000E786E /* WGScrollViewTableViewViewController.h */,
+				322757F5225DB826000E786E /* WGScrollViewTableViewViewController.m */,
+				322757F7225DB9CF000E786E /* WGScrollViewTableViewDetailViewController.h */,
+				322757F8225DB9CF000E786E /* WGScrollViewTableViewDetailViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -793,6 +811,8 @@
 				324EF2E0223208B7009EA813 /* WGSnowView.m */,
 				324EF2E6223244E4009EA813 /* WGCAEmitterLayerView.h */,
 				324EF2E7223244E4009EA813 /* WGCAEmitterLayerView.m */,
+				322757FA225DCF35000E786E /* WGSliderUIScrollView.h */,
+				322757FB225DCF35000E786E /* WGSliderUIScrollView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1245,6 +1265,7 @@
 				32677F851F00DCE2003E24D2 /* RongYunChatListViewController.m in Sources */,
 				322DB7CE2175E352005A9B0B /* NSDictionary+WGCommon.m in Sources */,
 				322DB7D22175EF10005A9B0B /* NSData+WGCommon.m in Sources */,
+				322757F6225DB826000E786E /* WGScrollViewTableViewViewController.m in Sources */,
 				328A48712237A8CC007D2339 /* UIView+WGController.m in Sources */,
 				3295DE1F1F25E646000E895C /* WGGestureViewController.m in Sources */,
 				324297C021BBA1370073EA21 /* WGAlgorithmViewController.m in Sources */,
@@ -1258,7 +1279,9 @@
 				32677F161F00B065003E24D2 /* WGFourViewController.m in Sources */,
 				32E1F412203FBA0F006ED322 /* JSONAPI.m in Sources */,
 				325BCEF72089C32F0062B735 /* WGArrayTestViewController.m in Sources */,
+				322757F9225DB9CF000E786E /* WGScrollViewTableViewDetailViewController.m in Sources */,
 				324EF2E8223244E4009EA813 /* WGCAEmitterLayerView.m in Sources */,
+				322757FC225DCF35000E786E /* WGSliderUIScrollView.m in Sources */,
 				32B08D91225B0FA20053804C /* WGLoginViewController.m in Sources */,
 				3225C0882021A44300E72388 /* WGBlockExecutor.m in Sources */,
 				32EE63421F46D24A00EAC313 /* WGAVPlayerViewController.m in Sources */,
@@ -1293,6 +1316,7 @@
 				324EF2E1223208B7009EA813 /* WGSnowView.m in Sources */,
 				32B8A2211F287FDE006C3098 /* WGBanner.m in Sources */,
 				32E1F40D203FBA0F006ED322 /* JSONModel.m in Sources */,
+				322757F3225DB7AD000E786E /* HuCusSagmentBtnView.m in Sources */,
 				32E1F40B203FBA0F006ED322 /* JSONValueTransformer.m in Sources */,
 				32EE63461F46DBB500EAC313 /* WGPlayerView.m in Sources */,
 			);

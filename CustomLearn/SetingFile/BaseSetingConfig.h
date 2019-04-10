@@ -45,6 +45,9 @@
 #define IS_IPHONE_55 (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
 #define IS_IPHONE_X (IS_IPHONE && SCREEN_MAX_LENGTH == 812.0)
 
+//对自己弱引用
+#define WS(weakSelf)  __weak typeof(self)weakSelf = self
+
 #ifdef DEBUG
 # define WGLog(format, ...) NSLog(format, ##__VA_ARGS__)
 #else
