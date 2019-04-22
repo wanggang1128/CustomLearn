@@ -137,6 +137,8 @@
 		32E1F41F203FE270006ED322 /* WGJsonmodel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1F41E203FE270006ED322 /* WGJsonmodel.m */; };
 		32EE63421F46D24A00EAC313 /* WGAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32EE63411F46D24A00EAC313 /* WGAVPlayerViewController.m */; };
 		32EE63461F46DBB500EAC313 /* WGPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32EE63451F46DBB500EAC313 /* WGPlayerView.m */; };
+		32F2BB7D2269911500DF6678 /* WGBtnAlphaControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F2BB7C2269911500DF6678 /* WGBtnAlphaControlViewController.m */; };
+		32F2BB81226991AF00DF6678 /* UIButton+WGBtnAlphaControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F2BB80226991AF00DF6678 /* UIButton+WGBtnAlphaControll.m */; };
 		32FB7EBE1EE010DC00B49531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32FB7EBD1EE010DC00B49531 /* Assets.xcassets */; };
 		32FB7ECC1EE010DC00B49531 /* CustomLearnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB7ECB1EE010DC00B49531 /* CustomLearnTests.m */; };
 		32FB7ED71EE010DC00B49531 /* CustomLearnUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB7ED61EE010DC00B49531 /* CustomLearnUITests.m */; };
@@ -390,6 +392,10 @@
 		32EE63411F46D24A00EAC313 /* WGAVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGAVPlayerViewController.m; sourceTree = "<group>"; };
 		32EE63441F46DBB500EAC313 /* WGPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGPlayerView.h; sourceTree = "<group>"; };
 		32EE63451F46DBB500EAC313 /* WGPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGPlayerView.m; sourceTree = "<group>"; };
+		32F2BB7B2269911500DF6678 /* WGBtnAlphaControlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGBtnAlphaControlViewController.h; sourceTree = "<group>"; };
+		32F2BB7C2269911500DF6678 /* WGBtnAlphaControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBtnAlphaControlViewController.m; sourceTree = "<group>"; };
+		32F2BB7F226991AF00DF6678 /* UIButton+WGBtnAlphaControll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+WGBtnAlphaControll.h"; sourceTree = "<group>"; };
+		32F2BB80226991AF00DF6678 /* UIButton+WGBtnAlphaControll.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WGBtnAlphaControll.m"; sourceTree = "<group>"; };
 		32FB7EAE1EE010DC00B49531 /* CustomLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32FB7EBD1EE010DC00B49531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32FB7EC71EE010DC00B49531 /* CustomLearnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomLearnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -535,6 +541,7 @@
 		32295D351F03984800AE8673 /* Categorys */ = {
 			isa = PBXGroup;
 			children = (
+				32F2BB7E2269917F00DF6678 /* UIButtonCategory */,
 				328A486B2237A815007D2339 /* UIViewCategory */,
 				322DB7DF2175F7EB005A9B0B /* NSStringCategory */,
 				322DB7DB2175F4F7005A9B0B /* NSFileManagerCategory */,
@@ -777,6 +784,8 @@
 				322757F5225DB826000E786E /* WGScrollViewTableViewViewController.m */,
 				322757F7225DB9CF000E786E /* WGScrollViewTableViewDetailViewController.h */,
 				322757F8225DB9CF000E786E /* WGScrollViewTableViewDetailViewController.m */,
+				32F2BB7B2269911500DF6678 /* WGBtnAlphaControlViewController.h */,
+				32F2BB7C2269911500DF6678 /* WGBtnAlphaControlViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -987,6 +996,15 @@
 				32EE63451F46DBB500EAC313 /* WGPlayerView.m */,
 			);
 			path = WGAVPlayer;
+			sourceTree = "<group>";
+		};
+		32F2BB7E2269917F00DF6678 /* UIButtonCategory */ = {
+			isa = PBXGroup;
+			children = (
+				32F2BB7F226991AF00DF6678 /* UIButton+WGBtnAlphaControll.h */,
+				32F2BB80226991AF00DF6678 /* UIButton+WGBtnAlphaControll.m */,
+			);
+			path = UIButtonCategory;
 			sourceTree = "<group>";
 		};
 		32FB7EA51EE010DC00B49531 = {
@@ -1249,6 +1267,7 @@
 				322DB7C72175D8F5005A9B0B /* WGCategoryTestViewController.m in Sources */,
 				3258A59D1F023CCA0018D691 /* WGUIViewController.m in Sources */,
 				32B8A21E1F287F76006C3098 /* WGBannerViewController.m in Sources */,
+				32F2BB81226991AF00DF6678 /* UIButton+WGBtnAlphaControll.m in Sources */,
 				322DB7D62175F0B8005A9B0B /* NSBundle+WGCommon.m in Sources */,
 				32B1BA4A200F43B3000119D7 /* RefreashUiOnMainthread.m in Sources */,
 				3295DE221F25E786000E895C /* WGUIGesture.m in Sources */,
@@ -1275,6 +1294,7 @@
 				3254505F1F43E45400EFB6A8 /* WGSystermVedioPlayerViewController.m in Sources */,
 				320E0E281F5512F500049762 /* WGDownloadManager.m in Sources */,
 				32E1F40C203FBA0F006ED322 /* JSONKeyMapper.m in Sources */,
+				32F2BB7D2269911500DF6678 /* WGBtnAlphaControlViewController.m in Sources */,
 				32A02CF21F5E921B002FE6EC /* WGNSURLSessionViewController.m in Sources */,
 				32677F161F00B065003E24D2 /* WGFourViewController.m in Sources */,
 				32E1F412203FBA0F006ED322 /* JSONAPI.m in Sources */,

@@ -14,14 +14,17 @@
     
     UIView *resultView = [super hitTest:point withEvent:event];
     if (resultView) {
-        
-        //resultView为nil说明不再在view上,不作处理
-        //不为nil,则进行下面处理
+        /*
+        resultView为nil说明不再在view上,不作处理
+        不为nil,则进行下面处理
+        */
         if (resultView != self) {
             
-            //如果响应resultView不是UIScrollView,则根据用户滑动位置来确定
-            //是self的子视图(tableView)侧滑
-            //还是self本身(scrollView)滚动
+            /*
+            如果响应resultView不是UIScrollView,则根据用户滑动位置来确定
+            是self的子视图(tableView)侧滑
+            还是self本身(scrollView)滚动
+            */
             int count =  (int)point.x / (int)([UIScreen mainScreen].bounds.size.width);
             CGFloat res = point.x - ([UIScreen mainScreen].bounds.size.width)*count;
             if (res > ([UIScreen mainScreen].bounds.size.width - 100)) {

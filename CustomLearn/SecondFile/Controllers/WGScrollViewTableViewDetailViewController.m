@@ -7,6 +7,7 @@
 //
 
 #import "WGScrollViewTableViewDetailViewController.h"
+#import "WGSnowAnimationViewController.h"
 
 @interface WGScrollViewTableViewDetailViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -48,7 +49,8 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    [[WGControllerPush WGControllerPushShare] pushFromController:self toCon:@"WGSnowAnimationViewController"];
+    WGSnowAnimationViewController *vc = [[WGSnowAnimationViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)tableView: (UITableView*)tableView willDisplayCell: (UITableViewCell*)cell forRowAtIndexPath: (NSIndexPath*)indexPath{
@@ -75,8 +77,7 @@
     return @"删除";
 }
 
--(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     //只要实现这个方法，就实现了默认滑动删除！！！！！
     if (editingStyle == UITableViewCellEditingStyleDelete){
         
