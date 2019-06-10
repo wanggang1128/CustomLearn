@@ -40,6 +40,7 @@
 		322DC7951F984FCB00BE55EF /* WGHTMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DC7941F984FCB00BE55EF /* WGHTMLViewController.m */; };
 		323AF45520D0B29F008ABCDD /* WGBlockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 323AF45420D0B29F008ABCDD /* WGBlockTestViewController.m */; };
 		323AF45920D0BCEA008ABCDD /* WGLianShiBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 323AF45820D0BCEA008ABCDD /* WGLianShiBlock.m */; };
+		32426ACF22AE34E600C6CE62 /* NSMutableArray+HuAvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 32426ACD22AE34E500C6CE62 /* NSMutableArray+HuAvoidCrash.m */; };
 		324297C021BBA1370073EA21 /* WGAlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324297BF21BBA1370073EA21 /* WGAlgorithmViewController.m */; };
 		324EF2DE223204F3009EA813 /* WGSnowAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF2DD223204F3009EA813 /* WGSnowAnimationViewController.m */; };
 		324EF2E1223208B7009EA813 /* WGSnowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF2E0223208B7009EA813 /* WGSnowView.m */; };
@@ -235,6 +236,8 @@
 		323AF45420D0B29F008ABCDD /* WGBlockTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGBlockTestViewController.m; sourceTree = "<group>"; };
 		323AF45720D0BCEA008ABCDD /* WGLianShiBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGLianShiBlock.h; sourceTree = "<group>"; };
 		323AF45820D0BCEA008ABCDD /* WGLianShiBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGLianShiBlock.m; sourceTree = "<group>"; };
+		32426ACD22AE34E500C6CE62 /* NSMutableArray+HuAvoidCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+HuAvoidCrash.m"; sourceTree = "<group>"; };
+		32426ACE22AE34E500C6CE62 /* NSMutableArray+HuAvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+HuAvoidCrash.h"; sourceTree = "<group>"; };
 		324297BE21BBA1370073EA21 /* WGAlgorithmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGAlgorithmViewController.h; sourceTree = "<group>"; };
 		324297BF21BBA1370073EA21 /* WGAlgorithmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGAlgorithmViewController.m; sourceTree = "<group>"; };
 		324EF2DC223204F3009EA813 /* WGSnowAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGSnowAnimationViewController.h; sourceTree = "<group>"; };
@@ -979,6 +982,8 @@
 		32EB682E21757D0D0046878E /* NSArrayCategory */ = {
 			isa = PBXGroup;
 			children = (
+				32426ACE22AE34E500C6CE62 /* NSMutableArray+HuAvoidCrash.h */,
+				32426ACD22AE34E500C6CE62 /* NSMutableArray+HuAvoidCrash.m */,
 				322DB7C22175D09D005A9B0B /* NSArray+WGCommon.h */,
 				322DB7C32175D09D005A9B0B /* NSArray+WGCommon.m */,
 				322DB7C82175E142005A9B0B /* NSMutableArray+WGCommon.h */,
@@ -1287,6 +1292,7 @@
 				322757F6225DB826000E786E /* WGScrollViewTableViewViewController.m in Sources */,
 				328A48712237A8CC007D2339 /* UIView+WGController.m in Sources */,
 				3295DE1F1F25E646000E895C /* WGGestureViewController.m in Sources */,
+				32426ACF22AE34E600C6CE62 /* NSMutableArray+HuAvoidCrash.m in Sources */,
 				324297C021BBA1370073EA21 /* WGAlgorithmViewController.m in Sources */,
 				322DC7951F984FCB00BE55EF /* WGHTMLViewController.m in Sources */,
 				328A486E2237A857007D2339 /* UIView+WGFrame.m in Sources */,

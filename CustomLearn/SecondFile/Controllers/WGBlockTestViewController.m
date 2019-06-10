@@ -31,12 +31,15 @@ static const void *key = @"key";
     
     [self setViewView];
     
-    
-    void (^BlockTestTwo)(NSInteger num) = ^(NSInteger num){
-        NSLog(@"---->%ld", (long)num);
+    __block NSInteger a = 1;
+    NSMutableArray *mutArr = [NSMutableArray arrayWithObject:@"1"];
+    void (^BlockTestTwo)() = ^{
+        a = 10;
+        [mutArr addObject:@(a)];
     };
-    BlockTestTwo(10);
-    
+    BlockTestTwo();
+    NSLog(@"===数组%@", mutArr);
+
     /*
      block如何修改block外部的局部变量值
      */

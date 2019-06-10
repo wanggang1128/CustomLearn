@@ -7,6 +7,7 @@
 //
 
 #import "WGBtnAlphaControlViewController.h"
+#import "NSMutableArray+HuAvoidCrash.h"
 
 @interface WGBtnAlphaControlViewController ()
 

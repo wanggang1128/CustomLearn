@@ -18,9 +18,9 @@
     [super viewDidLoad];
     
     //这里先不考虑属性，考虑局部变量
-//    [self equalArr];
+    [self equalArr];
 //    [self copyArr];
-    [self mutcopyArr];
+//    [self mutcopyArr];
     
 }
 
