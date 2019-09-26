@@ -11,12 +11,37 @@
 
 @interface WGBtnAlphaControlViewController ()
 
+@property (nonatomic, strong) NSString *str01;
+@property (nonatomic, copy) NSString *str02;
+@property (nonatomic, strong) NSArray *arr01;
+@property (nonatomic, copy) NSArray *arr02;
+
 @end
 
 @implementation WGBtnAlphaControlViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.str01 = @"123";
+    self.str02 = @"456";
+    NSMutableString *str = [NSMutableString stringWithString:@"qwe"];
+    self.str01 = str;
+    self.str02 = str;
+    [str appendString:@"rty"];
+    NSLog(@"--->%@,%@",self.str01, self.str02);
+    
+    NSString *sss = @"rfv";
+    NSString *ddd = sss.copy;
+    NSString *fff = str.copy;
+    
+    self.arr01 = @[@"1",@"2"];
+    self.arr02 = @[@"3",@"4"];
+    NSMutableArray *arr = [NSMutableArray arrayWithObjects:@"q", @"w", nil];
+    self.arr01 = arr;
+    self.arr02 = arr;
+    
+    [arr addObject:@"e"];
     
     self.title = @"按钮图文混排";
     self.view.backgroundColor = [UIColor whiteColor];

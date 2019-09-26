@@ -18,6 +18,7 @@
 		320E0E241F550F4300049762 /* WGResumeBrokenTransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 320E0E231F550F4300049762 /* WGResumeBrokenTransferViewController.m */; };
 		320E0E281F5512F500049762 /* WGDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 320E0E271F5512F500049762 /* WGDownloadManager.m */; };
 		322426AA223100F0004671E6 /* WGNSTimerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322426A9223100F0004671E6 /* WGNSTimerTestViewController.m */; };
+		3224E831233CA04E00B882C2 /* UIViewController+WGPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3224E830233CA04E00B882C2 /* UIViewController+WGPresent.m */; };
 		3225C0872021A44300E72388 /* NSObject+WGRunTimeDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 3225C0832021A44100E72388 /* NSObject+WGRunTimeDealloc.m */; };
 		3225C0882021A44300E72388 /* WGBlockExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3225C0852021A44300E72388 /* WGBlockExecutor.m */; };
 		322757F3225DB7AD000E786E /* HuCusSagmentBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322757F2225DB7AD000E786E /* HuCusSagmentBtnView.m */; };
@@ -25,6 +26,8 @@
 		322757F9225DB9CF000E786E /* WGScrollViewTableViewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322757F8225DB9CF000E786E /* WGScrollViewTableViewDetailViewController.m */; };
 		322757FC225DCF35000E786E /* WGSliderUIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322757FB225DCF35000E786E /* WGSliderUIScrollView.m */; };
 		32295D381F03989F00AE8673 /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 32295D371F03989F00AE8673 /* UIImage+Addition.m */; };
+		322C19E0230D1A6300456971 /* WGLians.m in Sources */ = {isa = PBXBuildFile; fileRef = 322C19DF230D1A6300456971 /* WGLians.m */; };
+		322C19E3230D207500456971 /* WGHans.m in Sources */ = {isa = PBXBuildFile; fileRef = 322C19E2230D207500456971 /* WGHans.m */; };
 		322DB7C42175D09D005A9B0B /* NSArray+WGCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DB7C32175D09D005A9B0B /* NSArray+WGCommon.m */; };
 		322DB7C72175D8F5005A9B0B /* WGCategoryTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DB7C62175D8F5005A9B0B /* WGCategoryTestViewController.m */; };
 		322DB7CA2175E142005A9B0B /* NSMutableArray+WGCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DB7C92175E142005A9B0B /* NSMutableArray+WGCommon.m */; };
@@ -42,6 +45,8 @@
 		323AF45920D0BCEA008ABCDD /* WGLianShiBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 323AF45820D0BCEA008ABCDD /* WGLianShiBlock.m */; };
 		32426ACF22AE34E600C6CE62 /* NSMutableArray+HuAvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 32426ACD22AE34E500C6CE62 /* NSMutableArray+HuAvoidCrash.m */; };
 		324297C021BBA1370073EA21 /* WGAlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324297BF21BBA1370073EA21 /* WGAlgorithmViewController.m */; };
+		3245D778230B947900A07A99 /* WGPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 3245D777230B947900A07A99 /* WGPerson.m */; };
+		3245D77B230B94CA00A07A99 /* WGTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3245D77A230B94CA00A07A99 /* WGTeacher.m */; };
 		324EF2DE223204F3009EA813 /* WGSnowAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF2DD223204F3009EA813 /* WGSnowAnimationViewController.m */; };
 		324EF2E1223208B7009EA813 /* WGSnowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 324EF2E0223208B7009EA813 /* WGSnowView.m */; };
 		324EF2E422323183009EA813 /* backgound.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 324EF2E222323183009EA813 /* backgound.jpg */; };
@@ -55,6 +60,7 @@
 		325450661F44235100EFB6A8 /* WGWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 325450651F44235100EFB6A8 /* WGWebViewViewController.m */; };
 		3258A59D1F023CCA0018D691 /* WGUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3258A59C1F023CCA0018D691 /* WGUIViewController.m */; };
 		3258A5A01F023D2D0018D691 /* WGTeamKindsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3258A59F1F023D2D0018D691 /* WGTeamKindsViewController.m */; };
+		32599F8122DD93D100367AFB /* WGHPAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 32599F8022DD93D100367AFB /* WGHPAlbum.m */; };
 		325AABCA2213AD25009A92EE /* WGXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 325AABC82213AD25009A92EE /* WGXibViewController.m */; };
 		325AABCB2213AD25009A92EE /* WGXibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 325AABC92213AD25009A92EE /* WGXibViewController.xib */; };
 		325BCEF72089C32F0062B735 /* WGArrayTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 325BCEF62089C32F0062B735 /* WGArrayTestViewController.m */; };
@@ -194,6 +200,8 @@
 		320E0E271F5512F500049762 /* WGDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGDownloadManager.m; sourceTree = "<group>"; };
 		322426A8223100F0004671E6 /* WGNSTimerTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGNSTimerTestViewController.h; sourceTree = "<group>"; };
 		322426A9223100F0004671E6 /* WGNSTimerTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGNSTimerTestViewController.m; sourceTree = "<group>"; };
+		3224E82F233CA04E00B882C2 /* UIViewController+WGPresent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WGPresent.h"; sourceTree = "<group>"; };
+		3224E830233CA04E00B882C2 /* UIViewController+WGPresent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WGPresent.m"; sourceTree = "<group>"; };
 		3225C0832021A44100E72388 /* NSObject+WGRunTimeDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WGRunTimeDealloc.m"; sourceTree = "<group>"; };
 		3225C0842021A44200E72388 /* NSObject+WGRunTimeDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WGRunTimeDealloc.h"; sourceTree = "<group>"; };
 		3225C0852021A44300E72388 /* WGBlockExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGBlockExecutor.m; sourceTree = "<group>"; };
@@ -208,6 +216,10 @@
 		322757FB225DCF35000E786E /* WGSliderUIScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGSliderUIScrollView.m; sourceTree = "<group>"; };
 		32295D361F03989F00AE8673 /* UIImage+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addition.h"; sourceTree = "<group>"; };
 		32295D371F03989F00AE8673 /* UIImage+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addition.m"; sourceTree = "<group>"; };
+		322C19DE230D1A6300456971 /* WGLians.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGLians.h; sourceTree = "<group>"; };
+		322C19DF230D1A6300456971 /* WGLians.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGLians.m; sourceTree = "<group>"; };
+		322C19E1230D207500456971 /* WGHans.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGHans.h; sourceTree = "<group>"; };
+		322C19E2230D207500456971 /* WGHans.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGHans.m; sourceTree = "<group>"; };
 		322DB7C22175D09D005A9B0B /* NSArray+WGCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+WGCommon.h"; sourceTree = "<group>"; };
 		322DB7C32175D09D005A9B0B /* NSArray+WGCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WGCommon.m"; sourceTree = "<group>"; };
 		322DB7C52175D8F5005A9B0B /* WGCategoryTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGCategoryTestViewController.h; sourceTree = "<group>"; };
@@ -240,6 +252,10 @@
 		32426ACE22AE34E500C6CE62 /* NSMutableArray+HuAvoidCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+HuAvoidCrash.h"; sourceTree = "<group>"; };
 		324297BE21BBA1370073EA21 /* WGAlgorithmViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGAlgorithmViewController.h; sourceTree = "<group>"; };
 		324297BF21BBA1370073EA21 /* WGAlgorithmViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGAlgorithmViewController.m; sourceTree = "<group>"; };
+		3245D776230B947900A07A99 /* WGPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGPerson.h; sourceTree = "<group>"; };
+		3245D777230B947900A07A99 /* WGPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGPerson.m; sourceTree = "<group>"; };
+		3245D779230B94CA00A07A99 /* WGTeacher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGTeacher.h; sourceTree = "<group>"; };
+		3245D77A230B94CA00A07A99 /* WGTeacher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGTeacher.m; sourceTree = "<group>"; };
 		324EF2DC223204F3009EA813 /* WGSnowAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGSnowAnimationViewController.h; sourceTree = "<group>"; };
 		324EF2DD223204F3009EA813 /* WGSnowAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGSnowAnimationViewController.m; sourceTree = "<group>"; };
 		324EF2DF223208B7009EA813 /* WGSnowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGSnowView.h; sourceTree = "<group>"; };
@@ -266,6 +282,7 @@
 		3258A59C1F023CCA0018D691 /* WGUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGUIViewController.m; sourceTree = "<group>"; };
 		3258A59E1F023D2D0018D691 /* WGTeamKindsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGTeamKindsViewController.h; sourceTree = "<group>"; };
 		3258A59F1F023D2D0018D691 /* WGTeamKindsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGTeamKindsViewController.m; sourceTree = "<group>"; };
+		32599F8022DD93D100367AFB /* WGHPAlbum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGHPAlbum.m; sourceTree = "<group>"; };
 		325AABC72213AD25009A92EE /* WGXibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGXibViewController.h; sourceTree = "<group>"; };
 		325AABC82213AD25009A92EE /* WGXibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGXibViewController.m; sourceTree = "<group>"; };
 		325AABC92213AD25009A92EE /* WGXibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WGXibViewController.xib; sourceTree = "<group>"; };
@@ -541,9 +558,19 @@
 			path = ManagerFile;
 			sourceTree = "<group>";
 		};
+		3224E82E233CA01100B882C2 /* UIViewControllerCategory */ = {
+			isa = PBXGroup;
+			children = (
+				3224E82F233CA04E00B882C2 /* UIViewController+WGPresent.h */,
+				3224E830233CA04E00B882C2 /* UIViewController+WGPresent.m */,
+			);
+			path = UIViewControllerCategory;
+			sourceTree = "<group>";
+		};
 		32295D351F03984800AE8673 /* Categorys */ = {
 			isa = PBXGroup;
 			children = (
+				3224E82E233CA01100B882C2 /* UIViewControllerCategory */,
 				32F2BB7E2269917F00DF6678 /* UIButtonCategory */,
 				328A486B2237A815007D2339 /* UIViewCategory */,
 				322DB7DF2175F7EB005A9B0B /* NSStringCategory */,
@@ -621,8 +648,23 @@
 				323AF45820D0BCEA008ABCDD /* WGLianShiBlock.m */,
 				32D75E8621B6A120007A62E8 /* WGHanShuShiBlock.h */,
 				32D75E8721B6A120007A62E8 /* WGHanShuShiBlock.m */,
+				322C19DE230D1A6300456971 /* WGLians.h */,
+				322C19DF230D1A6300456971 /* WGLians.m */,
+				322C19E1230D207500456971 /* WGHans.h */,
+				322C19E2230D207500456971 /* WGHans.m */,
 			);
 			path = SecondToolsFile;
+			sourceTree = "<group>";
+		};
+		3245D775230B945500A07A99 /* SecondUtils */ = {
+			isa = PBXGroup;
+			children = (
+				3245D776230B947900A07A99 /* WGPerson.h */,
+				3245D777230B947900A07A99 /* WGPerson.m */,
+				3245D779230B94CA00A07A99 /* WGTeacher.h */,
+				3245D77A230B94CA00A07A99 /* WGTeacher.m */,
+			);
+			path = SecondUtils;
 			sourceTree = "<group>";
 		};
 		324F33701F5FA2A0003209BC /* CommonFile */ = {
@@ -724,6 +766,7 @@
 		32677DEF1F00B065003E24D2 /* SecondFile */ = {
 			isa = PBXGroup;
 			children = (
+				3245D775230B945500A07A99 /* SecondUtils */,
 				323AF45620D0BC89008ABCDD /* SecondToolsFile */,
 				32EE63431F46DB7F00EAC313 /* WGAVPlayer */,
 				32677DF01F00B065003E24D2 /* Controllers */,
@@ -1059,6 +1102,7 @@
 			children = (
 				32FB7ECB1EE010DC00B49531 /* CustomLearnTests.m */,
 				32FB7ECD1EE010DC00B49531 /* Info.plist */,
+				32599F8022DD93D100367AFB /* WGHPAlbum.m */,
 			);
 			path = CustomLearnTests;
 			sourceTree = "<group>";
@@ -1151,7 +1195,7 @@
 				TargetAttributes = {
 					32FB7EAD1EE010DC00B49531 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 3WSRA66R7A;
+						DevelopmentTeam = 49T87S5RLN;
 						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
@@ -1174,6 +1218,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				"zh-Hans",
@@ -1264,6 +1309,7 @@
 			files = (
 				3225C0872021A44300E72388 /* NSObject+WGRunTimeDealloc.m in Sources */,
 				32677F8B1F00E202003E24D2 /* WGFriendInfoViewController.m in Sources */,
+				3245D778230B947900A07A99 /* WGPerson.m in Sources */,
 				324EF2DE223204F3009EA813 /* WGSnowAnimationViewController.m in Sources */,
 				32E1F40F203FBA0F006ED322 /* JSONModelClassProperty.m in Sources */,
 				320219AA1EFE139E0006704E /* WGTabBarViewController.m in Sources */,
@@ -1283,6 +1329,7 @@
 				320219AD1EFE139E0006704E /* main.m in Sources */,
 				3267D0591F2B378B00737178 /* WGCustomKeyboardViewController.m in Sources */,
 				324F336D1F5F8C77003209BC /* WGSendGeneralRequest.m in Sources */,
+				3224E831233CA04E00B882C2 /* UIViewController+WGPresent.m in Sources */,
 				32295D381F03989F00AE8673 /* UIImage+Addition.m in Sources */,
 				32E1F41C203FBF13006ED322 /* WGJSONModelViewController.m in Sources */,
 				323AF45520D0B29F008ABCDD /* WGBlockTestViewController.m in Sources */,
@@ -1304,6 +1351,7 @@
 				32A02CF21F5E921B002FE6EC /* WGNSURLSessionViewController.m in Sources */,
 				32677F161F00B065003E24D2 /* WGFourViewController.m in Sources */,
 				32E1F412203FBA0F006ED322 /* JSONAPI.m in Sources */,
+				322C19E0230D1A6300456971 /* WGLians.m in Sources */,
 				325BCEF72089C32F0062B735 /* WGArrayTestViewController.m in Sources */,
 				322757F9225DB9CF000E786E /* WGScrollViewTableViewDetailViewController.m in Sources */,
 				324EF2E8223244E4009EA813 /* WGCAEmitterLayerView.m in Sources */,
@@ -1318,6 +1366,7 @@
 				32677F151F00B065003E24D2 /* WGChatIndexViewController.m in Sources */,
 				326CDBAB1F5D2DE6000CE124 /* WGAnimationViewController.m in Sources */,
 				32677DE41F00B01C003E24D2 /* WGOneViewController.m in Sources */,
+				3245D77B230B94CA00A07A99 /* WGTeacher.m in Sources */,
 				32E1F413203FBA0F006ED322 /* JSONModel+networking.m in Sources */,
 				325F34BC1F3859E800990C72 /* WGContactTableViewCell.m in Sources */,
 				325450661F44235100EFB6A8 /* WGWebViewViewController.m in Sources */,
@@ -1328,6 +1377,7 @@
 				325F34B61F38516400990C72 /* WGContactsGroupModel.m in Sources */,
 				322DB7E52175F9C4005A9B0B /* NSMutableString+WGCommon.m in Sources */,
 				32677F181F00B065003E24D2 /* WGTwoViewController.m in Sources */,
+				322C19E3230D207500456971 /* WGHans.m in Sources */,
 				327A329D1F3052DD008E76B5 /* WGUIPickerViewViewController.m in Sources */,
 				32E1F411203FBA0F006ED322 /* JSONHTTPClient.m in Sources */,
 				325AABCA2213AD25009A92EE /* WGXibViewController.m in Sources */,
@@ -1353,6 +1403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32FB7ECC1EE010DC00B49531 /* CustomLearnTests.m in Sources */,
+				32599F8122DD93D100367AFB /* WGHPAlbum.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1489,7 +1540,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 3WSRA66R7A;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1508,7 +1559,7 @@
 					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)s/IMKit",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wuhan.citizens.home02;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuhan.citizens.home03;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1525,7 +1576,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 3WSRA66R7A;
+				DEVELOPMENT_TEAM = 49T87S5RLN;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1544,7 +1595,7 @@
 					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)s/IMKit",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wuhan.citizens.home02;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuhan.citizens.home03;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

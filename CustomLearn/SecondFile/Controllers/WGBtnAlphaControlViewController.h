@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WGBtnAlphaControlViewController : UIViewController
 
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, assign) NSInteger age;
+@property (nonatomic, strong) NSDictionary *dic;
+
 @end
 
 NS_ASSUME_NONNULL_END

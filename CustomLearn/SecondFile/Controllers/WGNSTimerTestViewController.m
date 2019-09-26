@@ -26,8 +26,8 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
-    [self test01];
-//    [self test02];
+//    [self test01];
+    [self test02];
 //    [self test03];
 }
 
@@ -54,6 +54,15 @@
     //3.要调用的任务
     dispatch_source_set_event_handler(_gcdTimer, ^{
         
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            NSInteger count = 0;
+            for (NSInteger i = 0; i < 1000000000; i++) {
+                count += i;
+            }
+            NSLog(@"test03Method");
+            
+        });
         NSLog(@"test03%@", [NSThread currentThread]);
     });
     
@@ -80,9 +89,11 @@
         for (NSInteger i = 0; i < 1000000000; i++) {
             count += i;
         }
-        NSLog(@"test01Method");
+        NSLog(@"test02Method");
         
     });
+    NSLog(@"test02%@", [NSThread currentThread]);
+
 }
 
 - (void)test01{

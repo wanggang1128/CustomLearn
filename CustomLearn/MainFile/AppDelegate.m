@@ -62,14 +62,14 @@
 - (void)setNav{
     
     //导航栏为白色
-    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
-    //改变导航栏的字体颜色和大小
-    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                          [UIColor blackColor], NSForegroundColorAttributeName,
-                                                          font18, NSFontAttributeName,
-                                                          nil]];
-    //状态栏颜色
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+//    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+//    //改变导航栏的字体颜色和大小
+//    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+//                                                          [UIColor blackColor], NSForegroundColorAttributeName,
+//                                                          font18, NSFontAttributeName,
+//                                                          nil]];
+//    //状态栏颜色
+//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

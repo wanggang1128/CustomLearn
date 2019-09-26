@@ -11,6 +11,9 @@
 #import "WGBannerViewController.h"
 #import <objc/runtime.h>
 #import "WGHanShuShiBlock.h"
+#import "WGLians.h"
+#import "WGHans.h"
+
 
 typedef void(^BlockTest)(void);
 
@@ -30,6 +33,19 @@ static const void *key = @"key";
     [super viewDidLoad];
     
     [self setViewView];
+    
+    WGLians *lian = [[WGLians alloc] init];
+    NSInteger val = lian.add(1).add(2).add(3).value;
+    
+    WGHans *han = [[WGHans alloc] init];
+    NSInteger valu = [han add:^NSInteger(NSInteger num) {
+        num += 1;
+        num += 2;
+        num += 3;
+        return num;
+    }].value;
+    
+    
     
     __block NSInteger a = 1;
     NSMutableArray *mutArr = [NSMutableArray arrayWithObject:@"1"];

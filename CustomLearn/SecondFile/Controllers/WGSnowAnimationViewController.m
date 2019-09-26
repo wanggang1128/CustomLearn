@@ -26,11 +26,11 @@
     [self setViewView];
     
     //第一种,较耗性能
-//    [self.view addSubview:self.snowView];
-//    [_snowView begin];
+    [self.view addSubview:self.snowView];
+    [_snowView begin];
     
     //第二种比较好
-    [self.view addSubview:self.snowView01];
+//    [self.view addSubview:self.snowView01];
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
@@ -56,6 +56,11 @@
         _snowView01 = [[WGCAEmitterLayerView alloc] initWithFrame:self.view.frame bgImgView:@"backgound.jpg"];
     }
     return _snowView01;
+}
+
+-(void)dealloc {
+    
+    
 }
 
 @end

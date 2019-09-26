@@ -8,6 +8,9 @@
 
 #import "WGAlgorithmViewController.h"
 
+#import "WGPerson.h"
+#import "WGTeacher.h"
+
 @interface WGAlgorithmViewController ()
 
 @end
@@ -19,7 +22,9 @@
     
     [self setViewView];
     
-    NSMutableArray *arr = @[@"2", @"1", @"3", @"4", @"7", @"5", @"6"].mutableCopy;
+    [WGTeacher new];
+    
+//    NSMutableArray *arr = @[@"2", @"1", @"3", @"4", @"7", @"5", @"6"].mutableCopy;
     
 //    [self bubbleSort:arr];
 //    [self bubbleSortNew:arr];

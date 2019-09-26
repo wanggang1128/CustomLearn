@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+        
     [self setViewView];
     
 }
@@ -29,6 +30,21 @@
 //    [self animation04];
 //    [self animation05];
     [self animation06];
+    
+//    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"弹框" message:@"111" preferredStyle:UIAlertControllerStyleAlert];
+//
+//    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"提示" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+//
+//    }];
+//
+//    UIAlertAction *cancleAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+//
+//    }];
+//
+//    [alert addAction: okAction];
+//    [alert addAction:cancleAction];
+//
+//    [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)animation06{

@@ -41,6 +41,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+     NSLock *lock = [[NSLock alloc] init];
+    [lock lock];
+    
     [self setViewBaseInfo];
     [self createTableView];
 
@@ -73,6 +76,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
     cell.selectionStyle = UITableViewCellSeparatorStyleNone;
     cell.textLabel.text = [self.itemArr objectAtIndex:indexPath.row];
+    cell.contentView.backgroundColor = UIColor.whiteColor;
+    cell.textLabel.textColor = UIColor.blackColor;
     return cell;
 }
 
@@ -182,9 +187,10 @@
             break;
         }
         case 21:{
-            WGBtnAlphaControlViewController *vc = [[WGBtnAlphaControlViewController alloc] init];
-            [vc setHidesBottomBarWhenPushed:YES];
-            [self.navigationController pushViewController:vc animated:YES];
+//            WGBtnAlphaControlViewController *vc = [[WGBtnAlphaControlViewController alloc] init];
+//            [vc setHidesBottomBarWhenPushed:YES];
+//            [self.navigationController pushViewController:vc animated:YES];
+            [[WGControllerPush WGControllerPushShare] pushFromController:self toCon:@"WGBtnAlphaControlViewController" paramType:WGPushProperty param:@{WGProperty:@{@"name":@"zhangsan",@"age":@(18),@"dic":@{@"key":@"value"}}}];
             break;
         }
         default:

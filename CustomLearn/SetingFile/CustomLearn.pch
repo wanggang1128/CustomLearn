@@ -28,5 +28,6 @@
 #import "UIView+WGFrame.h"
 #import "UIView+WGController.h"
 #import "UIButton+WGBtnAlphaControll.h"
+#import "UIViewController+WGPresent.h"
 
 #endif 
