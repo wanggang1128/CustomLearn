@@ -8,8 +8,7 @@
 
 #import "WGCustomKeyboardViewController.h"
 
-@interface WGCustomKeyboardViewController ()
-{
+@interface WGCustomKeyboardViewController () {
     UIView *view;
 }
 @end

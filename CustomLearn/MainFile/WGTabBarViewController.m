@@ -34,6 +34,9 @@
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:title image:[UIImage imageNamed:imgStr] tag:tag];
     item.selectedImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@%@",imgStr,@"s"]];
+    [item setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:UIColor.redColor, NSForegroundColorAttributeName, nil] forState:UIControlStateSelected];
+    [[UITabBar appearance] setUnselectedItemTintColor:UIColor.grayColor];
+    
     vc.tabBarItem = item;
     return nav;
 }
