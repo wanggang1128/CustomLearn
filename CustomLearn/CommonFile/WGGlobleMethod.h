@@ -21,4 +21,6 @@
 //获取沙盒document路径
 - (NSString *)applicationDocumentDirectoryFile:(NSString *)fileName;
 
++ (UIColor *)uiColorFromString:(NSString *)clrString;
+
 @end

@@ -28,6 +28,7 @@
 #import "WGAlgorithmViewController.h"
 #import "WGScrollViewTableViewViewController.h"
 #import "WGBtnAlphaControlViewController.h"
+#import "WGMyDViewController.h"
 
 @interface WGTwoViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -192,6 +193,11 @@
 //            [self.navigationController pushViewController:vc animated:YES];
             [[WGControllerPush WGControllerPushShare] pushFromController:self toCon:@"WGBtnAlphaControlViewController" paramType:WGPushProperty param:@{WGProperty:@{@"name":@"zhangsan",@"age":@(18),@"dic":@{@"key":@"value"}}}];
             break;
+        }case 22:{
+            WGMyDViewController *vc = [[WGMyDViewController alloc] init];
+            [vc setHidesBottomBarWhenPushed:YES];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
         }
         default:
             break;
@@ -208,7 +214,7 @@
 
 -(NSMutableArray *)itemArr{
     if (!_itemArr) {
-        _itemArr = [NSMutableArray arrayWithObjects:@"手势",@"轮播图",@"自定义键盘",@"随机选餐",@"联系人分组",@"系统视频播放器",@"自定义浏览器",@"断点下载实验",@"动画实验",@"NSURLSession测试",@"HTML与OC的交互", @"UI验证", @"JSONModel使用", @"动画详解", @"=/copy/mutCopy对数组的影响", @"block学习", @"类别测试", @"常用算法", @"NSTimer准吗,怎么解决", @"雪花动画", @"解决手势冲突", @"按钮图文混排", nil];
+        _itemArr = [NSMutableArray arrayWithObjects:@"手势",@"轮播图",@"自定义键盘",@"随机选餐",@"联系人分组",@"系统视频播放器",@"自定义浏览器",@"断点下载实验",@"动画实验",@"NSURLSession测试",@"HTML与OC的交互", @"UI验证", @"JSONModel使用", @"动画详解", @"=/copy/mutCopy对数组的影响", @"block学习", @"类别测试", @"常用算法", @"NSTimer准吗,怎么解决", @"雪花动画", @"解决手势冲突", @"按钮图文混排", @"我的", nil];
     }
     return _itemArr;
 }

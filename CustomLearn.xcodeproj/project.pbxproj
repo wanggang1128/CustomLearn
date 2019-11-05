@@ -119,6 +119,9 @@
 		3295DE1F1F25E646000E895C /* WGGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3295DE1E1F25E646000E895C /* WGGestureViewController.m */; };
 		3295DE221F25E786000E895C /* WGUIGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3295DE211F25E786000E895C /* WGUIGesture.m */; };
 		32A02CF21F5E921B002FE6EC /* WGNSURLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A02CF11F5E921B002FE6EC /* WGNSURLSessionViewController.m */; };
+		32A2100823519CE50000AEEF /* WGMyDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A2100723519CE50000AEEF /* WGMyDViewController.m */; };
+		32A2100B2351A1970000AEEF /* WGMyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A2100A2351A1970000AEEF /* WGMyHeaderView.m */; };
+		32A2100E2351BD4A0000AEEF /* WGMyHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A2100D2351BD4A0000AEEF /* WGMyHeadView.m */; };
 		32B08D8E225AF2990053804C /* WGUIApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B08D8D225AF2990053804C /* WGUIApplication.m */; };
 		32B08D91225B0FA20053804C /* WGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B08D90225B0FA20053804C /* WGLoginViewController.m */; };
 		32B1BA4A200F43B3000119D7 /* RefreashUiOnMainthread.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B1BA49200F43B3000119D7 /* RefreashUiOnMainthread.m */; };
@@ -131,6 +134,7 @@
 		32B8A21E1F287F76006C3098 /* WGBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B8A21D1F287F76006C3098 /* WGBannerViewController.m */; };
 		32B8A2211F287FDE006C3098 /* WGBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B8A2201F287FDE006C3098 /* WGBanner.m */; };
 		32D75E8821B6A120007A62E8 /* WGHanShuShiBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D75E8721B6A120007A62E8 /* WGHanShuShiBlock.m */; };
+		32DC7E97236BBF290097DBF4 /* WGMinesweeperWarningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DC7E96236BBF290097DBF4 /* WGMinesweeperWarningView.m */; };
 		32E1F40B203FBA0F006ED322 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1F3F6203FBA0F006ED322 /* JSONValueTransformer.m */; };
 		32E1F40C203FBA0F006ED322 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1F3F9203FBA0F006ED322 /* JSONKeyMapper.m */; };
 		32E1F40D203FBA0F006ED322 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1F3FB203FBA0F006ED322 /* JSONModel.m */; };
@@ -367,6 +371,12 @@
 		3295DE211F25E786000E895C /* WGUIGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WGUIGesture.m; path = CustomLearn/SecondFile/Model/WGUIGesture.m; sourceTree = SOURCE_ROOT; };
 		32A02CF01F5E921B002FE6EC /* WGNSURLSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGNSURLSessionViewController.h; sourceTree = "<group>"; };
 		32A02CF11F5E921B002FE6EC /* WGNSURLSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGNSURLSessionViewController.m; sourceTree = "<group>"; };
+		32A2100623519CE50000AEEF /* WGMyDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGMyDViewController.h; sourceTree = "<group>"; };
+		32A2100723519CE50000AEEF /* WGMyDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGMyDViewController.m; sourceTree = "<group>"; };
+		32A210092351A1970000AEEF /* WGMyHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGMyHeaderView.h; sourceTree = "<group>"; };
+		32A2100A2351A1970000AEEF /* WGMyHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGMyHeaderView.m; sourceTree = "<group>"; };
+		32A2100C2351BD4A0000AEEF /* WGMyHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGMyHeadView.h; sourceTree = "<group>"; };
+		32A2100D2351BD4A0000AEEF /* WGMyHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGMyHeadView.m; sourceTree = "<group>"; };
 		32B08D8C225AF2990053804C /* WGUIApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGUIApplication.h; sourceTree = "<group>"; };
 		32B08D8D225AF2990053804C /* WGUIApplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGUIApplication.m; sourceTree = "<group>"; };
 		32B08D8F225B0FA20053804C /* WGLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGLoginViewController.h; sourceTree = "<group>"; };
@@ -385,6 +395,8 @@
 		32B8A2201F287FDE006C3098 /* WGBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WGBanner.m; path = ../Model/WGBanner.m; sourceTree = "<group>"; };
 		32D75E8621B6A120007A62E8 /* WGHanShuShiBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGHanShuShiBlock.h; sourceTree = "<group>"; };
 		32D75E8721B6A120007A62E8 /* WGHanShuShiBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGHanShuShiBlock.m; sourceTree = "<group>"; };
+		32DC7E95236BBF290097DBF4 /* WGMinesweeperWarningView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGMinesweeperWarningView.h; sourceTree = "<group>"; };
+		32DC7E96236BBF290097DBF4 /* WGMinesweeperWarningView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGMinesweeperWarningView.m; sourceTree = "<group>"; };
 		32E1F3F6203FBA0F006ED322 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
 		32E1F3F7203FBA0F006ED322 /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper.h; sourceTree = "<group>"; };
 		32E1F3F8203FBA0F006ED322 /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
@@ -716,6 +728,10 @@
 		32677DE31F00B01C003E24D2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				32A210092351A1970000AEEF /* WGMyHeaderView.h */,
+				32A2100A2351A1970000AEEF /* WGMyHeaderView.m */,
+				32A2100C2351BD4A0000AEEF /* WGMyHeadView.h */,
+				32A2100D2351BD4A0000AEEF /* WGMyHeadView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -832,6 +848,8 @@
 				322757F8225DB9CF000E786E /* WGScrollViewTableViewDetailViewController.m */,
 				32F2BB7B2269911500DF6678 /* WGBtnAlphaControlViewController.h */,
 				32F2BB7C2269911500DF6678 /* WGBtnAlphaControlViewController.m */,
+				32A2100623519CE50000AEEF /* WGMyDViewController.h */,
+				32A2100723519CE50000AEEF /* WGMyDViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -868,6 +886,8 @@
 				324EF2E7223244E4009EA813 /* WGCAEmitterLayerView.m */,
 				322757FA225DCF35000E786E /* WGSliderUIScrollView.h */,
 				322757FB225DCF35000E786E /* WGSliderUIScrollView.m */,
+				32DC7E95236BBF290097DBF4 /* WGMinesweeperWarningView.h */,
+				32DC7E96236BBF290097DBF4 /* WGMinesweeperWarningView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1308,6 +1328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3225C0872021A44300E72388 /* NSObject+WGRunTimeDealloc.m in Sources */,
+				32A2100E2351BD4A0000AEEF /* WGMyHeadView.m in Sources */,
 				32677F8B1F00E202003E24D2 /* WGFriendInfoViewController.m in Sources */,
 				3245D778230B947900A07A99 /* WGPerson.m in Sources */,
 				324EF2DE223204F3009EA813 /* WGSnowAnimationViewController.m in Sources */,
@@ -1322,6 +1343,7 @@
 				322DB7D62175F0B8005A9B0B /* NSBundle+WGCommon.m in Sources */,
 				32B1BA4A200F43B3000119D7 /* RefreashUiOnMainthread.m in Sources */,
 				3295DE221F25E786000E895C /* WGUIGesture.m in Sources */,
+				32DC7E97236BBF290097DBF4 /* WGMinesweeperWarningView.m in Sources */,
 				32677F171F00B065003E24D2 /* WGFriendBooksViewController.m in Sources */,
 				323AF45920D0BCEA008ABCDD /* WGLianShiBlock.m in Sources */,
 				325F3328205B556C006115A4 /* WGAnimationStudyViewC.m in Sources */,
@@ -1337,6 +1359,7 @@
 				322DB7CE2175E352005A9B0B /* NSDictionary+WGCommon.m in Sources */,
 				322DB7D22175EF10005A9B0B /* NSData+WGCommon.m in Sources */,
 				322757F6225DB826000E786E /* WGScrollViewTableViewViewController.m in Sources */,
+				32A2100823519CE50000AEEF /* WGMyDViewController.m in Sources */,
 				328A48712237A8CC007D2339 /* UIView+WGController.m in Sources */,
 				3295DE1F1F25E646000E895C /* WGGestureViewController.m in Sources */,
 				32426ACF22AE34E600C6CE62 /* NSMutableArray+HuAvoidCrash.m in Sources */,
@@ -1351,6 +1374,7 @@
 				32A02CF21F5E921B002FE6EC /* WGNSURLSessionViewController.m in Sources */,
 				32677F161F00B065003E24D2 /* WGFourViewController.m in Sources */,
 				32E1F412203FBA0F006ED322 /* JSONAPI.m in Sources */,
+				32A2100B2351A1970000AEEF /* WGMyHeaderView.m in Sources */,
 				322C19E0230D1A6300456971 /* WGLians.m in Sources */,
 				325BCEF72089C32F0062B735 /* WGArrayTestViewController.m in Sources */,
 				322757F9225DB9CF000E786E /* WGScrollViewTableViewDetailViewController.m in Sources */,

@@ -73,4 +73,47 @@ static WGGlobleMethod *instance = nil;
     return path;
 }
 
+
++ (UIColor *)uiColorFromString:(NSString *)clrString {
+    if ([clrString length] == 0) {
+        return [UIColor clearColor];
+    }
+    
+    if ( [clrString rangeOfString:@"#"].location != 0 )
+    {
+        // error
+        return [UIColor redColor];
+    }
+    
+    if ([clrString length] == 7)
+    {
+        clrString = [clrString stringByAppendingString:@"FF"];
+    }
+    
+    if ([clrString length] != 9)
+    {
+        // error
+        return [UIColor redColor];
+    }
+    
+    const char * strBuf= [clrString UTF8String];
+    
+    unsigned long iColor = strtoul((strBuf+1), NULL, 16);
+    typedef struct colorByte
+    {
+        unsigned char a;
+        unsigned char b;
+        unsigned char g;
+        unsigned char r;
+    }CLRBYTE;
+    
+    CLRBYTE  pclr ;
+    memcpy(&pclr, &iColor, sizeof(CLRBYTE));
+    
+    return [UIColor colorWithRed:(pclr.r/255.0)
+                           green:(pclr.g/255.0)
+                            blue:(pclr.b/255.0)
+                           alpha:(pclr.a/255.0)];
+}
+
 @end
