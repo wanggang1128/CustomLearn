@@ -8,12 +8,16 @@
 
 #import "WGGestureViewController.h"
 #import "WGUIGesture.h"
+#import "SubUILongPressGestureRecognizer.h"
 
 
 
-@interface WGGestureViewController ()<WGUIGestureDelegate>
+@interface WGGestureViewController ()<WGUIGestureDelegate, UITextFieldDelegate>
 
 @property (nonatomic, strong) UIImageView *imageView;
+
+@property (nonatomic, strong) NSTimer *timer;
+@property (nonatomic, strong) UITextField *textFeild;
 
 @end
 
@@ -24,16 +28,82 @@
     
     [self setViewView];
     
-    [self screenSize];
+//    [self screenSize];
     
-    [self addGesture];
+//    [self addGesture];
     
+    [self btnAddLongPress];
+}
+
+- (void)btnAddLongPress {
+    
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    [btn setTitle:@"点击" forState:UIControlStateNormal];
+    [btn setTitleColor:UIColor.blueColor forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(btnClicked) forControlEvents:UIControlEventTouchUpInside];
+    
+    SubUILongPressGestureRecognizer *longPre = [[SubUILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(btnLongPressed:)];
+    longPre.addBtn = btn;
+    longPre.minimumPressDuration = 0.8;
+    [btn addGestureRecognizer:longPre];
+    
+    [self.view addSubview:btn];
+    
+    self.textFeild = [[UITextField alloc] initWithFrame:CGRectMake(0, btn.bottom+30, SCREEN_WIDTH, 40)];
+    _textFeild.backgroundColor = UIColor.yellowColor;
+    self.textFeild.placeholder = @"----";
+    _textFeild.delegate = self;
+    [self.view addSubview:self.textFeild];
+    
+}
+
+-(void)textFieldDidBeginEditing:(UITextField *)textField {
+    
+    
+}
+
+- (void)btnClicked {
+    
+    NSLog(@"--->btnClicked");
+}
+
+- (void)btnLongPressed:(SubUILongPressGestureRecognizer *)sender {
+        
+    if (sender.state ==UIGestureRecognizerStateBegan) {
+        [self beginDelete:sender.addBtn];
+    } else if (sender.state ==UIGestureRecognizerStateEnded){
+        [self endDelete];
+    }
+}
+
+- (void)beginDelete:(UIButton *)btn {
+    
+    NSLog(@"--->beginDelete");
+    
+    [self.timer invalidate];
+    self.timer = nil;
+    self.timer = [NSTimer timerWithTimeInterval:0.1 target:self selector:@selector(deledate:) userInfo:btn repeats:YES];
+    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
+}
+
+- (void)endDelete {
+    
+    NSLog(@"--->endDelete");
+    [self.timer invalidate];
+    self.timer = nil;
+}
+
+- (void)deledate:(NSTimer *)timer {
+    
+    NSLog(@"--->delete-->%@", [timer userInfo]);
+    [self.textFeild deleteBackward];
 }
 
 - (void)setViewView{
     self.view.backgroundColor = BACKGROUND_COLOR;
     self.automaticallyAdjustsScrollViewInsets = NO;
-    [self.view addSubview:self.imageView];
+//    [self.view addSubview:self.imageView];
+    
 }
 
 - (void)screenSize{

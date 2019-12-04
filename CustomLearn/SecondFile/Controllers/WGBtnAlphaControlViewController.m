@@ -8,6 +8,7 @@
 
 #import "WGBtnAlphaControlViewController.h"
 #import "NSMutableArray+HuAvoidCrash.h"
+#import "NSString+ChineseCharacterCheck.h"
 
 @interface WGBtnAlphaControlViewController ()
 
@@ -23,26 +24,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.str01 = @"123";
-    self.str02 = @"456";
-    NSMutableString *str = [NSMutableString stringWithString:@"qwe"];
-    self.str01 = str;
-    self.str02 = str;
-    [str appendString:@"rty"];
-    NSLog(@"--->%@,%@",self.str01, self.str02);
+    NSString *str = @"1你2好3啊!做个ssd456好人#";
+    NSArray *arr = [str getChineseCharacter];
     
-    NSString *sss = @"rfv";
-    NSString *ddd = sss.copy;
-    NSString *fff = str.copy;
-    
-    self.arr01 = @[@"1",@"2"];
-    self.arr02 = @[@"3",@"4"];
-    NSMutableArray *arr = [NSMutableArray arrayWithObjects:@"q", @"w", nil];
-    self.arr01 = arr;
-    self.arr02 = arr;
-    
-    [arr addObject:@"e"];
-    
+    for (NSString *sss in arr) {
+        str = [str stringByReplacingOccurrencesOfString:sss withString:@"成功"];
+    }
     self.title = @"按钮图文混排";
     self.view.backgroundColor = [UIColor whiteColor];
     

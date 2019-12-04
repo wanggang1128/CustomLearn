@@ -28,6 +28,7 @@
 		32295D381F03989F00AE8673 /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 32295D371F03989F00AE8673 /* UIImage+Addition.m */; };
 		322C19E0230D1A6300456971 /* WGLians.m in Sources */ = {isa = PBXBuildFile; fileRef = 322C19DF230D1A6300456971 /* WGLians.m */; };
 		322C19E3230D207500456971 /* WGHans.m in Sources */ = {isa = PBXBuildFile; fileRef = 322C19E2230D207500456971 /* WGHans.m */; };
+		322DB2D2237E371E00E4DA61 /* SubUILongPressGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DB2D1237E371E00E4DA61 /* SubUILongPressGestureRecognizer.m */; };
 		322DB7C42175D09D005A9B0B /* NSArray+WGCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DB7C32175D09D005A9B0B /* NSArray+WGCommon.m */; };
 		322DB7C72175D8F5005A9B0B /* WGCategoryTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DB7C62175D8F5005A9B0B /* WGCategoryTestViewController.m */; };
 		322DB7CA2175E142005A9B0B /* NSMutableArray+WGCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 322DB7C92175E142005A9B0B /* NSMutableArray+WGCommon.m */; };
@@ -153,6 +154,7 @@
 		32FB7EBE1EE010DC00B49531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32FB7EBD1EE010DC00B49531 /* Assets.xcassets */; };
 		32FB7ECC1EE010DC00B49531 /* CustomLearnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB7ECB1EE010DC00B49531 /* CustomLearnTests.m */; };
 		32FB7ED71EE010DC00B49531 /* CustomLearnUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB7ED61EE010DC00B49531 /* CustomLearnUITests.m */; };
+		32FF6C57237D442C00D686B3 /* NSString+ChineseCharacterCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FF6C56237D442C00D686B3 /* NSString+ChineseCharacterCheck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -224,6 +226,8 @@
 		322C19DF230D1A6300456971 /* WGLians.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGLians.m; sourceTree = "<group>"; };
 		322C19E1230D207500456971 /* WGHans.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGHans.h; sourceTree = "<group>"; };
 		322C19E2230D207500456971 /* WGHans.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGHans.m; sourceTree = "<group>"; };
+		322DB2D0237E371E00E4DA61 /* SubUILongPressGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubUILongPressGestureRecognizer.h; sourceTree = "<group>"; };
+		322DB2D1237E371E00E4DA61 /* SubUILongPressGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubUILongPressGestureRecognizer.m; sourceTree = "<group>"; };
 		322DB7C22175D09D005A9B0B /* NSArray+WGCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+WGCommon.h"; sourceTree = "<group>"; };
 		322DB7C32175D09D005A9B0B /* NSArray+WGCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WGCommon.m"; sourceTree = "<group>"; };
 		322DB7C52175D8F5005A9B0B /* WGCategoryTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGCategoryTestViewController.h; sourceTree = "<group>"; };
@@ -436,6 +440,8 @@
 		32FB7ED21EE010DC00B49531 /* CustomLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32FB7ED61EE010DC00B49531 /* CustomLearnUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLearnUITests.m; sourceTree = "<group>"; };
 		32FB7ED81EE010DC00B49531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32FF6C55237D442C00D686B3 /* NSString+ChineseCharacterCheck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ChineseCharacterCheck.h"; sourceTree = "<group>"; };
+		32FF6C56237D442C00D686B3 /* NSString+ChineseCharacterCheck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ChineseCharacterCheck.m"; sourceTree = "<group>"; };
 		38C4641BB293E7E0DFDB4E3B /* libPods-CustomLearn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CustomLearn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4162AA67F6F668379EF2BD2B /* Pods-CustomLearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomLearn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CustomLearn/Pods-CustomLearn.debug.xcconfig"; sourceTree = "<group>"; };
 		FA9B6BE151FA5175155856F2 /* Pods-CustomLearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomLearn.release.xcconfig"; path = "Pods/Target Support Files/Pods-CustomLearn/Pods-CustomLearn.release.xcconfig"; sourceTree = "<group>"; };
@@ -649,6 +655,8 @@
 				322DB7E12175F821005A9B0B /* NSString+WGCommon.m */,
 				322DB7E32175F9C4005A9B0B /* NSMutableString+WGCommon.h */,
 				322DB7E42175F9C4005A9B0B /* NSMutableString+WGCommon.m */,
+				32FF6C55237D442C00D686B3 /* NSString+ChineseCharacterCheck.h */,
+				32FF6C56237D442C00D686B3 /* NSString+ChineseCharacterCheck.m */,
 			);
 			path = NSStringCategory;
 			sourceTree = "<group>";
@@ -664,6 +672,8 @@
 				322C19DF230D1A6300456971 /* WGLians.m */,
 				322C19E1230D207500456971 /* WGHans.h */,
 				322C19E2230D207500456971 /* WGHans.m */,
+				322DB2D0237E371E00E4DA61 /* SubUILongPressGestureRecognizer.h */,
+				322DB2D1237E371E00E4DA61 /* SubUILongPressGestureRecognizer.m */,
 			);
 			path = SecondToolsFile;
 			sourceTree = "<group>";
@@ -1369,6 +1379,7 @@
 				32E1F40E203FBA0F006ED322 /* JSONModelError.m in Sources */,
 				3254505F1F43E45400EFB6A8 /* WGSystermVedioPlayerViewController.m in Sources */,
 				320E0E281F5512F500049762 /* WGDownloadManager.m in Sources */,
+				32FF6C57237D442C00D686B3 /* NSString+ChineseCharacterCheck.m in Sources */,
 				32E1F40C203FBA0F006ED322 /* JSONKeyMapper.m in Sources */,
 				32F2BB7D2269911500DF6678 /* WGBtnAlphaControlViewController.m in Sources */,
 				32A02CF21F5E921B002FE6EC /* WGNSURLSessionViewController.m in Sources */,
@@ -1376,6 +1387,7 @@
 				32E1F412203FBA0F006ED322 /* JSONAPI.m in Sources */,
 				32A2100B2351A1970000AEEF /* WGMyHeaderView.m in Sources */,
 				322C19E0230D1A6300456971 /* WGLians.m in Sources */,
+				322DB2D2237E371E00E4DA61 /* SubUILongPressGestureRecognizer.m in Sources */,
 				325BCEF72089C32F0062B735 /* WGArrayTestViewController.m in Sources */,
 				322757F9225DB9CF000E786E /* WGScrollViewTableViewDetailViewController.m in Sources */,
 				324EF2E8223244E4009EA813 /* WGCAEmitterLayerView.m in Sources */,
