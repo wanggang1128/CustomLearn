@@ -135,6 +135,13 @@
 		32B8A21E1F287F76006C3098 /* WGBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B8A21D1F287F76006C3098 /* WGBannerViewController.m */; };
 		32B8A2211F287FDE006C3098 /* WGBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B8A2201F287FDE006C3098 /* WGBanner.m */; };
 		32D75E8821B6A120007A62E8 /* WGHanShuShiBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D75E8721B6A120007A62E8 /* WGHanShuShiBlock.m */; };
+		32DBBE412399F77800CDC84E /* WGTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DBBE402399F77800CDC84E /* WGTextFieldViewController.m */; };
+		32DBBE442399FD5300CDC84E /* WGTextFieldRestrict.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DBBE432399FD5300CDC84E /* WGTextFieldRestrict.m */; };
+		32DBBE47239A01FC00CDC84E /* WGTextFieldNumberRestrict.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DBBE46239A01FC00CDC84E /* WGTextFieldNumberRestrict.m */; };
+		32DBBE4A239A021500CDC84E /* WGTextFieldCharacterRestrict.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DBBE49239A021500CDC84E /* WGTextFieldCharacterRestrict.m */; };
+		32DBBE4D239A023200CDC84E /* WGTextFieldDecimalRestrict.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DBBE4C239A023200CDC84E /* WGTextFieldDecimalRestrict.m */; };
+		32DBBE50239A1D5200CDC84E /* UITextField+WGTextFieldRestrict.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DBBE4F239A1D5200CDC84E /* UITextField+WGTextFieldRestrict.m */; };
+		32DBBE53239A357B00CDC84E /* UITextField+WGtextFieldAdjust.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DBBE52239A357B00CDC84E /* UITextField+WGtextFieldAdjust.m */; };
 		32DC7E97236BBF290097DBF4 /* WGMinesweeperWarningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DC7E96236BBF290097DBF4 /* WGMinesweeperWarningView.m */; };
 		32E1F40B203FBA0F006ED322 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1F3F6203FBA0F006ED322 /* JSONValueTransformer.m */; };
 		32E1F40C203FBA0F006ED322 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E1F3F9203FBA0F006ED322 /* JSONKeyMapper.m */; };
@@ -399,6 +406,20 @@
 		32B8A2201F287FDE006C3098 /* WGBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WGBanner.m; path = ../Model/WGBanner.m; sourceTree = "<group>"; };
 		32D75E8621B6A120007A62E8 /* WGHanShuShiBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGHanShuShiBlock.h; sourceTree = "<group>"; };
 		32D75E8721B6A120007A62E8 /* WGHanShuShiBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGHanShuShiBlock.m; sourceTree = "<group>"; };
+		32DBBE3F2399F77800CDC84E /* WGTextFieldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGTextFieldViewController.h; sourceTree = "<group>"; };
+		32DBBE402399F77800CDC84E /* WGTextFieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGTextFieldViewController.m; sourceTree = "<group>"; };
+		32DBBE422399FD5300CDC84E /* WGTextFieldRestrict.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGTextFieldRestrict.h; sourceTree = "<group>"; };
+		32DBBE432399FD5300CDC84E /* WGTextFieldRestrict.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGTextFieldRestrict.m; sourceTree = "<group>"; };
+		32DBBE45239A01FC00CDC84E /* WGTextFieldNumberRestrict.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGTextFieldNumberRestrict.h; sourceTree = "<group>"; };
+		32DBBE46239A01FC00CDC84E /* WGTextFieldNumberRestrict.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGTextFieldNumberRestrict.m; sourceTree = "<group>"; };
+		32DBBE48239A021500CDC84E /* WGTextFieldCharacterRestrict.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGTextFieldCharacterRestrict.h; sourceTree = "<group>"; };
+		32DBBE49239A021500CDC84E /* WGTextFieldCharacterRestrict.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGTextFieldCharacterRestrict.m; sourceTree = "<group>"; };
+		32DBBE4B239A023200CDC84E /* WGTextFieldDecimalRestrict.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGTextFieldDecimalRestrict.h; sourceTree = "<group>"; };
+		32DBBE4C239A023200CDC84E /* WGTextFieldDecimalRestrict.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGTextFieldDecimalRestrict.m; sourceTree = "<group>"; };
+		32DBBE4E239A1D5200CDC84E /* UITextField+WGTextFieldRestrict.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+WGTextFieldRestrict.h"; sourceTree = "<group>"; };
+		32DBBE4F239A1D5200CDC84E /* UITextField+WGTextFieldRestrict.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+WGTextFieldRestrict.m"; sourceTree = "<group>"; };
+		32DBBE51239A357B00CDC84E /* UITextField+WGtextFieldAdjust.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+WGtextFieldAdjust.h"; sourceTree = "<group>"; };
+		32DBBE52239A357B00CDC84E /* UITextField+WGtextFieldAdjust.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+WGtextFieldAdjust.m"; sourceTree = "<group>"; };
 		32DC7E95236BBF290097DBF4 /* WGMinesweeperWarningView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGMinesweeperWarningView.h; sourceTree = "<group>"; };
 		32DC7E96236BBF290097DBF4 /* WGMinesweeperWarningView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGMinesweeperWarningView.m; sourceTree = "<group>"; };
 		32E1F3F6203FBA0F006ED322 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
@@ -674,6 +695,18 @@
 				322C19E2230D207500456971 /* WGHans.m */,
 				322DB2D0237E371E00E4DA61 /* SubUILongPressGestureRecognizer.h */,
 				322DB2D1237E371E00E4DA61 /* SubUILongPressGestureRecognizer.m */,
+				32DBBE422399FD5300CDC84E /* WGTextFieldRestrict.h */,
+				32DBBE432399FD5300CDC84E /* WGTextFieldRestrict.m */,
+				32DBBE45239A01FC00CDC84E /* WGTextFieldNumberRestrict.h */,
+				32DBBE46239A01FC00CDC84E /* WGTextFieldNumberRestrict.m */,
+				32DBBE48239A021500CDC84E /* WGTextFieldCharacterRestrict.h */,
+				32DBBE49239A021500CDC84E /* WGTextFieldCharacterRestrict.m */,
+				32DBBE4B239A023200CDC84E /* WGTextFieldDecimalRestrict.h */,
+				32DBBE4C239A023200CDC84E /* WGTextFieldDecimalRestrict.m */,
+				32DBBE4E239A1D5200CDC84E /* UITextField+WGTextFieldRestrict.h */,
+				32DBBE4F239A1D5200CDC84E /* UITextField+WGTextFieldRestrict.m */,
+				32DBBE51239A357B00CDC84E /* UITextField+WGtextFieldAdjust.h */,
+				32DBBE52239A357B00CDC84E /* UITextField+WGtextFieldAdjust.m */,
 			);
 			path = SecondToolsFile;
 			sourceTree = "<group>";
@@ -860,6 +893,8 @@
 				32F2BB7C2269911500DF6678 /* WGBtnAlphaControlViewController.m */,
 				32A2100623519CE50000AEEF /* WGMyDViewController.h */,
 				32A2100723519CE50000AEEF /* WGMyDViewController.m */,
+				32DBBE3F2399F77800CDC84E /* WGTextFieldViewController.h */,
+				32DBBE402399F77800CDC84E /* WGTextFieldViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1368,13 +1403,17 @@
 				32677F851F00DCE2003E24D2 /* RongYunChatListViewController.m in Sources */,
 				322DB7CE2175E352005A9B0B /* NSDictionary+WGCommon.m in Sources */,
 				322DB7D22175EF10005A9B0B /* NSData+WGCommon.m in Sources */,
+				32DBBE4A239A021500CDC84E /* WGTextFieldCharacterRestrict.m in Sources */,
 				322757F6225DB826000E786E /* WGScrollViewTableViewViewController.m in Sources */,
 				32A2100823519CE50000AEEF /* WGMyDViewController.m in Sources */,
+				32DBBE412399F77800CDC84E /* WGTextFieldViewController.m in Sources */,
 				328A48712237A8CC007D2339 /* UIView+WGController.m in Sources */,
+				32DBBE53239A357B00CDC84E /* UITextField+WGtextFieldAdjust.m in Sources */,
 				3295DE1F1F25E646000E895C /* WGGestureViewController.m in Sources */,
 				32426ACF22AE34E600C6CE62 /* NSMutableArray+HuAvoidCrash.m in Sources */,
 				324297C021BBA1370073EA21 /* WGAlgorithmViewController.m in Sources */,
 				322DC7951F984FCB00BE55EF /* WGHTMLViewController.m in Sources */,
+				32DBBE442399FD5300CDC84E /* WGTextFieldRestrict.m in Sources */,
 				328A486E2237A857007D2339 /* UIView+WGFrame.m in Sources */,
 				32E1F40E203FBA0F006ED322 /* JSONModelError.m in Sources */,
 				3254505F1F43E45400EFB6A8 /* WGSystermVedioPlayerViewController.m in Sources */,
@@ -1410,14 +1449,17 @@
 				3258A5A01F023D2D0018D691 /* WGTeamKindsViewController.m in Sources */,
 				324F337A1F60195C003209BC /* WGRemoteResponse.m in Sources */,
 				324F33731F5FA30B003209BC /* WGGlobleMethod.m in Sources */,
+				32DBBE4D239A023200CDC84E /* WGTextFieldDecimalRestrict.m in Sources */,
 				325F34B61F38516400990C72 /* WGContactsGroupModel.m in Sources */,
 				322DB7E52175F9C4005A9B0B /* NSMutableString+WGCommon.m in Sources */,
 				32677F181F00B065003E24D2 /* WGTwoViewController.m in Sources */,
 				322C19E3230D207500456971 /* WGHans.m in Sources */,
 				327A329D1F3052DD008E76B5 /* WGUIPickerViewViewController.m in Sources */,
 				32E1F411203FBA0F006ED322 /* JSONHTTPClient.m in Sources */,
+				32DBBE50239A1D5200CDC84E /* UITextField+WGTextFieldRestrict.m in Sources */,
 				325AABCA2213AD25009A92EE /* WGXibViewController.m in Sources */,
 				320E0E241F550F4300049762 /* WGResumeBrokenTransferViewController.m in Sources */,
+				32DBBE47239A01FC00CDC84E /* WGTextFieldNumberRestrict.m in Sources */,
 				325BCEFA2089CFB70062B735 /* NSArray+WgArray.m in Sources */,
 				322DB7E22175F821005A9B0B /* NSString+WGCommon.m in Sources */,
 				32B08D8E225AF2990053804C /* WGUIApplication.m in Sources */,
