@@ -16,8 +16,6 @@
 @property (nonatomic, strong) UITextField *textField02;
 @property (nonatomic, strong) UITextField *textField03;
 
-@property (nonatomic, strong) UITextField *tempTextField;
-
 @end
 
 @implementation WGTextFieldViewController
@@ -35,16 +33,33 @@
     [self.view addSubview:self.textField01];
     [self.view addSubview:self.textField02];
     [self.view addSubview:self.textField03];
+    
+    _textField01.textFieldRestrict.textFieldChangedBlock = ^(NSString * _Nonnull textFieldStr) {
+        
+        if (textFieldStr.length == 2) {
+            NSLog(@"---->%lu", (unsigned long)textFieldStr.length);
+        }
+    };
+    _textField02.textFieldRestrict.textFieldChangedBlock = ^(NSString * _Nonnull textFieldStr) {
+        
+        if (textFieldStr.length == 2) {
+            NSLog(@"---->%lu", (unsigned long)textFieldStr.length);
+        }
+    };
+    _textField03.textFieldRestrict.textFieldChangedBlock = ^(NSString * _Nonnull textFieldStr) {
+        
+        if (textFieldStr.length == 2) {
+            NSLog(@"---->%lu", (unsigned long)textFieldStr.length);
+        }
+    };
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    if (self.tempTextField.isFirstResponder) {
-        [self.tempTextField resignFirstResponder];
-    }
+    
+    [self.view endEditing:YES];
 }
 
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
-    self.tempTextField = textField;
     return YES;
 }
 
@@ -82,7 +97,7 @@
         tempField.textAlignment = NSTextAlignmentLeft;
         [[tempField layer] setBorderColor:[[UIColor colorWithRed:151.0/255.0f green:151.0/255.0f blue:151.0/255.0f alpha:1] CGColor]];
         
-        tempField.textRestrictType = WGTextRestrictTypeCharacter;
+//        tempField.textRestrictType = WGTextRestrictTypeCharacter;
         [tempField setAutoAdjust:YES];
         tempField.maxLength = 5;
         _textField02 = tempField;

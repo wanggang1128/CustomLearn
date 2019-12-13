@@ -40,6 +40,9 @@
 
 - (void)textFieldDidChange:(UITextField *)textField {
     
+    if (self.textFieldChangedBlock) {
+        self.textFieldChangedBlock(textField.text);
+    }
 }
 
 @end

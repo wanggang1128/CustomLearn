@@ -17,6 +17,7 @@ typedef NS_ENUM(NSInteger, WGTextRestrictType){
 };
 
 typedef BOOL(^WGStringFilter)(NSString *string);
+typedef void(^WGTextFieldChangedBlock)(NSString *textFieldStr);
 
 static inline NSString * stringFilter(NSString *filterString, NSUInteger maxLength, WGStringFilter filter){
     
@@ -45,6 +46,8 @@ static inline BOOL matchString(NSString *string, NSString *format){
 
 @property (nonatomic, assign) WGTextRestrictType textRestrictType;
 @property (nonatomic, assign) NSUInteger maxLength;
+
+@property (nonatomic, copy) WGTextFieldChangedBlock textFieldChangedBlock;
 
 + (instancetype)textFieldRestrictWithType:(WGTextRestrictType)type;
 - (void)textFieldDidChange:(UITextField *)textField;

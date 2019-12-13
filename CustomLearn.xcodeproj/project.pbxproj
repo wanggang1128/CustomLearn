@@ -123,6 +123,7 @@
 		32A2100823519CE50000AEEF /* WGMyDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A2100723519CE50000AEEF /* WGMyDViewController.m */; };
 		32A2100B2351A1970000AEEF /* WGMyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A2100A2351A1970000AEEF /* WGMyHeaderView.m */; };
 		32A2100E2351BD4A0000AEEF /* WGMyHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A2100D2351BD4A0000AEEF /* WGMyHeadView.m */; };
+		32A9C500239E68C50083C68F /* WGAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A9C4FF239E68C50083C68F /* WGAnimationView.m */; };
 		32B08D8E225AF2990053804C /* WGUIApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B08D8D225AF2990053804C /* WGUIApplication.m */; };
 		32B08D91225B0FA20053804C /* WGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B08D90225B0FA20053804C /* WGLoginViewController.m */; };
 		32B1BA4A200F43B3000119D7 /* RefreashUiOnMainthread.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B1BA49200F43B3000119D7 /* RefreashUiOnMainthread.m */; };
@@ -388,6 +389,8 @@
 		32A2100A2351A1970000AEEF /* WGMyHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGMyHeaderView.m; sourceTree = "<group>"; };
 		32A2100C2351BD4A0000AEEF /* WGMyHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGMyHeadView.h; sourceTree = "<group>"; };
 		32A2100D2351BD4A0000AEEF /* WGMyHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGMyHeadView.m; sourceTree = "<group>"; };
+		32A9C4FE239E68C50083C68F /* WGAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGAnimationView.h; sourceTree = "<group>"; };
+		32A9C4FF239E68C50083C68F /* WGAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGAnimationView.m; sourceTree = "<group>"; };
 		32B08D8C225AF2990053804C /* WGUIApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGUIApplication.h; sourceTree = "<group>"; };
 		32B08D8D225AF2990053804C /* WGUIApplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGUIApplication.m; sourceTree = "<group>"; };
 		32B08D8F225B0FA20053804C /* WGLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGLoginViewController.h; sourceTree = "<group>"; };
@@ -933,6 +936,8 @@
 				322757FB225DCF35000E786E /* WGSliderUIScrollView.m */,
 				32DC7E95236BBF290097DBF4 /* WGMinesweeperWarningView.h */,
 				32DC7E96236BBF290097DBF4 /* WGMinesweeperWarningView.m */,
+				32A9C4FE239E68C50083C68F /* WGAnimationView.h */,
+				32A9C4FF239E68C50083C68F /* WGAnimationView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1379,6 +1384,7 @@
 				324EF2DE223204F3009EA813 /* WGSnowAnimationViewController.m in Sources */,
 				32E1F40F203FBA0F006ED322 /* JSONModelClassProperty.m in Sources */,
 				320219AA1EFE139E0006704E /* WGTabBarViewController.m in Sources */,
+				32A9C500239E68C50083C68F /* WGAnimationView.m in Sources */,
 				325F34B91F38517F00990C72 /* WGContactsModel.m in Sources */,
 				322426AA223100F0004671E6 /* WGNSTimerTestViewController.m in Sources */,
 				322DB7C72175D8F5005A9B0B /* WGCategoryTestViewController.m in Sources */,

@@ -15,6 +15,9 @@
         
         return matchString(string, @"^[^[\\u4e00-\\u9fa5]]$");
     });
+    if (self.textFieldChangedBlock) {
+        self.textFieldChangedBlock(textField.text);
+    }
 }
 
 @end

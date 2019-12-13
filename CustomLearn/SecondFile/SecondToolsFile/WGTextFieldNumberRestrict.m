@@ -15,6 +15,9 @@
         
         return matchString(string, @"^\\d$");
     });
+    if (self.textFieldChangedBlock) {
+        self.textFieldChangedBlock(textField.text);
+    }
 }
 
 @end

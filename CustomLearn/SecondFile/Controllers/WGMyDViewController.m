@@ -10,13 +10,12 @@
 #import "WGMinesweeperWarningView.h"
 
 #import <objc/runtime.h>
-
-
 #include <ifaddrs.h>
-
 #include <arpa/inet.h>
-
 #include <net/if.h>
+
+#import "WGAnimationView.h"
+
 
 @interface WGMyDViewController ()
 
@@ -38,7 +37,7 @@
     
     [self createView];
     
-    [self timerTest];
+//    [self timerTest];
     
 }
 
@@ -74,11 +73,15 @@
     if (@available(iOS 11.0, *)) {
         insets = [[[UIApplication sharedApplication] delegate] window].safeAreaInsets;
     }
+//
+//    self.rateLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, insets.top+44, SCREEN_WIDTH, 40)];
+//    _rateLabel.textColor = [UIColor redColor];
+//    _rateLabel.backgroundColor = UIColor.yellowColor;
+//    [self.view addSubview:_rateLabel];
     
-    self.rateLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, insets.top+44, SCREEN_WIDTH, 40)];
-    _rateLabel.textColor = [UIColor redColor];
-    _rateLabel.backgroundColor = UIColor.yellowColor;
-    [self.view addSubview:_rateLabel];
+    
+    WGAnimationView *aniView = [[WGAnimationView alloc] initWithFrame:CGRectMake(0, insets.top+44, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    [self.view addSubview:aniView];
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {

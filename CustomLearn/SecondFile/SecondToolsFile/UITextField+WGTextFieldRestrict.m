@@ -46,7 +46,7 @@
 - (void)setTextFieldRestrict:(WGTextFieldRestrict *)textFieldRestrict {
     
     if (self.textFieldRestrict) {
-        [self removeTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
+        [self removeTarget:self.textFieldRestrict action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
     }
     textFieldRestrict.maxLength = self.maxLength > 0?:NSUIntegerMax;
     [self addTarget:textFieldRestrict action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];

@@ -15,6 +15,9 @@
         
         return matchString(string, @"^[0-9.]$");
     });
+    if (self.textFieldChangedBlock) {
+        self.textFieldChangedBlock(textField.text);
+    }
 }
 
 @end
